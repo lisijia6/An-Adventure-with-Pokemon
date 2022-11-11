@@ -1,0 +1,21 @@
+type,name,year,unitsSold,reviewScore,imageID
+Video Game,Pokémon Red and Blue,1996,31.37,88,vg-0
+Video Game,Pokémon Yellow,1998,14.64,85,vg-1
+Video Game,Pokémon Gold and Silver,1999,23.73,90,vg-2
+Video Game,Pokémon Crystal,2000,6.39,80,vg-3
+Video Game,Pokémon Ruby and Sapphire,2002,16.22,84,vg-4
+Video Game,Pokémon FireRed and LeafGreen,2004,12,81,vg-5
+Video Game,Pokémon Emerald,2004,6.32,77,vg-6
+Video Game,Pokémon Diamond and Pearl,2006,17.67,85,vg-7
+Video Game,Pokémon Platinum,2008,7.06,83,vg-8
+Video Game,Pokémon HeartGold and SoulSilver,2009,12.72,88,vg-9
+Video Game,Pokémon Black and White,2010,15.64,86,vg-10
+Video Game,Pokémon Black 2 and White 2,2012,7.63,81,vg-11
+Video Game,Pokémon X and Y,2013,16.45,87,vg-12
+Video Game,Pokémon Omega Ruby and Alpha Sapphire,2014,14.27,84,vg-13
+Video Game,Pokémon Sun and Moon,2016,16.18,88,vg-14
+Video Game,Pokémon Ultra Sun and Ultra Moon,2017,8.77,83,vg-15
+Video Game,"Pokémon: Let's Go, Pikachu! and Let's Go, Eevee!",2018,13,78,vg-16
+Video Game,Pokémon Sword and Shield,2019,23.9,83,vg-17
+Video Game,Pokémon Brilliant Diamond and Shining Pearl,2021,14.79,73,vg-18
+Video Game,Pokémon Legends: Arceaus,2022,12.64,83,vg-19

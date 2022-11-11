@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>CS171 - Lab 10</title>
+    <title>An Adventure with Pokemon</title>
 
     <link href="https://fonts.googleapis.com/css?family=Neuton:300,400,400i,700,800" rel="stylesheet">
 
@@ -22,23 +22,51 @@
 
     <div class="row">
         <div class="col-md-12">
-            <h1><span class="h1-sub">United Nations.</span> My World 2015</h1>
-            <h2>A survey reveals what the world wants</h2>
+            <h1>An Adventure with Pokemon</h1>
         </div>
     </div>
 
     <div class="row">
         <div class="col-md-12">
-            <div id="countvis"></div>
+            <p>Pokemon Clusters</p>
+            <div id="pokemon-clusters"></div>
         </div>
     </div>
 
     <div class="row">
-        <div class="col-md-4">
-            <div id="agevis"></div>
+        <hr>
+        <div class="col-md-12">
+            <p>Box Office</p>
+            <div id="film-box-office"></div>
         </div>
-        <div class="col-md-8">
-            <div id="priovis"></div>
+    </div>
+
+    <div class="row">
+        <hr>
+        <div class="col-md-12">
+            <p>Pokemon Go Map</p>
+            <div id="pokemon-go-map"></div>
+        </div>
+    </div>
+
+    <div class="row">
+        <hr>
+        <!--
+        1. Select Mode: details or comparison; details: select 1, comparison: select 2
+        2a: details -> select pokemon type, etc.
+        2b: comparison -> select pokemon type, etc. for #1; select pokemon type, etc. for #2
+        -->
+        <div class="col-md-12">
+            <p>Pokemon Details or Comparison</p>
+            <div id="pokemon-details-comparison"></div>
+        </div>
+    </div>
+
+    <div class="row">
+        <hr>
+        <div class="col-md-12">
+            <p>Pokemon Media Details</p>
+            <div id="pokemon-media-details"></div>
         </div>
     </div>
 
@@ -59,6 +87,6 @@
 <script src="js/priovis.js"></script>
 
 <!-- Load data, create visualizations -->
-<script src="js/main.js"></script>
+<script src="js/main_example.js"></script>
 </body>
 </html>
