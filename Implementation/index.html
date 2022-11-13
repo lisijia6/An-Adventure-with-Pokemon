@@ -26,6 +26,12 @@
         </div>
     </div>
 
+
+
+
+
+
+    <!-- Pokemon Clusters-->
     <div class="row">
         <div class="col-md-12">
             <p>Pokemon Clusters</p>
@@ -33,6 +39,13 @@
         </div>
     </div>
 
+
+
+
+
+
+
+    <!-- Pokemon Box Office-->
     <div class="row">
         <hr>
         <div class="col-md-12">
@@ -41,6 +54,13 @@
         </div>
     </div>
 
+
+
+
+
+
+
+    <!-- Pokemon Go Map-->
     <div class="row">
         <hr>
         <div class="col-md-12">
@@ -49,6 +69,17 @@
         </div>
     </div>
 
+
+
+
+
+
+
+
+
+
+
+    <!-- Pokemon Details or Comparison-->
     <div class="row">
         <hr>
         <!--
@@ -56,12 +87,112 @@
         2a: details -> select pokemon type, etc.
         2b: comparison -> select pokemon type, etc. for #1; select pokemon type, etc. for #2
         -->
-        <div class="col-md-12">
-            <p>Pokemon Details or Comparison</p>
-            <div id="pokemon-details-comparison"></div>
+        <p>Pokemon Details</p>
+        <!--            <div id="pokemon-details-comparison"></div>-->
+        <div id="pokemon-details"></div>
+        <p>Pokemon Comparison</p>
+    </div>
+    <div class="row">
+        <div class="col-md-1">
+            <b style="font-size: large">Type: </b>
+        </div>
+        <div class="col-md-3">
+            <select class="form-control" id="pokemon-type-select">
+                <option value="ALLTYPE">All</option>
+                <option value="BUG">Bug</option>
+                <option value="DARK">Dark</option>
+                <option value="DRAGON">Dragon</option>
+                <option value="ELECTRIC">Electric</option>
+                <option value="FAIRY">Fairy</option>
+                <option value="FIGHTING">Fighting</option>
+                <option value="FIRE">Fire</option>
+                <option value="FLYING">Flying</option>
+                <option value="GHOST">Ghost</option>
+                <option value="GRASS">Grass</option>
+                <option value="GROUND">Ground</option>
+                <option value="ICE">Ice</option>
+                <option value="NORMAL">Normal</option>
+                <option value="POISON">Poison</option>
+                <option value="PSYCHIC">Psychic</option>
+                <option value="ROCK">Rock</option>
+                <option value="STEEL">Steel</option>
+                <option value="WATER">Water</option>
+            </select>
+        </div>
+        <div class="col-md-2">
+            <b style="font-size: large">Generation: </b>
+        </div>
+        <div class="col-md-3">
+            <select class="form-control" id="pokemon-generation-select">
+                <option value="ALLGENERATION">All</option>
+                <option value="ONE">1</option>
+                <option value="TWO">2</option>
+                <option value="THREE">3</option>
+                <option value="FOUR">4</option>
+                <option value="FIVE">5</option>
+                <option value="SIX">6</option>
+                <option value="SEVEN">7</option>
+                <option value="EIGHT">8</option>
+            </select>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-2">
+            <b style="font-size: large">Pokemon 1: </b>
+        </div>
+        <div class="col-md-3">
+            <select class="form-control" id="pokemon-comparetest-1" onchange="pokemonChange(1)">
+                <option value="SOBBLE">Sobble</option>
+                <option value="JIRACHI">Jirachi</option>
+                <option value="BULBASAUR">Bulbasaur</option>
+            </select>
+        </div>
+        <div class="col-md-2">
+            <b style="font-size: large">Pokemon 2: </b>
+        </div>
+        <div class="col-md-3">
+            <select class="form-control" id="pokemon-comparetest-2" onchange="pokemonChange(2)">
+                <option value="JIRACHI">Jirachi</option>
+                <option value="SOBBLE">Sobble</option>
+                <option value="BULBASAUR">Bulbasaur</option>
+            </select>
+        </div>
+    </div>
+    <div class="row" style="height: 30px">
+        <div class="col-md-1">
+            <div id="pokemon-comparison-1-name"></div>
+        </div>
+        <div class="col-md-4"></div>
+        <div class="col-md-4">
+            <div id="pokemon-comparison-2-name"></div>
+        </div>
+        <div class="col-md-1"></div>
+    </div>
+    <div class="row" style="height: 400px">
+<!--        <div id="pokemon-comparison">Test</div>-->
+        <div class="col-md-1">
+            <div id="pokemon-comparison-1-img"></div>
+        </div>
+        <div class="col-md-4">
+            <div id="pokemon-comparison-1"></div>
+        </div>
+        <div class="col-md-4">
+            <div id="pokemon-comparison-2"></div>
+        </div>
+        <div class="col-md-1">
+            <div id="pokemon-comparison-2-img"></div>
         </div>
     </div>
 
+
+
+
+
+
+
+
+
+    <!-- Pokemon Media Details-->
     <div class="row">
         <hr>
         <div class="col-md-12">
@@ -82,11 +213,15 @@
 
 
 <!-- Visualization objects -->
-<script src="js/countvis.js"></script>
-<script src="js/agevis.js"></script>
-<script src="js/priovis.js"></script>
+<script src="js/boxOfficeVis.js"></script>
+<script src="js/pokemonClustersVis.js"></script>
+<script src="js/pokemonComparisonVis.js"></script>
+<script src="js/pokemonDetailsVis.js"></script>
+<script src="js/pokemonGoMapVis.js"></script>
+<script src="js/pokemonMediaVis.js"></script>
 
 <!-- Load data, create visualizations -->
-<script src="js/main_example.js"></script>
+<script src="js/main.js"></script>
+<!--<script src="js/main_example.js"></script>-->
 </body>
 </html>
