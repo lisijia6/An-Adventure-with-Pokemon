@@ -97,6 +97,32 @@ class BoxOffice {
             .attr("class", "line")
             .attr("d", lineFunc)   // line stroke updated in style.css
 
+        // average line
+        vis.boxOfficeMean = d3.mean(vis.data.map(function(d){return d.boxOfficeUS;}))
+        vis.avgLine = vis.svg.append("g")
+        vis.avgLine.append("line")
+            .attr("class", "avgLine")
+            .style("stroke", "#CFD2CC")
+            .style("stroke-width", 3)
+            .style("stroke-dasharray", ("10,3"))
+            .attr("x1", 0)
+            .attr("y1", vis.boxOfficeMean)
+            .attr("x2", vis.width)
+            .attr("y2", vis.boxOfficeMean);
+
+        vis.avgLine.style("opacity", 0.0)
+            .transition()
+            .duration(1500)
+            .style("opacity", 1);
+
+        vis.avgLine.append("text")
+            .attr('text-anchor', 'middle')
+            .attr("x", 80)
+            .attr("y", vis.boxOfficeMean-10)
+            .attr("class", "linechart-annotation")
+            .text("Average Box Office")
+
+
         vis.circles = vis.svg.selectAll("circle")
         vis.circles  = vis.circles .data(vis.data)
             .enter()
@@ -120,7 +146,7 @@ class BoxOffice {
                     .style("top", event.pageY - 200 + "px")
                     .html(`
          <div style="border: thin solid #F5ED12; border-radius: 5px; background: #ECEAC3; padding: 10px">
-             <img src=${d.imageID} alt="movie image" width="40" height="120" class="center">
+             <img src=${d.imageID} alt="movie image" class="center movie-image">
              <ul>
              <li>Movie Name: ${d.name}</li>
              <li>Release Date: ${dateFormatter(d.releaseDateUS)}</li>

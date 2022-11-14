@@ -65,3 +65,10 @@ h2 {
 	margin-right: auto;
 	width: 50%;
 }
+
+.movie-image {
+	max-width:120px;
+	max-height:150px;
+	width:auto;
+	height:auto;
+}
