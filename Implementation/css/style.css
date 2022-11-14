@@ -52,3 +52,16 @@ h2 {
 .bar {
 	fill: #93bebf;
 }
+
+.line {
+	fill: none;
+	stroke: #ADE2F5;
+	stroke-width: 3px;
+}
+
+.center {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+}

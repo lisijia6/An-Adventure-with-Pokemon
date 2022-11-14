@@ -1,6 +1,6 @@
 // Function to convert date objects to strings or reverse
 let dateFormatter = d3.timeFormat("%Y-%m-%d");
-let dateParser = d3.timeParse("%Y-%m-%d");
+let dateParser = d3.timeParse("%m/%d/%Y"); // d3.timeParse("%Y-%m-%d");
 
 // (1) Load data with promises
 
@@ -34,6 +34,15 @@ function createVis(data) {
 
     // (2) Data Cleaning
     // *** TO-DO ***
+    // clean and sort film data
+    filmData = filmData.map(function(d) {
+        d.boxOfficeUS = +d.boxOfficeUS;
+        d.imageID = "img/movieImages/" + d.imageID + ".jpg";
+        d.releaseDateUS = dateParser(d.releaseDateUS);
+        return d
+    })
+    filmData.sort((a,b)=>{return a.releaseDateUS - b.releaseDateUS})
+    console.log("film data", filmData)
 
     // (3) Create event handlers
     // *** TO-DO ***
@@ -45,6 +54,8 @@ function createVis(data) {
         "pokemon-comparison-1-img", "pokemon-comparison-1-name", pokemonStatsData, 1);
     pokemonCompareVis2 = new PokemonComparisonVis("pokemon-comparison-2",
         "pokemon-comparison-2-img",  "pokemon-comparison-2-name", pokemonStatsData,2);
+
+    boxOffice = new BoxOffice("film-box-office", filmData)
 
     // *** TO-DO ***
     //  pass event handler to CountVis, at constructor of CountVis above

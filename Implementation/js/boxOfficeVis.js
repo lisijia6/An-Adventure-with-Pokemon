@@ -1,0 +1,154 @@
+class BoxOffice {
+    constructor(_parentElement, _data) {
+        this.parentElement = _parentElement;
+        this.data = _data;
+
+        this.initVis();
+    }
+
+    initVis() {
+        let vis = this;
+        vis.margin = { top: 20, right: 20, bottom: 200, left: 60 };
+        vis.width = document.getElementById(vis.parentElement).getBoundingClientRect().width - vis.margin.left - vis.margin.right;
+        vis.height = 500 - vis.margin.top - vis.margin.bottom;
+
+        // SVG drawing area
+        vis.svg = d3.select("#" + vis.parentElement).append("svg")
+            .attr("width", vis.width + vis.margin.left + vis.margin.right)
+            .attr("height", vis.height + vis.margin.top + vis.margin.bottom)
+            .append("g")
+            .attr("transform", "translate(" + vis.margin.left + "," + vis.margin.top + ")");
+
+        // Scales and axes
+        vis.svg.append("g")
+            .attr("class", "x-axis axis")
+            .attr("transform", "translate(0," + vis.height + ")");
+
+        vis.svg.append("g")
+            .attr("class", "y-axis axis");
+
+        vis.x = d3.scaleTime()
+            .range([0, vis.width])
+            .domain(d3.extent(vis.data, d=>d.releaseDateUS))
+            .nice(vis.data.length);
+
+        vis.y = d3.scaleLinear()
+            .range([vis.height, 0])
+            .domain([0, d3.max(vis.data, d=>d.boxOfficeUS)]);
+
+        vis.xAxis = d3.axisBottom()
+            .scale(vis.x)
+            // .tickValues(vis.data.map(d=>d.releaseDateUS))
+            // .tickFormat(dateFormatter)
+            // .ticks(21);
+
+        vis.yAxis = d3.axisLeft()
+            .scale(vis.y)
+
+        // draw the line chart
+        vis.line = vis.svg.append("path");
+        // initialize tooltip
+        vis.tooltip = d3.select("body").append('div')
+            .attr('class', "tooltip")
+            .attr('id', 'movieTooltip')
+        // vis.tipMovie = d3.tip()
+        //     .attr('class', 'd3-tip')
+        //     .html(function(d) {return d})
+        //     // .offset([-10, 0]);
+        // //
+        // // vis.tipMovie.html(function(d) {
+        // //     // append corresponding movie names
+        // //     // let movieNames = "<ul>"
+        // //     // for(name of Object.values(d.name)) {
+        // //     //     movieNames += "<li>"
+        // //     //     movieNames += name
+        // //     //     movieNames += "</li>"
+        // //     // }
+        // //     // if(movieNames == "<ul>") {
+        // //     //     movieNames = "None<br>";
+        // //     // }
+        // //     // else {
+        // //     //     movieNames += "</ul>";
+        // //     // }
+        // //
+        // //     return d.name;
+        // // })
+        // vis.svg.call(vis.tipMovie);
+
+        vis.wrangleData();
+
+    }
+
+    wrangleData() {
+        let vis = this;
+
+        vis.updateVis();
+    }
+
+    updateVis() {
+        let vis = this;
+
+        // draw d3 line chart
+        let lineFunc = d3.line()
+            .x(d=>vis.x(d.releaseDateUS))
+            .y(d=>vis.y(d.boxOfficeUS))
+            .curve(d3.curveLinear);
+        vis.line.datum(vis.data)
+            .attr("class", "line")
+            .attr("d", lineFunc)   // line stroke updated in style.css
+
+        vis.circles = vis.svg.selectAll("circle")
+        vis.circles  = vis.circles .data(vis.data)
+            .enter()
+            .append("circle")
+            .merge(vis.circles)
+        vis.circles.attr("cx", d=>vis.x(d.releaseDateUS))
+            .attr("cy", d=>vis.y(d.boxOfficeUS))
+            .attr("r", 5)
+            // .attr("stroke", "green")
+            .attr("fill", "#12B9F5")
+            // .on("click", function(event, d){
+            // vis.showEdition(d);
+            // vis.circles.attr("fill", "#12B9F5")
+            // d3.select(this).attr("fill", "#F5ED12")
+            // })
+            .on('mouseover', function(event, d){
+                d3.select(this).attr("fill", "#F5ED12");
+                vis.tooltip
+                    .style("opacity", 1)
+                    .style("left", event.pageX + 20 + "px")
+                    .style("top", event.pageY - 200 + "px")
+                    .html(`
+         <div style="border: thin solid #F5ED12; border-radius: 5px; background: #ECEAC3; padding: 10px">
+             <img src=${d.imageID} alt="movie image" width="40" height="120" class="center">
+             <ul>
+             <li>Movie Name: ${d.name}</li>
+             <li>Release Date: ${dateFormatter(d.releaseDateUS)}</li>
+             <li>Revenue: $${d.boxOfficeUS} million  </li>
+             </ul>                 
+         </div>`);
+            })
+            .on('mouseout', function(event, d){
+                d3.select(this).attr("fill", "#12B9F5");
+                vis.tooltip
+                    .style("opacity", 0)
+                    .style("left", 0)
+                    .style("top", 0)
+                    .html(``);
+            });
+        // .on("mouseover", vis.tipMovie.show)
+        // .on("mouseout", vis.tipMovie.hide);
+
+
+
+
+        // Call axis functions with the new domain
+        vis.svg.select(".x-axis").call(vis.xAxis);
+        vis.svg.select(".y-axis").call(vis.yAxis);
+    }
+
+    showEdition(d) {
+        let vis = this;
+    }
+}
+
