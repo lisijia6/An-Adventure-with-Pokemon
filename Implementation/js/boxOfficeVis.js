@@ -44,6 +44,7 @@ class BoxOffice {
 
         vis.yAxis = d3.axisLeft()
             .scale(vis.y)
+            .tickFormat(function(d) {return '$ ' + d + "M"})
 
         // draw the line chart
         vis.line = vis.svg.append("path");
@@ -98,29 +99,29 @@ class BoxOffice {
             .attr("d", lineFunc)   // line stroke updated in style.css
 
         // average line
-        vis.boxOfficeMean = d3.mean(vis.data.map(function(d){return d.boxOfficeUS;}))
-        vis.avgLine = vis.svg.append("g")
-        vis.avgLine.append("line")
-            .attr("class", "avgLine")
-            .style("stroke", "#CFD2CC")
-            .style("stroke-width", 3)
-            .style("stroke-dasharray", ("10,3"))
-            .attr("x1", 0)
-            .attr("y1", vis.boxOfficeMean)
-            .attr("x2", vis.width)
-            .attr("y2", vis.boxOfficeMean);
-
-        vis.avgLine.style("opacity", 0.0)
-            .transition()
-            .duration(1500)
-            .style("opacity", 1);
-
-        vis.avgLine.append("text")
-            .attr('text-anchor', 'middle')
-            .attr("x", 80)
-            .attr("y", vis.boxOfficeMean-10)
-            .attr("class", "linechart-annotation")
-            .text("Average Box Office")
+        // vis.boxOfficeMean = d3.mean(vis.data.map(function(d){return d.boxOfficeUS;}))
+        // vis.avgLine = vis.svg.append("g")
+        // vis.avgLine.append("line")
+        //     .attr("class", "avgLine")
+        //     .style("stroke", "#CFD2CC")
+        //     .style("stroke-width", 3)
+        //     .style("stroke-dasharray", ("10,3"))
+        //     .attr("x1", 0)
+        //     .attr("y1", vis.boxOfficeMean)
+        //     .attr("x2", vis.width)
+        //     .attr("y2", vis.boxOfficeMean);
+        //
+        // vis.avgLine.style("opacity", 0.0)
+        //     .transition()
+        //     .duration(1500)
+        //     .style("opacity", 1);
+        //
+        // vis.avgLine.append("text")
+        //     .attr('text-anchor', 'middle')
+        //     .attr("x", 80)
+        //     .attr("y", vis.boxOfficeMean-10)
+        //     .attr("class", "linechart-annotation")
+        //     .text("Average Box Office")
 
 
         vis.circles = vis.svg.selectAll("circle")
@@ -164,6 +165,41 @@ class BoxOffice {
             });
         // .on("mouseover", vis.tipMovie.show)
         // .on("mouseout", vis.tipMovie.hide);
+
+
+        // add annotations
+        const annotations = [
+            {
+                type: d3.annotationCalloutCircle,
+                note: {
+                    label: "Detective Pikachu is a big hit",
+                    wrap: 200
+                },
+                subject: {
+                    radius: 15,
+                    // radiusPadding: 5
+                },
+                x: 545,
+                y: 0,
+                dx: -50,
+                dy: 50,
+            }
+
+        ].map(function(d){ d.color = "grey"; return d})
+
+        const makeAnnotations = d3.annotation()
+            .type(d3.annotationLabel)
+            .annotations(annotations)
+
+
+        vis.annotationsOnPlot = vis.svg.append("g")
+            .attr("class", "annotation-group")
+            .call(makeAnnotations);
+
+        vis.annotationsOnPlot.style("opacity", 0.0)
+            .transition()
+            .duration(1500)
+            .style("opacity", 1.0);
 
 
 
