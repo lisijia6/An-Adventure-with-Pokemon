@@ -71,4 +71,50 @@ h2 {
 	max-height:150px;
 	width:auto;
 	height:auto;
+	border: 3px dotted #FF1493; padding:1em;
+	border-radius: 30%;
+	width:100%
+}
+
+.revenue-board {
+	max-width:120px;
+	max-height:120px;
+	width:100%;
+	opacity: 0.5;
+}
+
+.linechart-title {
+	font-family: fantasy;
+	font-size: 22px;
+}
+
+.movie-name{
+	font-size: 14px;
+	color: #FF1493;
+	text-shadow: 4px 4px 4px #aaa;
+}
+
+.padding-0{
+	padding-right:0;
+	padding-left:0;
+}
+
+.imgContainer{
+	float:left;
+}
+
+.text-centered {
+	position: absolute;
+	top: 26%;
+	left: 65%;
+	transform: translate(-50%, -50%);
+
+}
+
+.dyna {
+	font-family: 'DynaPuff';
+}
+
+.axis text {
+	font-family: 'DynaPuff';
 }

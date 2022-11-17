@@ -1,7 +1,8 @@
 class BoxOffice {
-    constructor(_parentElement, _data) {
+    constructor(_parentElement, _data, _stackedData) {
         this.parentElement = _parentElement;
         this.data = _data;
+        this.stackedData = _stackedData;
 
         this.initVis();
     }
@@ -46,39 +47,90 @@ class BoxOffice {
             .scale(vis.y)
             .tickFormat(function(d) {return '$ ' + d + "M"})
 
-        // draw the line chart
+        // draw the line path
         vis.line = vis.svg.append("path");
+        // draw the area path
+        // vis.areaPath = vis.svg.append("path");
+
         // initialize tooltip
         vis.tooltip = d3.select("body").append('div')
             .attr('class', "tooltip")
             .attr('id', 'movieTooltip')
+
+        // add line chart title
+        vis.svg.append("g")
+            .attr("class","linechart-title")
+            .attr("transform", `translate(${vis.width/2},10)`)
+            .append("text")
+            .text("US Box Office Per Movie")
+            .style("fill","black")
+            .style("text-anchor","middle");
+
+        // add annotations
+        // get the coordinate of detective pikachu
+        let hitPointX = vis.x(vis.data[21].releaseDateUS)
+        let hitPointY = vis.y(vis.data[21].boxOfficeUS)
+        const annotations = [
+            {
+                type: d3.annotationCalloutCircle,
+                note: {
+                    label: "Detective Pikachu is a big hit",
+                    wrap: 150
+                },
+                subject: {
+                    radius: 15,
+                    // radiusPadding: 5
+                },
+                x: hitPointX,
+                y: hitPointY,
+                dx: -50,
+                dy: 50,
+            }
+
+        ].map(function(d){ d.color = "#FF1493"; return d})
+
+        const makeAnnotations = d3.annotation()
+            .type(d3.annotationLabel)
+            .annotations(annotations)
+
+
+        vis.annotationsOnPlot = vis.svg.append("g")
+            .attr("class", "annotation-group dyna")
+            .call(makeAnnotations);
+
+        vis.annotationsOnPlot.style("opacity", 0.0)
+            .transition()
+            .duration(1500)
+            .style("opacity", 1.0);
+
         // vis.tipMovie = d3.tip()
         //     .attr('class', 'd3-tip')
         //     .html(function(d) {return d})
         //     // .offset([-10, 0]);
-        // //
-        // // vis.tipMovie.html(function(d) {
-        // //     // append corresponding movie names
-        // //     // let movieNames = "<ul>"
-        // //     // for(name of Object.values(d.name)) {
-        // //     //     movieNames += "<li>"
-        // //     //     movieNames += name
-        // //     //     movieNames += "</li>"
-        // //     // }
-        // //     // if(movieNames == "<ul>") {
-        // //     //     movieNames = "None<br>";
-        // //     // }
-        // //     // else {
-        // //     //     movieNames += "</ul>";
-        // //     // }
-        // //
-        // //     return d.name;
-        // // })
+        //
+        // vis.tipMovie.html(function(d) {
+        //     // append corresponding movie names
+        //     // let movieNames = "<ul>"
+        //     // for(name of Object.values(d.name)) {
+        //     //     movieNames += "<li>"
+        //     //     movieNames += name
+        //     //     movieNames += "</li>"
+        //     // }
+        //     // if(movieNames == "<ul>") {
+        //     //     movieNames = "None<br>";
+        //     // }
+        //     // else {
+        //     //     movieNames += "</ul>";
+        //     // }
+        //
+        //     return d.name;
+        // })
         // vis.svg.call(vis.tipMovie);
 
         vis.wrangleData();
 
     }
+
 
     wrangleData() {
         let vis = this;
@@ -97,6 +149,19 @@ class BoxOffice {
         vis.line.datum(vis.data)
             .attr("class", "line")
             .attr("d", lineFunc)   // line stroke updated in style.css
+        // vis.areaPath.datum(vis.stackedData)
+        //     .attr("fill", "#69b3a2")
+        //     .attr("fill-opacity", .3)
+        //     .attr("stroke", "none")
+        //     .attr("d", d3.area()
+        //         .x(function(d) { return vis.x(d.releaseDateUS) })
+        //         .y0(vis.height)
+        //         .y1(function(d) {
+        //
+        //             return vis.y(d.boxOfficeUS) })
+        //     )
+
+
 
         // average line
         // vis.boxOfficeMean = d3.mean(vis.data.map(function(d){return d.boxOfficeUS;}))
@@ -146,14 +211,17 @@ class BoxOffice {
                     .style("left", event.pageX + 20 + "px")
                     .style("top", event.pageY - 200 + "px")
                     .html(`
-         <div style="border: thin solid #F5ED12; border-radius: 5px; background: #ECEAC3; padding: 10px">
+         <div style="background: transparent; padding: 10px">
+            
+             <div class="row">
+             <div class="col padding-0 imgContainer">
+             <img src='img/pokemon-board2.jpg' alt="box office" class="center revenue-board">
+             <div class="center text-centered dyna">$${d.boxOfficeUS}</div>
              <img src=${d.imageID} alt="movie image" class="center movie-image">
-             <ul>
-             <li>Movie Name: ${d.name}</li>
-             <li>Release Date: ${dateFormatter(d.releaseDateUS)}</li>
-             <li>Revenue: $${d.boxOfficeUS} million  </li>
-             </ul>                 
-         </div>`);
+             <h6 class="movie-name center dyna">${d.name}</h6>
+             </div>
+             </div>    
+             </div>`);
             })
             .on('mouseout', function(event, d){
                 d3.select(this).attr("fill", "#12B9F5");
@@ -162,46 +230,9 @@ class BoxOffice {
                     .style("left", 0)
                     .style("top", 0)
                     .html(``);
-            });
+            })
         // .on("mouseover", vis.tipMovie.show)
         // .on("mouseout", vis.tipMovie.hide);
-
-
-        // add annotations
-        const annotations = [
-            {
-                type: d3.annotationCalloutCircle,
-                note: {
-                    label: "Detective Pikachu is a big hit",
-                    wrap: 200
-                },
-                subject: {
-                    radius: 15,
-                    // radiusPadding: 5
-                },
-                x: 545,
-                y: 0,
-                dx: -50,
-                dy: 50,
-            }
-
-        ].map(function(d){ d.color = "grey"; return d})
-
-        const makeAnnotations = d3.annotation()
-            .type(d3.annotationLabel)
-            .annotations(annotations)
-
-
-        vis.annotationsOnPlot = vis.svg.append("g")
-            .attr("class", "annotation-group")
-            .call(makeAnnotations);
-
-        vis.annotationsOnPlot.style("opacity", 0.0)
-            .transition()
-            .duration(1500)
-            .style("opacity", 1.0);
-
-
 
 
         // Call axis functions with the new domain
