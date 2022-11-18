@@ -9,7 +9,8 @@ let promises = [
     d3.csv("data/films.csv"),
     d3.csv("data/tvSeries.csv"),
     d3.csv("data/videoGames.csv"),
-    d3.csv("data/pokemonCombats_basic.csv")
+    d3.csv("data/pokemonCombats_basic.csv"),
+    d3.json("data/flare.json")
 ];
 
 Promise.all(promises)
@@ -69,6 +70,9 @@ function createVis(data) {
         "pokemon-comparison-2-img",  "pokemon-comparison-2-name", pokemonStatsData,2);
 
     boxOffice = new BoxOffice("film-box-office", filmData, filmStackedData)
+
+    // pokeCluster = new newCluster(data[5])
+    pokeCluster = new Cluster("pokemon-clusters", data[5]);
 
     // *** TO-DO ***
     //  pass event handler to CountVis, at constructor of CountVis above
