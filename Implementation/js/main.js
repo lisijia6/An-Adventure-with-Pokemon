@@ -43,20 +43,7 @@ function createVis(data) {
         return d
     })
     filmData.sort((a,b)=>{return a.releaseDateUS - b.releaseDateUS})
-    console.log("film data", filmData)
-    // stack the film data for area path
-    filmStackedData = []
-    for (let i=0; i<filmData.length; i++) {
-        ret = {}
-        let d = filmData[i].boxOfficeUS;
-        for (let j=0; j<i; j++) {
-            d += filmData[j].boxOfficeUS;
-        }
-        ret.boxOfficeUS = d;
-        ret.releaseDateUS = filmData[i].releaseDateUS
-        filmStackedData.push(ret);
-    }
-    console.log("stacked", filmStackedData)
+
 
     // (3) Create event handlers
     // *** TO-DO ***
@@ -69,10 +56,10 @@ function createVis(data) {
     pokemonCompareVis2 = new PokemonComparisonVis("pokemon-comparison-2",
         "pokemon-comparison-2-img",  "pokemon-comparison-2-name", pokemonStatsData,2);
 
-    boxOffice = new BoxOffice("film-box-office", filmData, filmStackedData)
+    boxOffice = new BoxOffice("film-box-office", filmData)
 
     // pokeCluster = new newCluster(data[5])
-    pokeCluster = new Cluster("pokemon-clusters", data[5]);
+    pokeCluster = new Cluster("pokemon-clusters", data[5], pokemonStatsData);
 
     // *** TO-DO ***
     //  pass event handler to CountVis, at constructor of CountVis above

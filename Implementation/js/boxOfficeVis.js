@@ -1,8 +1,7 @@
 class BoxOffice {
-    constructor(_parentElement, _data, _stackedData) {
+    constructor(_parentElement, _data) {
         this.parentElement = _parentElement;
         this.data = _data;
-        this.stackedData = _stackedData;
 
         this.initVis();
     }
