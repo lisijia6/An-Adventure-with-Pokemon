@@ -1,7 +1,6 @@
 class Cluster {
-    constructor(_parentElement, _data, _statsData) {
+    constructor(_parentElement, _statsData) {
         this.parentElement = _parentElement;
-        this.data = _data;
         this.statsData = _statsData;
         // console.log("stats data", this.data)
 
@@ -17,18 +16,35 @@ class Cluster {
 
         vis.diameter = 500    // d3.min([vis.height, vis.width]);
         // SVG drawing area
-        vis.svg = d3.select("#" + vis.parentElement).append("svg")
+        vis.realSvg = d3.select("#" + vis.parentElement).append("svg")
             .attr("width", vis.width + vis.margin.left + vis.margin.right)
             .attr("height", vis.height + vis.margin.top + vis.margin.bottom)
+        vis.svg = vis.realSvg
             .append("g")
             .attr("transform", "translate(" + vis.diameter/2 + "," + vis.diameter/2  + ")");
 
 
 
-        vis.color = d3.scaleLinear()
-            .domain([-1, 7])
-            .range(["hsl(152,80%,80%)", "hsl(228,30%,40%)"])
-            .interpolate(d3.interpolateHcl);
+        // vis.color = d3.scaleLinear()
+        //     .domain([-1, 7])
+        //     .range(["hsl(152,80%,80%)", "hsl(228,30%,40%)"])
+        //     .interpolate(d3.interpolateHcl);
+
+        vis.color = d3.scaleOrdinal()
+            .domain(["pokemon", "Water", "Electric", "Ice",
+                "Grass", "Normal", "Fairy", "Ground",
+                "Fighting", "Dark", "Psychic", "Rock",
+                "Poison", "Bug", "Steel", "Dragon",
+                "Fire", "Ghost", "Flying", ""])
+            .range(["#efeded","#c3f0f5", "#dbbbbb", "#08d0ea",
+                "#a5ea4a", "#fcd5a7", "#80b1d3", "#858959",
+                "#d79595", "#909090", "#c2e2bb", "#a6c2e2",
+                "#d38da9", "#EBD58D", "#9ab1c1", "#ffed6f",
+                "#f18787", "#ddb7ec", "#89e2e7", "#ffc5da"])
+            // .range(["hsl(152,80%,80%)", "hsl(228,30%,40%)"])
+            // .interpolate(d3.interpolateHcl);
+
+        // console.log("color",  vis.color("Electric"))
 
         vis.pack = d3.pack()
             .size([vis.diameter - vis.margin.top, vis.diameter - vis.margin.top])
@@ -68,7 +84,6 @@ class Cluster {
         console.log("groupdata", vis.groupedData)
         console.log("hierarchyData", vis.hierarchyData)
         console.log("statsData", vis.statsData)
-
         vis.root = d3.hierarchy(vis.hierarchyData)
             .sum(function(d) { return d.size; })
             .sort(function(a, b) { return b.value - a.value; });
@@ -89,8 +104,12 @@ class Cluster {
             .data(vis.nodes)
             .enter().append("circle")
             .attr("class", function(d) { return d.parent ? d.children ? "node" : "node node--leaf" : "node node--root"; })
-            .style("fill", function(d) { return d.children ? vis.color(d.depth) : null; })
-            .on("click", function(event, d) { if (focus !== d) vis.zoom(d, event), event.stopPropagation(); });
+            .style("fill", function(d) { console.log(vis.color(d.data.name)); return d.children ? vis.color(d.data.name) : null; })   //vis.color(d.depth)
+            .on("click", function(event, d) {
+                if (focus !== d) {
+                    vis.zoom(d, event); event.stopPropagation();
+                }
+            });
 
 
         vis.text = vis.svg.selectAll(".label")
@@ -99,13 +118,18 @@ class Cluster {
             .attr("class", "label")
             .style("fill-opacity", function(d) { return d.parent === vis.root ? 1 : 0; })
             .style("display", function(d) { return d.parent === vis.root ? "inline" : "none"; })
-            .text(function(d) { return d.data.name; })
+            .text(function(d) {
+                if (d.data.name !== "") {
+                    return d.data.name;
+                }
+                else {return "Others"}
+            })
             .style("font-family", "DynaPuff")
             // .style("font-size", "10px");
 
         vis.node = vis.svg.selectAll("circle,text");
 
-        vis.svg.style("background", vis.color(-1))
+        vis.realSvg.style("background", "transparent")   //vis.color(-1)
             .on("click", function(event) { vis.zoom(vis.root, event); });
 
         vis.zoomTo([vis.root.x, vis.root.y, vis.root.r * 2 + vis.margin.top]);
