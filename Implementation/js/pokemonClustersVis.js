@@ -41,25 +41,22 @@ class Cluster {
                 "#d79595", "#909090", "#c2e2bb", "#a6c2e2",
                 "#d38da9", "#EBD58D", "#9ab1c1", "#ffed6f",
                 "#f18787", "#ddb7ec", "#89e2e7", "#ffc5da"])
-            // .range(["hsl(152,80%,80%)", "hsl(228,30%,40%)"])
-            // .interpolate(d3.interpolateHcl);
-
-        // console.log("color",  vis.color("Electric"))
 
         vis.pack = d3.pack()
             .size([vis.diameter - vis.margin.top, vis.diameter - vis.margin.top])
             .padding(2);
 
 
-        vis.wrangleData();
+        vis.wrangleData(0);
     }
 
 
 
 
 
-    wrangleData() {
+    wrangleData(gen) {
         let vis = this;
+
         // re-structure the stats data for drawing clusters
         vis.groupedData = d3.group(vis.statsData, d=>d.type_1, d=>d.type_2)
         vis.hierarchyData = {}
@@ -81,11 +78,36 @@ class Cluster {
             }
             i.children = ichildren;
         }
+
+        // filter the data according to generation
+        for (let i of vis.hierarchyData.children) {
+            for (let j of i.children) {
+                for (let k of j.children) {
+                    if (gen!==0) {
+                        if (+k.generation===gen) {
+                            k.size = 1;
+                        }
+                        else {
+                            k.size = 0;
+                        }
+                    }
+                    else {
+                        k.size = 1;
+                    }
+                }
+            }
+        }
+
+
         console.log("groupdata", vis.groupedData)
         console.log("hierarchyData", vis.hierarchyData)
-        console.log("statsData", vis.statsData)
         vis.root = d3.hierarchy(vis.hierarchyData)
-            .sum(function(d) { return d.size; })
+            .sum(function(d) {
+                // console.log("d.size", d.size)
+                return d.size
+
+
+            })
             .sort(function(a, b) { return b.value - a.value; });
 
         console.log("vis.root", vis.root)
@@ -100,18 +122,21 @@ class Cluster {
     updateVis() {
         let vis = this;
 
+        vis.svg.selectAll("circle").remove();
         vis.circle = vis.svg.selectAll("circle")
             .data(vis.nodes)
             .enter().append("circle")
             .attr("class", function(d) { return d.parent ? d.children ? "node" : "node node--leaf" : "node node--root"; })
-            .style("fill", function(d) { console.log(vis.color(d.data.name)); return d.children ? vis.color(d.data.name) : null; })   //vis.color(d.depth)
+            .style("fill", function(d) { return d.children ? vis.color(d.data.name) : null; })   //vis.color(d.depth)
             .on("click", function(event, d) {
                 if (focus !== d) {
                     vis.zoom(d, event); event.stopPropagation();
                 }
             });
 
+        // vis.circle.exit().remove()
 
+        vis.svg.selectAll(".label").remove();
         vis.text = vis.svg.selectAll(".label")
             .data(vis.nodes)
             .enter().append("text")
@@ -126,6 +151,8 @@ class Cluster {
             })
             .style("font-family", "DynaPuff")
             // .style("font-size", "10px");
+
+        // vis.text.exit().remove()
 
         vis.node = vis.svg.selectAll("circle,text");
 

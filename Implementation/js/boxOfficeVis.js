@@ -214,7 +214,7 @@ class BoxOffice {
             
              <div class="row">
              <div class="col padding-0 imgContainer">
-             <img src='img/pokemon-board2.jpg' alt="box office" class="center revenue-board">
+             <img src='img/utils/pokemon-board2.jpg' alt="box office" class="center revenue-board">
              <div class="center text-centered dyna">$${d.boxOfficeUS}</div>
              <img src=${d.imageID} alt="movie image" class="center movie-image">
              <h6 class="movie-name center dyna">${d.name}</h6>
@@ -237,10 +237,6 @@ class BoxOffice {
         // Call axis functions with the new domain
         vis.svg.select(".x-axis").call(vis.xAxis);
         vis.svg.select(".y-axis").call(vis.yAxis);
-    }
-
-    showEdition(d) {
-        let vis = this;
     }
 }
 

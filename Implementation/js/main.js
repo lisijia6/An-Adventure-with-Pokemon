@@ -59,6 +59,18 @@ function createVis(data) {
 
     // pokeCluster = new newCluster(data[5])
     pokeCluster = new Cluster("pokemon-clusters", pokemonStatsData);
+    // filter data according to selection
+    document.getElementById("genButtons").innerHTML +=
+        ' <img src="img/utils/numAll.jpg" alt="All" width="55" height="54" onclick="pokeCluster.wrangleData(0)">\n' +
+        '            <img src="img/utils/numOne.jpg" alt="One" width="55" height="54" onclick="pokeCluster.wrangleData(1)">\n' +
+        '            <img src="img/utils/numTwo.jpg" alt="Two" width="55" height="54" onclick="pokeCluster.wrangleData(2)">\n' +
+        '            <img src="img/utils/numThree.jpg" alt="Three" width="55" height="54" onclick="pokeCluster.wrangleData(3)">\n' +
+        '            <img src="img/utils/numFour.jpg" alt="Four" width="55" height="54" onclick="pokeCluster.wrangleData(4)">\n' +
+        '            <img src="img/utils/numFive.jpg" alt="Five" width="55" height="54" onclick="pokeCluster.wrangleData(5)">\n' +
+        '            <img src="img/utils/numSix.jpg" alt="Six" width="55" height="54" onclick="pokeCluster.wrangleData(6)">\n' +
+        '            <img src="img/utils/numSeven.jpg" alt="Seven" width="55" height="54" onclick="pokeCluster.wrangleData(7)">\n' +
+        '            <img src="img/utils/numEight.jpg" alt="Eight" width="55" height="54" onclick="pokeCluster.wrangleData(8)">'
+
 
     // *** TO-DO ***
     //  pass event handler to CountVis, at constructor of CountVis above
@@ -81,3 +93,4 @@ function pokemonChange(value) {
         pokemonCompareVis2.wrangleData();
     }
 }
+
