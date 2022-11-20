@@ -139,6 +139,8 @@ class PokemonComparisonVis {
         vis.rect.enter()
             .append("rect")
             .merge(vis.rect)
+            .transition()
+            .duration(1000)
             .attr("x", d => {
                 if (vis.pokemonFlag === 1) {
                     return vis.width - (d.value * 2-20)
@@ -177,7 +179,16 @@ class PokemonComparisonVis {
         vis.rectValueLabels
             .enter()
             .append("text")
+            .attr("x", d => {
+                if (vis.pokemonFlag === 1) {
+                    return vis.width - (d.value*2+10)
+                } else if (vis.pokemonFlag === 2) {
+                    return d.value*2+150
+                }
+            })
             .merge(vis.rectValueLabels)
+            .transition()
+            .duration(1000)
             .attr("x", d => {
                 if (vis.pokemonFlag === 1) {
                     return vis.width - (d.value*2+10)
