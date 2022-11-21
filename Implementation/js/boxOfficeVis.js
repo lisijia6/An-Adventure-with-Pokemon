@@ -59,7 +59,7 @@ class BoxOffice {
 
         // add line chart title
         vis.svg.append("g")
-            .attr("class","linechart-title")
+            .attr("class","chart-title")
             .attr("transform", `translate(${vis.width/2},10)`)
             .append("text")
             .text("US Box Office Per Movie")

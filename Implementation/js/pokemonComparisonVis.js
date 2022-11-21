@@ -160,20 +160,20 @@ class PokemonComparisonVis {
         // Draw Title of Bar Chart
         vis.svgTitle.selectAll('text').remove();
         vis.rectTitle = vis.svgTitle.append("text")
-            .attr("class", "pokemon-comparison-title")
+            .attr("class", "chart-title")
             .text(d => {
                 if (vis.pokemonFlag === 1) {
                     return "\xa0".repeat(20) + vis.filteredData["Name"];
                 } else if (vis.pokemonFlag === 2) {
-                    return "\xa0".repeat(90) + vis.filteredData["Name"];
+                    return "\xa0".repeat(110) + vis.filteredData["Name"];
                 }
             })
             .attr("x", 100)
             .attr("y", 0)
-            .style("font", "24px times")
+            // .style("font", "24px times")
 
         // Draw labels of the rectangles
-        vis.svg.selectAll(".stats-labels").remove()
+        vis.svg.selectAll(".dyna").remove()
         vis.rectValueLabels = vis.svg.selectAll(".text")
             .data(vis.filteredData["Stats"])
         vis.rectValueLabels
@@ -200,8 +200,9 @@ class PokemonComparisonVis {
             .text(d => d.value)
             .attr("fill", "black")
             .attr("text-anchor", "end")
-            .style("font", "16px times")
-            .attr("class", "stats-labels")
+            .attr("class", "dyna")
+            // .style("font", "16px times")
+            // .attr("class", "stats-labels")
         vis.rectValueLabels.exit().remove();
 
         // Draw category labels of the rectangles
@@ -218,8 +219,9 @@ class PokemonComparisonVis {
                 .text(d => d.key)
                 .attr("fill", "black")
                 .attr("text-anchor", "middle")
-                .style("font", "16px times")
-                .attr("class", "stats-category-labels")
+                .attr("class", "dyna")
+                // .style("font", "16px times")
+                // .attr("class", "stats-category-labels")
             vis.rectCategoryLabels.exit().remove();
         }
 
