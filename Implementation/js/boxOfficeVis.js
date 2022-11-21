@@ -2,6 +2,7 @@ class BoxOffice {
     constructor(_parentElement, _data) {
         this.parentElement = _parentElement;
         this.data = _data;
+        console.log("box office data", this.data)
 
         this.initVis();
     }
@@ -102,29 +103,35 @@ class BoxOffice {
             .duration(1500)
             .style("opacity", 1.0);
 
-        // vis.tipMovie = d3.tip()
-        //     .attr('class', 'd3-tip')
-        //     .html(function(d) {return d})
-        //     // .offset([-10, 0]);
-        //
-        // vis.tipMovie.html(function(d) {
-        //     // append corresponding movie names
-        //     // let movieNames = "<ul>"
-        //     // for(name of Object.values(d.name)) {
-        //     //     movieNames += "<li>"
-        //     //     movieNames += name
-        //     //     movieNames += "</li>"
-        //     // }
-        //     // if(movieNames == "<ul>") {
-        //     //     movieNames = "None<br>";
-        //     // }
-        //     // else {
-        //     //     movieNames += "</ul>";
-        //     // }
-        //
-        //     return d.name;
-        // })
-        // vis.svg.call(vis.tipMovie);
+        // add chat boxes
+        vis.typed1 = new Typed(".auto-type-6", {
+            strings: ["Hey, what about Pokemon movies? Is there a big collection as well?"],
+            typeSpeed: 50,
+            backSpeed: 150,
+            loop: false
+        })
+        vis.typed2 = new Typed(".auto-type-7", {
+            strings: ["Of course! We have 24 movies over the last two decades. And our box office per movie is $44 million on average." +
+            " 'Detective Pikachu' in 2019 is even a greater hit!"],
+            typeSpeed: 50,
+            backSpeed: 150,
+            startDelay:7550,
+            loop: false
+        })
+        vis.typed3 = new Typed(".auto-type-8", {
+            strings: ["That's amazing Pikachu, how proud of you!"],
+            typeSpeed: 50,
+            backSpeed: 150,
+            startDelay:10000,
+            loop: false
+        })
+        vis.typed4 = new Typed(".auto-type-9", {
+            strings: ["I'm flattered hhhh"],
+            typeSpeed: 50,
+            backSpeed: 150,
+            startDelay:15000,
+            loop: false
+        })
 
         vis.wrangleData();
 
@@ -159,33 +166,6 @@ class BoxOffice {
         //
         //             return vis.y(d.boxOfficeUS) })
         //     )
-
-
-
-        // average line
-        // vis.boxOfficeMean = d3.mean(vis.data.map(function(d){return d.boxOfficeUS;}))
-        // vis.avgLine = vis.svg.append("g")
-        // vis.avgLine.append("line")
-        //     .attr("class", "avgLine")
-        //     .style("stroke", "#CFD2CC")
-        //     .style("stroke-width", 3)
-        //     .style("stroke-dasharray", ("10,3"))
-        //     .attr("x1", 0)
-        //     .attr("y1", vis.boxOfficeMean)
-        //     .attr("x2", vis.width)
-        //     .attr("y2", vis.boxOfficeMean);
-        //
-        // vis.avgLine.style("opacity", 0.0)
-        //     .transition()
-        //     .duration(1500)
-        //     .style("opacity", 1);
-        //
-        // vis.avgLine.append("text")
-        //     .attr('text-anchor', 'middle')
-        //     .attr("x", 80)
-        //     .attr("y", vis.boxOfficeMean-10)
-        //     .attr("class", "linechart-annotation")
-        //     .text("Average Box Office")
 
 
         vis.circles = vis.svg.selectAll("circle")
@@ -232,6 +212,36 @@ class BoxOffice {
             })
         // .on("mouseover", vis.tipMovie.show)
         // .on("mouseout", vis.tipMovie.hide);
+
+        // average line
+        vis.boxOfficeMean = d3.mean(vis.data.map(function(d){
+            if (d.name==="Detective Pikachu") return 0;
+            else return d.boxOfficeUS;
+        }));
+        vis.avgLine = vis.svg.append("g")
+        vis.avgLine.append("line")
+            .attr("class", "avgLine")
+            .style("stroke", "#CFD2CC")
+            .style("stroke-width", 3)
+            .style("stroke-dasharray", ("10,3"))
+            .attr("x1", 0)
+            .attr("y1", vis.y(vis.boxOfficeMean))
+            .attr("x2", vis.width)
+            .attr("y2", vis.y(vis.boxOfficeMean));
+
+
+        vis.avgLine.append("text")
+            .attr('text-anchor', 'middle')
+            .attr("x", 200)
+            .attr("y", vis.y(vis.boxOfficeMean)-10)
+            .attr("class", "linechart-annotation dyna")
+            .text("Average Box Office except 'Detective Pikachu'")
+            .style("fill", "gray")
+
+        vis.avgLine.style("opacity", 0.0)
+            .transition()
+            .duration(1500)
+            .style("opacity", 1);
 
 
         // Call axis functions with the new domain

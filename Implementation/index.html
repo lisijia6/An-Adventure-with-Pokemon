@@ -37,13 +37,13 @@
     <!-- Pokemon Clusters-->
     <div class="row">
         <div class="col-md-2" id="genButtons">
-            <p class="dyna" id="select-gen-text">Select Generation</p>
+            <p class="dyna" id="select-gen-text">Select Generation: <span id="genNum" style="font-size: 25px; color: yellow">All</span></p>
         </div>
         <div class="col-md-5">
             <div id="pokemon-clusters"></div>
         </div>
         <div class="col-md-5">
-            <div class="box text-boxes">
+            <div class="box text-boxes text-boxes-1">
                 <div class="container" style="padding-top: 100px; padding-bottom: 20px">
                 <p>
                     <span style="color: red">You</span>: <span class="auto-type-1"></span>
@@ -79,8 +79,28 @@
     <!-- Pokemon Box Office-->
     <div class="row" style="height: 400px">
         <hr>
-        <div class="col-md-12">
-            <p>Box Office</p>
+        <div class="col-md-4">
+            <div class="box text-boxes text-boxes-2">
+                <div class="container" style="padding-top: 50px; padding-bottom: 20px">
+                    <p>
+                        <span style="color: red">You</span>: <span class="auto-type-6"></span>
+                    </p>
+
+                    <p>
+                        <span style="color: deepskyblue">Pikachu</span>: <span class="auto-type-7"></span>
+                    </p>
+
+                    <p>
+                        <span style="color: red">You</span>: <span class="auto-type-8"></span>
+                    </p>
+
+                    <p>
+                        <span style="color: deepskyblue">Pikachu</span>: <span class="auto-type-9"></span>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-8">
             <div id="film-box-office"></div>
         </div>
     </div>
@@ -240,6 +260,7 @@
         crossorigin="anonymous"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+
 
 <!-- d3 -->
 <script src="https://d3js.org/d3.v7.min.js"></script>

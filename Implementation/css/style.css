@@ -151,12 +151,20 @@ h2 {
 }
 
 .text-boxes {
-	background-image: url("../img/utils/chatbox.jpg");
 	background-size: 100% 100%;
 	font-family: 'Press Start 2P';
 	font-size: 10px;
 	width: auto;
-	height: 400px;
+
 	/*align-items: center;*/
 
+}
+
+.text-boxes-1 {
+	background-image: url("../img/utils/chatbox.jpg");
+	height: 400px;
+}
+.text-boxes-2 {
+	background-image: url("../img/utils/chatbox2.jpg");
+	height: 300px;
 }
