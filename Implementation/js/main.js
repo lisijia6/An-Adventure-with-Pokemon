@@ -39,7 +39,7 @@ function createVis(data) {
     // (4) Create visualization instances
     // *** TO-DO ***
     // Example: let countVis = new CountVis("countvis", allData);
-    let pokeDetails = new PokemonDetailsVis("pokemon-details-comparison", pokemonStatsData.slice(0, 12), battleData, "img/pokemonImages_basic/");
+    let pokeDetails = new PokemonDetailsVis("pokemon-details-images", pokemonStatsData.slice(0, 12), battleData, "img/pokemonImages_basic/");
     // *** TO-DO ***
     //  pass event handler to CountVis, at constructor of CountVis above
 
@@ -50,3 +50,5 @@ function createVis(data) {
     // eventHandler.bind("selectionChanged", function(event){ ...
 
 }
+
+let features = ["hp","speed","attack","sp_attack","defense","sp_defense"]
