@@ -9,7 +9,10 @@ let promises = [
     d3.csv("data/films.csv"),
     d3.csv("data/tvSeries.csv"),
     d3.csv("data/videoGames.csv"),
-    d3.csv("data/pokemonCombats_basic.csv")
+    d3.csv("data/pokemonCombats_basic.csv"),
+    d3.json("data/pokemonGoGeoData.json"),
+    d3.json("https://cdn.jsdelivr.net/npm/world-atlas@2/countries-50m.json"),
+    d3.csv("data/pokemonGoGeoCountData.csv")
 ];
 
 Promise.all(promises)
@@ -26,11 +29,13 @@ function createVis(data) {
     let tvSeriesData = data[2]
     let videoGamesData = data[3]
     let battleData = data[4]
-    // let pokemonGoData = data[5]
+    let pokemonGoGeoData = data[5]
+    let worldGeoData = data[6]
+    let pokemonGoGeoCountData = data[7]
 
     // error, perDayData, metaData
     // if(error) { console.log(error); }
-    console.log(data)
+    console.log("all data", data)
 
     // (2) Data Cleaning
     // *** TO-DO ***
@@ -44,6 +49,15 @@ function createVis(data) {
     filmData.sort((a,b)=>{return a.releaseDateUS - b.releaseDateUS})
 
 
+    // clean world
+    pokemonGoGeoCountData = pokemonGoGeoCountData.map(function(d) {
+        d.pokemonCount = +d.pokemonCount;
+        d.latitude = +d.latitude;
+        d.longitude = +d.longitude;
+        return d
+    })
+    console.log("pokemonGoGeoCountData", pokemonGoGeoCountData)
+
     // (3) Create event handlers
     // *** TO-DO ***
 
@@ -55,7 +69,9 @@ function createVis(data) {
     pokemonCompareVis2 = new PokemonComparisonVis("pokemon-comparison-2",
         "pokemon-comparison-2-img",  "pokemon-comparison-2-name", pokemonStatsData,2);
 
-    boxOffice = new BoxOffice("film-box-office", filmData)
+    boxOffice = new BoxOffice("film-box-office", filmData);
+
+    pokemonGoMapVis = new PokemonGoMapVis("pokemon-go-map", "pokemon-go-map-pokemons", pokemonGoGeoData, worldGeoData, pokemonGoGeoCountData);
 
     // pokeCluster = new newCluster(data[5])
     pokeCluster = new Cluster("pokemon-clusters", pokemonStatsData);
