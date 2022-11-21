@@ -1,3 +1,5 @@
+
+
 class Cluster {
     constructor(_parentElement, _statsData) {
         this.parentElement = _parentElement;
@@ -22,7 +24,7 @@ class Cluster {
         vis.svg = vis.realSvg
             .append("g")
             .attr("transform", "translate(" + vis.diameter/2 + "," + vis.diameter/2  + ")");
-
+        vis.defs = vis.svg.append('defs');
 
 
         // vis.color = d3.scaleLinear()
@@ -40,11 +42,48 @@ class Cluster {
                 "#a5ea4a", "#fcd5a7", "#80b1d3", "#858959",
                 "#d79595", "#909090", "#c2e2bb", "#a6c2e2",
                 "#d38da9", "#EBD58D", "#9ab1c1", "#ffed6f",
-                "#f18787", "#ddb7ec", "#89e2e7", "#ffc5da"])
+                "#f18787", "#ddb7ec", "#89e2e7", "#ffc5da"])  //
 
         vis.pack = d3.pack()
             .size([vis.diameter - vis.margin.top, vis.diameter - vis.margin.top])
             .padding(2);
+
+        // add chat boxes
+        vis.typed1 = new Typed(".auto-type-1", {
+            strings: ["How many generations does Pokemon have?"],
+            typeSpeed: 50,
+            backSpeed: 150,
+            loop: false
+        })
+        vis.typed2 = new Typed(".auto-type-2", {
+            strings: ["There are eight generations."],
+            typeSpeed: 50,
+            backSpeed: 150,
+            startDelay:7550,
+            loop: false
+        })
+        vis.typed3 = new Typed(".auto-type-3", {
+            strings: ["Wow! You guys have evolved so many generations."],
+            typeSpeed: 50,
+            backSpeed: 150,
+            startDelay:10000,
+            loop: false
+        })
+        vis.typed4 = new Typed(".auto-type-4", {
+            strings: ["Exactly! You can click on the pokemon ball on the left to see each generation of us : )"],
+            typeSpeed: 50,
+            backSpeed: 150,
+            startDelay:15000,
+            loop: false
+        })
+        vis.typed5 = new Typed(".auto-type-5", {
+            strings: ["The pokemons are grouped by their primary types and secondary types, how cool!"],
+            typeSpeed: 50,
+            backSpeed: 150,
+            startDelay:23000,
+            loop: false
+        })
+
 
 
         vis.wrangleData(0);
@@ -78,35 +117,28 @@ class Cluster {
             }
             i.children = ichildren;
         }
+        console.log("vis.heirarchy", vis.hierarchyData)
 
         // filter the data according to generation
-        for (let i of vis.hierarchyData.children) {
-            for (let j of i.children) {
-                for (let k of j.children) {
-                    if (gen!==0) {
-                        if (+k.generation===gen) {
-                            k.size = 1;
+        if (gen!==0) {
+            for (let i of vis.hierarchyData.children) {
+                for (let j of i.children) {
+                    for (let [idx,k] of j.children.entries()) {
+                        if (+k.generation!==gen) {
+                            j.children.splice(idx,idx);
                         }
-                        else {
-                            k.size = 0;
-                        }
-                    }
-                    else {
-                        k.size = 1;
                     }
                 }
             }
         }
 
 
-        console.log("groupdata", vis.groupedData)
-        console.log("hierarchyData", vis.hierarchyData)
+
+
         vis.root = d3.hierarchy(vis.hierarchyData)
             .sum(function(d) {
                 // console.log("d.size", d.size)
                 return d.size
-
-
             })
             .sort(function(a, b) { return b.value - a.value; });
 
@@ -114,7 +146,22 @@ class Cluster {
 
         vis.focus = vis.root
         vis.nodes = vis.pack(vis.root).descendants()
+        console.log("vis.nodes", vis.nodes)
+        for (let i of vis.nodes) {
+            if (!i.children) {
+                vis.defs.append("pattern")
+                                    .attr("id", "pokemonColor"+i.data.name)
+                                    .attr("patternUnits", "userSpaceOnUse")
+                                    .append("image")
+                                    .attr("xlink:href", "img/pokemonImages_basic/"+i.data.image_file)
+                                    .attr("x", i.x)
+                                    .attr("y", i.y)
+                                    .attr("width", i.r)
+                                    .attr("height", i.r);
+            }
+        }
         vis.view;
+        console.log("vis.defs", vis.defs)
 
         vis.updateVis();
     }
@@ -122,18 +169,35 @@ class Cluster {
     updateVis() {
         let vis = this;
 
-        vis.svg.selectAll("circle").remove();
-        vis.circle = vis.svg.selectAll("circle")
+        vis.svg.selectAll(".node").remove();
+        vis.svg.selectAll(".node")
             .data(vis.nodes)
-            .enter().append("circle")
+            .enter()
+            .append("g")
             .attr("class", function(d) { return d.parent ? d.children ? "node" : "node node--leaf" : "node node--root"; })
-            .style("fill", function(d) { return d.children ? vis.color(d.data.name) : null; })   //vis.color(d.depth)
+
+        vis.icons = vis.svg.selectAll(".node--leaf").append("image")
+            .attr("class", "pokeIcon")
+            .attr("xlink:href", function(d) {
+                return "img/pokemonImages_basic/"+d.data.image_file;
+            })
+            .attr("x", function(d){return -5})
+            .attr("y", function(d){return -5})
+            .attr("width", function(d){return 2*d.r})
+            .attr("height", function(d){return 2*d.r});
+        vis.circle = vis.svg.selectAll(".node").append("circle")
+            // .attr("class", function(d) { return d.parent ? d.children ? "node" : "node node--leaf" : "node node--root"; })
+            // .style("fill", function(d) {return d.children ? vis.color(d.data.name) : "#fff";})
+            .style("fill", function(d) {
+
+                return d.children ? vis.color(d.data.name) : null;
+            })   //vis.color(d.depth)
             .on("click", function(event, d) {
                 if (focus !== d) {
                     vis.zoom(d, event); event.stopPropagation();
                 }
             });
-
+        //
         // vis.circle.exit().remove()
 
         vis.svg.selectAll(".label").remove();
@@ -148,6 +212,7 @@ class Cluster {
                     return d.data.name;
                 }
                 else {return "Others"}
+
             })
             .style("font-family", "DynaPuff")
             // .style("font-size", "10px");
@@ -155,6 +220,7 @@ class Cluster {
         // vis.text.exit().remove()
 
         vis.node = vis.svg.selectAll("circle,text");
+        vis.node2 = vis.svg.selectAll(".pokeIcon");
 
         vis.realSvg.style("background", "transparent")   //vis.color(-1)
             .on("click", function(event) { vis.zoom(vis.root, event); });
@@ -186,7 +252,10 @@ class Cluster {
 
         var k = vis.diameter / v[2]; vis.view = v;
         vis.node.attr("transform", function(d) { return "translate(" + (d.x - v[0]) * k + "," + (d.y - v[1]) * k + ")"; });
+        vis.node2.attr("transform", function(d) { return "translate(" + (d.x - v[0]-3.5) * k + "," + (d.y - v[1]-3.5) * k + ")"; });
         vis.circle.attr("r", function(d) { return d.r * k; });
+        vis.icons.attr("width", function(d){return 2*d.r*k})
+            .attr("height", function(d){return 2*d.r*k});
     }
 
 }
