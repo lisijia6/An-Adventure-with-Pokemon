@@ -17,249 +17,214 @@
     <!-- Custom CSS code -->
     <link rel="stylesheet" href="css/style.css">
     <link href='https://fonts.googleapis.com/css?family=DynaPuff' rel='stylesheet'>
+    <link rel="stylesheet" type="text/css" href="css/fullpage.css" />
+    <link rel="stylesheet" type="text/css" href="css/background.css" />
+
 
 </head>
 <body>
 <div id="fullpage">
-    <div class="section">Some section</div>
-    <div class="section">Some section</div>
-    <div class="section">Some section</div>
-    <div class="section">Some section</div>
-</div>
-
-<div class="container">
-
-    <div class="row">
-        <div class="col-md-12">
-            <h1>An Adventure with Pokemon</h1>
-        </div>
-    </div>
-
-
-
-
-
-
-    <!-- Pokemon Clusters-->
-    <div class="row">
-        <div class="col-md-2" id="genButtons">
-            <p class="dyna" id="select-gen-text">Select Generation: <span id="genNum" style="font-size: 25px; color: yellow">All</span></p>
-        </div>
-        <div class="col-md-5">
-            <div id="pokemon-clusters"></div>
-        </div>
-        <div class="col-md-5">
-            <div class="box text-boxes text-boxes-1">
-                <div class="container" style="padding-top: 100px; padding-bottom: 20px">
-                <p>
-                    <span style="color: red">You</span>: <span class="auto-type-1"></span>
-                </p>
-
-                <p>
-                    <span style="color: deepskyblue">Charmander</span>: <span class="auto-type-2"></span>
-                </p>
-
-                <p>
-                    <span style="color: red">You</span>: <span class="auto-type-3"></span>
-                </p>
-
-                <p>
-                    <span style="color: deepskyblue">Charmander</span>: <span class="auto-type-4"></span>
-                </p>
-
-                <p>
-                    <span style="color: red">You</span>: <span class="auto-type-5"></span>
-                </p>
-                </div>
+    <div class="section" id="title-sec">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>An Adventure with Pokemon</h1>
             </div>
         </div>
-
     </div>
 
 
+    <div class="section" id="cluster-sec">
+        <!-- Pokemon Clusters-->
+        <div class="row">
+            <div class="col-md-2" id="genButtons">
+                <p class="dyna" id="select-gen-text">Select Generation: <span id="genNum" style="font-size: 25px; color: yellow">All</span></p>
+            </div>
+            <div class="col-md-5">
+                <div id="pokemon-clusters"></div>
+            </div>
+            <div class="col-md-5">
+                <div class="box text-boxes text-boxes-1">
+                    <div class="container" style="padding-top: 100px; padding-bottom: 20px">
+                        <p>
+                            <span style="color: red">You</span>: <span class="auto-type-1"></span>
+                        </p>
 
+                        <p>
+                            <span style="color: deepskyblue">Charmander</span>: <span class="auto-type-2"></span>
+                        </p>
 
+                        <p>
+                            <span style="color: red">You</span>: <span class="auto-type-3"></span>
+                        </p>
 
+                        <p>
+                            <span style="color: deepskyblue">Charmander</span>: <span class="auto-type-4"></span>
+                        </p>
 
-
-    <!-- Pokemon Box Office-->
-    <div class="row" style="height: 400px">
-        <hr>
-        <div class="col-md-4">
-            <div class="box text-boxes text-boxes-2">
-                <div class="container" style="padding-top: 50px; padding-bottom: 20px">
-                    <p>
-                        <span style="color: red">You</span>: <span class="auto-type-6"></span>
-                    </p>
-
-                    <p>
-                        <span style="color: deepskyblue">Charmander</span>: <span class="auto-type-7"></span>
-                    </p>
-
-                    <p>
-                        <span style="color: red">You</span>: <span class="auto-type-8"></span>
-                    </p>
-
-                    <p>
-                        <span style="color: deepskyblue">Charmander</span>: <span class="auto-type-9"></span>
-                    </p>
+                        <p>
+                            <span style="color: red">You</span>: <span class="auto-type-5"></span>
+                        </p>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="col-md-8">
-            <div id="film-box-office"></div>
+
         </div>
     </div>
 
 
+    <div class="section" id="boxOffice-sec">
+        <!-- Pokemon Box Office-->
+        <div class="row" style="height: 600px">
+            <hr>
+            <div class="col-md-4">
+                <div class="box text-boxes text-boxes-2">
+                    <div class="container" style="padding-top: 50px; padding-bottom: 20px">
+                        <p>
+                            <span style="color: red">You</span>: <span class="auto-type-6"></span>
+                        </p>
 
+                        <p>
+                            <span style="color: deepskyblue">Charmander</span>: <span class="auto-type-7"></span>
+                        </p>
 
+                        <p>
+                            <span style="color: red">You</span>: <span class="auto-type-8"></span>
+                        </p>
 
-
-
-    <!-- Pokemon Go Map-->
-    <div class="row" >
-        <hr>
-        <div class="col-md-12">
-            <p>Pokemon Go Map</p>
-            <div id="pokemon-go-map" style="height: 600px"></div>
-            <div id="pokemon-go-map-pokemons" style="height: 600px"></div>
+                        <p>
+                            <span style="color: deepskyblue">Charmander</span>: <span class="auto-type-9"></span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div id="film-box-office"></div>
+            </div>
         </div>
     </div>
 
 
-
-
-
-
-
-
-
-
-
-    <!-- Pokemon Details or Comparison-->
-    <div class="row">
-        <hr>
-        <!--
-        1. Select Mode: details or comparison; details: select 1, comparison: select 2
-        2a: details -> select pokemon type, etc.
-        2b: comparison -> select pokemon type, etc. for #1; select pokemon type, etc. for #2
-        -->
-        <p>Pokemon Details</p>
-        <!--            <div id="pokemon-details-comparison"></div>-->
-        <div id="pokemon-details"></div>
-        <p>Pokemon Comparison</p>
-    </div>
-    <div class="row">
-        <div class="col-md-1">
-            <b style="font-size: large">Type: </b>
-        </div>
-        <div class="col-md-3">
-            <select class="form-control" id="pokemon-type-select">
-                <option value="ALLTYPE">All</option>
-                <option value="BUG">Bug</option>
-                <option value="DARK">Dark</option>
-                <option value="DRAGON">Dragon</option>
-                <option value="ELECTRIC">Electric</option>
-                <option value="FAIRY">Fairy</option>
-                <option value="FIGHTING">Fighting</option>
-                <option value="FIRE">Fire</option>
-                <option value="FLYING">Flying</option>
-                <option value="GHOST">Ghost</option>
-                <option value="GRASS">Grass</option>
-                <option value="GROUND">Ground</option>
-                <option value="ICE">Ice</option>
-                <option value="NORMAL">Normal</option>
-                <option value="POISON">Poison</option>
-                <option value="PSYCHIC">Psychic</option>
-                <option value="ROCK">Rock</option>
-                <option value="STEEL">Steel</option>
-                <option value="WATER">Water</option>
-            </select>
-        </div>
-        <div class="col-md-2">
-            <b style="font-size: large">Generation: </b>
-        </div>
-        <div class="col-md-3">
-            <select class="form-control" id="pokemon-generation-select">
-                <option value="ALLGENERATION">All</option>
-                <option value="ONE">1</option>
-                <option value="TWO">2</option>
-                <option value="THREE">3</option>
-                <option value="FOUR">4</option>
-                <option value="FIVE">5</option>
-                <option value="SIX">6</option>
-                <option value="SEVEN">7</option>
-                <option value="EIGHT">8</option>
-            </select>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-md-2">
-            <b style="font-size: large">Pokemon 1: </b>
-        </div>
-        <div class="col-md-3">
-            <select class="form-control" id="pokemon-comparetest-1" onchange="pokemonChange(1)">
-                <option value="SOBBLE">Sobble</option>
-                <option value="JIRACHI">Jirachi</option>
-                <option value="BULBASAUR">Bulbasaur</option>
-            </select>
-        </div>
-        <div class="col-md-2">
-            <b style="font-size: large">Pokemon 2: </b>
-        </div>
-        <div class="col-md-3">
-            <select class="form-control" id="pokemon-comparetest-2" onchange="pokemonChange(2)">
-                <option value="JIRACHI">Jirachi</option>
-                <option value="SOBBLE">Sobble</option>
-                <option value="BULBASAUR">Bulbasaur</option>
-            </select>
-        </div>
-    </div>
-    <div class="row" style="height: 30px">
-        <div class="col-md-1">
-            <div id="pokemon-comparison-1-name"></div>
-        </div>
-        <div class="col-md-4"></div>
-        <div class="col-md-4">
-            <div id="pokemon-comparison-2-name"></div>
-        </div>
-        <div class="col-md-1"></div>
-    </div>
-    <div class="row" style="height: 400px">
-<!--        <div id="pokemon-comparison">Test</div>-->
-        <div class="col-md-1">
-            <div id="pokemon-comparison-1-img"></div>
-        </div>
-        <div class="col-md-4">
-            <div id="pokemon-comparison-1"></div>
-        </div>
-        <div class="col-md-4">
-            <div id="pokemon-comparison-2"></div>
-        </div>
-        <div class="col-md-1">
-            <div id="pokemon-comparison-2-img"></div>
+    <div class="section">
+        <!-- Pokemon Go Map-->
+        <div class="row" id="map-sec">
+            <hr>
+            <div class="col-md-12">
+                <p>Pokemon Go Map</p>
+                <div id="pokemon-go-map" style="height: 600px"></div>
+                <div id="pokemon-go-map-pokemons" style="height: 600px"></div>
+            </div>
         </div>
     </div>
 
 
-
-
-
-
-
-
-
-    <!-- Pokemon Media Details-->
-    <div class="row">
-        <hr>
-        <div class="col-md-12">
-            <p>Pokemon Media Details</p>
-            <div id="pokemon-media-details"></div>
+    <div class="section" id="comparison-sec">
+        <!-- Pokemon Details or Comparison-->
+        <div class="row">
+            <hr>
+            <!--
+            1. Select Mode: details or comparison; details: select 1, comparison: select 2
+            2a: details -> select pokemon type, etc.
+            2b: comparison -> select pokemon type, etc. for #1; select pokemon type, etc. for #2
+            -->
+            <p>Pokemon Details</p>
+            <!--            <div id="pokemon-details-comparison"></div>-->
+            <div id="pokemon-details"></div>
+            <p>Pokemon Comparison</p>
+        </div>
+        <div class="row">
+            <div class="col-md-1">
+                <b style="font-size: large">Type: </b>
+            </div>
+            <div class="col-md-3">
+                <select class="form-control" id="pokemon-type-select">
+                    <option value="ALLTYPE">All</option>
+                    <option value="BUG">Bug</option>
+                    <option value="DARK">Dark</option>
+                    <option value="DRAGON">Dragon</option>
+                    <option value="ELECTRIC">Electric</option>
+                    <option value="FAIRY">Fairy</option>
+                    <option value="FIGHTING">Fighting</option>
+                    <option value="FIRE">Fire</option>
+                    <option value="FLYING">Flying</option>
+                    <option value="GHOST">Ghost</option>
+                    <option value="GRASS">Grass</option>
+                    <option value="GROUND">Ground</option>
+                    <option value="ICE">Ice</option>
+                    <option value="NORMAL">Normal</option>
+                    <option value="POISON">Poison</option>
+                    <option value="PSYCHIC">Psychic</option>
+                    <option value="ROCK">Rock</option>
+                    <option value="STEEL">Steel</option>
+                    <option value="WATER">Water</option>
+                </select>
+            </div>
+            <div class="col-md-2">
+                <b style="font-size: large">Generation: </b>
+            </div>
+            <div class="col-md-3">
+                <select class="form-control" id="pokemon-generation-select">
+                    <option value="ALLGENERATION">All</option>
+                    <option value="ONE">1</option>
+                    <option value="TWO">2</option>
+                    <option value="THREE">3</option>
+                    <option value="FOUR">4</option>
+                    <option value="FIVE">5</option>
+                    <option value="SIX">6</option>
+                    <option value="SEVEN">7</option>
+                    <option value="EIGHT">8</option>
+                </select>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2">
+                <b style="font-size: large">Pokemon 1: </b>
+            </div>
+            <div class="col-md-3">
+                <select class="form-control" id="pokemon-comparetest-1" onchange="pokemonChange(1)">
+                    <option value="SOBBLE">Sobble</option>
+                    <option value="JIRACHI">Jirachi</option>
+                    <option value="BULBASAUR">Bulbasaur</option>
+                </select>
+            </div>
+            <div class="col-md-2">
+                <b style="font-size: large">Pokemon 2: </b>
+            </div>
+            <div class="col-md-3">
+                <select class="form-control" id="pokemon-comparetest-2" onchange="pokemonChange(2)">
+                    <option value="JIRACHI">Jirachi</option>
+                    <option value="SOBBLE">Sobble</option>
+                    <option value="BULBASAUR">Bulbasaur</option>
+                </select>
+            </div>
+        </div>
+        <div class="row" style="height: 30px">
+            <div class="col-md-1">
+                <div id="pokemon-comparison-1-name"></div>
+            </div>
+            <div class="col-md-4"></div>
+            <div class="col-md-4">
+                <div id="pokemon-comparison-2-name"></div>
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+        <div class="row" style="height: 400px">
+            <!--        <div id="pokemon-comparison">Test</div>-->
+            <div class="col-md-1">
+                <div id="pokemon-comparison-1-img"></div>
+            </div>
+            <div class="col-md-4">
+                <div id="pokemon-comparison-1"></div>
+            </div>
+            <div class="col-md-4">
+                <div id="pokemon-comparison-2"></div>
+            </div>
+            <div class="col-md-1">
+                <div id="pokemon-comparison-2-img"></div>
+            </div>
         </div>
     </div>
-
 </div>
+
 
 <!-- Load JS libraries -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
@@ -267,7 +232,7 @@
         crossorigin="anonymous"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.14/fullpage.min.js"></script>
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.14/fullpage.extensions.min.js"></script>-->
 
 
 <!-- d3 -->
@@ -284,12 +249,26 @@
 <script src="js/pokemonDetailsVis.js"></script>
 <script src="js/pokemonGoMapVis.js"></script>
 <script src="js/pokemonMediaVis.js"></script>
+
+
+
 <script src="js/libraries/d3-annotation.min.js"></script>
+<script type="text/javascript" src="js/libraries/scrolloverflow.min.js"></script>
+<script type="text/javascript" src="js/libraries/fullpage.js"></script>
+<script src="js/scrollEffects.js"></script>
 
 
 
 <!-- Load data, create visualizations -->
 <script src="js/main.js"></script>
 <!--<script src="js/main_example.js"></script>-->
+
+<!--<script type="text/javascript">-->
+<!--    var myFullpage = new fullpage('#fullpage', {-->
+<!--        licenseKey: "gplv3-license",-->
+<!--        autoScrolling:true,-->
+<!--        scrollHorizontally: true-->
+<!--    });-->
+<!--</script>-->
 </body>
 </html>
