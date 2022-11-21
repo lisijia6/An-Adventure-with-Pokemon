@@ -116,7 +116,6 @@
         </div>
     </div>
 
-
     <div class="section" id="comparison-sec">
         <!-- Pokemon Details or Comparison-->
         <div class="row">
@@ -128,7 +127,12 @@
             -->
             <p>Pokemon Details</p>
             <!--            <div id="pokemon-details-comparison"></div>-->
-            <div id="pokemon-details"></div>
+            <div id="pokemon-details">
+                    <div class="row">
+                        <div class="col" id="pokemon-details-images"></div>
+                        <div class="col" id="pokemon-details-box"></div>
+                    </div>
+            </div>
             <p>Pokemon Comparison</p>
         </div>
         <div class="row">
@@ -237,7 +241,6 @@
 
 <!-- d3 -->
 <script src="https://d3js.org/d3.v7.min.js"></script>
-
 <script src="https://d3js.org/topojson.v2.min.js"></script>
 <script src="https://d3js.org/d3-geo.v1.min.js"></script>
 
@@ -261,14 +264,5 @@
 
 <!-- Load data, create visualizations -->
 <script src="js/main.js"></script>
-<!--<script src="js/main_example.js"></script>-->
-
-<!--<script type="text/javascript">-->
-<!--    var myFullpage = new fullpage('#fullpage', {-->
-<!--        licenseKey: "gplv3-license",-->
-<!--        autoScrolling:true,-->
-<!--        scrollHorizontally: true-->
-<!--    });-->
-<!--</script>-->
 </body>
 </html>

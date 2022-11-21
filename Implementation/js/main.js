@@ -58,12 +58,6 @@ function createVis(data) {
     })
     console.log("pokemonGoGeoCountData", pokemonGoGeoCountData)
 
-    // (3) Create event handlers
-    // *** TO-DO ***
-
-    // (4) Create visualization instances
-    // *** TO-DO ***
-    // Example: let countVis = new CountVis("countvis", allData);
     pokemonCompareVis1 = new PokemonComparisonVis("pokemon-comparison-1",
         "pokemon-comparison-1-img", "pokemon-comparison-1-name", pokemonStatsData, 1);
     pokemonCompareVis2 = new PokemonComparisonVis("pokemon-comparison-2",
@@ -91,16 +85,7 @@ function createVis(data) {
         '            <img src="img/utils/numSeven.jpg" alt="Seven" width="54" height="53" onclick="pokeCluster.wrangleData(7); document.getElementById(\'genNum\').innerText=7;">\n' +
         '            <img src="img/utils/numEight.jpg" alt="Eight" width="54" height="53" onclick="pokeCluster.wrangleData(8); document.getElementById(\'genNum\').innerText=8;">'
 
-
-    // *** TO-DO ***
-    //  pass event handler to CountVis, at constructor of CountVis above
-
-
-    // (5) Bind event handler
-
-    // *** TO-DO ***
-    // eventHandler.bind("selectionChanged", function(event){ ...
-
+    pokeDetails = new PokemonDetailsVis("pokemon-details-images", pokemonStatsData.slice(0, 12), battleData, "img/pokemonImages_basic/");
 }
 
 // change comparison pokemon based on select box
@@ -113,4 +98,4 @@ function pokemonChange(value) {
         pokemonCompareVis2.wrangleData();
     }
 }
-
+let features = ["hp","speed","attack","sp_attack","defense","sp_defense"]
