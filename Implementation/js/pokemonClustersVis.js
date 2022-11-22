@@ -4,7 +4,7 @@ class Cluster {
     constructor(_parentElement, _statsData) {
         this.parentElement = _parentElement;
         this.statsData = _statsData;
-        // console.log("stats data", this.data)
+        this.displayData = _statsData;
 
         this.initVis();
     }
@@ -24,13 +24,6 @@ class Cluster {
         vis.svg = vis.realSvg
             .append("g")
             .attr("transform", "translate(" + vis.diameter/2 + "," + vis.diameter/2  + ")");
-        vis.defs = vis.svg.append('defs');
-
-
-        // vis.color = d3.scaleLinear()
-        //     .domain([-1, 7])
-        //     .range(["hsl(152,80%,80%)", "hsl(228,30%,40%)"])
-        //     .interpolate(d3.interpolateHcl);
 
         vis.color = d3.scaleOrdinal()
             .domain(["pokemon", "Water", "Electric", "Ice",
@@ -117,7 +110,6 @@ class Cluster {
             }
             i.children = ichildren;
         }
-        console.log("vis.heirarchy", vis.hierarchyData)
 
         // filter the data according to generation
         if (gen!==0) {
@@ -137,33 +129,135 @@ class Cluster {
 
         vis.root = d3.hierarchy(vis.hierarchyData)
             .sum(function(d) {
-                // console.log("d.size", d.size)
                 return d.size
             })
             .sort(function(a, b) { return b.value - a.value; });
 
-        console.log("vis.root", vis.root)
-
         vis.focus = vis.root
         vis.nodes = vis.pack(vis.root).descendants()
-        console.log("vis.nodes", vis.nodes)
-        for (let i of vis.nodes) {
-            if (!i.children) {
-                vis.defs.append("pattern")
-                                    .attr("id", "pokemonColor"+i.data.name)
-                                    .attr("patternUnits", "userSpaceOnUse")
-                                    .append("image")
-                                    .attr("xlink:href", "img/pokemonImages_basic/"+i.data.image_file)
-                                    .attr("x", i.x)
-                                    .attr("y", i.y)
-                                    .attr("width", i.r)
-                                    .attr("height", i.r);
-            }
-        }
         vis.view;
-        console.log("vis.defs", vis.defs)
 
         vis.updateVis();
+    }
+
+    showDetails(d) {
+        let vis = this;
+        vis.selectedName = d.data.name;
+
+        vis.pokemon = vis.displayData.filter(function (d) {
+            return d.name === vis.selectedName;
+        });
+        d3.selectAll("#pokemon-detail-area").remove();
+        vis.detailDiv = d3.select("#pokemon-details-box").append("div")
+            .style("height", "500px")
+            .style("width", "400px")
+            .attr("id","pokemon-detail-area")
+        vis.detailSvg = vis.detailDiv.append("svg")
+            .attr("width", 300)
+            .attr("height", 200)
+            .attr('transform', `translate (100, 0)`);
+
+        vis.radialScale = d3.scaleLinear()
+            .domain([0,150])
+            .range([0,80]);
+
+        vis.ticks = [30,60,90,120,150];
+
+        vis.ticks.forEach(t =>
+            vis.detailSvg.append("circle")
+                .attr("cx", 100)
+                .attr("cy", 100)
+                .attr("fill", "none")
+                .attr("stroke", "gray")
+                .attr("r", vis.radialScale(t))
+        );
+
+        vis.ticks.forEach(t =>
+            vis.detailSvg.append("text")
+                .attr("x", 105)
+                .attr("y", 100 - vis.radialScale(t))
+                .text(t.toString())
+        );
+
+        for (let i = 0; i < features.length; i++) {
+            let ft_name = features[i];
+            let angle = (Math.PI / 2) + (2 * Math.PI * i / features.length);
+            let line_coordinate = vis.angleToCoordinate(vis,angle, 150,100);
+            let label_coordinate = vis.angleToCoordinate(vis, angle, 155, 100);
+
+            //draw axis line
+            vis.detailSvg.append("line")
+                .attr("x1", 100)
+                .attr("y1", 100)
+                .attr("x2", line_coordinate.x)
+                .attr("y2", line_coordinate.y)
+                .attr("stroke","black");
+
+            //draw axis label
+            vis.detailSvg.append("text")
+                .attr("x", label_coordinate.x-15)
+                .attr("y", label_coordinate.y-5)
+                .text(ft_name);
+
+            vis.line = d3.line()
+                .x(d => d.x)
+                .y(d => d.y);
+
+            vis.coordinates = vis.getPathCoordinates(vis, vis.pokemon, 100);
+
+            //draw the path element
+            vis.detailSvg.append("path")
+                .datum(vis.coordinates)
+                .attr("d",vis.line)
+                .attr("stroke-width", 3)
+                .attr("stroke", "orange")
+                .attr("fill", "orange")
+                .attr("stroke-opacity", 1)
+                .attr("opacity", 0.2);
+
+        }
+
+        vis.detailTable = vis.detailDiv.append("table")
+            .attr("class","table table-striped table-sm")
+            .style("width","200px")
+            .attr("id","pokemon-detail-table")
+            .style("margin-left","100px");
+
+        vis.thead = vis.detailTable.append("thead");
+        vis.tbody = vis.detailTable.append("tbody");
+
+
+        for (let i = 0; i < features.length; i++) {
+            let ft_name = features[i];
+
+            let row = vis.tbody.append("tr")
+                .attr("class", `info-row-${i}`);
+
+            row.append("td")
+                .text(ft_name)
+                .attr("class", "table-header");
+
+            row.append("td")
+                .text(vis.pokemon[0][ft_name])
+                .attr("class", "table-content");
+        }
+    }
+
+    angleToCoordinate(vis, angle, value, padding) {
+        let x = Math.cos(angle) * vis.radialScale(value);
+        let y = Math.sin(angle) * vis.radialScale(value);
+        return {"x": padding + x, "y": padding - y};
+    }
+
+    getPathCoordinates(vis, data_point, padding){
+        let coordinates = [];
+        for (let i = 0; i < features.length; i++){
+            let ft_name = features[i];
+            let angle = (Math.PI / 2) + (2 * Math.PI * i / features.length);
+            let coor = vis.angleToCoordinate(vis, angle, data_point[0][ft_name], padding)
+            coordinates.push(coor);
+        }
+        return coordinates;
     }
 
     updateVis() {
@@ -174,31 +268,62 @@ class Cluster {
             .data(vis.nodes)
             .enter()
             .append("g")
-            .attr("class", function(d) { return d.parent ? d.children ? "node" : "node node--leaf" : "node node--root"; })
+            .attr("class", function(d) { return d.parent ? d.children ? "node" : "node" : "node node--root"; })
 
-        vis.icons = vis.svg.selectAll(".node--leaf").append("image")
-            .attr("class", "pokeIcon")
-            .attr("xlink:href", function(d) {
-                return "img/pokemonImages_basic/"+d.data.image_file;
-            })
-            .attr("x", function(d){return -5})
-            .attr("y", function(d){return -5})
-            .attr("width", function(d){return 2*d.r})
-            .attr("height", function(d){return 2*d.r});
+
         vis.circle = vis.svg.selectAll(".node").append("circle")
             // .attr("class", function(d) { return d.parent ? d.children ? "node" : "node node--leaf" : "node node--root"; })
             // .style("fill", function(d) {return d.children ? vis.color(d.data.name) : "#fff";})
             .style("fill", function(d) {
 
-                return d.children ? vis.color(d.data.name) : null;
+                return d.children ? vis.color(d.data.name) : "transparent";
             })   //vis.color(d.depth)
             .on("click", function(event, d) {
                 if (focus !== d) {
                     vis.zoom(d, event); event.stopPropagation();
                 }
             });
-        //
-        // vis.circle.exit().remove()
+
+
+        vis.icons = vis.svg.selectAll(".node").append("image")
+            .attr("class", "pokeIcon")
+            .attr("xlink:href", function(d) {
+
+                if (!d.children) {
+                    return "img/pokemonImages_basic/"+d.data.image_file;
+                }
+            })
+            .attr("x", function(d){
+                if (!d.children) {
+                    return -5;
+                }
+               else return d.x;
+            })
+            .attr("y", function(d){
+                if (!d.children) {
+                    return -5;
+                }
+                else return d.y;
+            })
+            .attr("width", function(d){
+                if (!d.children) return 2*d.r;
+            })
+            .attr("height", function(d){
+                if (!d.children) return 2*d.r;
+            })
+            .on("click", function(event, d) {
+                if (!d.children) {
+                    console.log("click the leaf")
+                    vis.showDetails(d);
+                    pokeDetails.wrangleData(d);
+                    // smoothScroll(document.getElementById('pokemon-details-box'))
+                    // window.location("https://www.google.com");
+                }
+            });
+
+        // vis.svg.selectAll(".node--leaf").on("click", function(event){
+        //     return vis.showDetails(event)}
+        // );
 
         vis.svg.selectAll(".label").remove();
         vis.text = vis.svg.selectAll(".label")

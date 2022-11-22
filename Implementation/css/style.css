@@ -129,9 +129,14 @@ h2 {
 	stroke-width: 1.5px;
 }
 
-.node--leaf {
-	fill: transparent;
+.node.node--leaf:hover {
+	stroke: #000;
+	stroke-width: 1.5px;
 }
+
+/*.node--leaf {*/
+/*	fill: transparent;*/
+/*}*/
 
 .label {
 	font: 9px "Helvetica Neue", Helvetica, Arial, sans-serif;
