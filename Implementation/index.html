@@ -19,6 +19,7 @@
     <link href='https://fonts.googleapis.com/css?family=DynaPuff' rel='stylesheet'>
     <link rel="stylesheet" type="text/css" href="css/fullpage.css" />
     <link rel="stylesheet" type="text/css" href="css/background.css" />
+    <link rel="stylesheet" type="text/css" href="css/panel.css" />
 
 
 </head>
@@ -78,7 +79,7 @@
 
         </div>
     </div>
-    
+
 
     <div class="section" id="comparison-sec">
         <!-- Pokemon Details or Comparison-->
@@ -88,7 +89,7 @@
             2a: details -> select pokemon type, etc.
             2b: comparison -> select pokemon type, etc. for #1; select pokemon type, etc. for #2
             -->
-            <p>Pokemon Details</p>
+<!--            <p>Pokemon Details</p>-->
             <!--            <div id="pokemon-details-comparison"></div>-->
             <div id="pokemon-details">
                 <div class="row">
@@ -105,99 +106,107 @@
 <!--                    <div class="modal-body"></div>-->
 <!--                </div>-->
 <!--                <div id="overlay"></div>-->
+<!--                comparison panel pop up-->
+                <div id="centerDIV">
+                    <!-- The element which will float at the center of the screen -->
+                    <div class="divFloat">
+                        <input type="button" id="btClose" class="btClose" value="Close (x)" onclick="closePanel()"/>
+                        <div class="row">
+<!--                            <p>Pokemon Comparison</p>-->
+<!--                            <div class="col-md-1">-->
+<!--                                <b style="font-size: large">Type: </b>-->
+<!--                            </div>-->
+<!--                            <div class="col-md-3">-->
+<!--                                <select class="form-control" id="pokemon-type-select">-->
+<!--                                    <option value="ALLTYPE">All</option>-->
+<!--                                    <option value="BUG">Bug</option>-->
+<!--                                    <option value="DARK">Dark</option>-->
+<!--                                    <option value="DRAGON">Dragon</option>-->
+<!--                                    <option value="ELECTRIC">Electric</option>-->
+<!--                                    <option value="FAIRY">Fairy</option>-->
+<!--                                    <option value="FIGHTING">Fighting</option>-->
+<!--                                    <option value="FIRE">Fire</option>-->
+<!--                                    <option value="FLYING">Flying</option>-->
+<!--                                    <option value="GHOST">Ghost</option>-->
+<!--                                    <option value="GRASS">Grass</option>-->
+<!--                                    <option value="GROUND">Ground</option>-->
+<!--                                    <option value="ICE">Ice</option>-->
+<!--                                    <option value="NORMAL">Normal</option>-->
+<!--                                    <option value="POISON">Poison</option>-->
+<!--                                    <option value="PSYCHIC">Psychic</option>-->
+<!--                                    <option value="ROCK">Rock</option>-->
+<!--                                    <option value="STEEL">Steel</option>-->
+<!--                                    <option value="WATER">Water</option>-->
+<!--                                </select>-->
+<!--                            </div>-->
+<!--                            <div class="col-md-2">-->
+<!--                                <b style="font-size: large">Generation: </b>-->
+<!--                            </div>-->
+<!--                            <div class="col-md-3">-->
+<!--                                <select class="form-control" id="pokemon-generation-select">-->
+<!--                                    <option value="ALLGENERATION">All</option>-->
+<!--                                    <option value="ONE">1</option>-->
+<!--                                    <option value="TWO">2</option>-->
+<!--                                    <option value="THREE">3</option>-->
+<!--                                    <option value="FOUR">4</option>-->
+<!--                                    <option value="FIVE">5</option>-->
+<!--                                    <option value="SIX">6</option>-->
+<!--                                    <option value="SEVEN">7</option>-->
+<!--                                    <option value="EIGHT">8</option>-->
+<!--                                </select>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        <div class="row">-->
+<!--                            <div class="col-md-2">-->
+<!--                                <b style="font-size: large">Pokemon 1: </b>-->
+<!--                            </div>-->
+<!--                            <div class="col-md-3">-->
+<!--                                <select class="form-control" id="pokemon-comparetest-1" onchange="pokemonChange(1)">-->
+<!--                                    <option value="SOBBLE">Sobble</option>-->
+<!--                                    <option value="JIRACHI">Jirachi</option>-->
+<!--                                    <option value="BULBASAUR">Bulbasaur</option>-->
+<!--                                </select>-->
+<!--                            </div>-->
+<!--                            <div class="col-md-2">-->
+<!--                                <b style="font-size: large">Pokemon 2: </b>-->
+<!--                            </div>-->
+<!--                            <div class="col-md-3">-->
+<!--                                <select class="form-control" id="pokemon-comparetest-2" onchange="pokemonChange(2)">-->
+<!--                                    <option value="JIRACHI">Jirachi</option>-->
+<!--                                    <option value="SOBBLE">Sobble</option>-->
+<!--                                    <option value="BULBASAUR">Bulbasaur</option>-->
+<!--                                </select>-->
+<!--                            </div>-->
+<!--                        </div>-->
+                        <div class="row" style="height: 30px">
+                            <div class="col-md-1">
+                                <div id="pokemon-comparison-1-name"></div>
+                            </div>
+                            <div class="col-md-4"></div>
+                            <div class="col-md-4">
+                                <div id="pokemon-comparison-2-name"></div>
+                            </div>
+                            <div class="col-md-1"></div>
+                        </div>
+                        <div class="row" style="height: 400px">
+                            <!--        <div id="pokemon-comparison">Test</div>-->
+                            <div class="col-md-1">
+                                <div id="pokemon-comparison-1-img"></div>
+                            </div>
+                            <div class="col-md-5">
+                                <div id="pokemon-comparison-1"></div>
+                            </div>
+                            <div class="col-md-5">
+                                <div id="pokemon-comparison-2"></div>
+                            </div>
+                            <div class="col-md-1">
+                                <div id="pokemon-comparison-2-img"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <p>Pokemon Comparison</p>
-        </div>
-        <div class="row">
-            <div class="col-md-1">
-                <b style="font-size: large">Type: </b>
-            </div>
-            <div class="col-md-3">
-                <select class="form-control" id="pokemon-type-select">
-                    <option value="ALLTYPE">All</option>
-                    <option value="BUG">Bug</option>
-                    <option value="DARK">Dark</option>
-                    <option value="DRAGON">Dragon</option>
-                    <option value="ELECTRIC">Electric</option>
-                    <option value="FAIRY">Fairy</option>
-                    <option value="FIGHTING">Fighting</option>
-                    <option value="FIRE">Fire</option>
-                    <option value="FLYING">Flying</option>
-                    <option value="GHOST">Ghost</option>
-                    <option value="GRASS">Grass</option>
-                    <option value="GROUND">Ground</option>
-                    <option value="ICE">Ice</option>
-                    <option value="NORMAL">Normal</option>
-                    <option value="POISON">Poison</option>
-                    <option value="PSYCHIC">Psychic</option>
-                    <option value="ROCK">Rock</option>
-                    <option value="STEEL">Steel</option>
-                    <option value="WATER">Water</option>
-                </select>
-            </div>
-            <div class="col-md-2">
-                <b style="font-size: large">Generation: </b>
-            </div>
-            <div class="col-md-3">
-                <select class="form-control" id="pokemon-generation-select">
-                    <option value="ALLGENERATION">All</option>
-                    <option value="ONE">1</option>
-                    <option value="TWO">2</option>
-                    <option value="THREE">3</option>
-                    <option value="FOUR">4</option>
-                    <option value="FIVE">5</option>
-                    <option value="SIX">6</option>
-                    <option value="SEVEN">7</option>
-                    <option value="EIGHT">8</option>
-                </select>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-2">
-                <b style="font-size: large">Pokemon 1: </b>
-            </div>
-            <div class="col-md-3">
-                <select class="form-control" id="pokemon-comparetest-1" onchange="pokemonChange(1)">
-                    <option value="SOBBLE">Sobble</option>
-                    <option value="JIRACHI">Jirachi</option>
-                    <option value="BULBASAUR">Bulbasaur</option>
-                </select>
-            </div>
-            <div class="col-md-2">
-                <b style="font-size: large">Pokemon 2: </b>
-            </div>
-            <div class="col-md-3">
-                <select class="form-control" id="pokemon-comparetest-2" onchange="pokemonChange(2)">
-                    <option value="JIRACHI">Jirachi</option>
-                    <option value="SOBBLE">Sobble</option>
-                    <option value="BULBASAUR">Bulbasaur</option>
-                </select>
-            </div>
-        </div>
-        <div class="row" style="height: 30px">
-            <div class="col-md-1">
-                <div id="pokemon-comparison-1-name"></div>
-            </div>
-            <div class="col-md-4"></div>
-            <div class="col-md-4">
-                <div id="pokemon-comparison-2-name"></div>
-            </div>
-            <div class="col-md-1"></div>
-        </div>
-        <div class="row" style="height: 400px">
-            <!--        <div id="pokemon-comparison">Test</div>-->
-            <div class="col-md-1">
-                <div id="pokemon-comparison-1-img"></div>
-            </div>
-            <div class="col-md-4">
-                <div id="pokemon-comparison-1"></div>
-            </div>
-            <div class="col-md-4">
-                <div id="pokemon-comparison-2"></div>
-            </div>
-            <div class="col-md-1">
-                <div id="pokemon-comparison-2-img"></div>
-            </div>
+
         </div>
     </div>
 
