@@ -32,14 +32,13 @@ class PokemonGoMapVis {
 
         // add title
         vis.svg.append('g')
-            .attr('class', 'title dyna')
+            .attr('class', 'chart-title')
             .attr('id', 'map-title')
             .append('text')
             .text('Pokemon Go Sightings')
             .attr('transform', `translate(${vis.width / 2}, 20)`)
             .attr('text-anchor', 'middle');
 
-        // TODO
         vis.projection = d3.geoEqualEarth() //geoStereographic() //geoOrthographic()
             .scale(150)
             .translate([vis.width / 2, vis.height / 2])
@@ -93,6 +92,36 @@ class PokemonGoMapVis {
             .attr('class', "tooltip")
             .attr('id', 'mapPokemonTooltip');
 
+        // add chat boxes
+        vis.typed1 = new Typed(".auto-type-10", {
+            strings: ["I heard about the popular Pokemon Go game. Where can I find Pokemons around the world?"],
+            typeSpeed: 50,
+            backSpeed: 150,
+            loop: false
+        })
+        vis.typed2 = new Typed(".auto-type-11", {
+            strings: ["Yeah! You can find us almost anywhere around the world. New York, Chicago, and LA are " +
+            "the three places that we are seen the most."],
+            typeSpeed: 50,
+            backSpeed: 150,
+            startDelay:7550,
+            loop: false
+        })
+        vis.typed3 = new Typed(".auto-type-12", {
+            strings: ["Wonderful!"],
+            typeSpeed: 50,
+            backSpeed: 150,
+            startDelay:10000,
+            loop: false
+        })
+        vis.typed4 = new Typed(".auto-type-13", {
+            strings: ["Have fun with the game!"],
+            typeSpeed: 50,
+            backSpeed: 150,
+            startDelay:15000,
+            loop: false
+        })
+
         vis.wrangleData()
 
     }
@@ -143,11 +172,11 @@ class PokemonGoMapVis {
                     .style("top", event.pageY + "px")
                     .html(`
                          <div style="border: thin solid grey; border-radius: 5px; background: #ECEAC3; padding: 20px">
-                             <h4> ${d.city}</h4>
-                             <h6> City: ${d.city}</h6>
-                             <h6> Continent: ${filteredData[0].continent}</h6>
-                             <h6> Total Number of Pokemons Spotted: ${d.pokemonCount}</h6>
-                             <h6> Unique Types Pokemons Spotted: ${uniquePokemons.length}</h6>
+                             <h4 class="chart-title-bold"> ${d.city}</h4>
+                             <h6 class="chart-title-small"> City: ${d.city}</h6>
+                             <h6 class="chart-title-small"> Continent: ${filteredData[0].continent}</h6>
+                             <h6 class="chart-title-small"> Total Number of Pokemons Spotted: ${d.pokemonCount}</h6>
+                             <h6 class="chart-title-small"> Unique Types Pokemons Spotted: ${uniquePokemons.length}</h6>
                          </div>`)
                     .style("background",'#BCC5F7')
 

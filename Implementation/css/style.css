@@ -83,9 +83,20 @@ h2 {
 	opacity: 0.5;
 }
 
+.chart-title-bold {
+	font-family: fantasy;
+	font-size: 24px;
+	font-weight: bold;
+}
+
 .chart-title {
 	font-family: fantasy;
 	font-size: 22px;
+}
+
+.chart-title-small {
+	font-family: fantasy;
+	font-size: 18px;
 }
 
 .movie-name{
