@@ -22,7 +22,7 @@ class PokemonGoMapVis {
 
         vis.margin = {top: 20, right: 20, bottom: 20, left: 20};
         vis.width = document.getElementById(vis.parentElement).getBoundingClientRect().width - vis.margin.left - vis.margin.right;
-        vis.height = 500 - vis.margin.top - vis.margin.bottom;
+        vis.height = 750 - vis.margin.top - vis.margin.bottom;
 
         // init drawing area
         vis.svg = d3.select("#" + vis.parentElement).append("svg")
@@ -39,20 +39,21 @@ class PokemonGoMapVis {
             .attr('transform', `translate(${vis.width / 2}, 20)`)
             .attr('text-anchor', 'middle');
 
-        vis.projection = d3.geoEqualEarth() //geoStereographic() //geoOrthographic()
-            .scale(150)
-            .translate([vis.width / 2, vis.height / 2])
+        vis.projection = d3.geoEquirectangular()
+            // d3.geoEqualEarth() //geoStereographic() //geoOrthographic()
+            .scale(220)
+            .translate([vis.width / 2, vis.height / 2 + 30])
 
         vis.path = d3.geoPath()
             .projection(vis.projection);
 
         // Add sphere and graticule to mimic the ocean and the globe
-        vis.svg.append("path")
-            .datum({type: "Sphere"})
-            .attr("class", "graticule")
-            .attr('fill', '#ADDEFF')
-            .attr("stroke","rgba(129,129,129,0.35)")
-            .attr("d", vis.path);
+        // vis.svg.append("path")
+        //     .datum({type: "Sphere"})
+        //     .attr("class", "graticule")
+        //     .attr('fill', '#ADDEFF')
+        //     .attr("stroke","rgba(129,129,129,0.35)")
+        //     .attr("d", vis.path);
 
         // Add the countries
         vis.world = topojson.feature(vis.worldGeoData, vis.worldGeoData.objects.countries).features
@@ -145,7 +146,6 @@ class PokemonGoMapVis {
     updateVis() {
         let vis = this;
 
-        // TODO
         // console.log(vis.countryInfo)
         vis.countries
             .attr('fill', "#D3D3D3")
@@ -193,7 +193,7 @@ class PokemonGoMapVis {
                     .merge(vis.images)
                     .attr("src", d => "img/pokemonImages_basic/"+d+".png")
                     .attr("class", "map-pokemon-image")
-                    .attr("width", 100)
+                    .attr("width", 43)
                     .attr("x", (d,i) => 10*i)
                     .attr("y", 10)
                 vis.images.exit().remove();

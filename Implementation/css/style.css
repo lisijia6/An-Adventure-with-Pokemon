@@ -5,9 +5,15 @@ body {
 }
 
 h1 {
-	font-size: 36px;
+	font-size: 80px;
 	color: #825a5a;
 	margin-top: 40px;
+}
+
+#front-page-subtitle {
+	font-size: 30px;
+	color: #ab8282;
+	margin-top: 10px;
 }
 
 h2 {
