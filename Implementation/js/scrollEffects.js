@@ -2,6 +2,7 @@
 var myFullpage = new fullpage('#fullpage', {
     navigation: true,
     navigationPosition: 'right',
+    anchors: ["page1", "page2", "page3", "page4", "page5"],
 
 
     onLeave: function(origin, destination, direction) {
@@ -31,22 +32,25 @@ var myFullpage = new fullpage('#fullpage', {
 
 
         switch (secId) {
-            case 'boxOffice-sec':
-                boxOffice.wrangleData();
-                break;
             case 'cluster-sec':
                 pokeCluster.wrangleData(0);
                 break;
-            case 'map-sec':
-                pokemonGoMapVis.wrangleData();
+            case 'boxOffice-sec':
+                boxOffice.wrangleData();
                 break;
             case 'comparison-sec':
+                // pokeDetails.wrangleData();
                 pokemonCompareVis1.wrangleData();
                 pokemonCompareVis2.wrangleData();
                 // if (!plotVis.drawn) {
                 //     drawPlotVis();
                 // }
                 break;
+
+            case 'map-sec':
+                pokemonGoMapVis.wrangleData();
+                break;
+
 
             // case 'characters-sec':
             //     if (!doneIntro) {
@@ -62,4 +66,11 @@ var myFullpage = new fullpage('#fullpage', {
         }
     }
 });
+
+
+//adding the action to the button
+$(document).on('click', '.pokeIcon', function(){
+    fullpage_api.moveTo('page3', 1);
+});
+
 

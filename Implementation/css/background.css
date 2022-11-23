@@ -22,6 +22,10 @@
     animation: 50s para infinite linear;
 }
 
+/*body {*/
+/*    background-color: lightskyblue;*/
+/*}*/
+
 @keyframes para {
     100% {
         background-position:
