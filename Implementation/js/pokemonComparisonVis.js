@@ -118,21 +118,26 @@ class PokemonComparisonVis {
         let vis = this;
 
         // get data based on select box
-        if (vis.pokemonFlag === 1){
-            vis.selectedPokemon =  document.getElementById('pokemon-comparetest-1').value;
-        } else if (vis.pokemonFlag === 2) {
-            vis.selectedPokemon =  document.getElementById('pokemon-comparetest-2').value;
-        }
+        // if (vis.pokemonFlag === 1){
+        //     vis.selectedPokemon =  document.getElementById('pokemon-comparetest-1').value;
+        // } else if (vis.pokemonFlag === 2) {
+        //     vis.selectedPokemon =  document.getElementById('pokemon-comparetest-2').value;
+        // }
+        // vis.selectedPokemon = vis.selectedPokemon.toLowerCase();
+        // vis.selectedPokemon = vis.selectedPokemon[0].toUpperCase() + vis.selectedPokemon.slice(1);
+        // // console.log(vis.selectedPokemon)
+        //
+        vis.selectedPokemon = "pichu"
         vis.selectedPokemon = vis.selectedPokemon.toLowerCase();
         vis.selectedPokemon = vis.selectedPokemon[0].toUpperCase() + vis.selectedPokemon.slice(1);
-        // console.log(vis.selectedPokemon)
-
         let obj;
         Object.keys(vis.filteredData).forEach(
             x => obj = vis.filteredData[x].Name === vis.selectedPokemon ? vis.filteredData[x]: obj);
         vis.filteredData = obj
-        // console.log(vis.filteredData)
-        // console.log(vis.filteredData["Stats"])
+        console.log(vis.filteredData)
+        console.log(vis.filteredData["Stats"])
+
+
 
         // Draw Rectangles
         vis.rect = vis.svg.selectAll("rect").data(vis.filteredData["Stats"])
@@ -229,7 +234,7 @@ class PokemonComparisonVis {
         vis.svgImg.append("img")
             .attr("src", "img/pokemonImages_basic/"+vis.filteredData["Image Name"]+".png")
             .attr("class", "comparison-pokemon-image")
-            .attr("width", 280)
+            .attr("width", 100)
     }
 
 }

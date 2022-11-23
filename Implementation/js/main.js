@@ -99,3 +99,7 @@ function pokemonChange(value) {
     }
 }
 let features = ["hp","speed","attack","sp_attack","defense","sp_defense"]
+
+function closePanel() {
+    document.getElementById('centerDIV').style.display = 'none';
+}

@@ -108,6 +108,15 @@ class PokemonDetailsVis {
                 .attr("width", 50)
                 .attr("border-radius","50%")
                 .attr("border","1px solid black")
+                .on("click", function(e, d) {
+                    document.getElementById('centerDIV').style.display = 'block';
+                })
+                .on('mouseover', function (d, i) {
+                    d3.select(this).style("cursor", "pointer");
+                })
+                .on('mouseout', function (d, i) {
+                    d3.select(this).style("cursor", "default");
+                })
         })
 
         vis.loses.forEach(function (t, i) {
@@ -119,8 +128,14 @@ class PokemonDetailsVis {
                 .attr("border","1px solid black")
                 .attr("data-modal-target", "#modal")
                 .on("click", function(event, d) {
-
+                    document.getElementById('centerDIV').style.display = 'block';
                 })
+            .on('mouseover', function (d, i) {
+                d3.select(this).style("cursor", "pointer");
+            })
+            .on('mouseout', function (d, i) {
+                d3.select(this).style("cursor", "default");
+            })
         })
 
         const overlay = document.getElementById("overlay");
