@@ -117,7 +117,13 @@ class PokemonDetailsVis {
                 .attr("width", 50)
                 .attr("border-radius","50%")
                 .attr("border","1px solid black")
+                .attr("data-modal-target", "#modal")
+                .on("click", function(event, d) {
+
+                })
         })
+
+        const overlay = document.getElementById("overlay");
 
 
 
