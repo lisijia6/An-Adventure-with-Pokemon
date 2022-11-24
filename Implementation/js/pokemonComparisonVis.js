@@ -58,7 +58,7 @@ class PokemonComparisonVis {
                 .attr("width", vis.width + vis.margin.left + vis.margin.right)
                 .attr("height", vis.height + vis.margin.top + vis.margin.bottom)
                 .append("g")
-                .attr("transform", "translate(" + -100 + "," + vis.margin.top + ")");
+                .attr("transform", "translate(" + -170 + "," + vis.margin.top + ")");
         } else if (vis.pokemonFlag === 2) {
             vis.svg = d3.select("#" + vis.parentElement).append("svg")
                 .attr("width", vis.width + vis.margin.left + vis.margin.right)
@@ -115,7 +115,7 @@ class PokemonComparisonVis {
         // console.log(vis.filteredData);
 
         // Update the visualization
-        vis.updateVis();
+        vis.updateVis("pichu");
     }
 
 
@@ -124,33 +124,34 @@ class PokemonComparisonVis {
      * The drawing function
      */
 
-    updateVis() {
+    updateVis(selectedPokemon) {
         let vis = this;
 
         // get data based on select box
-        // if (vis.pokemonFlag === 1){
-        //     vis.selectedPokemon =  document.getElementById('pokemon-comparetest-1').value;
-        // } else if (vis.pokemonFlag === 2) {
-        //     vis.selectedPokemon =  document.getElementById('pokemon-comparetest-2').value;
-        // }
-        // vis.selectedPokemon = vis.selectedPokemon.toLowerCase();
-        // vis.selectedPokemon = vis.selectedPokemon[0].toUpperCase() + vis.selectedPokemon.slice(1);
-        // // console.log(vis.selectedPokemon)
-        //
-        vis.selectedPokemon = "pichu"
-        vis.selectedPokemon = vis.selectedPokemon.toLowerCase();
-        vis.selectedPokemon = vis.selectedPokemon[0].toUpperCase() + vis.selectedPokemon.slice(1);
+        selectedPokemon = selectedPokemon.toLowerCase();
+        selectedPokemon = selectedPokemon[0].toUpperCase() + selectedPokemon.slice(1);
         let obj;
         Object.keys(vis.filteredData).forEach(
-            x => obj = vis.filteredData[x].Name === vis.selectedPokemon ? vis.filteredData[x]: obj);
-        vis.filteredData = obj
-        console.log(vis.filteredData)
-        console.log(vis.filteredData["Stats"])
+            x => obj = vis.filteredData[x].Name === selectedPokemon ? vis.filteredData[x]: obj);
+        vis.selectedData = obj
 
 
+        // Image
+        vis.svgImg.selectAll("img").remove()
+        // console.log(vis.filteredData["Image Name"])
+        vis.svgImg.append("img")
+            .attr("src", "img/pokemonImages_basic/"+vis.selectedData["Image Name"]+".png")
+            .attr("class", function(){
+                if (vis.pokemonFlag===1){
+                    return "comparison-pokemon-image-left";
+                }
+                else return "comparison-pokemon-image-right";
+
+            })
+            .attr("width", 150)
 
         // Draw Rectangles
-        vis.rect = vis.svg.selectAll("rect").data(vis.filteredData["Stats"])
+        vis.rect = vis.svg.selectAll("rect").data(vis.selectedData["Stats"])
         vis.rect.enter()
             .append("rect")
             .merge(vis.rect)
@@ -178,9 +179,9 @@ class PokemonComparisonVis {
             .attr("class", "pokemon-comparison-title")
             .text(d => {
                 if (vis.pokemonFlag === 1) {
-                    return "\xa0".repeat(40) + vis.filteredData["Name"];
+                    return "Winner:   " + vis.selectedData["Name"];   //"\xa0".repeat(40)
                 } else if (vis.pokemonFlag === 2) {
-                    return "\xa0".repeat(70) + vis.filteredData["Name"];
+                    return "Loser:   " + vis.selectedData["Name"];   //"\xa0".repeat(70)
                 }
             })
             .attr("x", 50)
@@ -190,7 +191,7 @@ class PokemonComparisonVis {
         // Draw labels of the rectangles
         vis.svg.selectAll(".stats-labels").remove()
         vis.rectValueLabels = vis.svg.selectAll(".text")
-            .data(vis.filteredData["Stats"])
+            .data(vis.selectedData["Stats"])
         vis.rectValueLabels
             .enter()
             .append("text")
@@ -223,12 +224,12 @@ class PokemonComparisonVis {
         if (vis.pokemonFlag === 2) {
             vis.svg.selectAll(".stats-category-labels").remove()
             vis.rectCategoryLabels = vis.svg.selectAll(".text")
-                .data(vis.filteredData["Stats"])
+                .data(vis.selectedData["Stats"])
             vis.rectCategoryLabels
                 .enter()
                 .append("text")
                 .merge(vis.rectCategoryLabels)
-                .attr("x", 10)
+                .attr("x", 33)
                 .attr("y", d => vis.y(d.key)+20)
                 .text(d => d.key)
                 .attr("fill", "black")
@@ -238,13 +239,6 @@ class PokemonComparisonVis {
             vis.rectCategoryLabels.exit().remove();
         }
 
-        // Image
-        vis.svgImg.selectAll("img").remove()
-        // console.log(vis.filteredData["Image Name"])
-        vis.svgImg.append("img")
-            .attr("src", "img/pokemonImages_basic/"+vis.filteredData["Image Name"]+".png")
-            .attr("class", "comparison-pokemon-image")
-            .attr("width", 150)
     }
 
 }

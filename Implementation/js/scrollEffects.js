@@ -40,14 +40,14 @@ var myFullpage = new fullpage('#fullpage', {
             case 'boxOffice-sec':
                 boxOffice.wrangleData();
                 break;
-            case 'comparison-sec':
-                // pokeDetails.wrangleData();
-                pokemonCompareVis1.wrangleData();
-                pokemonCompareVis2.wrangleData();
-                // if (!plotVis.drawn) {
-                //     drawPlotVis();
-                // }
-                break;
+            // case 'comparison-sec':
+            //     // pokeDetails.wrangleData();
+            //     pokemonCompareVis1.wrangleData();
+            //     pokemonCompareVis2.wrangleData();
+            //     // if (!plotVis.drawn) {
+            //     //     drawPlotVis();
+            //     // }
+            //     break;
 
             case 'map-sec':
                 pokemonGoMapVis.wrangleData();

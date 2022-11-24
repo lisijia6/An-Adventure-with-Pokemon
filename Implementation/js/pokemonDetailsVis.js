@@ -108,7 +108,14 @@ class PokemonDetailsVis {
                 .attr("width", 50)
                 .attr("border-radius","50%")
                 .attr("border","1px solid black")
-                .on("click", function(e, d) {
+                .on("click", function() {
+                    pokemonCompareVis1.updateVis(d.data.name);
+                    if (t.First_pokemon!==d.data.name) {
+                        pokemonCompareVis2.updateVis(t.First_pokemon.toLowerCase());
+                    }
+                    else {
+                        pokemonCompareVis2.updateVis(t.Second_pokemon.toLowerCase());
+                    }
                     document.getElementById('centerDIV').style.display = 'block';
                 })
                 .on('mouseover', function (d, i) {
@@ -127,7 +134,9 @@ class PokemonDetailsVis {
                 .attr("border-radius","50%")
                 .attr("border","1px solid black")
                 .attr("data-modal-target", "#modal")
-                .on("click", function(event, d) {
+                .on("click", function() {
+                    pokemonCompareVis1.updateVis(t.Winner.toLowerCase());
+                    pokemonCompareVis2.updateVis(d.data.name);
                     document.getElementById('centerDIV').style.display = 'block';
                 })
             .on('mouseover', function (d, i) {
