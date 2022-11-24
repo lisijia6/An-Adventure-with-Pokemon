@@ -24,7 +24,9 @@
 
 </head>
 <body>
+
 <div id="fullpage">
+    <!--    page1-->
     <div class="section" id="title-sec">
         <div class="row">
             <div class="col-md-12">
@@ -41,6 +43,7 @@
         </div>
     </div>
 
+    <!--    page2-->
     <div class="section" id="cluster-intro">
         <div class="row justify-content-md-center">
             <div class="col-md-12">
@@ -74,6 +77,7 @@
         </div>
     </div>
 
+    <!--    page3-->
     <div class="section" id="cluster-sec">
         <!-- Pokemon Clusters-->
         <div class="row">
@@ -112,17 +116,10 @@
         </div>
     </div>
 
-
+    <!--    page4-->
     <div class="section" id="comparison-sec">
         <!-- Pokemon Details or Comparison-->
         <div class="row">
-            <!--
-            1. Select Mode: details or comparison; details: select 1, comparison: select 2
-            2a: details -> select pokemon type, etc.
-            2b: comparison -> select pokemon type, etc. for #1; select pokemon type, etc. for #2
-            -->
-<!--            <p>Pokemon Details</p>-->
-            <!--            <div id="pokemon-details-comparison"></div>-->
             <div id="pokemon-details">
                 <div class="row">
                     <div class="col-sm-2" id="pokemon-details-images"></div>
@@ -130,86 +127,10 @@
                     <div class="col-sm-3" id="win-over"></div>
                     <div class="col-sm-3" id="lose-to"></div>
                 </div>
-<!--                <div class="modal" id="modal">-->
-<!--                    <div class="modal-header">-->
-<!--                        <div class="title"></div>-->
-<!--                        <button data-close-button class="close-button">&times;</button>-->
-<!--                    </div>-->
-<!--                    <div class="modal-body"></div>-->
-<!--                </div>-->
-<!--                <div id="overlay"></div>-->
-<!--                comparison panel pop up-->
                 <div id="centerDIV">
                     <!-- The element which will float at the center of the screen -->
                     <div class="divFloat">
                         <input type="button" id="btClose" class="btClose" value="Close (x)" onclick="closePanel()"/>
-                        <div class="row">
-<!--                            <p>Pokemon Comparison</p>-->
-<!--                            <div class="col-md-1">-->
-<!--                                <b style="font-size: large">Type: </b>-->
-<!--                            </div>-->
-<!--                            <div class="col-md-3">-->
-<!--                                <select class="form-control" id="pokemon-type-select">-->
-<!--                                    <option value="ALLTYPE">All</option>-->
-<!--                                    <option value="BUG">Bug</option>-->
-<!--                                    <option value="DARK">Dark</option>-->
-<!--                                    <option value="DRAGON">Dragon</option>-->
-<!--                                    <option value="ELECTRIC">Electric</option>-->
-<!--                                    <option value="FAIRY">Fairy</option>-->
-<!--                                    <option value="FIGHTING">Fighting</option>-->
-<!--                                    <option value="FIRE">Fire</option>-->
-<!--                                    <option value="FLYING">Flying</option>-->
-<!--                                    <option value="GHOST">Ghost</option>-->
-<!--                                    <option value="GRASS">Grass</option>-->
-<!--                                    <option value="GROUND">Ground</option>-->
-<!--                                    <option value="ICE">Ice</option>-->
-<!--                                    <option value="NORMAL">Normal</option>-->
-<!--                                    <option value="POISON">Poison</option>-->
-<!--                                    <option value="PSYCHIC">Psychic</option>-->
-<!--                                    <option value="ROCK">Rock</option>-->
-<!--                                    <option value="STEEL">Steel</option>-->
-<!--                                    <option value="WATER">Water</option>-->
-<!--                                </select>-->
-<!--                            </div>-->
-<!--                            <div class="col-md-2">-->
-<!--                                <b style="font-size: large">Generation: </b>-->
-<!--                            </div>-->
-<!--                            <div class="col-md-3">-->
-<!--                                <select class="form-control" id="pokemon-generation-select">-->
-<!--                                    <option value="ALLGENERATION">All</option>-->
-<!--                                    <option value="ONE">1</option>-->
-<!--                                    <option value="TWO">2</option>-->
-<!--                                    <option value="THREE">3</option>-->
-<!--                                    <option value="FOUR">4</option>-->
-<!--                                    <option value="FIVE">5</option>-->
-<!--                                    <option value="SIX">6</option>-->
-<!--                                    <option value="SEVEN">7</option>-->
-<!--                                    <option value="EIGHT">8</option>-->
-<!--                                </select>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                        <div class="row">-->
-<!--                            <div class="col-md-2">-->
-<!--                                <b style="font-size: large">Pokemon 1: </b>-->
-<!--                            </div>-->
-<!--                            <div class="col-md-3">-->
-<!--                                <select class="form-control" id="pokemon-comparetest-1" onchange="pokemonChange(1)">-->
-<!--                                    <option value="SOBBLE">Sobble</option>-->
-<!--                                    <option value="JIRACHI">Jirachi</option>-->
-<!--                                    <option value="BULBASAUR">Bulbasaur</option>-->
-<!--                                </select>-->
-<!--                            </div>-->
-<!--                            <div class="col-md-2">-->
-<!--                                <b style="font-size: large">Pokemon 2: </b>-->
-<!--                            </div>-->
-<!--                            <div class="col-md-3">-->
-<!--                                <select class="form-control" id="pokemon-comparetest-2" onchange="pokemonChange(2)">-->
-<!--                                    <option value="JIRACHI">Jirachi</option>-->
-<!--                                    <option value="SOBBLE">Sobble</option>-->
-<!--                                    <option value="BULBASAUR">Bulbasaur</option>-->
-<!--                                </select>-->
-<!--                            </div>-->
-<!--                        </div>-->
                         <div class="row" style="height: 30px">
                             <div class="col-md-1">
                                 <div id="pokemon-comparison-1-name"></div>
@@ -226,10 +147,10 @@
                                 <div id="pokemon-comparison-1-img"></div>
                             </div>
                             <div class="col-md-5">
-                                <div id="pokemon-comparison-1"></div>
+                                <div id="pokemon-comparison-1" style="width: 300px"></div>
                             </div>
                             <div class="col-md-5">
-                                <div id="pokemon-comparison-2"></div>
+                                <div id="pokemon-comparison-2" style="width: 300px"></div>
                             </div>
                             <div class="col-md-1">
                                 <div id="pokemon-comparison-2-img"></div>
@@ -242,6 +163,7 @@
     </div>
 
 
+    <!--    page5-->
     <div class="section" id="boxOffice-sec">
         <!-- Pokemon Box Office-->
         <div class="row" style="height: 600px">
@@ -272,6 +194,8 @@
         </div>
     </div>
 
+
+    <!--    page6-->
     <div class="section" id="pokemon-go-map-intro">
         <div class="row justify-content-md-center" style="height: 600px">
             <div class="col-md-6">
@@ -299,6 +223,7 @@
         </div>
     </div>
 
+    <!--    page7-->
     <div class="section" id="map-sec">
         <!-- Pokemon Go Map-->
         <div class="row">
@@ -313,6 +238,8 @@
         </div>
     </div>
 
+
+    <!--    page8-->
     <div class="section" id="web-authors">
         <div class="row">
             <div class="col-md-12">
@@ -326,6 +253,8 @@
         </div>
     </div>
 
+
+    <!--    page9-->
     <div class="section" id="web-sources">
         <div class="row">
             <div class="col-md-12">
@@ -337,6 +266,11 @@
     </div>
 
 </div>
+
+
+
+
+
 
 
 <!-- Load JS libraries -->

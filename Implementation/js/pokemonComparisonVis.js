@@ -183,7 +183,7 @@ class PokemonComparisonVis {
                     return "\xa0".repeat(70) + vis.filteredData["Name"];
                 }
             })
-            .attr("x", 100)
+            .attr("x", 50)
             .attr("y", 0)
             // .style("font", "24px times")
 
