@@ -132,6 +132,23 @@ h2 {
 	font-family: 'DynaPuff';
 }
 
+.pokemon-comparison-title {
+	font-family: 'DynaPuff';
+	font-size: 24px;
+}
+
+.stats-category-labels {
+	font-family: 'DynaPuff';
+	font-width: 1px;
+	font-size: 16px;
+}
+
+.stats-labels {
+	font-family: 'DynaPuff';
+	font-width: 1px;
+	font-size: 16px;
+}
+
 .axis text {
 	font-family: 'DynaPuff';
 }

@@ -48,15 +48,25 @@ class PokemonComparisonVis {
         vis.svgTitle = d3.select("#" + vis.nameElement);
 
         // For Pokemon Stats
-        vis.width = document.getElementById(vis.parentElement).getBoundingClientRect().width - vis.margin.left - vis.margin.right;
+        // vis.width = document.getElementById(vis.parentElement).getBoundingClientRect().width - vis.margin.left - vis.margin.right;
+        vis.width = 500 - vis.margin.left - vis.margin.right;
         vis.height = 500 - vis.margin.top - vis.margin.bottom;
 
         // SVG drawing area for Pokemon Stats
-        vis.svg = d3.select("#" + vis.parentElement).append("svg")
-            .attr("width", vis.width + vis.margin.left + vis.margin.right)
-            .attr("height", vis.height + vis.margin.top + vis.margin.bottom)
-            .append("g")
-            .attr("transform", "translate(" + vis.margin.left + "," + vis.margin.top + ")");
+        if (vis.pokemonFlag === 1) {
+            vis.svg = d3.select("#" + vis.parentElement).append("svg")
+                .attr("width", vis.width + vis.margin.left + vis.margin.right)
+                .attr("height", vis.height + vis.margin.top + vis.margin.bottom)
+                .append("g")
+                .attr("transform", "translate(" + -100 + "," + vis.margin.top + ")");
+        } else if (vis.pokemonFlag === 2) {
+            vis.svg = d3.select("#" + vis.parentElement).append("svg")
+                .attr("width", vis.width + vis.margin.left + vis.margin.right)
+                .attr("height", vis.height + vis.margin.top + vis.margin.bottom)
+                .append("g")
+                .attr("transform", "translate(" + vis.margin.left + "," + vis.margin.top + ")");
+        }
+
 
         // Scales and axes
         vis.x = d3.scaleLinear()
@@ -168,14 +178,14 @@ class PokemonComparisonVis {
             .attr("class", "pokemon-comparison-title")
             .text(d => {
                 if (vis.pokemonFlag === 1) {
-                    return "\xa0".repeat(20) + vis.filteredData["Name"];
+                    return "\xa0".repeat(40) + vis.filteredData["Name"];
                 } else if (vis.pokemonFlag === 2) {
-                    return "\xa0".repeat(90) + vis.filteredData["Name"];
+                    return "\xa0".repeat(70) + vis.filteredData["Name"];
                 }
             })
             .attr("x", 100)
             .attr("y", 0)
-            .style("font", "24px times")
+            // .style("font", "24px times")
 
         // Draw labels of the rectangles
         vis.svg.selectAll(".stats-labels").remove()
@@ -205,7 +215,7 @@ class PokemonComparisonVis {
             .text(d => d.value)
             .attr("fill", "black")
             .attr("text-anchor", "end")
-            .style("font", "16px times")
+            // .style("font", "16px times")
             .attr("class", "stats-labels")
         vis.rectValueLabels.exit().remove();
 
@@ -223,7 +233,7 @@ class PokemonComparisonVis {
                 .text(d => d.key)
                 .attr("fill", "black")
                 .attr("text-anchor", "middle")
-                .style("font", "16px times")
+                // .style("font", "16px times")
                 .attr("class", "stats-category-labels")
             vis.rectCategoryLabels.exit().remove();
         }
@@ -234,7 +244,7 @@ class PokemonComparisonVis {
         vis.svgImg.append("img")
             .attr("src", "img/pokemonImages_basic/"+vis.filteredData["Image Name"]+".png")
             .attr("class", "comparison-pokemon-image")
-            .attr("width", 100)
+            .attr("width", 150)
     }
 
 }
