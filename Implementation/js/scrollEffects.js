@@ -2,7 +2,7 @@
 var myFullpage = new fullpage('#fullpage', {
     navigation: true,
     navigationPosition: 'right',
-    anchors: ["page1", "page2", "page3", "page4", "page5", "page6", "page7"],
+    anchors: ["page1", "page2", "page3", "page4", "page5", "page6", "page7", "page8"],
 
 
     onLeave: function(origin, destination, direction) {
