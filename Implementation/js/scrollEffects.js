@@ -2,7 +2,7 @@
 var myFullpage = new fullpage('#fullpage', {
     navigation: true,
     navigationPosition: 'right',
-    anchors: ["page1", "page2", "page3", "page4", "page5", "page6", "page7", "page8"],
+    anchors: ["page1", "page2", "page3", "page4", "page5", "page6", "page7", "page8", "page9"],
 
 
     onLeave: function(origin, destination, direction) {
@@ -70,7 +70,7 @@ var myFullpage = new fullpage('#fullpage', {
 
 //adding the action to the button
 $(document).on('click', '.pokeIcon', function(){
-    fullpage_api.moveTo('page3', 1);
+    fullpage_api.moveTo('page4', 1);
 });
 
 
