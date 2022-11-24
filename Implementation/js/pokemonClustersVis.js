@@ -11,12 +11,12 @@ class Cluster {
 
     initVis() {
         let vis = this;
-        vis.margin = { top: 20, right: 20, bottom: 200, left: 60 };
+        vis.margin = { top: 20, right: 0, bottom: 200, left: 60 };
         vis.width = document.getElementById(vis.parentElement).getBoundingClientRect().width - vis.margin.left - vis.margin.right;
-        vis.height = 500 - vis.margin.top - vis.margin.bottom;
+        vis.height = 980 - vis.margin.top - vis.margin.bottom;
 
 
-        vis.diameter = 500    // d3.min([vis.height, vis.width]);
+        vis.diameter = 980    // d3.min([vis.height, vis.width]);
         // SVG drawing area
         vis.realSvg = d3.select("#" + vis.parentElement).append("svg")
             .attr("width", vis.width + vis.margin.left + vis.margin.right)
@@ -295,13 +295,13 @@ class Cluster {
             })
             .attr("x", function(d){
                 if (!d.children) {
-                    return -5;
+                    return -13;
                 }
                else return d.x;
             })
             .attr("y", function(d){
                 if (!d.children) {
-                    return -5;
+                    return -14;
                 }
                 else return d.y;
             })

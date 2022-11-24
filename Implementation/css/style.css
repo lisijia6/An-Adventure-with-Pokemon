@@ -86,7 +86,7 @@ h2 {
 	max-width:120px;
 	max-height:120px;
 	width:100%;
-	opacity: 0.5;
+	/*opacity: 0.5;*/
 }
 
 .chart-title-bold {
@@ -201,6 +201,7 @@ h2 {
 
 .text-boxes-1 {
 	background-image: url("../img/utils/chatbox.jpg");
+	width: 350px;
 	height: 400px;
 }
 .text-boxes-2 {
