@@ -208,6 +208,12 @@ h2 {
 	background-image: url("../img/utils/chatbox2.jpg");
 	height: 300px;
 }
+.text-boxes-3 {
+	background-image: url("../img/utils/chatbox.jpg");
+	width:120%;
+	height:50%;
+	margin-top:120px
+}
 
 .comparison-pokemon-image-left {
 	position: absolute;

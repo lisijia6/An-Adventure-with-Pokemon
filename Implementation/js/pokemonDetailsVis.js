@@ -37,16 +37,54 @@ class PokemonDetailsVis {
         d3.select("#win-over").html("");
         d3.select("#lose-to").html("");
 
+        // add chat boxes
+        vis.chat1 = new Typed(".detail-chat-1", {
+            strings: ["How strong this Pokemon is?"],
+            typeSpeed: 50,
+            backSpeed: 150,
+            loop: false
+        })
+        vis.chat2 = new Typed(".detail-chat-2", {
+            strings: ["Check out the Pokemon card for details, including its name, type(s), strength scores, and more!"],
+            typeSpeed: 50,
+            backSpeed: 150,
+            loop: false
+        })
+        vis.chat3 = new Typed(".detail-chat-3", {
+            strings: ["This is so cool! I'm also wondering how it compares with other Pokemons."],
+            typeSpeed: 50,
+            backSpeed: 150,
+            loop: false
+        })
+        vis.chat4 = new Typed(".detail-chat-4", {
+            strings: ["You can click on Pokemons it loses to or win over to compare them!"],
+            typeSpeed: 50,
+            backSpeed: 150,
+            loop: false
+        })
+
+        let winBoxMarginLeft = 60,
+            loseBoxMarginLeft = 180,
+            boxMarginTop = 30,
+            boxHeight = 260,
+            boxWidth = 325;
+
+        let pokeMarginTop = 20,
+            titleHeight = 50;
+
         vis.winDiv = d3.select("#win-over").append("div")
-            .style("width","325px")
-            .style("height","800px")
+            .style("width",`${boxWidth}px`)
+            .style("margin-top",`${boxMarginTop}px`)
+            // .style("margin-left",`${winBoxMarginLeft}px`)
+            .style("height",`${boxHeight}px`)
             .style("background-color","#F6F5E1")
             .style("border-radius","25px");
 
         vis.loseDiv = d3.select("#lose-to")
-            .style("width","325px")
-            .style("margin-left","50px")
-            .style("height","800px")
+            .style("width",`${boxWidth}px`)
+            .style("margin-top",`${boxMarginTop}px`)
+            .style("margin-left",`10px`)
+            .style("height",`${boxHeight}px`)
             .style("background-color","#FFF0F3")
             .style("border-radius","25px");
 
@@ -68,9 +106,10 @@ class PokemonDetailsVis {
 
             vis.winPokemon = vis.winDiv.append("div")
                 .style("class","winner-pokemons")
-                .style("height","700px")
+                .style("height",`${boxHeight-pokeMarginTop-titleHeight}px`)
                 .style("overflow","scroll")
-                .style("padding","20px");
+                .style("margin-top",`${pokeMarginTop}`)
+                .style("margin-left","20px");
 
             vis.winTitle.append("p").text("WIN OVER")
                 .style("font-size","18px")
@@ -126,10 +165,10 @@ class PokemonDetailsVis {
 
             vis.losePokemon = vis.loseDiv.append("div")
                 .style("class","loser-pokemons")
-                .style("height","700px")
+                .style("height",`${boxHeight-pokeMarginTop-titleHeight}px`)
                 .style("overflow","scroll")
-                .style("margin-top","20px")
-                .style("margin-left","5px");
+                .style("margin-top",`${pokeMarginTop}`)
+                .style("margin-left","10px");
 
             vis.loseTitle.append("p").text("LOSE TO")
                 .style("font-size","18px")

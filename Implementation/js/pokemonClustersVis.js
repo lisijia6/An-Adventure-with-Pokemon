@@ -149,13 +149,14 @@ class Cluster {
         vis.detailDiv = d3.select("#pokemon-details-features").append("div")
             .attr("id","#card-details");
 
-        let cardMarginLeft = 50;
+        let cardMarginLeft = 0,
+            cardMarginTop = 60;
 
         vis.cardSvg = vis.detailDiv.append("svg")
             .attr("id","card-svg-area")
             .attr("width",400)
             .attr("height",600)
-            .attr("transform",`translate(${cardMarginLeft},0)`);
+            .attr("transform",`translate(${cardMarginLeft},${cardMarginTop})`);
 
         vis.cardSvg
             .append("image")
@@ -173,14 +174,14 @@ class Cluster {
         vis.cardSvg
             .append("text")
             .text(d.data.name.toUpperCase())
-            .attr("transform",`translate(${cardMarginLeft+40},52)`)
+            .attr("transform",`translate(${cardMarginLeft+150},${cardMarginTop-8})`)
             .attr("font-size","24px")
             .attr("fill","#00003B");
 
         vis.cardSvg
             .append("text")
             .text(`G${d.data.generation}`)
-            .attr("transform",`translate(${cardMarginLeft-25},70)`)
+            .attr("transform",`translate(${cardMarginLeft+23},${cardMarginTop+10})`)
             .attr("font-size","30px")
             .attr("fill","#00003B");
 
@@ -205,7 +206,7 @@ class Cluster {
             .attr("id","radar-svg-area")
             .attr("width", 300)
             .attr("height", 200)
-            .attr('transform', `translate(150, -280)`);
+            .attr('transform', `translate(${100+cardMarginLeft}, ${-280+cardMarginTop})`);
 
         vis.radialScale = d3.scaleLinear()
             .domain([0,domainMax])
