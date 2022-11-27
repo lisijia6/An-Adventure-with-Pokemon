@@ -43,22 +43,6 @@ class PokemonDetailsVis {
             .style("background-color","#F6F5E1")
             .style("border-radius","25px");
 
-        vis.winTitle = vis.winDiv.append("div")
-            .style("class","win-over-title")
-            .style("height","50px");
-
-        vis.winPokemon = vis.winDiv.append("div")
-            .style("class","winner-pokemons")
-            .style("height","700px")
-            .style("overflow","scroll")
-            .style("padding","20px");
-
-        vis.winTitle.append("p").text("WIN OVER")
-            .style("font-size","18px")
-            .style("padding","20px")
-            .style("margin-left","100px")
-            .style("color","#5579C6");
-
         vis.loseDiv = d3.select("#lose-to")
             .style("width","325px")
             .style("margin-left","50px")
@@ -66,21 +50,6 @@ class PokemonDetailsVis {
             .style("background-color","#FFF0F3")
             .style("border-radius","25px");
 
-        vis.loseTitle = vis.loseDiv.append("div")
-            .style("class","lose-to-title")
-            .style("height","50px");
-
-        vis.losePokemon = vis.loseDiv.append("div")
-            .style("class","loser-pokemons")
-            .style("height","700px")
-            .style("overflow","scroll")
-            .style("padding","10px");
-
-        vis.loseTitle.append("p").text("LOSE TO")
-            .style("font-size","18px")
-            .style("padding","20px")
-            .style("margin-left","100px")
-            .style("color","#FF5349");
 
         // add win and lose pokemons
         // find the combats that this pokemon has won
@@ -92,74 +61,122 @@ class PokemonDetailsVis {
             return (t.First_pokemon === d.data.name || t.Second_pokemon === d.data.name) && t.Winner!==d.data.name;
         });
 
-        let winOverList = [];
-        let loseToList = [];
+        if (vis.wins.length !== 0){
+            vis.winTitle = vis.winDiv.append("div")
+                .style("class","win-over-title")
+                .style("height","50px");
 
-        vis.wins.forEach(function (t, i) {
-            let firstPoke = t.First_pokemon,
-                secondPoke = t.Second_pokemon;
+            vis.winPokemon = vis.winDiv.append("div")
+                .style("class","winner-pokemons")
+                .style("height","700px")
+                .style("overflow","scroll")
+                .style("padding","20px");
 
-            if (firstPoke!==d.data.name){
-                if (!winOverList.includes(firstPoke)){
-                    winOverList.push(firstPoke)
+            vis.winTitle.append("p").text("WIN OVER")
+                .style("font-size","18px")
+                .style("padding","20px")
+                .style("margin-left","100px")
+                .style("color","#5579C6");
+
+            let winOverList = [];
+
+            vis.wins.forEach(function (t, i) {
+                let firstPoke = t.First_pokemon,
+                    secondPoke = t.Second_pokemon;
+
+                if (firstPoke!==d.data.name){
+                    if (!winOverList.includes(firstPoke)){
+                        winOverList.push(firstPoke)
+                    }
+                } else {
+                    if (!winOverList.includes(secondPoke)){
+                        winOverList.push(secondPoke)
+                    }
                 }
-            } else {
-                if (!winOverList.includes(secondPoke)){
-                    winOverList.push(secondPoke)
+            })
+
+            winOverList.forEach(function(t,i){
+                vis.winPokemon.append("img")
+                    .attr("src", `${vis.imageDir}${t.toLowerCase()}.png`)
+                    .style("margin","10px 10px 10px 10px")
+                    .attr("width", 50)
+                    .on("click", function() {
+                        pokemonCompareVis1.updateVis(d.data.name);
+                        pokemonCompareVis2.updateVis(t.toLowerCase());
+                        document.getElementById('centerDIV').style.display = 'block';
+                    })
+                    .on('mouseover', function (d, i) {
+                        d3.select(this).style("cursor", "pointer");
+                    })
+                    .on('mouseout', function (d, i) {
+                        d3.select(this).style("cursor", "default");
+                    })
+            })
+        } else {
+            vis.winDiv.append("div")
+                .style("id","no-win-data")
+                .append("p")
+                .text("Sorry, there is no combat data available for this pokemon :(");
+        };
+
+        if (vis.loses.length !== 0) {
+            vis.loseTitle = vis.loseDiv.append("div")
+                .style("class","lose-to-title")
+                .style("height","50px");
+
+            vis.losePokemon = vis.loseDiv.append("div")
+                .style("class","loser-pokemons")
+                .style("height","700px")
+                .style("overflow","scroll")
+                .style("margin-top","20px")
+                .style("margin-left","5px");
+
+            vis.loseTitle.append("p").text("LOSE TO")
+                .style("font-size","18px")
+                .style("padding","20px")
+                .style("margin-left","100px")
+                .style("color","#FF5349");
+
+            let loseToList = [];
+
+            vis.loses.forEach(function (t, i) {
+                let firstPoke = t.First_pokemon,
+                    secondPoke = t.Second_pokemon;
+
+                if (firstPoke!==d.data.name){
+                    if (!loseToList.includes(firstPoke)){
+                        loseToList.push(firstPoke)
+                    }
+                } else {
+                    if (!loseToList.includes(secondPoke)){
+                        loseToList.push(secondPoke)
+                    }
                 }
-            }
-        })
+            })
 
-        winOverList.forEach(function(t,i){
-            vis.winPokemon.append("img")
-                .attr("src", `${vis.imageDir}${t.toLowerCase()}.png`)
-                .style("margin","10px 10px 10px 10px")
-                .attr("width", 50)
-                .on("click", function() {
-                    pokemonCompareVis1.updateVis(d.data.name);
-                    pokemonCompareVis2.updateVis(t.toLowerCase());
-                    document.getElementById('centerDIV').style.display = 'block';
-                })
-                .on('mouseover', function (d, i) {
-                    d3.select(this).style("cursor", "pointer");
-                })
-                .on('mouseout', function (d, i) {
-                    d3.select(this).style("cursor", "default");
-                })
-        })
-
-        vis.loses.forEach(function (t, i) {
-            let firstPoke = t.First_pokemon,
-                secondPoke = t.Second_pokemon;
-
-            if (firstPoke!==d.data.name){
-                if (!loseToList.includes(firstPoke)){
-                    loseToList.push(firstPoke)
-                }
-            } else {
-                if (!loseToList.includes(secondPoke)){
-                    loseToList.push(secondPoke)
-                }
-            }
-        })
-
-        loseToList.forEach(function(t,i){
-            vis.losePokemon.append("img")
-                .attr("src", `${vis.imageDir}${t.toLowerCase()}.png`)
-                .style("margin","10px 10px 10px 10px")
-                .attr("width", 50)
-                .on("click", function() {
-                    pokemonCompareVis1.updateVis(d.data.name);
-                    pokemonCompareVis2.updateVis(t.toLowerCase());
-                    document.getElementById('centerDIV').style.display = 'block';
-                })
-                .on('mouseover', function (d, i) {
-                    d3.select(this).style("cursor", "pointer");
-                })
-                .on('mouseout', function (d, i) {
-                    d3.select(this).style("cursor", "default");
-                })
-        })
+            loseToList.forEach(function(t,i){
+                vis.losePokemon.append("img")
+                    .attr("src", `${vis.imageDir}${t.toLowerCase()}.png`)
+                    .style("margin","10px 10px 10px 10px")
+                    .attr("width", 50)
+                    .on("click", function() {
+                        pokemonCompareVis1.updateVis(d.data.name);
+                        pokemonCompareVis2.updateVis(t.toLowerCase());
+                        document.getElementById('centerDIV').style.display = 'block';
+                    })
+                    .on('mouseover', function (d, i) {
+                        d3.select(this).style("cursor", "pointer");
+                    })
+                    .on('mouseout', function (d, i) {
+                        d3.select(this).style("cursor", "default");
+                    })
+            })
+        } else {
+            vis.loseDiv.append("div")
+                .style("id","no-lose-data")
+                .append("p")
+                .text("Sorry, there is no combat data available for this pokemon :(");
+        };
 
         const overlay = document.getElementById("overlay");
 
