@@ -294,7 +294,7 @@ class Cluster {
             .datum(vis.coordinates)
             .attr("d",vis.line)
             .attr("fill", "#FFD700")
-            .attr("opacity", 0.7);
+            .attr("opacity", 0.8);
 
         vis.radarTooltips = vis.radarSvg.append("g")
             .attr("class","feature-tooltips");
