@@ -94,7 +94,7 @@ function createVis(data) {
         '            <img src="img/utils/numEight.jpg" alt="Eight" width="54" height="53" onclick="pokeCluster.wrangleData(8); document.getElementById(\'genNum\').innerText=8;" ' +
         'onmouseover="d3.select(this).style(\'cursor\', \'pointer\');" onmouseout="d3.select(this).style(\'cursor\', \'default\');">'
 
-    pokeDetails = new PokemonDetailsVis("pokemon-details-images", pokemonStatsData.slice(0, 12), battleData, "img/pokemonImages_basic/");
+    pokeDetails = new PokemonDetailsVis("pokemon-details-features", battleData, "img/pokemonImages_basic/");
 }
 
 // change comparison pokemon based on select box
@@ -107,7 +107,9 @@ function pokemonChange(value) {
         pokemonCompareVis2.wrangleData();
     }
 }
+
 let features = ["hp","speed","attack","sp_attack","defense","sp_defense"]
+let featureNames = ["HP","Speed","Attack","Special Attack","Defense","Special Defense"]
 
 function closePanel() {
     document.getElementById('centerDIV').style.display = 'none';

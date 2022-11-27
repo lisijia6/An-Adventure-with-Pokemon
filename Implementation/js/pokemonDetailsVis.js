@@ -1,11 +1,9 @@
 class PokemonDetailsVis {
 
-    constructor(parentElement, statData, combatData, imageDir) {
+    constructor(parentElement, combatData, imageDir) {
         this.parentElement = parentElement;
         this.imageDir = imageDir;
-        this.statData = statData;
         this.combatData = combatData;
-        this.displayData = statData;
 
         this.initVis()
     }
@@ -20,14 +18,6 @@ class PokemonDetailsVis {
         vis.width = document.getElementById(vis.parentElement).getBoundingClientRect().width - vis.margin.left - vis.margin.right;
         vis.height = document.getElementById(vis.parentElement).getBoundingClientRect().height - vis.margin.top - vis.margin.bottom;
 
-        vis.imageDiv = d3.select("#" + vis.parentElement).append("div")
-            .attr("id","pokemon-detail-images-all")
-            .attr("width", vis.width)
-            .attr("height", vis.height)
-            .attr('transform', `translate (${vis.margin.left}, ${vis.margin.top})`);
-
-        vis.winDiv = d3.select("#win-over");
-        vis.loseDiv = d3.select("#lose-to");
 
         // vis.wrangleData();
 
@@ -43,44 +33,54 @@ class PokemonDetailsVis {
         let vis = this;
         console.log("d", d)
         // clear for new click
-        vis.imageDiv.html("");
-        vis.winDiv.html("");
-        vis.winDiv.append("p").text("WIN OVER:")
-        vis.loseDiv.html("");
-        vis.loseDiv.append("p").text("LOSE TO:")
 
-        vis.imageDiv.append("img")
-            .attr("id",d.data.name)
-            .attr("src", vis.imageDir+d.data.image_file)
-            .style("margin","10px 10px 10px 10px")
-            .attr("width", 200)
-            .attr("border-radius","50%")
-            .attr("border","1px solid black")
-            // .on('mouseover', function (d, i) {
-            //     d3.select(this).style("cursor", "pointer");
-            // })
-            // .on('mouseout', function (d, i) {
-            //     d3.select(this).style("cursor", "default");
-            // })
-        vis.imageDiv.append("p")
-            .text(d.data.name.toUpperCase())
-            .style("padding","10px")
-            .style("margin-left","15px")
-            .style("font-size","20px");
-        vis.imageDiv.append("p").text("PokeDex: "+d.data.pokedex_number).style("margin-left","15px");
-        // vis.imageDiv.append("p").text("Species: " + d.data.species);
-        vis.imageDiv.append("p").text("Primary Type: " + d.data.type_1).style("margin-left","15px");
-        vis.imageDiv.append("p").text(
-            function() {
-                if (d.data.type_2==="") {
-                    return "Secondary Type: N/A";
-                }
-                else return "Secondary Type: " + d.data.type_2;
-            }
+        d3.select("#win-over").html("");
+        d3.select("#lose-to").html("");
 
-        ).style("margin-left","15px");
-        vis.imageDiv.append("p").text("Generation: " + d.data.generation).style("margin-left","15px");
+        vis.winDiv = d3.select("#win-over").append("div")
+            .style("width","325px")
+            .style("height","800px")
+            .style("background-color","#F6F5E1")
+            .style("border-radius","25px");
 
+        vis.winTitle = vis.winDiv.append("div")
+            .style("class","win-over-title")
+            .style("height","50px");
+
+        vis.winPokemon = vis.winDiv.append("div")
+            .style("class","winner-pokemons")
+            .style("height","700px")
+            .style("overflow","scroll")
+            .style("padding","20px");
+
+        vis.winTitle.append("p").text("WIN OVER")
+            .style("font-size","18px")
+            .style("padding","20px")
+            .style("margin-left","100px")
+            .style("color","#5579C6");
+
+        vis.loseDiv = d3.select("#lose-to")
+            .style("width","325px")
+            .style("margin-left","50px")
+            .style("height","800px")
+            .style("background-color","#FFF0F3")
+            .style("border-radius","25px");
+
+        vis.loseTitle = vis.loseDiv.append("div")
+            .style("class","lose-to-title")
+            .style("height","50px");
+
+        vis.losePokemon = vis.loseDiv.append("div")
+            .style("class","loser-pokemons")
+            .style("height","700px")
+            .style("overflow","scroll")
+            .style("padding","10px");
+
+        vis.loseTitle.append("p").text("LOSE TO")
+            .style("font-size","18px")
+            .style("padding","20px")
+            .style("margin-left","100px")
+            .style("color","#FF5349");
 
         // add win and lose pokemons
         // find the combats that this pokemon has won
@@ -92,30 +92,32 @@ class PokemonDetailsVis {
             return (t.First_pokemon === d.data.name || t.Second_pokemon === d.data.name) && t.Winner!==d.data.name;
         });
 
+        let winOverList = [];
+        let loseToList = [];
 
         vis.wins.forEach(function (t, i) {
-            vis.winDiv.append("img")
-                .attr("src", function(){
-                    if (t.First_pokemon!==d.data.name) {
-                        return vis.imageDir+t.First_pokemon.toLowerCase()+".png";
-                    }
-                    else {
-                        return vis.imageDir+t.Second_pokemon.toLowerCase()+".png";
-                    }
+            let firstPoke = t.First_pokemon,
+                secondPoke = t.Second_pokemon;
 
-                })
+            if (firstPoke!==d.data.name){
+                if (!winOverList.includes(firstPoke)){
+                    winOverList.push(firstPoke)
+                }
+            } else {
+                if (!winOverList.includes(secondPoke)){
+                    winOverList.push(secondPoke)
+                }
+            }
+        })
+
+        winOverList.forEach(function(t,i){
+            vis.winPokemon.append("img")
+                .attr("src", `${vis.imageDir}${t.toLowerCase()}.png`)
                 .style("margin","10px 10px 10px 10px")
                 .attr("width", 50)
-                .attr("border-radius","50%")
-                .attr("border","1px solid black")
                 .on("click", function() {
                     pokemonCompareVis1.updateVis(d.data.name);
-                    if (t.First_pokemon!==d.data.name) {
-                        pokemonCompareVis2.updateVis(t.First_pokemon.toLowerCase());
-                    }
-                    else {
-                        pokemonCompareVis2.updateVis(t.Second_pokemon.toLowerCase());
-                    }
+                    pokemonCompareVis2.updateVis(t.toLowerCase());
                     document.getElementById('centerDIV').style.display = 'block';
                 })
                 .on('mouseover', function (d, i) {
@@ -127,24 +129,36 @@ class PokemonDetailsVis {
         })
 
         vis.loses.forEach(function (t, i) {
-            vis.loseDiv.append("img")
-                .attr("src", vis.imageDir+t.Winner.toLowerCase()+".png")
+            let firstPoke = t.First_pokemon,
+                secondPoke = t.Second_pokemon;
+
+            if (firstPoke!==d.data.name){
+                if (!loseToList.includes(firstPoke)){
+                    loseToList.push(firstPoke)
+                }
+            } else {
+                if (!loseToList.includes(secondPoke)){
+                    loseToList.push(secondPoke)
+                }
+            }
+        })
+
+        loseToList.forEach(function(t,i){
+            vis.losePokemon.append("img")
+                .attr("src", `${vis.imageDir}${t.toLowerCase()}.png`)
                 .style("margin","10px 10px 10px 10px")
                 .attr("width", 50)
-                .attr("border-radius","50%")
-                .attr("border","1px solid black")
-                .attr("data-modal-target", "#modal")
                 .on("click", function() {
-                    pokemonCompareVis1.updateVis(t.Winner.toLowerCase());
-                    pokemonCompareVis2.updateVis(d.data.name);
+                    pokemonCompareVis1.updateVis(d.data.name);
+                    pokemonCompareVis2.updateVis(t.toLowerCase());
                     document.getElementById('centerDIV').style.display = 'block';
                 })
-            .on('mouseover', function (d, i) {
-                d3.select(this).style("cursor", "pointer");
-            })
-            .on('mouseout', function (d, i) {
-                d3.select(this).style("cursor", "default");
-            })
+                .on('mouseover', function (d, i) {
+                    d3.select(this).style("cursor", "pointer");
+                })
+                .on('mouseout', function (d, i) {
+                    d3.select(this).style("cursor", "default");
+                })
         })
 
         const overlay = document.getElementById("overlay");

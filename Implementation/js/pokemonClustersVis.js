@@ -142,105 +142,210 @@ class Cluster {
 
     showDetails(d) {
         let vis = this;
-        vis.selectedName = d.data.name;
+        console.log("card-d",d);
 
-        vis.pokemon = vis.displayData.filter(function (d) {
-            return d.name === vis.selectedName;
-        });
-        d3.selectAll("#pokemon-detail-area").remove();
-        vis.detailDiv = d3.select("#pokemon-details-box").append("div")
-            .style("height", "500px")
-            .style("width", "400px")
-            .attr("id","pokemon-detail-area")
-        vis.detailSvg = vis.detailDiv.append("svg")
+        d3.select("#pokemon-details-features").html("");
+
+        vis.detailDiv = d3.select("#pokemon-details-features").append("div")
+            .attr("id","#card-details");
+
+        let cardMarginLeft = 50;
+
+        vis.cardSvg = vis.detailDiv.append("svg")
+            .attr("id","card-svg-area")
+            .attr("width",400)
+            .attr("height",600)
+            .attr("transform",`translate(${cardMarginLeft},0)`);
+
+        vis.cardSvg
+            .append("image")
+            .attr("class","pokemon-image-svg")
+            .attr("xlink:href", "img/utils/pokemonCard.png")
+            .attr("width","100%");
+
+        vis.cardSvg
+            .append("image")
+            .attr("xlink:href",'img/pokemonImages_basic/'+d.data.image_file)
+            .attr("x",120)
+            .attr("y",100)
+            .attr("width",150);
+
+        vis.cardSvg
+            .append("text")
+            .text(d.data.name.toUpperCase())
+            .attr("transform",`translate(${cardMarginLeft+40},52)`)
+            .attr("font-size","24px")
+            .attr("fill","#00003B");
+
+        vis.cardSvg
+            .append("text")
+            .text(`G${d.data.generation}`)
+            .attr("transform",`translate(${cardMarginLeft-25},70)`)
+            .attr("font-size","30px")
+            .attr("fill","#00003B");
+
+        let featureValues = [];
+        for (let i = 0; i < features.length; i++) {
+            let ft_name = features[i];
+            featureValues.push(+d.data[ft_name])
+        }
+        let featureMax = Math.max(...featureValues);
+        console.log("featureMax",featureMax);
+
+        let domainMax = 100;
+        if (featureMax >= 100 && featureMax < 150) {
+            domainMax = 150
+        } else if (featureMax >= 150 && featureMax < 200) {
+            domainMax = 200
+        } else if (featureMax >= 200 && featureMax < 250) {
+            domainMax = 250
+        }
+
+        vis.radarSvg = vis.detailDiv.append("svg")
+            .attr("id","radar-svg-area")
             .attr("width", 300)
             .attr("height", 200)
-            .attr('transform', `translate (100, 0)`);
+            .attr('transform', `translate(150, -280)`);
 
         vis.radialScale = d3.scaleLinear()
-            .domain([0,150])
+            .domain([0,domainMax])
             .range([0,80]);
 
-        vis.ticks = [30,60,90,120,150];
+        let initialValue = domainMax/5;
+        vis.ticks = [];
+
+        for (let n = initialValue; n <= domainMax; n += initialValue) {
+            vis.ticks.push(n);
+        }
+        console.log("ticksArray",vis.ticks);
+
+        let radarCX = 100;
+        let radarCY = 100;
 
         vis.ticks.forEach(t =>
-            vis.detailSvg.append("circle")
-                .attr("cx", 100)
-                .attr("cy", 100)
+            vis.radarSvg.append("circle")
+                .attr("cx", radarCX)
+                .attr("cy", radarCY)
                 .attr("fill", "none")
-                .attr("stroke", "gray")
+                .attr("stroke", "#2E5984")
+                .attr("stroke-width","2px")
+                .attr("opacity",0.3)
                 .attr("r", vis.radialScale(t))
         );
 
-        vis.ticks.forEach(t =>
-            vis.detailSvg.append("text")
-                .attr("x", 105)
-                .attr("y", 100 - vis.radialScale(t))
-                .text(t.toString())
-        );
+        vis.radarRange = vis.radarSvg.append("g")
+            .attr("class","radar-range-labels")
+            .attr("text-anchor","middle");
+
+        vis.radarNames = vis.cardSvg.append("g")
+            .attr("class","feature-names")
+            .attr("text-anchor","start")
+            .attr("fill","#012231");
+
+        let radarNamesCX = [190, 275, 275, 160, 75, 30]
+        let radarNamesCY = [335, 380, 470, 515, 470, 380]
+
+        for (let i = 0; i < features.length; i++) {
+            vis.radarNames
+                .append("text")
+                .attr("class","feature-name")
+                .attr("id",`feature-${featureNames[i]}`)
+                .text(featureNames[i])
+                .attr("x",radarNamesCX[i])
+                .attr("y",radarNamesCY[i])
+                .attr("font-size","12px");
+        }
+
+        // vis.ticks.forEach(t =>
+        //     vis.radarRange.append("text")
+        //         .attr("x", radarCX)
+        //         .attr("y", radarCY - vis.radialScale(t))
+        //         .text(t.toString())
+        // );
+
+        vis.line = d3.line()
+            .x(d => d.x)
+            .y(d => d.y);
+
+        vis.coordinates = vis.getPathCoordinates(vis, d.data, 100);
+        console.log("coordinates",vis.coordinates)
 
         for (let i = 0; i < features.length; i++) {
             let ft_name = features[i];
             let angle = (Math.PI / 2) + (2 * Math.PI * i / features.length);
-            let line_coordinate = vis.angleToCoordinate(vis,angle, 150,100);
-            let label_coordinate = vis.angleToCoordinate(vis, angle, 155, 100);
+            let line_coordinate = vis.angleToCoordinate(vis, angle, domainMax,100);
+
+            //let label_coordinate = vis.angleToCoordinate(vis, angle, domainMax+5, 100);
 
             //draw axis line
-            vis.detailSvg.append("line")
+            vis.radarSvg.append("line")
                 .attr("x1", 100)
                 .attr("y1", 100)
                 .attr("x2", line_coordinate.x)
                 .attr("y2", line_coordinate.y)
-                .attr("stroke","black");
-
-            //draw axis label
-            vis.detailSvg.append("text")
-                .attr("x", label_coordinate.x-15)
-                .attr("y", label_coordinate.y-5)
-                .text(ft_name);
-
-            vis.line = d3.line()
-                .x(d => d.x)
-                .y(d => d.y);
-
-            vis.coordinates = vis.getPathCoordinates(vis, vis.pokemon, 100);
-
-            //draw the path element
-            vis.detailSvg.append("path")
-                .datum(vis.coordinates)
-                .attr("d",vis.line)
-                .attr("stroke-width", 3)
-                .attr("stroke", "orange")
-                .attr("fill", "orange")
-                .attr("stroke-opacity", 1)
-                .attr("opacity", 0.2);
+                .attr("stroke","#2E5984")
+                .attr("stroke-width","2px")
+                .attr("opacity",0.3);
 
         }
 
-        vis.detailTable = vis.detailDiv.append("table")
-            .attr("class","table table-striped table-sm")
-            .style("width","200px")
-            .attr("id","pokemon-detail-table")
-            .style("margin-left","100px");
+        //draw the path element
+        vis.radarSvg.append("path")
+            .datum(vis.coordinates)
+            .attr("d",vis.line)
+            .attr("fill", "#FFD700")
+            .attr("opacity", 0.7);
 
-        vis.thead = vis.detailTable.append("thead");
-        vis.tbody = vis.detailTable.append("tbody");
+        vis.radarTooltips = vis.radarSvg.append("g")
+            .attr("class","feature-tooltips");
 
+        vis.featureValueLabels = vis.radarSvg.append("g")
+            .attr("class","feature-values")
+            .attr("text-anchor","middle")
+            .attr("fill","white")
+            .attr("font-size","10px");
 
         for (let i = 0; i < features.length; i++) {
-            let ft_name = features[i];
+            vis.radarTooltips.append("circle")
+                .attr("cx", vis.coordinates[i].x)
+                .attr("cy", vis.coordinates[i].y)
+                .attr("r", 8)
+                .attr("fill", "#EC9706");
 
-            let row = vis.tbody.append("tr")
-                .attr("class", `info-row-${i}`);
-
-            row.append("td")
-                .text(ft_name)
-                .attr("class", "table-header");
-
-            row.append("td")
-                .text(vis.pokemon[0][ft_name])
-                .attr("class", "table-content");
+            vis.featureValueLabels.append("text")
+                .text(featureValues[i])
+                .attr("x", vis.coordinates[i].x)
+                .attr("y", vis.coordinates[i].y+3);
         }
+
+        if (d.data.type_2 === "") {
+            vis.cardSvg.append("image")
+                .attr("xlink:href", `img/typeImages/${d.data.type_1.toLowerCase()}.png`)
+                .attr("x",275)
+                .attr("y",260)
+                .attr("width",70)
+        } else {
+            vis.cardSvg.append("image")
+                .attr("xlink:href", `img/typeImages/${d.data.type_1.toLowerCase()}.png`)
+                .attr("x",275)
+                .attr("y",230)
+                .attr("width",70)
+
+            vis.cardSvg.append("image")
+                .attr("xlink:href", `img/typeImages/${d.data.type_2.toLowerCase()}.png`)
+                .attr("x",275)
+                .attr("y",260)
+                .attr("width",70)
+        }
+        console.log("Pokemon primary type",d.data.type_1)
+
+        vis.cardSvg.append("text")
+            .text(`Pokedex No. ${d.data.pokedex_number}`)
+            .attr("x",160)
+            .attr("y",313)
+            .attr("font-size","10px")
+            .attr("fill","#012231");
+
     }
 
     angleToCoordinate(vis, angle, value, padding) {
@@ -254,7 +359,7 @@ class Cluster {
         for (let i = 0; i < features.length; i++){
             let ft_name = features[i];
             let angle = (Math.PI / 2) + (2 * Math.PI * i / features.length);
-            let coor = vis.angleToCoordinate(vis, angle, data_point[0][ft_name], padding)
+            let coor = vis.angleToCoordinate(vis, angle, data_point[ft_name], padding)
             coordinates.push(coor);
         }
         return coordinates;
