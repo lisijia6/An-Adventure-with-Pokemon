@@ -43,7 +43,7 @@ class PokemonDetailsVis {
             backSpeed: 150,
             loop: false
         })
-        // vis.wrangleData();
+        vis.wrangleData({data:{name: "Charmander"}});
 
     }
 

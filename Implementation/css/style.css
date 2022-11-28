@@ -2,6 +2,7 @@
 
 body {
 	font-family: 'Neuton', serif;
+	cursor:url(http://www.rw-designer.com/cursor-extern.php?id=22253), auto;
 }
 
 h1 {
@@ -227,8 +228,21 @@ h2 {
 	right: 300px;
 }
 
-
-.nopadding {
-	padding: 0 !important;
-	margin: 0 !important;
+#hand-pointer-img {
+	animation: updown 2s ease infinite;
 }
+
+@keyframes updown {
+	0% {
+		transform: translateY(-30%);
+	}
+
+	50% {
+		transform: translateY(20%);
+	}
+
+	100% {
+		transform: translateY(-30%);
+	}
+}
+

@@ -78,6 +78,8 @@ class Cluster {
         })
 
 
+        // initialize the card with charmander
+        vis.showDetails({data:{name: "Charmander", generation:"1", image_file: "charmander.png",type_1:"Fire", type_2:"",hp: "39",speed: "65",attack:"52",sp_attack:"60",defense:"43",sp_defense: "50"}});
 
         vis.wrangleData(0);
     }
