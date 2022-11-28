@@ -18,25 +18,6 @@ class PokemonDetailsVis {
         vis.width = document.getElementById(vis.parentElement).getBoundingClientRect().width - vis.margin.left - vis.margin.right;
         vis.height = document.getElementById(vis.parentElement).getBoundingClientRect().height - vis.margin.top - vis.margin.bottom;
 
-
-        // vis.wrangleData();
-
-    }
-
-    wrangleData(d) {
-        let vis = this;
-
-        vis.updateVis(d)
-    }
-
-    updateVis(d) {
-        let vis = this;
-        console.log("d", d)
-        // clear for new click
-
-        d3.select("#win-over").html("");
-        d3.select("#lose-to").html("");
-
         // add chat boxes
         vis.chat1 = new Typed(".detail-chat-1", {
             strings: ["How strong this Pokemon is?"],
@@ -62,6 +43,24 @@ class PokemonDetailsVis {
             backSpeed: 150,
             loop: false
         })
+        // vis.wrangleData();
+
+    }
+
+    wrangleData(d) {
+        let vis = this;
+
+        vis.updateVis(d)
+    }
+
+    updateVis(d) {
+        let vis = this;
+        console.log("d", d)
+        // clear for new click
+
+        d3.select("#win-over").html("");
+        d3.select("#lose-to").html("");
+
 
         let winBoxMarginLeft = 60,
             loseBoxMarginLeft = 180,

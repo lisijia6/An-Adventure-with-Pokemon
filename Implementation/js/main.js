@@ -1,6 +1,7 @@
 // Function to convert date objects to strings or reverse
 let dateFormatter = d3.timeFormat("%Y-%m-%d");
 let dateParser = d3.timeParse("%m/%d/%Y"); // d3.timeParse("%Y-%m-%d");
+let dateParser2 = d3.timeParse("%Y");
 
 // (1) Load data with promises
 
@@ -47,6 +48,14 @@ function createVis(data) {
         return d
     })
     filmData.sort((a,b)=>{return a.releaseDateUS - b.releaseDateUS})
+    // clean and sort video game data
+    videoGamesData = videoGamesData.map(function(d) {
+        d.unitsSold = +d.unitsSold;
+        d.year = dateParser2(d.year);
+        d.imageID = "img/videoGamesImages/" + d.imageID + ".jpg";
+        return d;
+    })
+    videoGamesData.sort((a,b)=>{return a.year - b.year})
 
 
     // clean world
@@ -64,6 +73,7 @@ function createVis(data) {
         "pokemon-comparison-2-img",  "pokemon-comparison-2-name", pokemonStatsData,2);
 
     boxOffice = new BoxOffice("film-box-office", filmData);
+    tvSeries = new VideoGame("video-game-revenue", videoGamesData);
 
     pokemonGoMapVis = new PokemonGoMapVis("pokemon-go-map", "pokemon-go-map-pokemons", pokemonGoGeoData, worldGeoData, pokemonGoGeoCountData);
 

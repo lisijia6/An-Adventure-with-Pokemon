@@ -69,7 +69,7 @@ h2 {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-	width: 50%;
+	width: 80%;
 }
 
 .movie-image {
@@ -225,4 +225,10 @@ h2 {
 	position: absolute;
 	top: 243px;
 	right: 300px;
+}
+
+
+.nopadding {
+	padding: 0 !important;
+	margin: 0 !important;
 }

@@ -104,34 +104,34 @@ class BoxOffice {
             .style("opacity", 1.0);
 
         // add chat boxes
-        vis.typed1 = new Typed(".auto-type-6", {
-            strings: ["Hey, what about Pokemon movies? Is there a big collection as well?"],
-            typeSpeed: 50,
-            backSpeed: 150,
-            loop: false
-        })
-        vis.typed2 = new Typed(".auto-type-7", {
-            strings: ["Of course! We have 24 movies over the last two decades. And our box office per movie is $44 million on average." +
-            " 'Detective Pikachu' in 2019 is even a greater hit!"],
-            typeSpeed: 50,
-            backSpeed: 150,
-            startDelay:7550,
-            loop: false
-        })
-        vis.typed3 = new Typed(".auto-type-8", {
-            strings: ["That's amazing Pikachu, how proud of you!"],
-            typeSpeed: 50,
-            backSpeed: 150,
-            startDelay:10000,
-            loop: false
-        })
-        vis.typed4 = new Typed(".auto-type-9", {
-            strings: ["I'm flattered hhhh"],
-            typeSpeed: 50,
-            backSpeed: 150,
-            startDelay:15000,
-            loop: false
-        })
+        // vis.typed1 = new Typed(".auto-type-6", {
+        //     strings: ["Hey, what about Pokemon movies? Is there a big collection as well?"],
+        //     typeSpeed: 50,
+        //     backSpeed: 150,
+        //     loop: false
+        // })
+        // vis.typed2 = new Typed(".auto-type-7", {
+        //     strings: ["Of course! We have 24 movies over the last two decades. And our box office per movie is $44 million on average." +
+        //     " 'Detective Pikachu' in 2019 is even a greater hit!"],
+        //     typeSpeed: 50,
+        //     backSpeed: 150,
+        //     startDelay:7550,
+        //     loop: false
+        // })
+        // vis.typed3 = new Typed(".auto-type-8", {
+        //     strings: ["That's amazing Charmander, how proud of you!"],
+        //     typeSpeed: 50,
+        //     backSpeed: 150,
+        //     startDelay:10000,
+        //     loop: false
+        // })
+        // vis.typed4 = new Typed(".auto-type-9", {
+        //     strings: ["I'm flattered hhhh"],
+        //     typeSpeed: 50,
+        //     backSpeed: 150,
+        //     startDelay:15000,
+        //     loop: false
+        // })
 
         vis.wrangleData();
 
@@ -190,12 +190,12 @@ class BoxOffice {
                     .style("left", event.pageX + 20 + "px")
                     .style("top", event.pageY - 200 + "px")
                     .html(`
-         <div style="background: transparent; padding: 10px">
+         <div style="background: transparent; padding: -10px">
             
              <div class="row">
              <div class="col padding-0 imgContainer">
              <img src='img/utils/pokemon-board2.jpg' alt="box office" class="center revenue-board">
-             <div class="center text-centered dyna">$${d.boxOfficeUS}</div>
+             <div class="center text-centered dyna" style="padding-left: 30px">$${d.boxOfficeUS}</div>
              <img src=${d.imageID} alt="movie image" class="center movie-image">
              <h6 class="movie-name center dyna">${d.name}</h6>
              </div>
@@ -214,34 +214,34 @@ class BoxOffice {
         // .on("mouseout", vis.tipMovie.hide);
 
         // average line
-        vis.boxOfficeMean = d3.mean(vis.data.map(function(d){
-            if (d.name==="Detective Pikachu") return 0;
-            else return d.boxOfficeUS;
-        }));
-        vis.avgLine = vis.svg.append("g")
-        vis.avgLine.append("line")
-            .attr("class", "avgLine")
-            .style("stroke", "#CFD2CC")
-            .style("stroke-width", 3)
-            .style("stroke-dasharray", ("10,3"))
-            .attr("x1", 0)
-            .attr("y1", vis.y(vis.boxOfficeMean))
-            .attr("x2", vis.width)
-            .attr("y2", vis.y(vis.boxOfficeMean));
-
-
-        vis.avgLine.append("text")
-            .attr('text-anchor', 'middle')
-            .attr("x", 200)
-            .attr("y", vis.y(vis.boxOfficeMean)-10)
-            .attr("class", "linechart-annotation dyna")
-            .text("Average Box Office except 'Detective Pikachu'")
-            .style("fill", "gray")
-
-        vis.avgLine.style("opacity", 0.0)
-            .transition()
-            .duration(1500)
-            .style("opacity", 1);
+        // vis.boxOfficeMean = d3.mean(vis.data.map(function(d){
+        //     if (d.name==="Detective Pikachu") return 0;
+        //     else return d.boxOfficeUS;
+        // }));
+        // vis.avgLine = vis.svg.append("g")
+        // vis.avgLine.append("line")
+        //     .attr("class", "avgLine")
+        //     .style("stroke", "#CFD2CC")
+        //     .style("stroke-width", 3)
+        //     .style("stroke-dasharray", ("10,3"))
+        //     .attr("x1", 0)
+        //     .attr("y1", vis.y(vis.boxOfficeMean))
+        //     .attr("x2", vis.width)
+        //     .attr("y2", vis.y(vis.boxOfficeMean));
+        //
+        //
+        // vis.avgLine.append("text")
+        //     .attr('text-anchor', 'middle')
+        //     .attr("x", 200)
+        //     .attr("y", vis.y(vis.boxOfficeMean)-10)
+        //     .attr("class", "linechart-annotation dyna")
+        //     .text("Average Box Office except 'Detective Pikachu'")
+        //     .style("fill", "gray")
+        //
+        // vis.avgLine.style("opacity", 0.0)
+        //     .transition()
+        //     .duration(1500)
+        //     .style("opacity", 1);
 
 
         // Call axis functions with the new domain
