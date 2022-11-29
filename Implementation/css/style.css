@@ -207,7 +207,7 @@ h2 {
 }
 .text-boxes-2 {
 	background-image: url("../img/utils/chatbox2.jpg");
-	height: 300px;
+	height: 400px;
 }
 .text-boxes-3 {
 	background-image: url("../img/utils/chatbox.jpg");
@@ -256,5 +256,27 @@ h2 {
 	0%   { transform: translateY(0); }
 	50%  { transform: translateY(-20px); }
 	100% { transform: translateY(0); }
+}
+
+#radar-path:hover {
+	opacity: 0.8;
+}
+
+.fade-in-image { animation: fadeIn 2s; }
+
+@keyframes fadeIn {
+	0% { opacity: 0; }
+	100% { opacity: 1; }
+}
+
+.grow{
+	transition: 0.5s ease;
+}
+
+.grow:hover{
+	-webkit-transform: scale(1.2);
+	-ms-transform: scale(1.2);
+	transform: scale(1.2);
+	transition: 0.5s ease;
 }
 

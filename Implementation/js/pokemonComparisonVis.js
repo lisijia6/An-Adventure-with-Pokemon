@@ -143,9 +143,9 @@ class PokemonComparisonVis {
             .attr("src", "img/pokemonImages_basic/"+vis.selectedData["Image Name"]+".png")
             .attr("class", function(){
                 if (vis.pokemonFlag===1){
-                    return "comparison-pokemon-image-left";
+                    return "comparison-pokemon-image-left fade-in-image";
                 }
-                else return "comparison-pokemon-image-right";
+                else return "comparison-pokemon-image-right fade-in-image";
 
             })
             .attr("width", 150)

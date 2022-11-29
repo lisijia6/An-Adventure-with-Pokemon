@@ -170,6 +170,7 @@ class Cluster {
         vis.cardSvg
             .append("image")
             .attr("xlink:href",'img/pokemonImages_basic/'+d.data.image_file)
+            .attr("class", "grow")
             .attr("x",120)
             .attr("y",100)
             .attr("width",150);
@@ -295,10 +296,11 @@ class Cluster {
 
         //draw the path element
         vis.radarSvg.append("path")
+            .attr("id", "radar-path")
             .datum(vis.coordinates)
             .attr("d",vis.line)
             .attr("fill", "#FFD700")
-            .attr("opacity", 0.8);
+            .attr("opacity", 0.4);
 
         vis.radarTooltips = vis.radarSvg.append("g")
             .attr("class","feature-tooltips");
