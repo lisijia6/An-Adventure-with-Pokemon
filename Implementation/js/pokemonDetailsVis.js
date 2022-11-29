@@ -135,6 +135,7 @@ class PokemonDetailsVis {
 
             winOverList.forEach(function(t,i){
                 vis.winPokemon.append("img")
+                    .attr("class", "bounce")
                     .attr("src", `${vis.imageDir}${t.toLowerCase()}.png`)
                     .style("margin","10px 10px 10px 10px")
                     .attr("width", 50)
@@ -194,6 +195,7 @@ class PokemonDetailsVis {
 
             loseToList.forEach(function(t,i){
                 vis.losePokemon.append("img")
+                    .attr("class", "bounce")
                     .attr("src", `${vis.imageDir}${t.toLowerCase()}.png`)
                     .style("margin","10px 10px 10px 10px")
                     .attr("width", 50)

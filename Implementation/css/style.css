@@ -247,10 +247,11 @@ h2 {
 }
 
 .bounce:hover {
-	animation-duration: 0.5s;
-	animation-iteration-count: 1;
-	animation-name: bounce;
-	animation-timing-function: ease;
+	transform: translateY(-10px);
+	/*animation-duration: 0.5s;*/
+	/*animation-iteration-count: 1;*/
+	/*animation-name: bounce;*/
+	/*animation-timing-function: ease;*/
 }
 @keyframes bounce {
 	0%   { transform: translateY(0); }
@@ -278,5 +279,29 @@ h2 {
 	-ms-transform: scale(1.2);
 	transform: scale(1.2);
 	transition: 0.5s ease;
+}
+
+
+.compareImg {
+	--g: 4px;     /* the gap */
+	--b: 12px;    /* border thickness*/
+	--c: skyblue; /* the color */
+
+
+	padding: calc(var(--g) + var(--b));
+	--_c: #0000 0 25%, var(--c) 0 50%;
+	--_g1: repeating-linear-gradient(90deg ,var(--_c)) repeat-x;
+	--_g2: repeating-linear-gradient(180deg,var(--_c)) repeat-y;
+	background:
+			var(--_g1) var(--_p, 25%) 0   ,var(--_g2) 0    var(--_p,125%),
+			var(--_g1) var(--_p,125%) 100%,var(--_g2) 100% var(--_p, 25%);
+	background-size: 200% var(--b),var(--b) 200%;
+	cursor: pointer;
+	filter: grayscale(50%);
+	transition: .3s;
+}
+.compareImg:hover {
+	--_p: 75%;
+	filter: grayscale(0%);
 }
 
