@@ -1,3 +1,4 @@
+
 // Function to convert date objects to strings or reverse
 let dateFormatter = d3.timeFormat("%Y-%m-%d");
 let dateParser = d3.timeParse("%m/%d/%Y"); // d3.timeParse("%Y-%m-%d");
@@ -85,23 +86,23 @@ function createVis(data) {
     //     this.src = 'img/utils/num1.jpg';
     // }
     document.getElementById("genButtons").innerHTML +=
-        ' <img src="img/utils/numAll.jpg" alt="All" width="54" height="53" onclick="pokeCluster.wrangleData(0); document.getElementById(\'genNum\').innerText=\'All\';" ' +
+        ' <img src="img/utils/numAll.jpg" alt="All" width="54" height="53" class="bounce" onclick="pokeCluster.wrangleData(0); document.getElementById(\'genNum\').innerText=\'All\';" ' +
         'onmouseover="d3.select(this).style(\'cursor\', \'pointer\');" onmouseout="d3.select(this).style(\'cursor\', \'default\');">\n' +
-        '            <img src="img/utils/numOne.jpg" alt="One" width="54" height="53" onclick="pokeCluster.wrangleData(1); document.getElementById(\'genNum\').innerText=1;" ' +
+        '            <img src="img/utils/numOne.jpg" alt="One" class="bounce" width="54" height="53" onclick="pokeCluster.wrangleData(1); document.getElementById(\'genNum\').innerText=1;" ' +
         'onmouseover="d3.select(this).style(\'cursor\', \'pointer\');" onmouseout="d3.select(this).style(\'cursor\', \'default\');">\n' +
-        '            <img src="img/utils/numTwo.jpg" alt="Two" width="54" height="53" onclick="pokeCluster.wrangleData(2); document.getElementById(\'genNum\').innerText=2;" ' +
+        '            <img src="img/utils/numTwo.jpg" alt="Two" class="bounce" width="54" height="53" onclick="pokeCluster.wrangleData(2); document.getElementById(\'genNum\').innerText=2;" ' +
         'onmouseover="d3.select(this).style(\'cursor\', \'pointer\');" onmouseout="d3.select(this).style(\'cursor\', \'default\');">\n' +
-        '            <img src="img/utils/numThree.jpg" alt="Three" width="54" height="53" onclick="pokeCluster.wrangleData(3); document.getElementById(\'genNum\').innerText=3;" ' +
+        '            <img src="img/utils/numThree.jpg" alt="Three" class="bounce" width="54" height="53" onclick="pokeCluster.wrangleData(3); document.getElementById(\'genNum\').innerText=3;" ' +
         'onmouseover="d3.select(this).style(\'cursor\', \'pointer\');" onmouseout="d3.select(this).style(\'cursor\', \'default\');">\n' +
-        '            <img src="img/utils/numFour.jpg" alt="Four" width="54" height="53" onclick="pokeCluster.wrangleData(4); document.getElementById(\'genNum\').innerText=4;" ' +
+        '            <img src="img/utils/numFour.jpg" alt="Four" class="bounce" width="54" height="53" onclick="pokeCluster.wrangleData(4); document.getElementById(\'genNum\').innerText=4;" ' +
         'onmouseover="d3.select(this).style(\'cursor\', \'pointer\');" onmouseout="d3.select(this).style(\'cursor\', \'default\');">\n' +
-        '            <img src="img/utils/numFive.jpg" alt="Five" width="54" height="53" onclick="pokeCluster.wrangleData(5); document.getElementById(\'genNum\').innerText=5;" ' +
+        '            <img src="img/utils/numFive.jpg" alt="Five" class="bounce" width="54" height="53" onclick="pokeCluster.wrangleData(5); document.getElementById(\'genNum\').innerText=5;" ' +
         'onmouseover="d3.select(this).style(\'cursor\', \'pointer\');" onmouseout="d3.select(this).style(\'cursor\', \'default\');">\n' +
-        '            <img src="img/utils/numSix.jpg" alt="Six" width="54" height="53" onclick="pokeCluster.wrangleData(6); document.getElementById(\'genNum\').innerText=6;" ' +
+        '            <img src="img/utils/numSix.jpg" alt="Six" class="bounce" width="54" height="53" onclick="pokeCluster.wrangleData(6); document.getElementById(\'genNum\').innerText=6;" ' +
         'onmouseover="d3.select(this).style(\'cursor\', \'pointer\');" onmouseout="d3.select(this).style(\'cursor\', \'default\');">\n' +
-        '            <img src="img/utils/numSeven.jpg" alt="Seven" width="54" height="53" onclick="pokeCluster.wrangleData(7); document.getElementById(\'genNum\').innerText=7;" ' +
+        '            <img src="img/utils/numSeven.jpg" alt="Seven" class="bounce" width="54" height="53" onclick="pokeCluster.wrangleData(7); document.getElementById(\'genNum\').innerText=7;" ' +
         'onmouseover="d3.select(this).style(\'cursor\', \'pointer\');" onmouseout="d3.select(this).style(\'cursor\', \'default\');">\n' +
-        '            <img src="img/utils/numEight.jpg" alt="Eight" width="54" height="53" onclick="pokeCluster.wrangleData(8); document.getElementById(\'genNum\').innerText=8;" ' +
+        '            <img src="img/utils/numEight.jpg" alt="Eight" class="bounce" width="54" height="53" onclick="pokeCluster.wrangleData(8); document.getElementById(\'genNum\').innerText=8;" ' +
         'onmouseover="d3.select(this).style(\'cursor\', \'pointer\');" onmouseout="d3.select(this).style(\'cursor\', \'default\');">'
 
     pokeDetails = new PokemonDetailsVis("pokemon-details-features", battleData, "img/pokemonImages_basic/");

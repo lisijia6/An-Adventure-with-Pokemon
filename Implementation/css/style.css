@@ -174,7 +174,7 @@ h2 {
 /*}*/
 
 .label {
-	font: 9px "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font: 15px "Helvetica Neue", Helvetica, Arial, sans-serif;
 	text-anchor: middle;
 	text-shadow: 0 1px 0 #fff, 1px 0 0 #fff, -1px 0 0 #fff, 0 -1px 0 #fff;
 }
@@ -244,5 +244,17 @@ h2 {
 	100% {
 		transform: translateY(-30%);
 	}
+}
+
+.bounce:hover {
+	animation-duration: 0.5s;
+	animation-iteration-count: 1;
+	animation-name: bounce;
+	animation-timing-function: ease;
+}
+@keyframes bounce {
+	0%   { transform: translateY(0); }
+	50%  { transform: translateY(-20px); }
+	100% { transform: translateY(0); }
 }
 

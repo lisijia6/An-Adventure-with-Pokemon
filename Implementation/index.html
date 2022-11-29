@@ -26,10 +26,11 @@
 </head>
 <body>
 
+
 <div id="fullpage">
     <!--    page1-->
     <div class="section active" id="title-sec">
-        <div class="row">
+        <div class="row" style="padding-top: 250px">
             <div class="col-md-12">
                 <div class="row">
                     <div class="col-md-6 dyna">
@@ -42,6 +43,13 @@
                 </div>
             </div>
         </div>
+        <div class="row" style="width: 300px; padding-top: 300px">
+            <!--background music-->
+            <audio src="audio/backgroundmusic.mp3" controls autoplay loop id="myAudio">
+                <p>If you are reading this, it is because your browser does not support the audio element.</p>
+            </audio>
+        </div>
+
     </div>
 
     <!--    page2-->
@@ -130,23 +138,14 @@
         <div class="row">
             <div id="pokemon-details" class="dyna">
                 <div class="row">
-                    <div class="col-sm-4" id="pokemon-details-features"></div>
-                    <div class="col-sm-4" style="margin-left:60px;margin-top:35px;">
-                        <div class="row">
-                            <div id="win-over"></div>
-                        </div>
-                        <div class="row">
-                            <div id="lose-to"></div>
-                        </div>
-                    </div>
-                    <div class="col-sm-3" style="height: 700px">
+                    <div class="col-md-3" style="height: 700px; ">
                         <div class="row" id="hand-pointer-img">
                             <img src="img/utils/hand-pointer.png" >
                             <p class="text-center">Click on the bubble above to explore more pokemons</p>
                         </div>
                         <div class="row">
                             <div class="box text-boxes text-boxes-3">
-                                <div class="container" style="padding-top: 80px; padding-bottom: 20px">
+                                <div class="container" style="padding-top: 70px; padding-bottom: 20px; height: 350px">
                                     <p>
                                         <span style="color: red">You</span>: <span class="detail-chat-1"></span>
                                     </p>
@@ -169,8 +168,17 @@
                                 </div>
                             </div>
                         </div>
-
                     </div>
+                    <div class="col-md-4" id="pokemon-details-features" style="padding-left: 80px"></div>
+                    <div class="col-md-4" style="margin-left:60px;margin-top:35px;padding-left: 50px">
+                        <div class="row">
+                            <div id="win-over"></div>
+                        </div>
+                        <div class="row">
+                            <div id="lose-to"></div>
+                        </div>
+                    </div>
+
                 </div>
                 <div id="centerDIV">
                     <!-- The element which will float at the center of the screen -->

@@ -1,9 +1,13 @@
+body{
+    background: #d8ecf3;
+    margin: 0;
+}
 
 #title-sec {
     height: 100%;
     /* max-height: 600px; */
     width: 2000px;
-    background-color: hsla(200,40%,30%,.4);
+    background-color: dodgerblue;
     background-image:
             url('../img/utils/movingBackground1.jpg');
     background-repeat: repeat-x;
@@ -45,10 +49,7 @@
     color: #05445E;
 }
 
-body{
-    background: #d8ecf3;
-    margin: 0;
-}
+
 
 /*body {*/
 /*    background-color: lightskyblue;*/
