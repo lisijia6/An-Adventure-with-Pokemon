@@ -263,6 +263,7 @@ h2 {
 	opacity: 0.8;
 }
 
+/*image fade in in comparison*/
 .fade-in-image { animation: fadeIn 2s; }
 
 @keyframes fadeIn {
@@ -281,7 +282,7 @@ h2 {
 	transition: 0.5s ease;
 }
 
-
+/*spinning border in comparison*/
 .compareImg {
 	--g: 4px;     /* the gap */
 	--b: 12px;    /* border thickness*/
@@ -303,5 +304,65 @@ h2 {
 .compareImg:hover {
 	--_p: 75%;
 	filter: grayscale(0%);
+}
+
+
+
+
+.container .card {
+	position: relative;
+	width : 200px;
+	height : 215px;
+	background-color : #fff;
+	margin : 30px 10px;
+	padding : 20px 15px;
+
+	display : flex;
+	flex-direction : column;
+	box-shadow : 0 5px 20px rgba(0,0,0,0.5);
+	transition : 0.3s ease-in-out;
+	border-radius : 15px;
+}
+.container .card:hover {
+	height : 320px;
+}
+
+
+.container .card .compareImg {
+	position : relative;
+	width : 150px;
+	height : 150px;
+
+	top : -40%;
+	left: 8px;
+	box-shadow : 0 5px 20px rgba(0,0,0,0.2);
+	z-index : 1;
+}
+
+.container .card .compareImg {
+	max-width : 100%;
+	border-radius : 15px;
+}
+
+.container .card .content {
+	position : relative;
+	top : -140px;
+	padding : 10px 15px;
+	color : #111;
+	text-align : center;
+	font-size: small;
+
+	visibility : hidden;
+	opacity : 0;
+	transition : 0.3s ease-in-out;
+
+}
+
+.container .card:hover .content {
+	margin-top : 30px;
+	visibility : visible;
+	opacity : 1;
+	transition-delay: 0.2s;
+
 }
 
