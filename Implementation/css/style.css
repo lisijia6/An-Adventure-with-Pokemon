@@ -66,6 +66,12 @@ h2 {
 	stroke-width: 3px;
 }
 
+.digiLine {
+	fill: none;
+	stroke: #ff9999;
+	stroke-width: 3px;
+}
+
 .center {
 	display: block;
 	margin-left: auto;
@@ -78,7 +84,17 @@ h2 {
 	max-height:150px;
 	width:auto;
 	height:auto;
-	border: 3px dotted #FF1493; padding:1em;
+	border: 3px dotted lightskyblue; padding:1em;
+	border-radius: 30%;
+	width:100%
+}
+
+.digi-movie-image {
+	max-width:120px;
+	max-height:150px;
+	width:auto;
+	height:auto;
+	border: 3px dotted #ff9999; padding:1em;
 	border-radius: 30%;
 	width:100%
 }
@@ -108,8 +124,20 @@ h2 {
 
 .movie-name{
 	font-size: 14px;
-	color: #FF1493;
+	color: #12B9F5;
+	/*-webkit-text-stroke-width: 1px;*/
+	/*-webkit-text-stroke-color: dimgray;*/
 	text-shadow: 4px 4px 4px #aaa;
+	text-align: center;
+}
+
+.digi-movie-name{
+	font-size: 14px;
+	color: #ef2a45;
+	/*-webkit-text-stroke-width: 1px;*/
+	/*-webkit-text-stroke-color: dimgray;*/
+	text-shadow: 4px 4px 4px #aaa;
+	text-align: center;
 }
 
 .padding-0{

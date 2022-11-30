@@ -14,7 +14,9 @@ let promises = [
     d3.csv("data/pokemonCombats_basic.csv"),
     d3.json("data/pokemonGoGeoData.json"),
     d3.json("https://cdn.jsdelivr.net/npm/world-atlas@2/countries-50m.json"),
-    d3.csv("data/pokemonGoGeoCountData.csv")
+    d3.csv("data/pokemonGoGeoCountData.csv"),
+    d3.csv("data/digimon_films.csv"),
+    d3.csv("data/digimon_videoGames.csv")
 ];
 
 Promise.all(promises)
@@ -34,6 +36,8 @@ function createVis(data) {
     let pokemonGoGeoData = data[5]
     let worldGeoData = data[6]
     let pokemonGoGeoCountData = data[7]
+    let digimonFilmData = data[8]
+    let digimonVideoGamesData = data[9]
 
     // error, perDayData, metaData
     // if(error) { console.log(error); }
@@ -49,6 +53,14 @@ function createVis(data) {
         return d
     })
     filmData.sort((a,b)=>{return a.releaseDateUS - b.releaseDateUS})
+    // clean and sort the digimon film data
+    digimonFilmData = digimonFilmData.map(function(d) {
+        d.boxOfficeUS = +d.boxOfficeUS;
+        d.imageID = "img/movieImages/" + d.imageID + ".jpg";
+        d.releaseDateUS = dateParser(d.releaseDateUS);
+        return d
+    })
+    digimonFilmData.sort((a,b)=>{return a.releaseDateUS - b.releaseDateUS})
     // clean and sort video game data
     videoGamesData = videoGamesData.map(function(d) {
         d.unitsSold = +d.unitsSold;
@@ -57,6 +69,14 @@ function createVis(data) {
         return d;
     })
     videoGamesData.sort((a,b)=>{return a.year - b.year})
+    // clean and sort digimon video game data
+    digimonVideoGamesData = digimonVideoGamesData.map(function(d) {
+        d.unitsSold = +d.unitsSold;
+        d.year = dateParser(d.year);
+        d.imageID = "img/videoGamesImages/" + d.imageID + ".jpg";
+        return d;
+    })
+    digimonVideoGamesData.sort((a,b)=>{return a.year - b.year})
 
 
     // clean world
@@ -73,18 +93,14 @@ function createVis(data) {
     pokemonCompareVis2 = new PokemonComparisonVis("pokemon-comparison-2",
         "pokemon-comparison-2-img",  "pokemon-comparison-2-name", pokemonStatsData,2);
 
-    boxOffice = new BoxOffice("film-box-office", filmData);
-    tvSeries = new VideoGame("video-game-revenue", videoGamesData);
+    boxOffice = new BoxOffice("film-box-office", filmData, digimonFilmData);
+    videoGames = new VideoGame("video-game-revenue", videoGamesData, digimonVideoGamesData);
 
     pokemonGoMapVis = new PokemonGoMapVis("pokemon-go-map", "pokemon-go-map-pokemons", pokemonGoGeoData, worldGeoData, pokemonGoGeoCountData);
 
     // pokeCluster = new newCluster(data[5])
     pokeCluster = new Cluster("pokemon-clusters", pokemonStatsData);
-    // filter data according to selection
-    // function genButtonChange(gen) {
-    //     pokeCluster.wrangleData(gen);
-    //     this.src = 'img/utils/num1.jpg';
-    // }
+
     document.getElementById("genButtons").innerHTML +=
         ' <img src="img/utils/numAll.jpg" alt="All" width="54" height="53" class="bounce" onclick="pokeCluster.wrangleData(0); document.getElementById(\'genNum\').innerText=\'All\';" ' +
         'onmouseover="d3.select(this).style(\'cursor\', \'pointer\');" onmouseout="d3.select(this).style(\'cursor\', \'default\');">\n' +

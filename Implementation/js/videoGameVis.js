@@ -1,8 +1,10 @@
 class VideoGame {
-    constructor(_parentElement, _data) {
+    constructor(_parentElement, _data, _extraData) {
         this.parentElement = _parentElement;
         this.data = _data;
+        this.digiData = _extraData;
         console.log("video game", this.data)
+        console.log("digimon video game", this.digiData)
 
         this.initVis();
     }
@@ -30,14 +32,19 @@ class VideoGame {
         vis.svg.append("g")
             .attr("class", "y-axis axis");
 
+        let maxX = d3.max([d3.max(vis.data, d=>d.year), d3.max(vis.digiData, d=>d.year)])
+        let minX = d3.min([d3.min(vis.data, d=>d.year), d3.min(vis.digiData, d=>d.year)])
+        let maxY = d3.max([d3.max(vis.data, d=>d.unitsSold), d3.max(vis.digiData, d=>d.unitsSold)])
+        let minY = d3.min([d3.min(vis.data, d=>d.unitsSold), d3.min(vis.digiData, d=>d.unitsSold)])
+
         vis.x = d3.scaleTime()
             .range([0, vis.width])
-            .domain(d3.extent(vis.data, d=>d.year))
+            .domain([minX, maxX])
             .nice(vis.data.length);
 
         vis.y = d3.scaleLinear()
             .range([vis.height, 0])
-            .domain([0, d3.max(vis.data, d=>d.unitsSold)]);
+            .domain([0, maxY]);
 
         vis.xAxis = d3.axisBottom()
             .scale(vis.x)
@@ -47,10 +54,11 @@ class VideoGame {
 
         vis.yAxis = d3.axisLeft()
             .scale(vis.y)
-            .tickFormat(function(d) {return '$ ' + d + "M"})
+            .tickFormat(function(d) {return d + "M"})
 
         // draw the line path
         vis.line = vis.svg.append("path");
+        vis.digiLine = vis.svg.append("path")
         // draw the area path
         // vis.areaPath = vis.svg.append("path");
 
@@ -58,6 +66,7 @@ class VideoGame {
         vis.tooltip = d3.select("body").append('div')
             .attr('class', "tooltip")
             .attr('id', 'movieTooltip')
+
 
         // add line chart title
         vis.svg.append("g")
@@ -67,6 +76,28 @@ class VideoGame {
             .text("Units Sold Per Video Game in US")
             .style("fill","black")
             .style("text-anchor","middle");
+
+        // add legends
+        vis.svg.append("circle")
+            .attr("cx", 120)
+            .attr("cy", 60)
+            .attr("r", 5)
+            .attr("fill", "#12B9F5")
+        vis.svg.append("circle")
+            .attr("cx", 120)
+            .attr("cy", 90)
+            .attr("r", 5)
+            .attr("fill", "#ef2a45")
+        vis.svg.append("text")
+            .attr("x", 140)
+            .attr("y", 65)
+            .text("Pokemon Video Game")
+            .attr("class", "dyna")
+        vis.svg.append("text")
+            .attr("x", 140)
+            .attr("y", 95)
+            .text("Digimon Video Game")
+            .attr("class", "dyna")
 
         // add annotations
         // get the coordinate of detective pikachu
@@ -127,13 +158,24 @@ class VideoGame {
         vis.line.datum(vis.data)
             .attr("class", "line")
             .attr("d", lineFunc)   // line stroke updated in style.css
+        vis.digiLine.datum(vis.digiData)
+            .attr("class", "digiLine")
+            .attr("d", lineFunc)
 
 
-        vis.circles = vis.svg.selectAll("circle")
-        vis.circles  = vis.circles .data(vis.data)
+        vis.circles = vis.svg.selectAll(".pokeCircle")
+        vis.digiCircles = vis.svg.selectAll(".digiCircle")
+        vis.circles  = vis.circles.data(vis.data)
             .enter()
             .append("circle")
+            .attr("class", "pokeCircle")
             .merge(vis.circles)
+        vis.digiCircles = vis.digiCircles.data(vis.digiData)
+            .enter()
+            .append("circle")
+            .attr("class", "digiCircle")
+            .merge(vis.digiCircles)
+
         vis.circles.attr("cx", d=>vis.x(d.year))
             .attr("cy", d=>vis.y(d.unitsSold))
             .attr("r", 5)
@@ -160,6 +202,40 @@ class VideoGame {
             })
             .on('mouseout', function(event, d){
                 d3.select(this).attr("fill", "#12B9F5");
+                vis.tooltip
+                    .style("opacity", 0)
+                    .style("left", 0)
+                    .style("top", 0)
+                    .html(``);
+            })
+
+
+        vis.digiCircles.attr("cx", d=>vis.x(d.year))
+            .attr("cy", d=>vis.y(d.unitsSold))
+            .attr("r", 5)
+            // .attr("stroke", "green")
+            .attr("fill", "#ef2a45")
+            .on('mouseover', function(event, d){
+                d3.select(this).attr("fill", "#F5ED12");
+                vis.tooltip
+                    .style("opacity", 1)
+                    .style("left", event.pageX + 20 + "px")
+                    .style("top", event.pageY - 200 + "px")
+                    .html(`
+         <div style="background: transparent; padding: -10px">
+            
+             <div class="row">
+             <div class="col padding-0 imgContainer">
+             <img src='img/utils/pokemon-board2.jpg' alt="box office" class="center revenue-board">
+             <div class="center text-centered dyna" style="padding-left: 25px;padding-top: 10px">$${d.unitsSold}</div>
+             <img src=${d.imageID} alt="movie image" class="center digi-movie-image">
+             <h6 class="digi-movie-name center dyna">${d.name}</h6>
+             </div>
+             </div>    
+             </div>`);
+            })
+            .on('mouseout', function(event, d){
+                d3.select(this).attr("fill", "#ef2a45");
                 vis.tooltip
                     .style("opacity", 0)
                     .style("left", 0)
