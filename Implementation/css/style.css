@@ -314,7 +314,7 @@ h2 {
 .compareImg {
 	--g: 4px;     /* the gap */
 	--b: 12px;    /* border thickness*/
-	--c: skyblue; /* the color */
+
 
 
 	padding: calc(var(--g) + var(--b));
@@ -329,11 +329,27 @@ h2 {
 	filter: grayscale(50%);
 	transition: .3s;
 }
+
+.compareImg-win {
+	--c: skyblue; /* the color */
+}
+
+.compareImg-lose {
+	--c: #ff9999; /* the color */
+}
+
 .compareImg:hover {
 	--_p: 75%;
 	filter: grayscale(0%);
 }
 
+.win-text{
+	color: skyblue;
+}
+
+.lose-text{
+	color: #ff9999;
+}
 
 
 
@@ -352,7 +368,7 @@ h2 {
 	border-radius : 15px;
 }
 .container .card:hover {
-	height : 320px;
+	height : 380px;
 }
 
 
@@ -387,7 +403,7 @@ h2 {
 }
 
 .container .card:hover .content {
-	margin-top : 30px;
+	margin-top : 80px;
 	visibility : visible;
 	opacity : 1;
 	transition-delay: 0.2s;

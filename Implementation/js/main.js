@@ -136,7 +136,7 @@ function pokemonChange(value) {
 }
 
 let features = ["hp","speed","attack","sp_attack","defense","sp_defense"]
-let featureNames = ["HP","Speed","Attack","Special Attack","Defense","Special Defense"]
+let featureNames = ["Hit Points","Speed","Attack","Special Attack","Defense","Special Defense"]
 
 function closePanel() {
     document.getElementById('centerDIV').style.display = 'none';

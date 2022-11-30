@@ -97,6 +97,11 @@ class PokemonComparisonVis {
         vis.filteredData = []
 
         vis.data.forEach((row, idx) => {
+            if (row["ability_hidden"]==="") row["ability_hidden"]= "N/A"
+            if (row["ability_2"]==="") row["ability_2"]= "N/A"
+            if (row["type_2"]==="") row["type_2"]= "N/A"
+
+
             let pokemonInfo = {
                 "Name": row["name"],
                 "Stats": [
@@ -107,6 +112,15 @@ class PokemonComparisonVis {
                     {"key": "Special Defense", "value": +row["sp_defense"]},
                     {"key": "Speed", "value": +row["speed"]}
                 ],
+                "extraStats": [
+                    {"key": "Main Type", "value": row["type_1"]},
+                    {"key": "Sub Type", "value": row["type_2"]},
+                    {"key": "Height", "value": +row["height_m"]},
+                    {"key": "Weight", "value": +row["weight_kg"]},
+                    {"key": "Ability 1", "value": row["ability_1"]},
+                    {"key": "Ability 2", "value": row["ability_2"]},
+                    {"key": "Ability Hidden", "value": row["ability_hidden"]}
+                ],
                 "Image Name": row["image_name"]
             }
             vis.filteredData.push(pokemonInfo);
@@ -115,7 +129,7 @@ class PokemonComparisonVis {
         // console.log(vis.filteredData);
 
         // Update the visualization
-        vis.updateVis("pichu");
+        // vis.updateVis("pichu");
     }
 
 
@@ -143,9 +157,9 @@ class PokemonComparisonVis {
             .attr("src", "img/pokemonImages_basic/"+vis.selectedData["Image Name"]+".png")
             .attr("class", function(){
                 if (vis.pokemonFlag===1){
-                    return "comparison-pokemon-image-left fade-in-image compareImg";
+                    return "comparison-pokemon-image-left fade-in-image compareImg compareImg-win";
                 }
-                else return "comparison-pokemon-image-right fade-in-image compareImg";
+                else return "comparison-pokemon-image-right fade-in-image compareImg compareImg-lose";
 
             })
             .attr("width", 150)
@@ -170,7 +184,14 @@ class PokemonComparisonVis {
             })
             .attr("start", 10)
             .attr("height", 30)
-            .attr("fill", "#4ca3bd")
+            .attr("fill", function(d){
+                if (vis.pokemonFlag===1) {
+                    return "skyblue";
+                }
+                else {
+                    return "#ff9999";
+                }
+            })
         vis.rect.exit().remove();
 
         // Draw Title of Bar Chart
@@ -179,10 +200,16 @@ class PokemonComparisonVis {
             .attr("class", "pokemon-comparison-title")
             .text(d => {
                 if (vis.pokemonFlag === 1) {
-                    return "Winner:   " + vis.selectedData["Name"];   //"\xa0".repeat(40)
+                    return "Winner:" + "\xa0".repeat(3) + vis.selectedData["Name"];   //"\xa0".repeat(40)
                 } else if (vis.pokemonFlag === 2) {
-                    return "Loser:   " + vis.selectedData["Name"];   //"\xa0".repeat(70)
+                    return "Loser:" + "\xa0".repeat(3) + vis.selectedData["Name"];   //"\xa0".repeat(70)
                 }
+            })
+            .style("color", function(){
+                if (vis.pokemonFlag===1){
+                    return "skyblue";
+                }
+                else return "#ff9999";
             })
             .attr("x", 50)
             .attr("y", 0)
@@ -229,7 +256,7 @@ class PokemonComparisonVis {
                 .enter()
                 .append("text")
                 .merge(vis.rectCategoryLabels)
-                .attr("x", 33)
+                .attr("x", 5)
                 .attr("y", d => vis.y(d.key)+20)
                 .text(d => d.key)
                 .attr("fill", "black")
@@ -238,6 +265,33 @@ class PokemonComparisonVis {
                 .attr("class", "stats-category-labels")
             vis.rectCategoryLabels.exit().remove();
         }
+
+
+        console.log("vis.selectedData", vis.selectedData)
+
+
+        // add extra information to card on the board
+        if (vis.pokemonFlag===1){
+            d3.select("#extra-info-1").html("");
+        }
+        else {
+            d3.select("#extra-info-2").html("");
+        }
+
+        for (let i of vis.selectedData["extraStats"]) {
+            console.log("i", i)
+            if (vis.pokemonFlag===1) {
+
+                d3.select("#extra-info-1").append("p")
+                    .html("<span class='win-text'>" + i.key + ": " + "</span>"  + "\xa0".repeat(3)  +i.value)
+            }
+            else {
+
+                d3.select("#extra-info-2").append("p")
+                    .html("<span class='lose-text'>" + i.key + ": " + "</span>"  + "\xa0".repeat(3) + i.value)
+            }
+        }
+
 
     }
 
