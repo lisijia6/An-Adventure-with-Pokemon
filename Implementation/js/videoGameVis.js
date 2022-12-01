@@ -12,7 +12,7 @@ class VideoGame {
     initVis() {
         let vis = this;
         vis.margin = { top: 20, right: 20, bottom: 200, left: 60 };
-        vis.width =  900 - vis.margin.left - vis.margin.right;  //document.getElementById(vis.parentElement).getBoundingClientRect().width
+        vis.width =  700 - vis.margin.left - vis.margin.right;  //document.getElementById(vis.parentElement).getBoundingClientRect().width
         console.log("container", vis.parentElement)
         console.log("svg width", vis.width)
         vis.height = 500 - vis.margin.top - vis.margin.bottom;

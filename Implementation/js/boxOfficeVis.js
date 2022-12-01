@@ -134,34 +134,34 @@ class BoxOffice {
             .style("opacity", 1.0);
 
         // add chat boxes
-        vis.typed1 = new Typed(".auto-type-6", {
-            strings: ["Hey, what about Pokemon movies and tv series? Is there a big collection as well?"],
-            typeSpeed: 50,
-            backSpeed: 150,
-            loop: false
-        })
-        vis.typed2 = new Typed(".auto-type-7", {
-            strings: ["Of course! We have 24 movies and 26 tv series over the last two decades. " +
-            " Especially 'Detective Pikachu' in 2019 is such a greater hit!"],
-            typeSpeed: 50,
-            backSpeed: 150,
-            startDelay:7550,
-            loop: false
-        })
-        vis.typed3 = new Typed(".auto-type-8", {
-            strings: ["That's amazing Charmander, how proud of you!"],
-            typeSpeed: 50,
-            backSpeed: 150,
-            startDelay:18000,
-            loop: false
-        })
-        vis.typed4 = new Typed(".auto-type-9", {
-            strings: ["I'm flattered hhhh"],
-            typeSpeed: 50,
-            backSpeed: 150,
-            startDelay:21000,
-            loop: false
-        })
+        // vis.typed1 = new Typed(".auto-type-6", {
+        //     strings: ["Hey, what about Pokemon movies and tv series? Is there a big collection as well?"],
+        //     typeSpeed: 50,
+        //     backSpeed: 150,
+        //     loop: false
+        // })
+        // vis.typed2 = new Typed(".auto-type-7", {
+        //     strings: ["Of course! We have 24 movies and 26 tv series over the last two decades. " +
+        //     " Especially 'Detective Pikachu' in 2019 is such a greater hit!"],
+        //     typeSpeed: 50,
+        //     backSpeed: 150,
+        //     startDelay:7550,
+        //     loop: false
+        // })
+        // vis.typed3 = new Typed(".auto-type-8", {
+        //     strings: ["That's amazing Charmander, how proud of you!"],
+        //     typeSpeed: 50,
+        //     backSpeed: 150,
+        //     startDelay:18000,
+        //     loop: false
+        // })
+        // vis.typed4 = new Typed(".auto-type-9", {
+        //     strings: ["I'm flattered hhhh"],
+        //     typeSpeed: 50,
+        //     backSpeed: 150,
+        //     startDelay:21000,
+        //     loop: false
+        // })
 
         vis.wrangleData();
 
