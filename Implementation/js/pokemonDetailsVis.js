@@ -200,8 +200,8 @@ class PokemonDetailsVis {
                     .style("margin","10px 10px 10px 10px")
                     .attr("width", 50)
                     .on("click", function() {
-                        pokemonCompareVis1.updateVis(d.data.name);
-                        pokemonCompareVis2.updateVis(t.toLowerCase());
+                        pokemonCompareVis2.updateVis(d.data.name);
+                        pokemonCompareVis1.updateVis(t.toLowerCase());
                         document.getElementById('centerDIV').style.display = 'block';
                     })
                     .on('mouseover', function (d, i) {

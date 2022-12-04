@@ -357,10 +357,9 @@ h2 {
 }
 
 
-
 .container .card {
 	position: relative;
-	width : 200px;
+	width : 240px;
 	height : 215px;
 	background-color : #fff;
 	margin : 30px 10px;
@@ -396,7 +395,7 @@ h2 {
 .container .card .content {
 	position : relative;
 	top : -140px;
-	padding : 10px 15px;
+	padding : 10px 10px;
 	color : #111;
 	text-align : center;
 	font-size: small;
@@ -549,4 +548,31 @@ h2 {
 	margin-left: 100px;
 	justify-content: center;
 	align-items: center;
+}
+
+#web-authors {
+	background-image: url("../img/utils/end-pages-background.jpg");
+	background-size: 1100px 650px;
+	background-repeat: no-repeat;
+	background-position: center;
+	margin-top: -100px;
+}
+
+#web-sources {
+	background-image: url("../img/utils/end-pages-background.jpg");
+	background-size: 1100px 650px;
+	background-repeat: no-repeat;
+	background-position: center;
+	margin-top: -100px;
+}
+
+.web-sources-text-bold {
+	font-family: "DynaPuff";
+	font-size: 22px;
+}
+
+.web-sources-text-normal {
+	font-family: "DynaPuff";
+	font-size: 16px;
+	font-weight: lighter;
 }
