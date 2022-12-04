@@ -558,6 +558,30 @@ h2 {
 	align-items: center;
 }
 
-#mapTooltip:hover {
-	background-color: #ffcc00;
+#web-sources {
+	background-image: url("../img/utils/end-pages-background.jpg");
+	background-size: 1100px 650px;
+	background-repeat: no-repeat;
+	background-position: center;
+	margin-top: -100px;
+}
+
+.web-sources-text-bold {
+	font-family: "DynaPuff";
+	font-size: 22px;
+}
+
+.web-sources-text-normal {
+	font-family: "DynaPuff";
+	font-size: 16px;
+	font-weight: lighter;
+}
+
+#compare-pokemon-digimon-sticky {
+	background-image: url("../img/utils/sticky-note.png");
+	background-size: 500px 500px;
+	background-repeat: no-repeat;
+	background-position: center;
+	margin-top: 30px;
+	opacity: 0.5;
 }

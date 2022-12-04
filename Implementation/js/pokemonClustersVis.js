@@ -150,8 +150,8 @@ class Cluster {
         d3.select("#pokemon-details-features").html("");
 
         vis.detailDiv = d3.select("#pokemon-details-features").append("div")
-            .attr("id","#card-details");
-            // .style("height","900px");
+            .attr("id","#card-details")
+            .style("height","850px");
 
 
         let cardMarginLeft = 0,
@@ -420,8 +420,8 @@ class Cluster {
 
                     vis.tooltip
                         .style("opacity", 1)
-                        .style("left", event.pageX - 110 + "px")
-                        .style("top", event.pageY + "px")
+                        .style("left", event.pageX - 160 + "px")
+                        .style("top", event.pageY - 160 + "px")
                         .html(html)
                         .style("background",'#012231')})
 
