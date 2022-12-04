@@ -1,0 +1,312 @@
+/*Chat Monitor Screens*/
+#cluster-intro{
+    background-image: url("../img/utils/monitor.png");
+    background-size: 1200px 850px;
+    background-repeat: no-repeat;
+    background-position: 0 150px;
+    margin-top: -120px;
+}
+
+#digimon-vs-pokemon {
+    background-image: url("../img/utils/monitor.png");
+    background-size: 1250px 900px;
+    background-repeat: no-repeat;
+    background-position: 20px 130px;
+    margin-top: -200px;
+}
+
+#pokemon-go-map-intro {
+    background-image: url("../img/utils/monitor.png");
+    background-size: 1250px 850px;
+    background-repeat: no-repeat;
+    background-position: 20px 150px;
+    margin-top: -120px;
+}
+
+#conclusion-sec {
+    background-image: url("../img/utils/monitor.png");
+    background-size: 1250px 850px;
+    background-repeat: no-repeat;
+    background-position: 20px 150px;
+    margin-top: -120px;
+    margin-left: 200px;
+}
+
+
+/*Chat messaging styles*/
+.chat-wrapper-left {
+    border: 2px solid #dedede;
+    background-color: #EBD58D;
+    border-radius: 5px;
+    padding: 5px;
+    position: relative;
+    overflow: hidden;
+    height: 80px;
+    width: 70%;
+}
+
+.chat-wrapper-right {
+    border: 2px solid #ccc;
+    background-color: #dbbbbb;
+    border-radius: 5px;
+    padding: 5px;
+    position: relative;
+    overflow: hidden;
+    height: 80px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: 0;
+}
+
+/*Chat messaging boxes*/
+/*introduction*/
+.slide-left-to-right1 {
+    position: relative;
+    left: -100px;
+    height: 80px;
+    margin: 5px;
+    -webkit-animation: slide 3s forwards;
+    -webkit-animation-delay: 1s;
+    visibility: hidden;
+    animation: 1s fadeIn, slide 3s forwards;
+    animation-fill-mode: forwards;
+    animation-delay: 2s;
+}
+
+.slide-right-to-left1 {
+    position: relative;
+    left: 100px;
+    height: 70px;
+    -webkit-animation: slide 3s forwards;
+    -webkit-animation-delay: 1s;
+    visibility: hidden;
+    animation: 1s fadeIn, slide 3s forwards;
+    animation-fill-mode: forwards;
+    animation-delay: 4s;
+}
+
+.slide-left-to-right2 {
+    position: relative;
+    left: -100px;
+    height: 250px;
+    -webkit-animation: slide 3s forwards;
+    -webkit-animation-delay: 1s;
+    visibility: hidden;
+    animation: 1s fadeIn, slide 3s forwards;
+    animation-fill-mode: forwards;
+    animation-delay: 6s;
+}
+
+.slide-right-to-left2 {
+    position: relative;
+    left: 100px;
+    height: 70px;
+    -webkit-animation: slide 3s forwards;
+    -webkit-animation-delay: 1s;
+    visibility: hidden;
+    animation: 1s fadeIn, slide 3s forwards;
+    animation-fill-mode: forwards;
+    animation-delay: 8s;
+}
+
+/*box office*/
+.slide-left-to-right3 {
+    position: relative;
+    left: -100px;
+    height: 240px;
+    margin: 5px;
+    -webkit-animation: slide 3s forwards;
+    -webkit-animation-delay: 1s;
+    visibility: hidden;
+    animation: 1s fadeIn, slide 3s forwards;
+    animation-fill-mode: forwards;
+    animation-delay: 20s;
+}
+
+.slide-right-to-left3 {
+    position: relative;
+    left: 100px;
+    height: 70px;
+    -webkit-animation: slide 3s forwards;
+    -webkit-animation-delay: 1s;
+    visibility: hidden;
+    animation: 1s fadeIn, slide 3s forwards;
+    animation-fill-mode: forwards;
+    animation-delay: 22s;
+}
+
+.slide-left-to-right4 {
+    position: relative;
+    left: -100px;
+    height: 180px;
+    -webkit-animation: slide 3s forwards;
+    -webkit-animation-delay: 1s;
+    visibility: hidden;
+    animation: 1s fadeIn, slide 3s forwards;
+    animation-fill-mode: forwards;
+    animation-delay: 24s;
+}
+
+/*map intro*/
+.slide-right-to-left4 {
+    position: relative;
+    left: 100px;
+    height: 110px;
+    -webkit-animation: slide 3s forwards;
+    -webkit-animation-delay: 1s;
+    visibility: hidden;
+    animation: 1s fadeIn, slide 3s forwards;
+    animation-fill-mode: forwards;
+    animation-delay: 40s;
+}
+
+.slide-left-to-right5 {
+    position: relative;
+    left: -100px;
+    height: 140px;
+    -webkit-animation: slide 3s forwards;
+    -webkit-animation-delay: 1s;
+    visibility: hidden;
+    animation: 1s fadeIn, slide 3s forwards;
+    animation-fill-mode: forwards;
+    animation-delay: 42s;
+}
+
+.slide-right-to-left5 {
+    position: relative;
+    left: 100px;
+    height: 70px;
+    -webkit-animation: slide 3s forwards;
+    -webkit-animation-delay: 1s;
+    visibility: hidden;
+    animation: 1s fadeIn, slide 3s forwards;
+    animation-fill-mode: forwards;
+    animation-delay: 44s;
+}
+
+/*conclusion*/
+.slide-right-to-left6 {
+    position: relative;
+    left: 100px;
+    height: 140px;
+    -webkit-animation: slide 3s forwards;
+    -webkit-animation-delay: 1s;
+    visibility: hidden;
+    animation: 1s fadeIn, slide 3s forwards;
+    animation-fill-mode: forwards;
+    animation-delay: 52s;
+}
+
+.slide-left-to-right6 {
+    position: relative;
+    left: -100px;
+    height: 90px;
+    -webkit-animation: slide 3s forwards;
+    -webkit-animation-delay: 1s;
+    visibility: hidden;
+    animation: 1s fadeIn, slide 3s forwards;
+    animation-fill-mode: forwards;
+    animation-delay: 54s;
+}
+
+.slide-right-to-left7 {
+    position: relative;
+    left: 100px;
+    height: 110px;
+    -webkit-animation: slide 3s forwards;
+    -webkit-animation-delay: 1s;
+    visibility: hidden;
+    animation: 1s fadeIn, slide 3s forwards;
+    animation-fill-mode: forwards;
+    animation-delay: 56s;
+}
+
+.slide-left-to-right7 {
+    position: relative;
+    left: -100px;
+    height: 70px;
+    -webkit-animation: slide 3s forwards;
+    -webkit-animation-delay: 1s;
+    visibility: hidden;
+    animation: 1s fadeIn, slide 3s forwards;
+    animation-fill-mode: forwards;
+    animation-delay: 58s;
+}
+
+/*Chat messaging styles*/
+@keyframes fadeIn {
+    99% {
+        visibility: hidden;
+    }
+    100% {
+        visibility: visible;
+    }
+}
+
+@-webkit-keyframes slide {
+    100% { left: 0; }
+}
+
+@keyframes slide {
+    100% { left: 0; }
+}
+
+.chat-wrapper-left::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.chat-wrapper-right::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.chat-wrapper-left img {
+    float: left;
+    max-width: 60px;
+    width: 100%;
+    margin-right: 20px;
+    border-radius: 50%;
+}
+
+.chat-wrapper-right img {
+    float: left;
+    max-width: 60px;
+    width: 100%;
+    margin-right: 20px;
+    border-radius: 50%;
+}
+
+.chat-wrapper-left img.right {
+    float: right;
+    margin-left: 20px;
+    margin-right:0;
+}
+
+.chat-wrapper-right img.right {
+    float: right;
+    margin-left: 20px;
+    margin-right:0;
+}
+
+.chat-wrapper-left p {
+    font-family: 'DynaPuff';
+}
+
+.chat-wrapper-right p {
+    font-family: 'DynaPuff';
+}
+
+.time-right {
+    float: right;
+    color: #aaa;
+    margin-top: -20px;
+}
+
+.time-left {
+    float: left;
+    color: #999;
+    margin-top: -20px;
+}
