@@ -128,6 +128,13 @@ h2 {
 	color: #555555;
 }
 
+.chart-title-tiny {
+	font-family: 'DynaPuff';
+	/*font-family: fantasy;*/
+	font-size: 10px;
+	color: white;
+}
+
 .movie-name{
 	font-size: 14px;
 	color: #12B9F5;
@@ -357,9 +364,10 @@ h2 {
 }
 
 
+
 .container .card {
 	position: relative;
-	width : 240px;
+	width : 200px;
 	height : 215px;
 	background-color : #fff;
 	margin : 30px 10px;
@@ -395,7 +403,7 @@ h2 {
 .container .card .content {
 	position : relative;
 	top : -140px;
-	padding : 10px 10px;
+	padding : 10px 15px;
 	color : #111;
 	text-align : center;
 	font-size: small;
@@ -550,29 +558,6 @@ h2 {
 	align-items: center;
 }
 
-#web-authors {
-	background-image: url("../img/utils/end-pages-background.jpg");
-	background-size: 1100px 650px;
-	background-repeat: no-repeat;
-	background-position: center;
-	margin-top: -100px;
-}
-
-#web-sources {
-	background-image: url("../img/utils/end-pages-background.jpg");
-	background-size: 1100px 650px;
-	background-repeat: no-repeat;
-	background-position: center;
-	margin-top: -100px;
-}
-
-.web-sources-text-bold {
-	font-family: "DynaPuff";
-	font-size: 22px;
-}
-
-.web-sources-text-normal {
-	font-family: "DynaPuff";
-	font-size: 16px;
-	font-weight: lighter;
+#mapTooltip:hover {
+	background-color: #ffcc00;
 }

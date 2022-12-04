@@ -151,6 +151,8 @@ class Cluster {
 
         vis.detailDiv = d3.select("#pokemon-details-features").append("div")
             .attr("id","#card-details");
+            // .style("height","900px");
+
 
         let cardMarginLeft = 0,
             cardMarginTop = 60;
@@ -242,24 +244,7 @@ class Cluster {
             .attr("class","radar-range-labels")
             .attr("text-anchor","middle");
 
-        vis.radarNames = vis.cardSvg.append("g")
-            .attr("class","feature-names")
-            .attr("text-anchor","start")
-            .attr("fill","#012231");
 
-        let radarNamesCX = [190, 275, 275, 160, 75, 30]
-        let radarNamesCY = [335, 380, 470, 515, 470, 380]
-
-        for (let i = 0; i < features.length; i++) {
-            vis.radarNames
-                .append("text")
-                .attr("class","feature-name")
-                .attr("id",`feature-${featureNames[i]}`)
-                .text(featureNames[i])
-                .attr("x",radarNamesCX[i])
-                .attr("y",radarNamesCY[i])
-                .attr("font-size","12px");
-        }
 
         // vis.ticks.forEach(t =>
         //     vis.radarRange.append("text")
@@ -300,7 +285,7 @@ class Cluster {
             .datum(vis.coordinates)
             .attr("d",vis.line)
             .attr("fill", "#FFD700")
-            .attr("opacity", 0.4);
+            .attr("opacity", 0.6);
 
         vis.radarTooltips = vis.radarSvg.append("g")
             .attr("class","feature-tooltips");
@@ -351,6 +336,108 @@ class Cluster {
             .attr("y",313)
             .attr("font-size","10px")
             .attr("fill","#012231");
+
+        vis.tooltipSvg = vis.detailDiv.append("svg")
+            .attr("id","tooltip-svg-area")
+            .attr("width",400)
+            .attr("height",600)
+            .attr("transform",`translate(0,-740)`);
+
+        vis.radarNames = vis.tooltipSvg.append("g")
+            .attr("class","feature-names")
+            .attr("text-anchor","start")
+            .attr("fill","#012231");
+
+        let radarNamesCX = [170, 275, 275, 160, 75, 30]
+        let radarNamesCY = [335, 380, 470, 515, 470, 380]
+
+        // append tooltip
+        vis.tooltip = vis.detailDiv.append('div')
+            .attr('class', "tooltip")
+            .attr('id', 'mapTooltip');
+
+        for (let i = 0; i < features.length; i++) {
+            vis.radarNames
+                .append("text")
+                .attr("class","feature-name")
+                .attr("id",`feature-${featureNames[i]}`)
+                .text(featureNames[i])
+                .attr("x",radarNamesCX[i])
+                .attr("y",radarNamesCY[i])
+                .attr("font-size","12px")
+                .on('mouseover', function(event, d){
+                    let name = d3.select(this)._groups[0][0].innerHTML;
+                    //console.log("card tooltip", d3.select(this)._groups[0][0].innerHTML)
+                    d3.select(this)
+                        .attr("fill", "#0055B3")
+                        .attr("stroke", "white")
+                        .attr("font-size","13px")
+                        .attr("stroke-width","0.3px");
+
+                    let html = ""
+
+                    if (name === "Hit Points") {
+                        html = `
+                         <div style="border-radius: 5px; padding: 20px; width: 200px;">
+                             <h6 class="chart-title-tiny"> A value that determines how much damage a Pokémon can receive. </h6>
+                         </div>`
+                    }
+
+                    if (name === "Speed") {
+                        html = `
+                         <div style="border-radius: 5px; padding: 20px; width: 200px;">
+                             <h6 class="chart-title-tiny"> A value that determines which Pokémon will act first during battle. </h6>
+                         </div>`
+                    }
+
+                    if (name === "Attack") {
+                        html = `
+                         <div style="border-radius: 5px; padding: 20px; width: 200px;">
+                             <h6 class="chart-title-tiny"> A value that determines how much damage a Pokémon will cause to the opponent while using a physical move. </h6>
+                         </div>`
+                    }
+
+                    if (name === "Special Attack") {
+                        html = `
+                         <div style="border-radius: 5px; padding: 20px; width: 200px;">
+                             <h6 class="chart-title-tiny"> A value that determines how much damage a Pokémon can cause while using a special move. </h6>
+                         </div>`
+                    }
+
+                    if (name === "Defense") {
+                        html = `
+                         <div style="border-radius: 5px; padding: 20px; width: 200px;">
+                             <h6 class="chart-title-tiny"> A value that determines how much damage a Pokémon will resist when hit by a physical move. </h6>
+                         </div>`
+                    }
+
+                    if (name === "Special Defense") {
+                        html = `
+                         <div style="border-radius: 5px; padding: 20px; width: 200px;">
+                             <h6 class="chart-title-tiny"> A value that determines how much damage a Pokémon will resist when hit by a special move. </h6>
+                         </div>`
+                    }
+
+                    vis.tooltip
+                        .style("opacity", 1)
+                        .style("left", event.pageX - 110 + "px")
+                        .style("top", event.pageY + "px")
+                        .html(html)
+                        .style("background",'#012231')})
+
+                .on('mouseout', function(event, d){
+                    d3.select(this)
+                        .attr('fill', "#012231")
+                        .attr("stroke","none")
+                        .attr("font-size","12px");
+
+                    vis.tooltip
+                        .style("opacity", 0)
+                        .style("left", 0)
+                        .style("top", 0)
+                        .html(``);
+                });
+        }
 
     }
 
