@@ -185,7 +185,6 @@ class PokemonGoMapVis {
                              <h4> ${d}</h4>
                          </div>`)
                             .style("background",'#d79595')
-
                     })
                     .on('mouseout', function(event, d){
                         d3.select(this)
