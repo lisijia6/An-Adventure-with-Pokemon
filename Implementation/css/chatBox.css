@@ -184,6 +184,106 @@
     animation-delay: 4s;
 }
 
+.slide-left-to-right2 {
+    position: relative;
+    left: -100px;
+    height: 250px;
+    -webkit-animation: slide 3s forwards;
+    -webkit-animation-delay: 1s;
+    visibility: hidden;
+    animation: 1s fadeIn, slide 3s forwards;
+    animation-fill-mode: forwards;
+    animation-delay: 6s;
+}
+
+.slide-right-to-left2 {
+    position: relative;
+    left: 100px;
+    height: 70px;
+    -webkit-animation: slide 3s forwards;
+    -webkit-animation-delay: 1s;
+    visibility: hidden;
+    animation: 1s fadeIn, slide 3s forwards;
+    animation-fill-mode: forwards;
+    animation-delay: 8s;
+}
+
+/*box office*/
+.slide-left-to-right3 {
+    position: relative;
+    left: -100px;
+    height: 240px;
+    margin: 5px;
+    -webkit-animation: slide 3s forwards;
+    -webkit-animation-delay: 1s;
+    visibility: hidden;
+    animation: 1s fadeIn, slide 3s forwards;
+    animation-fill-mode: forwards;
+    animation-delay: 20s;
+}
+
+.slide-right-to-left3 {
+    position: relative;
+    left: 100px;
+    height: 90px;
+    -webkit-animation: slide 3s forwards;
+    -webkit-animation-delay: 1s;
+    visibility: hidden;
+    animation: 1s fadeIn, slide 3s forwards;
+    animation-fill-mode: forwards;
+    animation-delay: 22s;
+}
+
+.slide-left-to-right4 {
+    position: relative;
+    left: -100px;
+    height: 180px;
+    -webkit-animation: slide 3s forwards;
+    -webkit-animation-delay: 1s;
+    visibility: hidden;
+    animation: 1s fadeIn, slide 3s forwards;
+    animation-fill-mode: forwards;
+    animation-delay: 24s;
+}
+
+/*map intro*/
+.slide-right-to-left4 {
+    position: relative;
+    left: 100px;
+    height: 110px;
+    -webkit-animation: slide 3s forwards;
+    -webkit-animation-delay: 1s;
+    visibility: hidden;
+    animation: 1s fadeIn, slide 3s forwards;
+    animation-fill-mode: forwards;
+    animation-delay: 40s;
+}
+
+.slide-left-to-right5 {
+    position: relative;
+    left: -100px;
+    height: 140px;
+    -webkit-animation: slide 3s forwards;
+    -webkit-animation-delay: 1s;
+    visibility: hidden;
+    animation: 1s fadeIn, slide 3s forwards;
+    animation-fill-mode: forwards;
+    animation-delay: 42s;
+}
+
+.slide-right-to-left5 {
+    position: relative;
+    left: 100px;
+    height: 70px;
+    -webkit-animation: slide 3s forwards;
+    -webkit-animation-delay: 1s;
+    visibility: hidden;
+    animation: 1s fadeIn, slide 3s forwards;
+    animation-fill-mode: forwards;
+    animation-delay: 44s;
+}
+
+>>>>>>> c0f1000fad484e36273d002d7a0326aed5c126e6
 /*conclusion*/
 .slide-right-to-left6.animate {
     position: relative;

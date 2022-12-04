@@ -128,6 +128,13 @@ h2 {
 	color: #555555;
 }
 
+.chart-title-tiny {
+	font-family: 'DynaPuff';
+	/*font-family: fantasy;*/
+	font-size: 10px;
+	color: white;
+}
+
 .movie-name{
 	font-size: 14px;
 	color: #12B9F5;
@@ -549,4 +556,8 @@ h2 {
 	margin-left: 100px;
 	justify-content: center;
 	align-items: center;
+}
+
+#mapTooltip:hover {
+	background-color: #ffcc00;
 }

@@ -21,9 +21,9 @@ input { cursor: pointer; }
     background-color: #FFF;
     border: solid 1px #999;
     color: #000;
-    width: 1200px;
+    width: 1400px;
     height: auto;
-    padding: 20px;
+    padding: 50px;
     -webkit-border-radius: 3px;
     -webkit-box-orient: vertical;
     -webkit-transition: 200ms -webkit-transform;
