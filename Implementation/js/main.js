@@ -143,7 +143,6 @@ function closePanel() {
     document.getElementById('centerDIV').style.display = 'none';
 }
 
-
 /*HOVER OVER THE ZIP ZAG IMAGE AND SHOW TEXT*/
 writeText("poke")
 function writeText(type){

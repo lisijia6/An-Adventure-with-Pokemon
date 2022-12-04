@@ -106,20 +106,26 @@ h2 {
 	/*opacity: 0.5;*/
 }
 
-.chart-title-bold {
-	font-family: fantasy;
-	font-size: 24px;
-	font-weight: bold;
-}
 
 .chart-title {
-	font-family: fantasy;
+	font-family: 'DynaPuff';
+	/*font-family: fantasy;*/
+	font-size: 26px;
+}
+
+.chart-title-bold {
+	font-family: 'DynaPuff';
+	/*font-family: fantasy;*/
 	font-size: 22px;
+	font-weight: bold;
+	color: #404245;
 }
 
 .chart-title-small {
-	font-family: fantasy;
-	font-size: 18px;
+	font-family: 'DynaPuff';
+	/*font-family: fantasy;*/
+	font-size: 16px;
+	color: #555555;
 }
 
 .movie-name{
@@ -534,4 +540,13 @@ h2 {
 	font-weight: 600;
 	margin-top: 16px;
 	text-align: center;
+}
+
+.end-pages-title {
+	font-family: 'DynaPuff';
+	font-size: 36px;
+	display: flex;
+	margin-left: 100px;
+	justify-content: center;
+	align-items: center;
 }

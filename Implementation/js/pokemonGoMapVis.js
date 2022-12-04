@@ -73,7 +73,7 @@ class PokemonGoMapVis {
         // create a point radius scale
         vis.pointScale = d3.scaleLinear()
             .domain([0, d3.max(vis.pokemonGoGeoCountData, d => d.pokemonCount)])
-            .range([2, 10])
+            .range([4, 20])
 
         vis.pokemonCities = vis.svg.selectAll(".pokemonCities")
             .data(vis.pokemonGoGeoCountData)
@@ -81,7 +81,7 @@ class PokemonGoMapVis {
             .attr("r", d => vis.pointScale(d.pokemonCount))
             .attr('cx', d => vis.projection([d.longitude, d.latitude])[0])
             .attr('cy', d => vis.projection([d.longitude, d.latitude])[1])
-            .attr("fill", "#55aaff")
+            .attr("fill", "#ffed6f")
             .attr("stroke", "black")
             .attr('class', 'pokemonCities')
             .attr("d", vis.path)
@@ -92,36 +92,6 @@ class PokemonGoMapVis {
         vis.tooltip2 = d3.select("body").append('div')
             .attr('class', "tooltip")
             .attr('id', 'mapPokemonTooltip');
-
-        // add chat boxes
-        vis.typed1 = new Typed(".auto-type-10", {
-            strings: ["I heard about the popular Pokemon Go game. Where can I find Pokemons around the world?"],
-            typeSpeed: 50,
-            backSpeed: 150,
-            loop: false
-        })
-        vis.typed2 = new Typed(".auto-type-11", {
-            strings: ["Yeah! You can find us almost anywhere around the world. New York, Chicago, and LA are " +
-            "the three places that we are seen the most."],
-            typeSpeed: 50,
-            backSpeed: 150,
-            startDelay:7550,
-            loop: false
-        })
-        vis.typed3 = new Typed(".auto-type-12", {
-            strings: ["Wonderful!"],
-            typeSpeed: 50,
-            backSpeed: 150,
-            startDelay:10000,
-            loop: false
-        })
-        vis.typed4 = new Typed(".auto-type-13", {
-            strings: ["Have fun with the game!"],
-            typeSpeed: 50,
-            backSpeed: 150,
-            startDelay:15000,
-            loop: false
-        })
 
         vis.wrangleData()
 
@@ -148,7 +118,7 @@ class PokemonGoMapVis {
 
         // console.log(vis.countryInfo)
         vis.countries
-            .attr('fill', "#D3D3D3")
+            .attr('fill', "#80b1d3")
             .attr('stroke', '#656565')
         //     .attr("fill", d => {return vis.countryInfo[d.properties.name].color})
 
@@ -158,7 +128,7 @@ class PokemonGoMapVis {
                 d3.select(this)
                     .attr('stroke-width', '2px')
                     .attr('stroke', "black")
-                    .attr('fill', "#d6604d")
+                    .attr('fill', "#d79595")
                     // .attr('fill', d => {return vis.countryInfo[d.properties.name].color})
                 let filteredData = vis.pokemonGoGeoData['nodes'].filter(function(c){ return c.city === d.city })
                 let uniquePokemons = d3.map(filteredData, function(d){return d.name;})
@@ -171,14 +141,13 @@ class PokemonGoMapVis {
                     .style("left", event.pageX + 20 + "px")
                     .style("top", event.pageY + "px")
                     .html(`
-                         <div style="border: thin solid grey; border-radius: 5px; background: #ECEAC3; padding: 20px">
+                         <div style="border: thin solid grey; border-radius: 5px; padding: 20px">
                              <h4 class="chart-title-bold"> ${d.city}</h4>
-                             <h6 class="chart-title-small"> City: ${d.city}</h6>
                              <h6 class="chart-title-small"> Continent: ${filteredData[0].continent}</h6>
                              <h6 class="chart-title-small"> Total Number of Pokemons Spotted: ${d.pokemonCount}</h6>
                              <h6 class="chart-title-small"> Unique Types Pokemons Spotted: ${uniquePokemons.length}</h6>
                          </div>`)
-                    .style("background",'#BCC5F7')
+                    .style("background",'#dbbbbb')
 
                 // Image
                 vis.svgImg.selectAll("img").remove()
@@ -204,7 +173,7 @@ class PokemonGoMapVis {
                         d3.select(this)
                             .attr('stroke-width', '2px')
                             .attr('stroke', "black")
-                            .attr('fill', "#d6604d")
+                            .attr('fill', "#d79595")
                         // .attr('fill', d => {return vis.countryInfo[d.properties.name].color})
                         // console.log(d)
                         vis.tooltip2
@@ -212,10 +181,10 @@ class PokemonGoMapVis {
                             .style("left", event.pageX + 20 + "px")
                             .style("top", event.pageY + "px")
                             .html(`
-                         <div style="border: thin solid grey; border-radius: 5px; background: #ECEAC3; padding: 20px">
+                         <div style="border: thin solid grey; border-radius: 5px; padding: 20px">
                              <h4> ${d}</h4>
                          </div>`)
-                            .style("background",'#BCC5F7')
+                            .style("background",'#d79595')
 
                     })
                     .on('mouseout', function(event, d){
@@ -236,7 +205,7 @@ class PokemonGoMapVis {
                 d3.select(this)
                     .attr('stroke-width', '1px')
                     // .attr('stroke', '#656565')
-                    .attr('fill', "#55aaff")
+                    .attr('fill', "#ffed6f")
                     // .attr("fill", d => {return vis.countryInfo[d.properties.name].color})
 
                 vis.tooltip
