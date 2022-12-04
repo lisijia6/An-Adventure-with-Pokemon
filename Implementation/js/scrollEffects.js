@@ -38,6 +38,16 @@ var myFullpage = new fullpage('#fullpage', {
             case 'cluster-sec':
                 pokeCluster.wrangleData(0);
                 break;
+            case 'cluster-intro':
+                document.getElementsByClassName('slide-left-to-right1')[0].classList.add('animate');
+                document.getElementsByClassName('slide-right-to-left1')[0].classList.add('animate');
+                document.getElementsByClassName('slide-left-to-right2')[0].classList.add('animate');
+                document.getElementsByClassName('slide-right-to-left2')[0].classList.add('animate');
+                break;
+            case 'digimon-vs-pokemon':
+                document.getElementsByClassName('slide-left-to-right3')[0].classList.add('animate');
+                document.getElementsByClassName('slide-right-to-left3')[0].classList.add('animate');
+                document.getElementsByClassName('slide-left-to-right4')[0].classList.add('animate');
             case 'boxOffice-sec':
                 boxOffice.wrangleData();
                 break;
@@ -49,11 +59,20 @@ var myFullpage = new fullpage('#fullpage', {
             //     //     drawPlotVis();
             //     // }
             //     break;
-
+            case "pokemon-go-map-intro":
+                document.getElementsByClassName('slide-right-to-left4')[0].classList.add('animate');
+                document.getElementsByClassName('slide-left-to-right5')[0].classList.add('animate');
+                document.getElementsByClassName('slide-right-to-left5')[0].classList.add('animate');
+                break;
             case 'map-sec':
                 pokemonGoMapVis.wrangleData();
                 break;
-
+            case 'conclusion-sec':
+                document.getElementsByClassName('slide-right-to-left6')[0].classList.add('animate');
+                document.getElementsByClassName('slide-left-to-right6')[0].classList.add('animate');
+                document.getElementsByClassName('slide-right-to-left7')[0].classList.add('animate');
+                document.getElementsByClassName('slide-left-to-right7')[0].classList.add('animate');
+                break;
 
             // case 'characters-sec':
             //     if (!doneIntro) {
