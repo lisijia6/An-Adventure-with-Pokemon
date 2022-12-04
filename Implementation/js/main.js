@@ -146,20 +146,39 @@ function closePanel() {
 /*HOVER OVER THE ZIP ZAG IMAGE AND SHOW TEXT*/
 writeText("poke")
 function writeText(type){
-    let p1 = document.getElementById("compare-movie-text")
-    let p2 = document.getElementById("compare-game-text")
+    let p = document.getElementById("compare-pokemon-digimon-text")
     if (type==="poke") {
-        p1.innerHTML = "As of 2022, there have been <span style=\"color: #12B9F5\">23</span> theatrical <span style=\"color: #12B9F5\">Pokémon</span> movies and one live-action movie, Detective Pikachu. " +
-            "The average box office per movie is <span style=\"color: #12B9F5\">$62.1</span> million US dollars and Detective Pikachu in 2019 even made a gross of <span style=\"color: #12B9F5\">$433</span> million, " +
-            "becoming the second highest-grossing video game film adaptation behind Warcraft. "
-        p2.innerHTML = "On the video game side, <span style=\"color: #12B9F5\">Pokémon</span> has <span style=\"color: #12B9F5\">20</span> 'core-series' games, each was released in a new generation with different Pokémon, storylines, and characters. " +
-            "It also has several spin-off games, the famous of which is 'Pokémon Go', which has crossed <span style=\"color: #12B9F5\">1 billion</span> mobile game downloads worldwide. " +
-            "By 2017, more tha <span style=\"color: #12B9F5\">300 million</span> <span style=\"color: #12B9F5\">Pokémon</span> games had been sold worldwide. As of 2022, the series has sold over <span style=\"color: #12B9F5\">440 million</span> worldwide, making <span style=\"color: #12B9F5\">Pokémon</span> the 3rd best-selling video franchise, behind Mrio and Tetris. "
+        p.innerHTML = "<span style='font-size: 24px'>Pokémon as of 2022:</span> <br>" +
+            "<ul>" +
+                "<li><span style=\"color: #12B9F5\">23</span> theatrical Pokémon movies, " +
+                    "<span style=\"color: #12B9F5\">1</span> live-action movie (Detective Pikachu), " +
+                    "<span style=\"color: #12B9F5\">20</span> 'core-series' games</li>" +
+                "<li>Average box office per movie: <span style=\"color: #12B9F5\">USD $62.1M</span></li>" +
+                "<li>Each Pokémon 'core-series' game is released in a new generation with different" +
+                "</li>" +
+            "</ul>"
+        // p.innerHTML = "As of 2022, there have been <span style=\"color: #12B9F5\">23</span> theatrical <span style=\"color: #12B9F5\">Pokémon</span> movies and one live-action movie, Detective Pikachu. " +
+        //     "The average box office per movie is <span style=\"color: #12B9F5\">$62.1</span> million US dollars and Detective Pikachu in 2019 even made a gross of <span style=\"color: #12B9F5\">$433</span> million, " +
+        //     "becoming the second highest-grossing video game film adaptation behind Warcraft. "
     }
     else {
-        p1.innerHTML = "To date, there have been <span style=\"color: #ef2a45\">15</span> movies released in the <span style=\"color: #ef2a45\">Digimon</span> franchise. Among those, Digital Adventure 02: Revenge of Diaboromon has the highest box office <span style=\"color: #ef2a45\">$37.6M</span>, " +
+        p.innerHTML = "To date, there have been <span style=\"color: #ef2a45\">15</span> movies released in the <span style=\"color: #ef2a45\">Digimon</span> franchise. Among those, Digital Adventure 02: Revenge of Diaboromon has the highest box office <span style=\"color: #ef2a45\">$37.6M</span>, " +
             "which is almost <span style=\"color: #ef2a45\">11 times</span> less compared to the highest box office of the Pokémon movies. The average box office is about <span style=\"color: #ef2a45\">$9.1M</span> which is <span style=\"color: #ef2a45\">6 times less</span> than that of the Pokémon's."
-        p2.innerHTML = "There have been several <span style=\"color: #ef2a45\">Digimon</span> video games developed since 1999. Common elements include battle between Digimon, with human 'Tamers' present or otherwise, and the ability to 'Digivolve' back and forth between several evolutionary forms." +
-            "Despite sveral games have drawn comparisons to that of the Pokémon franchise, the <span style=\"color: #ef2a45\">Digimon</span> video games are <span style=\"color: #ef2a45\">not nearly as supported</span> based on the units sold per game."
     }
+    // let p1 = document.getElementById("compare-movie-text")
+    // let p2 = document.getElementById("compare-game-text")
+    // if (type==="poke") {
+    //     p1.innerHTML = "As of 2022, there have been <span style=\"color: #12B9F5\">23</span> theatrical <span style=\"color: #12B9F5\">Pokémon</span> movies and one live-action movie, Detective Pikachu. " +
+    //         "The average box office per movie is <span style=\"color: #12B9F5\">$62.1</span> million US dollars and Detective Pikachu in 2019 even made a gross of <span style=\"color: #12B9F5\">$433</span> million, " +
+    //         "becoming the second highest-grossing video game film adaptation behind Warcraft. "
+    //     p2.innerHTML = "On the video game side, <span style=\"color: #12B9F5\">Pokémon</span> has <span style=\"color: #12B9F5\">20</span> 'core-series' games, each was released in a new generation with different Pokémon, storylines, and characters. " +
+    //         "It also has several spin-off games, the famous of which is 'Pokémon Go', which has crossed <span style=\"color: #12B9F5\">1 billion</span> mobile game downloads worldwide. " +
+    //         "By 2017, more tha <span style=\"color: #12B9F5\">300 million</span> <span style=\"color: #12B9F5\">Pokémon</span> games had been sold worldwide. As of 2022, the series has sold over <span style=\"color: #12B9F5\">440 million</span> worldwide, making <span style=\"color: #12B9F5\">Pokémon</span> the 3rd best-selling video franchise, behind Mrio and Tetris. "
+    // }
+    // else {
+    //     p1.innerHTML = "To date, there have been <span style=\"color: #ef2a45\">15</span> movies released in the <span style=\"color: #ef2a45\">Digimon</span> franchise. Among those, Digital Adventure 02: Revenge of Diaboromon has the highest box office <span style=\"color: #ef2a45\">$37.6M</span>, " +
+    //         "which is almost <span style=\"color: #ef2a45\">11 times</span> less compared to the highest box office of the Pokémon movies. The average box office is about <span style=\"color: #ef2a45\">$9.1M</span> which is <span style=\"color: #ef2a45\">6 times less</span> than that of the Pokémon's."
+    //     p2.innerHTML = "There have been several <span style=\"color: #ef2a45\">Digimon</span> video games developed since 1999. Common elements include battle between Digimon, with human 'Tamers' present or otherwise, and the ability to 'Digivolve' back and forth between several evolutionary forms." +
+    //         "Despite sveral games have drawn comparisons to that of the Pokémon franchise, the <span style=\"color: #ef2a45\">Digimon</span> video games are <span style=\"color: #ef2a45\">not nearly as supported</span> based on the units sold per game."
+    // }
 }
