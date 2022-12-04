@@ -35,7 +35,7 @@ class Cluster {
                 "#a5ea4a", "#fcd5a7", "#80b1d3", "#858959",
                 "#d79595", "#909090", "#c2e2bb", "#a6c2e2",
                 "#d38da9", "#EBD58D", "#9ab1c1", "#ffed6f",
-                "#f18787", "#ddb7ec", "#89e2e7", "#ffc5da"])  //
+                "#f18787", "#ddb7ec", "#89e2e7", "rgba(255,197,218,0.83)"])  //
 
         vis.pack = d3.pack()
             .size([vis.diameter - vis.margin.top, vis.diameter - vis.margin.top])

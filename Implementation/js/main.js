@@ -163,3 +163,18 @@ function writeText(type){
             "Despite sveral games have drawn comparisons to that of the Pokémon franchise, the <span style=\"color: #ef2a45\">Digimon</span> video games are <span style=\"color: #ef2a45\">not nearly as supported</span> based on the units sold per game."
     }
 }
+
+
+
+
+
+// make the css animation happen after reach a certain page section
+var scrollpos = window.scrollY; // window scroll position
+var wh = window.innerHeight-50; // as soon as element touches bottom with offset event starts
+var element = document.querySelector(".slide-left-to-right1"); //element
+
+window.addEventListener('scroll', function(){
+    if(scrollpos > (element.offsetTop - wh)){
+        element.classList.add("onScroll");
+    }
+});

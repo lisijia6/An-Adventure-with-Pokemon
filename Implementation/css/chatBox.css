@@ -3,38 +3,38 @@
     background-image: url("../img/utils/monitor.png");
     background-size: 1200px 850px;
     background-repeat: no-repeat;
-    background-position: 0 150px;
-    margin-top: -150px;
+    background-position: center;
+    margin-top: 30px;
 }
 
 #digimon-vs-pokemon {
     background-image: url("../img/utils/monitor.png");
     background-size: 1250px 900px;
     background-repeat: no-repeat;
-    background-position: 20px 130px;
-    margin-top: -200px;
+    background-position: center;
+    margin-top: 30px;
 }
 
 #pokemon-go-map-intro {
     background-image: url("../img/utils/monitor.png");
     background-size: 1250px 850px;
     background-repeat: no-repeat;
-    background-position: 20px 150px;
-    margin-top: -120px;
+    background-position: center;
+    margin-top: 30px;
 }
 
 #conclusion-sec {
     background-image: url("../img/utils/monitor.png");
     background-size: 1250px 850px;
     background-repeat: no-repeat;
-    background-position: 20px 150px;
-    margin-top: -120px;
+    background-position: center;
+    margin-top: 30px;
     margin-left: 200px;
 }
 
 
 /*Chat messaging styles*/
-.chat-wrapper-left {
+.chat-wrapper-left{
     border: 2px solid #dedede;
     background-color: #EBD58D;
     border-radius: 5px;
@@ -60,7 +60,7 @@
 
 /*Chat messaging boxes*/
 /*introduction*/
-.slide-left-to-right1 {
+.slide-left-to-right1.animate {
     position: relative;
     left: -100px;
     height: 80px;
@@ -70,10 +70,109 @@
     visibility: hidden;
     animation: 1s fadeIn, slide 3s forwards;
     animation-fill-mode: forwards;
+    animation-delay: 0s;
+}
+
+.slide-right-to-left1.animate {
+    position: relative;
+    left: 100px;
+    height: 70px;
+    -webkit-animation: slide 3s forwards;
+    -webkit-animation-delay: 1s;
+    visibility: hidden;
+    animation: 1s fadeIn, slide 3s forwards;
+    animation-fill-mode: forwards;
     animation-delay: 2s;
 }
 
-.slide-right-to-left1 {
+.slide-left-to-right2.animate {
+    position: relative;
+    left: -100px;
+    height: 250px;
+    -webkit-animation: slide 3s forwards;
+    -webkit-animation-delay: 1s;
+    visibility: hidden;
+    animation: 1s fadeIn, slide 3s forwards;
+    animation-fill-mode: forwards;
+    animation-delay: 4s;
+}
+
+.slide-right-to-left2.animate {
+    position: relative;
+    left: 100px;
+    height: 70px;
+    -webkit-animation: slide 3s forwards;
+    -webkit-animation-delay: 1s;
+    visibility: hidden;
+    animation: 1s fadeIn, slide 3s forwards;
+    animation-fill-mode: forwards;
+    animation-delay: 6s;
+}
+
+/*box office*/
+.slide-left-to-right3.animate {
+    position: relative;
+    left: -100px;
+    height: 240px;
+    margin: 5px;
+    -webkit-animation: slide 3s forwards;
+    -webkit-animation-delay: 1s;
+    visibility: hidden;
+    animation: 1s fadeIn, slide 3s forwards;
+    animation-fill-mode: forwards;
+    animation-delay: 0s;
+}
+
+.slide-right-to-left3.animate {
+    position: relative;
+    left: 100px;
+    height: 70px;
+    -webkit-animation: slide 3s forwards;
+    -webkit-animation-delay: 1s;
+    visibility: hidden;
+    animation: 1s fadeIn, slide 3s forwards;
+    animation-fill-mode: forwards;
+    animation-delay: 2s;
+}
+
+.slide-left-to-right4.animate {
+    position: relative;
+    left: -100px;
+    height: 180px;
+    -webkit-animation: slide 3s forwards;
+    -webkit-animation-delay: 1s;
+    visibility: hidden;
+    animation: 1s fadeIn, slide 3s forwards;
+    animation-fill-mode: forwards;
+    animation-delay: 4s;
+}
+
+/*map intro*/
+.slide-right-to-left4.animate {
+    position: relative;
+    left: 100px;
+    height: 110px;
+    -webkit-animation: slide 3s forwards;
+    -webkit-animation-delay: 1s;
+    visibility: hidden;
+    animation: 1s fadeIn, slide 3s forwards;
+    animation-fill-mode: forwards;
+    animation-delay: 0s;
+}
+
+.slide-left-to-right5.animate {
+    position: relative;
+    left: -100px;
+    height: 140px;
+    -webkit-animation: slide 3s forwards;
+    -webkit-animation-delay: 1s;
+    visibility: hidden;
+    animation: 1s fadeIn, slide 3s forwards;
+    animation-fill-mode: forwards;
+    animation-delay: 2s;
+}
+
+.slide-right-to-left5.animate {
     position: relative;
     left: 100px;
     height: 70px;
@@ -85,107 +184,8 @@
     animation-delay: 4s;
 }
 
-.slide-left-to-right2 {
-    position: relative;
-    left: -100px;
-    height: 250px;
-    -webkit-animation: slide 3s forwards;
-    -webkit-animation-delay: 1s;
-    visibility: hidden;
-    animation: 1s fadeIn, slide 3s forwards;
-    animation-fill-mode: forwards;
-    animation-delay: 6s;
-}
-
-.slide-right-to-left2 {
-    position: relative;
-    left: 100px;
-    height: 70px;
-    -webkit-animation: slide 3s forwards;
-    -webkit-animation-delay: 1s;
-    visibility: hidden;
-    animation: 1s fadeIn, slide 3s forwards;
-    animation-fill-mode: forwards;
-    animation-delay: 8s;
-}
-
-/*box office*/
-.slide-left-to-right3 {
-    position: relative;
-    left: -100px;
-    height: 240px;
-    margin: 5px;
-    -webkit-animation: slide 3s forwards;
-    -webkit-animation-delay: 1s;
-    visibility: hidden;
-    animation: 1s fadeIn, slide 3s forwards;
-    animation-fill-mode: forwards;
-    animation-delay: 20s;
-}
-
-.slide-right-to-left3 {
-    position: relative;
-    left: 100px;
-    height: 70px;
-    -webkit-animation: slide 3s forwards;
-    -webkit-animation-delay: 1s;
-    visibility: hidden;
-    animation: 1s fadeIn, slide 3s forwards;
-    animation-fill-mode: forwards;
-    animation-delay: 22s;
-}
-
-.slide-left-to-right4 {
-    position: relative;
-    left: -100px;
-    height: 180px;
-    -webkit-animation: slide 3s forwards;
-    -webkit-animation-delay: 1s;
-    visibility: hidden;
-    animation: 1s fadeIn, slide 3s forwards;
-    animation-fill-mode: forwards;
-    animation-delay: 24s;
-}
-
-/*map intro*/
-.slide-right-to-left4 {
-    position: relative;
-    left: 100px;
-    height: 110px;
-    -webkit-animation: slide 3s forwards;
-    -webkit-animation-delay: 1s;
-    visibility: hidden;
-    animation: 1s fadeIn, slide 3s forwards;
-    animation-fill-mode: forwards;
-    animation-delay: 40s;
-}
-
-.slide-left-to-right5 {
-    position: relative;
-    left: -100px;
-    height: 140px;
-    -webkit-animation: slide 3s forwards;
-    -webkit-animation-delay: 1s;
-    visibility: hidden;
-    animation: 1s fadeIn, slide 3s forwards;
-    animation-fill-mode: forwards;
-    animation-delay: 42s;
-}
-
-.slide-right-to-left5 {
-    position: relative;
-    left: 100px;
-    height: 70px;
-    -webkit-animation: slide 3s forwards;
-    -webkit-animation-delay: 1s;
-    visibility: hidden;
-    animation: 1s fadeIn, slide 3s forwards;
-    animation-fill-mode: forwards;
-    animation-delay: 44s;
-}
-
 /*conclusion*/
-.slide-right-to-left6 {
+.slide-right-to-left6.animate {
     position: relative;
     left: 100px;
     height: 140px;
@@ -194,10 +194,10 @@
     visibility: hidden;
     animation: 1s fadeIn, slide 3s forwards;
     animation-fill-mode: forwards;
-    animation-delay: 52s;
+    animation-delay: 0s;
 }
 
-.slide-left-to-right6 {
+.slide-left-to-right6.animate {
     position: relative;
     left: -100px;
     height: 90px;
@@ -206,10 +206,10 @@
     visibility: hidden;
     animation: 1s fadeIn, slide 3s forwards;
     animation-fill-mode: forwards;
-    animation-delay: 54s;
+    animation-delay: 2s;
 }
 
-.slide-right-to-left7 {
+.slide-right-to-left7.animate {
     position: relative;
     left: 100px;
     height: 110px;
@@ -218,10 +218,10 @@
     visibility: hidden;
     animation: 1s fadeIn, slide 3s forwards;
     animation-fill-mode: forwards;
-    animation-delay: 56s;
+    animation-delay: 4s;
 }
 
-.slide-left-to-right7 {
+.slide-left-to-right7.animate {
     position: relative;
     left: -100px;
     height: 70px;
@@ -230,7 +230,7 @@
     visibility: hidden;
     animation: 1s fadeIn, slide 3s forwards;
     animation-fill-mode: forwards;
-    animation-delay: 58s;
+    animation-delay: 6s;
 }
 
 /*Chat messaging styles*/
