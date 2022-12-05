@@ -149,21 +149,35 @@ function writeText(type){
     let p = document.getElementById("compare-pokemon-digimon-text")
     if (type==="poke") {
         p.innerHTML = "<span style='font-size: 24px'>Pokémon as of 2022:</span> <br>" +
+            "Movies: "+
             "<ul>" +
                 "<li><span style=\"color: #12B9F5\">23</span> theatrical Pokémon movies, " +
                     "<span style=\"color: #12B9F5\">1</span> live-action movie (Detective Pikachu), " +
-                    "<span style=\"color: #12B9F5\">20</span> 'core-series' games</li>" +
                 "<li>Average box office per movie: <span style=\"color: #12B9F5\">USD $62.1M</span></li>" +
-                "<li>Each Pokémon 'core-series' game is released in a new generation with different" +
-                "</li>" +
+                "<li>'Detective Pikach' is <span style=\"color: #12B9F5\">the second highest-grossing</span> video game adaptation behind Warcraft</li>" +
             "</ul>"
-        // p.innerHTML = "As of 2022, there have been <span style=\"color: #12B9F5\">23</span> theatrical <span style=\"color: #12B9F5\">Pokémon</span> movies and one live-action movie, Detective Pikachu. " +
-        //     "The average box office per movie is <span style=\"color: #12B9F5\">$62.1</span> million US dollars and Detective Pikachu in 2019 even made a gross of <span style=\"color: #12B9F5\">$433</span> million, " +
-        //     "becoming the second highest-grossing video game film adaptation behind Warcraft. "
+            +"Video Games: "+
+            "<ul>"+
+                "<li><span style=\"color: #12B9F5\">20</span> 'core-series' games</li>"+
+                "<li>More than <span style=\"color: #12B9F5\">440 million</span> games have been sold worldwide."+
+                "The <span style=\"color: #12B9F5\">3rd best-selling</span> video franchise</li>" +
+                "<li>The famous 'Pokemon GO' has <span style=\"color: #12B9F5\">1 billion</span> mobile game downloads worldwide</li>"
+           +"</ul>"
     }
     else {
-        p.innerHTML = "To date, there have been <span style=\"color: #ef2a45\">15</span> movies released in the <span style=\"color: #ef2a45\">Digimon</span> franchise. Among those, Digital Adventure 02: Revenge of Diaboromon has the highest box office <span style=\"color: #ef2a45\">$37.6M</span>, " +
-            "which is almost <span style=\"color: #ef2a45\">11 times</span> less compared to the highest box office of the Pokémon movies. The average box office is about <span style=\"color: #ef2a45\">$9.1M</span> which is <span style=\"color: #ef2a45\">6 times less</span> than that of the Pokémon's."
+        p.innerHTML = "<span style='font-size: 24px'>Digimon as of 2022:</span> <br>" +
+            "Movies: "+
+            "<ul>" +
+                "<li><span style=\"color: #ef2a45\">15</span> movies " +
+                "<li>Average boc office per movie: <span style=\"color: #ef2a45\">USD $9.1M</span></li>" +
+            "</ul>"
+            +"Video Games: " +
+            "<ul>"+
+            "<li>Several video games have been developed since 1999</li>"+
+            "<li><span style=\"color: #ef2a45\">None</span> is nearly as supported as Pokémon based on the units sold per game"+
+            +"</ul>"
+        // p.innerHTML = "To date, there have been <span style=\"color: #ef2a45\">15</span> movies released in the <span style=\"color: #ef2a45\">Digimon</span> franchise. Among those, Digital Adventure 02: Revenge of Diaboromon has the highest box office <span style=\"color: #ef2a45\">$37.6M</span>, " +
+        //     "which is almost <span style=\"color: #ef2a45\">11 times</span> less compared to the highest box office of the Pokémon movies. The average box office is about <span style=\"color: #ef2a45\">$9.1M</span> which is <span style=\"color: #ef2a45\">6 times less</span> than that of the Pokémon's."
     }
     // let p1 = document.getElementById("compare-movie-text")
     // let p2 = document.getElementById("compare-game-text")

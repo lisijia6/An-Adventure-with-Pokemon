@@ -1,7 +1,7 @@
 /*Chat Monitor Screens*/
 #cluster-intro{
     background-image: url("../img/utils/monitor.png");
-    background-size: 1200px 850px;
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
     margin-top: 30px;
@@ -9,7 +9,7 @@
 
 #digimon-vs-pokemon {
     background-image: url("../img/utils/monitor.png");
-    background-size: 1250px 900px;
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
     margin-top: 30px;
@@ -17,7 +17,7 @@
 
 #pokemon-go-map-intro {
     background-image: url("../img/utils/monitor.png");
-    background-size: 1250px 850px;
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
     margin-top: 30px;
@@ -25,7 +25,7 @@
 
 #conclusion-sec {
     background-image: url("../img/utils/monitor.png");
-    background-size: 1250px 850px;
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
     margin-top: 30px;
