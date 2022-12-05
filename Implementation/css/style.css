@@ -367,7 +367,7 @@ h2 {
 
 .container .card {
 	position: relative;
-	width : 200px;
+	width : 235px;
 	height : 215px;
 	background-color : #fff;
 	margin : 30px 10px;
@@ -501,7 +501,7 @@ h2 {
 	top: -200px;
 }
 .circle-img {
-	background-color: #fee7d3;
+	/*background-color: white;*/
 	border-radius: 50%;
 	cursor: pointer;
 	height: 380px;
@@ -558,6 +558,14 @@ h2 {
 	align-items: center;
 }
 
+#web-authors {
+	background-image: url("../img/utils/end-pages-background.jpg");
+	background-size: 1100px 650px;
+	background-repeat: no-repeat;
+	background-position: center;
+	margin-top: -100px;
+}
+
 #web-sources {
 	background-image: url("../img/utils/end-pages-background.jpg");
 	background-size: 1100px 650px;
@@ -578,10 +586,16 @@ h2 {
 }
 
 #compare-pokemon-digimon-sticky {
-	background-image: url("../img/utils/sticky-note.png");
-	background-size: 500px 500px;
+	background-image: url("../img/utils/quicknote.png");
+	background-size: 650px 590px;
 	background-repeat: no-repeat;
 	background-position: center;
 	margin-top: 30px;
-	opacity: 0.5;
+	margin-left: -150px;
+	opacity: 0.8;
+}
+
+.name {
+	font-size: 20px;
+	font-weight: lighter;
 }

@@ -1,429 +1,429 @@
-,image_name,pokedex_number,name,german_name,japanese_name,generation,status,species,type_number,type_1,type_2,height_m,weight_kg,abilities_number,ability_1,ability_2,ability_hidden,total_points,hp,attack,defense,sp_attack,sp_defense,speed,catch_rate,base_friendship,base_experience,growth_rate,egg_type_number,egg_type_1,egg_type_2,percentage_male,egg_cycles,against_normal,against_fire,against_water,against_electric,against_grass,against_ice,against_fight,against_poison,against_ground,against_flying,against_psychic,against_bug,against_rock,against_ghost,against_dragon,against_dark,against_steel,against_fairy,image_file,size
-0,sobble,816,Sobble,Memmeon,メッソン (Messon),8,Normal,Water Lizard Pokémon,1,Water,,0.3,4,2,Torrent,,Sniper,310,50,40,40,70,40,70,45,,,Medium Slow,2,Field,Water 1,87.5,20,1,0.5,0.5,2,2,0.5,1,1,1,1,1,1,1,1,1,1,0.5,1,sobble.png,1
-1,raikou,243,Raikou,Raikou,ライコウ (Raikou),2,Sub Legendary,Thunder Pokémon,1,Electric,,1.9,178,2,Pressure,,Inner Focus,580,90,85,75,115,100,115,3,35,261,Slow,1,Undiscovered,,,80,1,1,1,0.5,1,1,1,1,2,0.5,1,1,1,1,1,1,0.5,1,raikou.png,1
-2,dedenne,702,Dedenne,Dedenne,デデンネ (Dedenne),6,Normal,Antenna Pokémon,2,Electric,Fairy,0.2,2.2,3,Cheek Pouch,Pickup,Plus,431,67,58,57,81,67,101,180,70,151,Medium Fast,2,Fairy,Field,50,20,1,1,1,0.5,1,1,0.5,2,2,0.5,1,0.5,1,1,0,0.5,1,1,dedenne.png,1
-3,articuno,144,Articuno,Arktos,フリーザー (Freezer),1,Sub Legendary,Freeze Pokémon,2,Ice,Flying,1.7,55.4,2,Pressure,,Snow Cloak,580,90,85,100,95,125,85,3,35,261,Slow,1,Undiscovered,,,80,1,2,1,2,0.5,1,1,1,0,1,1,0.5,4,1,1,1,2,1,articuno.png,1
-4,bulbasaur,1,Bulbasaur,Bisasam,フシギダネ (Fushigidane),1,Normal,Seed Pokémon,2,Grass,Poison,0.7,6.9,2,Overgrow,,Chlorophyll,318,45,49,49,65,65,45,45,70,64,Medium Slow,2,Grass,Monster,87.5,20,1,2,0.5,0.5,0.25,2,0.5,1,1,2,2,1,1,1,1,1,1,0.5,bulbasaur.png,1
-5,pidove,519,Pidove,Dusselgurr,マメパト (Mamepato),5,Normal,Tiny Pigeon Pokémon,2,Normal,Flying,0.3,2.1,3,Big Pecks,Super Luck,Rivalry,264,50,55,50,36,30,43,255,70,53,Medium Slow,1,Flying,,50,15,1,1,1,2,0.5,2,1,1,0,1,1,0.5,2,0,1,1,1,1,pidove.png,1
-6,comfey,764,Comfey,Curelei,キュワワー (Cuwawa),7,Normal,Posy Picker Pokémon,1,Fairy,,0.1,0.3,3,Flower Veil,Triage,Natural Cure,485,51,52,90,82,110,100,60,70,170,Fast,1,Grass,,25,20,1,1,1,1,1,1,0.5,2,1,1,1,0.5,1,1,0,0.5,2,1,comfey.png,1
-7,taillow,276,Taillow,Schwalbini,スバメ (Subame),3,Normal,TinySwallow Pokémon,2,Normal,Flying,0.3,2.3,2,Guts,,Scrappy,270,40,55,30,30,30,85,200,70,54,Medium Slow,1,Flying,,50,15,1,1,1,2,0.5,2,1,1,0,1,1,0.5,2,0,1,1,1,1,taillow.png,1
-8,sandshrew,27,Sandshrew,Sandan,サンド (Sand),1,Normal,Mouse Pokémon,1,Ground,,0.6,12,2,Sand Veil,,Sand Rush,300,50,75,85,20,30,40,255,70,60,Medium Fast,1,Field,,50,20,1,1,2,0,2,2,1,0.5,1,1,1,1,0.5,1,1,1,1,1,sandshrew.png,1
-9,marshadow,802,Marshadow,Marshadow,マーシャドー (Marshadow),7,Mythical,Gloomdweller Pokémon,2,Fighting,Ghost,0.7,22.2,1,Technician,,,600,90,125,80,90,90,125,3,0,270,Slow,1,Undiscovered,,,120,0,1,1,1,1,1,0,0.5,1,2,2,0.25,0.5,2,1,1,1,2,marshadow.png,1
-10,lickitung,108,Lickitung,Schlurp,ベロリンガ (Beroringa),1,Normal,Licking Pokémon,1,Normal,,1.2,65.5,3,Own Tempo,Oblivious,Cloud Nine,385,90,55,75,60,75,30,45,70,77,Medium Fast,1,Monster,,50,20,1,1,1,1,1,1,2,1,1,1,1,1,1,0,1,1,1,1,lickitung.png,1
-11,yveltal,717,Yveltal,Yveltal,イベルタル (Yveltal),6,Legendary,Destruction Pokémon,2,Dark,Flying,5.8,203,1,Dark Aura,,,680,126,131,95,131,98,99,45,0,306,Slow,1,Undiscovered,,,120,1,1,1,2,0.5,2,1,1,0,1,0,1,2,0.5,1,0.5,1,2,yveltal.png,1
-12,zigzagoon,263,Zigzagoon,Zigzachs,ジグザグマ (Jiguzaguma),3,Normal,TinyRaccoon Pokémon,1,Normal,,0.4,17.5,3,Pickup,Gluttony,Quick Feet,240,38,30,41,30,41,60,255,70,56,Medium Fast,1,Field,,50,15,1,1,1,1,1,1,2,1,1,1,1,1,1,0,1,1,1,1,zigzagoon.png,1
-13,petilil,548,Petilil,Lilminip,チュリネ (Churine),5,Normal,Bulb Pokémon,1,Grass,,0.5,6.6,3,Chlorophyll,Own Tempo,Leaf Guard,280,45,35,50,70,50,30,190,70,56,Medium Fast,1,Grass,,0,20,1,2,0.5,0.5,0.5,2,1,2,0.5,2,1,2,1,1,1,1,1,1,petilil.png,1
-14,cresselia,488,Cresselia,Cresselia,クレセリア (Cresselia),4,Sub Legendary,Lunar Pokémon,1,Psychic,,1.5,85.6,1,Levitate,,,600,120,70,120,75,130,85,3,100,270,Slow,1,Undiscovered,,0,120,1,1,1,1,1,1,0.5,1,0,1,0.5,2,1,2,1,2,1,1,cresselia.png,1
-15,regigigas,486,Regigigas,Regigigas,レジギガス (Regigigas),4,Sub Legendary,Colossal Pokémon,1,Normal,,3.7,420,1,Slow Start,,,670,110,160,110,80,110,100,3,0,302,Slow,1,Undiscovered,,,120,1,1,1,1,1,1,2,1,1,1,1,1,1,0,1,1,1,1,regigigas.png,1
-16,palkia,484,Palkia,Palkia,パルキア (Palkia),4,Legendary,Spatial Pokémon,2,Water,Dragon,4.2,336,2,Pressure,,Telepathy,680,90,120,100,150,120,100,3,0,306,Slow,1,Undiscovered,,,120,1,0.25,0.25,1,1,1,1,1,1,1,1,1,1,1,2,1,0.5,2,palkia.png,1
-17,impidimp,859,Impidimp,Bähmon,ベロバー (Beroba),8,Normal,Wily Pokémon,2,Dark,Fairy,0.4,5.5,3,Prankster,Frisk,Pickpocket,265,45,45,30,55,40,50,255,,,Medium Fast,2,Fairy,Human-Like,100,20,1,1,1,1,1,1,1,2,1,1,0,1,1,0.5,0,0.25,2,2,impidimp.png,1
-18,froakie,656,Froakie,Froxy,ケロマツ (Keromatsu),6,Normal,Bubble Frog Pokémon,1,Water,,0.3,7,2,Torrent,,Protean,314,41,56,40,62,44,71,45,70,63,Medium Slow,1,Water 1,,87.5,20,1,0.5,0.5,2,2,0.5,1,1,1,1,1,1,1,1,1,1,0.5,1,froakie.png,1
-19,arrokuda,846,Arrokuda,Pikuda,サシカマス (Sasikamasu),8,Normal,Rush Pokémon,1,Water,,0.5,1,2,Swift Swim,,Propeller Tail,280,41,63,40,40,30,66,255,,,Slow,1,Water 2,,50,20,1,0.5,0.5,2,2,0.5,1,1,1,1,1,1,1,1,1,1,0.5,1,arrokuda.png,1
-20,munna,517,Munna,Somniam,ムンナ (Munna),5,Normal,Dream Eater Pokémon,1,Psychic,,0.6,23.3,3,Forewarn,Synchronize,Telepathy,292,76,25,45,67,55,24,190,70,58,Fast,1,Field,,50,10,1,1,1,1,1,1,0.5,1,1,1,0.5,2,1,2,1,2,1,1,munna.png,1
-21,mareep,179,Mareep,Voltilamm,メリープ (Merriep),2,Normal,Wool Pokémon,1,Electric,,0.6,7.8,2,Static,,Plus,280,55,40,40,65,45,35,235,70,56,Medium Slow,2,Field,Monster,50,20,1,1,1,0.5,1,1,1,1,2,0.5,1,1,1,1,1,1,0.5,1,mareep.png,1
-22,shieldon,410,Shieldon,Schilterus,タテトプス (Tatetops),4,Normal,Shield Pokémon,2,Rock,Steel,0.5,57,2,Sturdy,,Soundproof,350,30,42,118,42,88,30,45,70,70,Erratic,1,Monster,,87.5,30,0.25,1,2,1,1,0.5,4,0,4,0.25,0.5,0.5,0.5,1,0.5,1,1,0.5,shieldon.png,1
-23,makuhita,296,Makuhita,Makuhita,マクノシタ (Makunoshita),3,Normal,Guts Pokémon,1,Fighting,,1,86.4,3,Thick Fat,Guts,Sheer Force,237,72,60,30,20,30,25,180,70,47,Fluctuating,1,Human-Like,,75,20,1,0.5,1,1,1,0.5,1,1,1,2,2,0.5,0.5,1,1,0.5,1,2,makuhita.png,1
-24,seviper,336,Seviper,Vipitis,ハブネーク (Habunake),3,Normal,Fang Snake Pokémon,1,Poison,,2.7,52.5,2,Shed Skin,,Infiltrator,458,73,100,60,100,60,65,90,70,160,Fluctuating,2,Dragon,Field,50,20,1,1,1,1,0.5,1,0.5,0.5,2,1,2,0.5,1,1,1,1,1,0.5,seviper.png,1
-25,tirtouga,564,Tirtouga,Galapaflos,プロトーガ (Protoga),5,Normal,Prototurtle Pokémon,2,Water,Rock,0.7,16.5,3,Solid Rock,Sturdy,Swift Swim,355,54,78,103,53,45,22,45,70,71,Medium Fast,2,Water 1,Water 3,87.5,30,0.5,0.25,1,1.5,3,0.5,1.5,0.5,1.5,0.5,1,1,1,1,1,1,1,1,tirtouga.png,1
-26,nosepass,299,Nosepass,Nasgnet,ノズパス (Nosepass),3,Normal,Compass Pokémon,1,Rock,,1,97,3,Sturdy,Magnet Pull,Sand Force,375,30,45,135,45,90,30,255,70,75,Medium Fast,1,Mineral,,50,20,0.5,0.5,2,1,2,1,2,0.5,2,0.5,1,1,1,1,1,1,2,1,nosepass.png,1
-27,inkay,686,Inkay,Iscalar,マーイーカ (Maaiika),6,Normal,Revolving Pokémon,2,Dark,Psychic,0.4,3.5,3,Contrary,Suction Cups,Infiltrator,288,53,54,53,37,46,45,190,70,58,Medium Fast,2,Water 1,Water 2,50,20,1,1,1,1,1,1,1,1,1,1,0,4,1,1,1,1,1,2,inkay.png,1
-28,grubbin,736,Grubbin,Mabula,アゴジムシ (Agojimushi),7,Normal,Larva Pokémon,1,Bug,,0.4,4.4,1,Swarm,,,300,47,62,45,55,45,46,255,70,60,Medium Fast,1,Bug,,50,15,1,2,1,1,0.5,1,0.5,1,0.5,2,1,1,2,1,1,1,1,1,grubbin.png,1
-29,sentret,161,Sentret,Wiesor,オタチ (Otachi),2,Normal,Scout Pokémon,1,Normal,,0.8,6,3,Run Away,Keen Eye,Frisk,215,35,46,34,35,45,20,255,70,43,Medium Fast,1,Field,,50,15,1,1,1,1,1,1,2,1,1,1,1,1,1,0,1,1,1,1,sentret.png,1
-30,skorupi,451,Skorupi,Pionskora,スコルピ (Scorupi),4,Normal,Scorpion Pokémon,2,Poison,Bug,0.8,12,3,Battle Armor,Sniper,Keen Eye,330,40,50,90,30,55,65,120,70,66,Slow,2,Bug,Water 3,50,20,1,2,1,1,0.25,1,0.25,0.5,1,2,2,0.5,2,1,1,1,1,0.5,skorupi.png,1
-31,yungoos,734,Yungoos,Mangunior,ヤングース (Youngoose),7,Normal,Loitering Pokémon,1,Normal,,0.4,6,3,Strong Jaw,Stakeout,Adaptability,253,48,70,30,30,30,45,255,70,51,Medium Fast,1,Field,,50,15,1,1,1,1,1,1,2,1,1,1,1,1,1,0,1,1,1,1,yungoos.png,1
-32,meltan,808,Meltan,Meltan,メルタン (Meltan) ,7,Mythical,Hex Nut Pokémon,1,Steel,,0.2,8,1,Magnet Pull,,,300,46,65,65,55,35,34,3,,,Slow,1,Undiscovered,,,120,0.5,2,1,1,0.5,0.5,2,0,2,0.5,0.5,0.5,0.5,1,0.5,1,0.5,0.5,meltan.png,1
-33,arctovish,883,Arctovish,Pescryodon,ウオチルドン (Ouchilldon),8,Normal,Fossil Pokémon,2,Water,Ice,2,175,3,Water Absorb,Ice Body,Slush Rush,505,90,90,100,80,90,55,45,,,Slow,1,Undiscovered,,,35,1,1,0,2,2,0.25,2,1,1,1,1,1,2,1,1,1,1,1,arctovish.png,1
-34,duraludon,884,Duraludon,Duraludon,ジュラルドン (Duraludon),8,Normal,Alloy Pokémon,2,Steel,Dragon,1.8,40,3,Light Metal,Heavy Metal,Stalwart,535,70,95,115,120,50,85,45,,,Medium Fast,2,Dragon,Mineral,50,30,0.5,1,0.5,0.5,0.25,1,2,0,2,0.5,0.5,0.5,0.5,1,1,1,0.5,1,duraludon.png,1
-35,binacle,688,Binacle,Bithora,カメテテ (Kametete),6,Normal,Two-Handed Pokémon,2,Rock,Water,0.5,31,3,Sniper,Tough Claws,Pickpocket,306,42,52,67,39,56,50,120,70,61,Medium Fast,1,Water 3,,50,20,0.5,0.25,1,2,4,0.5,2,0.5,2,0.5,1,1,1,1,1,1,1,1,binacle.png,1
-36,hippopotas,449,Hippopotas,Hippopotas,ヒポポタス (Hippopotas),4,Normal,Hippo Pokémon,1,Ground,,0.8,49.5,2,Sand Stream,,Sand Force,330,68,72,78,38,42,32,140,70,66,Slow,1,Field,,50,30,1,1,2,0,2,2,1,0.5,1,1,1,1,0.5,1,1,1,1,1,hippopotas.png,1
-37,swirlix,684,Swirlix,Flauschling,ペロッパフ (Peroppafu),6,Normal,Cotton Candy Pokémon,1,Fairy,,0.4,3.5,2,Sweet Veil,,Unburden,341,62,48,66,59,57,49,200,70,68,Medium Fast,1,Fairy,,50,20,1,1,1,1,1,1,0.5,2,1,1,1,0.5,1,1,0,0.5,2,1,swirlix.png,1
-38,finneon,456,Finneon,Finneon,ケイコウオ (Keikouo),4,Normal,Wing Fish Pokémon,1,Water,,0.4,7,3,Swift Swim,Storm Drain,Water Veil,330,49,49,56,49,61,66,190,70,66,Erratic,1,Water 2,,50,20,1,0.5,0.5,2,2,0.5,1,1,1,1,1,1,1,1,1,1,0.5,1,finneon.png,1
-39,yamper,835,Yamper,Voldi,ワンパチ (Wanpachi),8,Normal,Puppy Pokémon,1,Electric,,0.3,13.5,2,Ball Fetch,,Rattled,270,59,45,50,40,50,26,255,,,Fast,1,Field,,50,20,1,1,1,0.5,1,1,1,1,2,0.5,1,1,1,1,1,1,0.5,1,yamper.png,1
-40,magnemite,81,Magnemite,Magnetilo,コイル (Coil),1,Normal,Magnet Pokémon,2,Electric,Steel,0.3,6,3,Magnet Pull,Sturdy,Analytic,325,25,35,70,95,55,45,190,70,65,Medium Fast,1,Mineral,,,20,0.5,2,1,0.5,0.5,0.5,2,0,4,0.25,0.5,0.5,0.5,1,0.5,1,0.25,0.5,magnemite.png,1
-41,shinx,403,Shinx,Sheinux,コリンク (Kolink),4,Normal,Flash Pokémon,1,Electric,,0.5,9.5,3,Rivalry,Intimidate,Guts,263,45,65,34,40,34,45,235,70,53,Medium Slow,1,Field,,50,20,1,1,1,0.5,1,1,1,1,2,0.5,1,1,1,1,1,1,0.5,1,shinx.png,1
-42,budew,406,Budew,Knospi,スボミー (Subomie),4,Normal,Bud Pokémon,2,Grass,Poison,0.2,1.2,3,Natural Cure,Poison Point,Leaf Guard,280,40,30,35,50,70,55,255,70,56,Medium Slow,1,Undiscovered,,50,20,1,2,0.5,0.5,0.25,2,0.5,1,1,2,2,1,1,1,1,1,1,0.5,budew.png,1
-43,gothita,574,Gothita,Mollimorba,ゴチム (Gothimu),5,Normal,Fixation Pokémon,1,Psychic,,0.4,5.8,3,Frisk,Competitive,Shadow Tag,290,45,30,50,55,65,45,200,70,58,Medium Slow,1,Human-Like,,25,20,1,1,1,1,1,1,0.5,1,1,1,0.5,2,1,2,1,2,1,1,gothita.png,1
-44,porygon,137,Porygon,Porygon,ポリゴン (Porygon),1,Normal,Virtual Pokémon,1,Normal,,0.8,36.5,3,Trace,Download,Analytic,395,65,60,70,85,75,40,45,70,79,Medium Fast,1,Mineral,,,20,1,1,1,1,1,1,2,1,1,1,1,1,1,0,1,1,1,1,porygon.png,1
-45,alomomola,594,Alomomola,Mamolida,ママンボウ (Mamanbou),5,Normal,Caring Pokémon,1,Water,,1.2,31.6,3,Healer,Hydration,Regenerator,470,165,75,80,40,45,65,75,70,165,Fast,2,Water 1,Water 2,50,40,1,0.5,0.5,2,2,0.5,1,1,1,1,1,1,1,1,1,1,0.5,1,alomomola.png,1
-46,electrike,309,Electrike,Frizelbliz,ラクライ (Rakurai),3,Normal,Lightning Pokémon,1,Electric,,0.6,15.2,3,Static,Lightning Rod,Minus,295,40,45,40,65,40,65,120,70,59,Slow,1,Field,,50,20,1,1,1,0.5,1,1,1,1,2,0.5,1,1,1,1,1,1,0.5,1,electrike.png,1
-47,dratini,147,Dratini,Dratini,ミニリュウ (Miniryu),1,Normal,Dragon Pokémon,1,Dragon,,1.8,3.3,2,Shed Skin,,Marvel Scale,300,41,64,45,50,50,50,45,35,60,Slow,2,Dragon,Water 1,50,40,1,0.5,0.5,0.5,0.5,2,1,1,1,1,1,1,1,1,2,1,1,2,dratini.png,1
-48,mienfoo,619,Mienfoo,Lin-Fu,コジョフー (Kojofu),5,Normal,Martial Arts Pokémon,1,Fighting,,0.9,20,3,Inner Focus,Regenerator,Reckless,350,45,85,50,55,50,65,180,70,70,Medium Slow,2,Field,Human-Like,50,25,1,1,1,1,1,1,1,1,1,2,2,0.5,0.5,1,1,0.5,1,2,mienfoo.png,1
-49,reshiram,643,Reshiram,Reshiram,レシラム (Reshiram),5,Legendary,Vast White Pokémon,2,Dragon,Fire,3.2,330,1,Turboblaze,,,680,100,120,100,150,120,90,3,0,306,Slow,1,Undiscovered,,,120,1,0.25,1,0.5,0.25,1,1,1,2,1,1,0.5,2,1,2,1,0.5,1,reshiram.png,1
-50,heatran,485,Heatran,Heatran,ヒードラン (Heatran),4,Sub Legendary,Lava Dome Pokémon,2,Fire,Steel,1.7,430,2,Flash Fire,,Flame Body,600,91,90,106,130,106,77,3,100,270,Slow,1,Undiscovered,,50,10,0.5,0,2,1,0.25,0.25,2,0,4,0.5,0.5,0.25,1,1,0.5,1,0.25,0.25,heatran.png,1
-51,phanpy,231,Phanpy,Phanpy,ゴマゾウ (Gomazou),2,Normal,Long Nose Pokémon,1,Ground,,0.5,33.5,2,Pickup,,Sand Veil,330,90,60,60,40,40,40,120,70,66,Medium Fast,1,Field,,50,20,1,1,2,0,2,2,1,0.5,1,1,1,1,0.5,1,1,1,1,1,phanpy.png,1
-52,cyndaquil,155,Cyndaquil,Feurigel,ヒノアラシ (Hinoarashi),2,Normal,Fire Mouse Pokémon,1,Fire,,0.5,7.9,2,Blaze,,Flash Fire,309,39,52,43,60,50,65,45,70,62,Medium Slow,1,Field,,87.5,20,1,0.5,2,1,0.5,0.5,1,1,2,1,1,0.5,2,1,1,1,0.5,0.5,cyndaquil.png,1
-53,machop,66,Machop,Machollo,ワンリキー (Wanriky),1,Normal,Superpower Pokémon,1,Fighting,,0.8,19.5,3,Guts,No Guard,Steadfast,305,70,80,50,35,35,35,180,70,61,Medium Slow,1,Human-Like,,75,20,1,1,1,1,1,1,1,1,1,2,2,0.5,0.5,1,1,0.5,1,2,machop.png,1
-54,eternatus,890,Eternatus,Endynalos,ムゲンダイナ (Mugendina),8,Legendary,Gigantic Pokémon,2,Poison,Dragon,20,950,1,Pressure,,,690,140,85,95,145,95,130,255,,,Slow,1,Undiscovered,,,120,1,0.5,0.5,0.5,0.25,2,0.5,0.5,2,1,2,0.5,1,1,2,1,1,1,eternatus.png,1
-55,fletchling,661,Fletchling,Dartiri,ヤヤコマ (Yayakoma),6,Normal,Tiny Robin Pokémon,2,Normal,Flying,0.3,1.7,2,Big Pecks,,Gale Wings,278,45,50,43,40,38,62,255,70,56,Medium Slow,1,Flying,,50,15,1,1,1,2,0.5,2,1,1,0,1,1,0.5,2,0,1,1,1,1,fletchling.png,1
-56,passimian,766,Passimian,Quartermak,ナゲツケサル (Nagetukesaru),7,Normal,Teamwork Pokémon,1,Fighting,,2,82.8,2,Receiver,,Defiant,490,100,120,90,40,60,80,45,70,172,Slow,1,Field,,50,20,1,1,1,1,1,1,1,1,1,2,2,0.5,0.5,1,1,0.5,1,2,passimian.png,1
-57,roggenrola,524,Roggenrola,Kiesling,ダンゴロ (Dangoro),5,Normal,Mantle Pokémon,1,Rock,,0.4,18,3,Sturdy,Weak Armor,Sand Force,280,55,75,85,25,25,15,255,70,56,Medium Slow,1,Mineral,,50,15,0.5,0.5,2,1,2,1,2,0.5,2,0.5,1,1,1,1,1,1,2,1,roggenrola.png,1
-58,scraggy,559,Scraggy,Zurrokex,ズルッグ (Zuruggu),5,Normal,Shedding Pokémon,2,Dark,Fighting,0.6,11.8,3,Shed Skin,Moxie,Intimidate,348,50,75,70,35,70,48,180,35,70,Medium Fast,2,Dragon,Field,50,15,1,1,1,1,1,1,2,1,1,2,0,1,0.5,0.5,1,0.25,1,4,scraggy.png,1
-59,latias,380,Latias,Latias,ラティアス (Latias),3,Sub Legendary,Eon Pokémon,2,Dragon,Psychic,1.4,40,1,Levitate,,,600,80,80,90,110,130,110,3,90,270,Slow,1,Undiscovered,,0,120,1,0.5,0.5,0.5,0.5,2,0.5,1,0,1,0.5,2,1,2,2,2,1,2,latias.png,1
-60,shelmet,616,Shelmet,Schnuthelm,チョボマキ (Chobomaki),5,Normal,Snail Pokémon,1,Bug,,0.4,7.7,3,Hydration,Shell Armor,Overcoat,305,50,40,85,40,65,25,200,70,61,Medium Fast,1,Bug,,50,15,1,2,1,1,0.5,1,0.5,1,0.5,2,1,1,2,1,1,1,1,1,shelmet.png,1
-61,sawk,539,Sawk,Karadonis,ダゲキ (Dageki),5,Normal,Karate Pokémon,1,Fighting,,1.4,51,3,Sturdy,Inner Focus,Mold Breaker,465,75,125,75,30,75,85,45,70,163,Medium Fast,1,Human-Like,,100,20,1,1,1,1,1,1,1,1,1,2,2,0.5,0.5,1,1,0.5,1,2,sawk.png,1
-62,azelf,482,Azelf,Tobutz,アグノム (Agnome),4,Sub Legendary,Willpower Pokémon,1,Psychic,,0.3,0.3,1,Levitate,,,580,75,125,70,125,70,115,3,140,261,Slow,1,Undiscovered,,,80,1,1,1,1,1,1,0.5,1,0,1,0.5,2,1,2,1,2,1,1,azelf.png,1
-63,drampa,780,Drampa,Sen-Long,ジジーロン (Jijilong),7,Normal,Placid Pokémon,2,Normal,Dragon,3,185,3,Berserk,Sap Sipper,Cloud Nine,485,78,60,85,135,91,36,70,70,170,Medium Fast,2,Dragon,Monster,50,20,1,0.5,0.5,0.5,0.5,2,2,1,1,1,1,1,1,0,2,1,1,2,drampa.png,1
-64,aipom,190,Aipom,Griffel,エイパム (Eipam),2,Normal,Long Tail Pokémon,1,Normal,,0.8,11.5,3,Run Away,Pickup,Skill Link,360,55,70,55,40,55,85,45,70,72,Fast,1,Field,,50,20,1,1,1,1,1,1,2,1,1,1,1,1,1,0,1,1,1,1,aipom.png,1
-65,xurkitree,796,Xurkitree,Voltriant,デンジュモク (Denjyumoku),7,Sub Legendary,Glowing Pokémon,1,Electric,,3.8,100,1,Beast Boost,,,570,83,89,71,173,71,83,45,0,257,Slow,1,Undiscovered,,,120,1,1,1,0.5,1,1,1,1,2,0.5,1,1,1,1,1,1,0.5,1,xurkitree.png,1
-66,meditite,307,Meditite,Meditie,アサナン (Asanan),3,Normal,Meditate Pokémon,2,Fighting,Psychic,0.6,11.2,2,Pure Power,,Telepathy,280,30,40,55,40,55,60,180,70,56,Medium Fast,1,Human-Like,,50,20,1,1,1,1,1,1,0.5,1,1,2,1,1,0.5,2,1,1,1,2,meditite.png,1
-67,heatmor,631,Heatmor,Furnifraß,クイタラン (Kuitaran),5,Normal,Anteater Pokémon,1,Fire,,1.4,58,3,Gluttony,Flash Fire,White Smoke,484,85,97,66,105,66,65,90,70,169,Medium Fast,1,Field,,50,20,1,0.5,2,1,0.5,0.5,1,1,2,1,1,0.5,2,1,1,1,0.5,0.5,heatmor.png,1
-68,calyrex,898,Calyrex,Coronospa,バドレックス (Budrex),8,Legendary,King Pokémon,2,Psychic,Grass,1.1,7.7,1,Unnerve,,,500,100,80,80,80,80,80,3,,,Slow,1,Undiscovered,,,120,1,2,0.5,0.5,0.5,2,0.5,2,0.5,2,0.5,4,1,2,1,2,1,1,calyrex.png,1
-69,gible,443,Gible,Kaumalat,フカマル (Fukamaru),4,Normal,Land Shark Pokémon,2,Dragon,Ground,0.7,20.5,2,Sand Veil,,Rough Skin,300,58,70,45,40,45,42,45,70,60,Slow,2,Dragon,Monster,50,40,1,0.5,1,0,1,4,1,0.5,1,1,1,1,0.5,1,2,1,1,2,gible.png,1
-70,corphish,341,Corphish,Krebscorps,ヘイガニ (Heigani),3,Normal,Ruffian Pokémon,1,Water,,0.6,11.5,3,Hyper Cutter,Shell Armor,Adaptability,308,43,80,65,50,35,35,205,70,62,Fluctuating,2,Water 1,Water 3,50,15,1,0.5,0.5,2,2,0.5,1,1,1,1,1,1,1,1,1,1,0.5,1,corphish.png,1
-71,cubone,104,Cubone,Tragosso,カラカラ (Karakara),1,Normal,Lonely Pokémon,1,Ground,,0.4,6.5,3,Rock Head,Lightning Rod,Battle Armor,320,50,50,95,40,50,35,190,70,64,Medium Fast,1,Monster,,50,20,1,1,2,0,2,2,1,0.5,1,1,1,1,0.5,1,1,1,1,1,cubone.png,1
-72,koffing,109,Koffing,Smogon,ドガース (Dogars),1,Normal,Poison Gas Pokémon,1,Poison,,0.6,1,3,Levitate,Neutralizing Gas,Stench,340,40,65,95,60,45,35,190,70,68,Medium Fast,1,Amorphous,,50,20,1,1,1,1,0.5,1,0.5,0.5,0,1,2,0.5,1,1,1,1,1,0.5,koffing.png,1
-73,larvitar,246,Larvitar,Larvitar,ヨーギラス (Yogiras),2,Normal,Rock Skin Pokémon,2,Rock,Ground,0.6,72,2,Guts,,Sand Veil,300,50,64,50,45,50,41,45,35,60,Slow,1,Monster,,50,40,0.5,0.5,4,0,4,2,2,0.25,2,0.5,1,1,0.5,1,1,1,2,1,larvitar.png,1
-74,tyrogue,236,Tyrogue,Rabauz,バルキー (Balkie),2,Normal,Scuffle Pokémon,1,Fighting,,0.7,21,3,Guts,Steadfast,Vital Spirit,210,35,35,35,35,35,35,75,70,42,Medium Fast,1,Undiscovered,,100,25,1,1,1,1,1,1,1,1,1,2,2,0.5,0.5,1,1,0.5,1,2,tyrogue.png,1
-75,castform,351,Castform,Formeo,ポワルン (Powalen),3,Normal,Weather Pokémon,1,Normal,,0.3,0.8,1,Forecast,,,420,70,70,70,70,70,70,45,70,147,Medium Fast,2,Amorphous,Fairy,50,25,1,1,1,1,1,1,2,1,1,1,1,1,1,0,1,1,1,1,castform.png,1
-76,chinchou,170,Chinchou,Lampi,チョンチー (Chonchie),2,Normal,Angler Pokémon,2,Water,Electric,0.5,12,3,Volt Absorb,Illuminate,Water Absorb,330,75,38,38,56,56,67,190,70,66,Slow,1,Water 2,,50,20,1,0.5,0.5,0,2,0.5,1,1,2,0.5,1,1,1,1,1,1,0.25,1,chinchou.png,1
-77,litleo,667,Litleo,Leufeo,シシコ (Shishiko),6,Normal,Lion Cub Pokémon,2,Fire,Normal,0.6,13.5,3,Rivalry,Unnerve,Moxie,369,62,50,58,73,54,72,220,70,74,Medium Slow,1,Field,,25,20,1,0.5,2,1,0.5,0.5,2,1,2,1,1,0.5,2,0,1,1,0.5,0.5,litleo.png,1
-78,ditto,132,Ditto,Ditto,メタモン (Metamon),1,Normal,Transform Pokémon,1,Normal,,0.3,4,2,Limber,,Imposter,288,48,48,48,48,48,48,35,70,101,Medium Fast,1,Ditto,,,20,1,1,1,1,1,1,2,1,1,1,1,1,1,0,1,1,1,1,ditto.png,1
-79,wingull,278,Wingull,Wingull,キャモメ (Camome),3,Normal,Seagull Pokémon,2,Water,Flying,0.6,9.5,3,Keen Eye,Hydration,Rain Dish,270,40,30,30,55,30,85,190,70,54,Medium Fast,2,Flying,Water 1,50,20,1,0.5,0.5,4,1,1,0.5,1,0,1,1,0.5,2,1,1,1,0.5,1,wingull.png,1
-80,gastly,92,Gastly,Nebulak,ゴース (Ghos),1,Normal,Gas Pokémon,2,Ghost,Poison,1.3,0.1,1,Levitate,,,310,30,35,30,100,35,80,190,70,62,Medium Slow,1,Amorphous,,50,20,0,1,1,1,0.5,1,0,0.25,0,1,2,0.25,1,2,1,2,1,0.5,gastly.png,1
-81,whismur,293,Whismur,Flurmel,ゴニョニョ (Gonyonyo),3,Normal,Whisper Pokémon,1,Normal,,0.6,16.3,2,Soundproof,,Rattled,240,64,51,23,51,23,28,190,70,48,Medium Slow,2,Field,Monster,50,20,1,1,1,1,1,1,2,1,1,1,1,1,1,0,1,1,1,1,whismur.png,1
-82,cleffa,173,Cleffa,Pii,ピィ (Py),2,Normal,Star Shape Pokémon,1,Fairy,,0.3,3,3,Cute Charm,Magic Guard,Friend Guard,218,50,25,28,45,55,15,150,140,44,Fast,1,Undiscovered,,25,10,1,1,1,1,1,1,0.5,2,1,1,1,0.5,1,1,0,0.5,2,1,cleffa.png,1
-83,growlithe,58,Growlithe,Fukano,ガーディ (Gardie),1,Normal,Puppy Pokémon,1,Fire,,0.7,19,3,Intimidate,Flash Fire,Justified,350,55,70,45,70,50,60,190,70,70,Slow,1,Field,,75,20,1,0.5,2,1,0.5,0.5,1,1,2,1,1,0.5,2,1,1,1,0.5,0.5,growlithe.png,1
-84,sigilyph,561,Sigilyph,Symvolara,シンボラー (Symboler),5,Normal,Avianoid Pokémon,2,Psychic,Flying,1.4,14,3,Wonder Skin,Magic Guard,Tinted Lens,490,72,58,80,103,80,97,45,70,172,Medium Fast,1,Flying,,50,20,1,1,1,2,0.5,2,0.25,1,0,1,0.5,1,2,2,1,2,1,1,sigilyph.png,1
-85,cryogonal,615,Cryogonal,Frigometri,フリージオ (Freegeo),5,Normal,Crystallizing Pokémon,1,Ice,,1.1,148,1,Levitate,,,515,80,50,50,95,135,105,25,70,180,Medium Fast,1,Mineral,,,25,1,2,1,1,1,0.5,2,1,0,1,1,1,2,1,1,1,2,1,cryogonal.png,1
-86,stunfisk,618,Stunfisk,Flunschlik,マッギョ (Maggyo),5,Normal,Trap Pokémon,2,Ground,Electric,0.7,11,3,Static,Limber,Sand Veil,471,109,66,84,81,99,32,75,70,165,Medium Fast,2,Amorphous,Water 1,50,20,1,1,2,0,2,2,1,0.5,2,0.5,1,1,0.5,1,1,1,0.5,1,stunfisk.png,1
-87,stantler,234,Stantler,Damhirplex,オドシシ (Odoshishi),2,Normal,Big Horn Pokémon,1,Normal,,1.4,71.2,3,Intimidate,Frisk,Sap Sipper,465,73,95,62,85,65,85,45,70,163,Slow,1,Field,,50,20,1,1,1,1,1,1,2,1,1,1,1,1,1,0,1,1,1,1,stantler.png,1
-88,dracovish,882,Dracovish,Pescragon,ウオノラゴン (Ounaragon),8,Normal,Fossil Pokémon,2,Water,Dragon,2.3,215,3,Water Absorb,Strong Jaw,Sand Rush,505,90,90,100,70,80,75,45,,,Slow,1,Undiscovered,,,35,1,0.25,0,1,1,1,1,1,1,1,1,1,1,1,2,1,0.5,2,dracovish.png,1
-89,snubbull,209,Snubbull,Snubbull,ブルー (Bulu),2,Normal,Fairy Pokémon,1,Fairy,,0.6,7.8,3,Intimidate,Run Away,Rattled,300,60,80,50,40,40,30,190,70,60,Fast,2,Fairy,Field,25,20,1,1,1,1,1,1,0.5,2,1,1,1,0.5,1,1,0,0.5,2,1,snubbull.png,1
-90,surskit,283,Surskit,Gehweiher,アメタマ (Ametama),3,Normal,Pond Skater Pokémon,2,Bug,Water,0.5,1.7,2,Swift Swim,,Rain Dish,269,40,30,32,50,52,65,200,70,54,Medium Fast,2,Bug,Water 1,50,15,1,1,0.5,2,1,0.5,0.5,1,0.5,2,1,1,2,1,1,1,0.5,1,surskit.png,1
-91,amaura,698,Amaura,Amarino,アマルス (Amarus),6,Normal,Tundra Pokémon,2,Rock,Ice,1.3,25.2,2,Refrigerate,,Snow Warning,362,77,59,50,67,63,46,45,70,72,Medium Fast,1,Monster,,87.5,30,0.5,1,2,1,2,0.5,4,0.5,2,0.5,1,1,2,1,1,1,4,1,amaura.png,1
-92,elekid,239,Elekid,Elekid,エレキッド (Elekid),2,Normal,Electric Pokémon,1,Electric,,0.6,23.5,2,Static,,Vital Spirit,360,45,63,37,65,55,95,45,70,72,Medium Fast,1,Undiscovered,,75,25,1,1,1,0.5,1,1,1,1,2,0.5,1,1,1,1,1,1,0.5,1,elekid.png,1
-93,goomy,704,Goomy,Viscora,ヌメラ (Numera),6,Normal,Soft Tissue Pokémon,1,Dragon,,0.3,2.8,3,Sap Sipper,Hydration,Gooey,300,45,50,35,55,75,40,45,35,60,Slow,1,Dragon,,50,40,1,0.5,0.5,0.5,0,2,1,1,1,1,1,1,1,1,2,1,1,2,goomy.png,1
-94,vullaby,629,Vullaby,Skallyk,バルチャイ (Valchai),5,Normal,Diapered Pokémon,2,Dark,Flying,0.5,9,3,Big Pecks,Overcoat,Weak Armor,370,70,55,75,45,65,60,190,35,74,Slow,1,Flying,,0,20,1,1,1,2,0.5,2,1,1,0,1,0,1,2,0.5,1,0.5,1,2,vullaby.png,1
-95,venipede,543,Venipede,Toxiped,フシデ (Fushide),5,Normal,Centipede Pokémon,2,Bug,Poison,0.4,5.3,3,Poison Point,Swarm,Speed Boost,260,30,45,59,30,39,57,255,70,52,Medium Slow,1,Bug,,50,15,1,2,1,1,0.25,1,0.25,0.5,1,2,2,0.5,2,1,1,1,1,0.5,venipede.png,1
-96,regieleki,894,Regieleki,Regieleki,レジエレキ (Regieleki),8,Sub Legendary,Elektron Pokémon,1,Electric,,1.2,145,1,Transistor,,,580,80,100,50,100,50,200,3,,,Slow,1,Undiscovered,,,120,1,1,1,0.5,1,1,1,1,2,0.5,1,1,1,1,1,1,0.5,1,regieleki.png,1
-97,tangela,114,Tangela,Tangela,モンジャラ (Monjara),1,Normal,Vine Pokémon,1,Grass,,1,35,3,Chlorophyll,Leaf Guard,Regenerator,435,65,55,115,100,40,60,45,70,87,Medium Fast,1,Grass,,50,20,1,2,0.5,0.5,0.5,2,1,2,0.5,2,1,2,1,1,1,1,1,1,tangela.png,1
-98,sandile,551,Sandile,Ganovil,メグロコ (Meguroco),5,Normal,Desert Croc Pokémon,2,Ground,Dark,0.7,15.2,3,Intimidate,Moxie,Anger Point,292,50,72,35,35,35,65,180,70,58,Medium Slow,1,Field,,50,20,1,1,2,0,2,2,2,0.5,1,1,0,2,0.5,0.5,1,0.5,1,2,sandile.png,1
-99,rhyhorn,111,Rhyhorn,Rihorn,サイホーン (Sihorn),1,Normal,Spikes Pokémon,2,Ground,Rock,1,115,3,Lightning Rod,Rock Head,Reckless,345,80,85,95,30,30,25,120,70,69,Slow,2,Field,Monster,50,20,0.5,0.5,4,0,4,2,2,0.25,2,0.5,1,1,0.5,1,1,1,2,1,rhyhorn.png,1
-100,salandit,757,Salandit,Molunk,ヤトウモリ (Yatoumori),7,Normal,Toxic Lizard Pokémon,2,Poison,Fire,0.6,4.8,2,Corrosion,,Oblivious,320,48,44,40,71,40,77,120,70,64,Medium Fast,2,Dragon,Monster,87.5,20,1,0.5,2,1,0.25,0.5,0.5,0.5,4,1,2,0.25,2,1,1,1,0.5,0.25,salandit.png,1
-101,zarude,893,Zarude,Zarude,ザルード (Zarude),8,Mythical,Rogue Monkey Pokémon,2,Dark,Grass,1.8,70,1,Leaf Guard,,,600,105,120,105,70,95,105,3,,,Slow,1,Undiscovered,,,120,1,2,0.5,0.5,0.5,2,2,2,0.5,2,0,4,1,0.5,1,0.5,1,2,zarude.png,1
-102,sizzlipede,850,Sizzlipede,Thermopod,ヤクデ (Yakude),8,Normal,Radiator Pokémon,2,Fire,Bug,0.7,1,3,Flash Fire,White Smoke,Flame Body,305,50,65,45,50,50,45,190,,,Medium Fast,1,Bug,,50,20,1,0,2,1,0.25,0.5,0.5,1,1,2,1,0.5,4,1,1,1,0.5,0.5,sizzlipede.png,1
-103,audino,531,Audino,Ohrdoch,タブンネ (Tabunne),5,Normal,Hearing Pokémon,1,Normal,,1.1,31,3,Healer,Regenerator,Klutz,445,103,60,86,60,86,50,255,70,390,Fast,1,Fairy,,50,20,1,1,1,1,1,1,2,1,1,1,1,1,1,0,1,1,1,1,audino.png,1
-104,dialga,483,Dialga,Dialga,ディアルガ (Dialga),4,Legendary,Temporal Pokémon,2,Steel,Dragon,5.4,683,2,Pressure,,Telepathy,680,100,120,120,150,100,90,3,0,306,Slow,1,Undiscovered,,,120,0.5,1,0.5,0.5,0.25,1,2,0,2,0.5,0.5,0.5,0.5,1,1,1,0.5,1,dialga.png,1
-105,totodile,158,Totodile,Karnimani,ワニノコ (Waninoko),2,Normal,Big Jaw Pokémon,1,Water,,0.6,9.5,2,Torrent,,Sheer Force,314,50,65,64,44,48,43,45,70,63,Medium Slow,2,Monster,Water 1,87.5,20,1,0.5,0.5,2,2,0.5,1,1,1,1,1,1,1,1,1,1,0.5,1,totodile.png,1
-106,tauros,128,Tauros,Tauros,ケンタロス (Kentauros),1,Normal,Wild Bull Pokémon,1,Normal,,1.4,88.4,3,Intimidate,Anger Point,Sheer Force,490,75,100,95,40,70,110,45,70,172,Slow,1,Field,,100,20,1,1,1,1,1,1,2,1,1,1,1,1,1,0,1,1,1,1,tauros.png,1
-107,cottonee,546,Cottonee,Waumboll,モンメン (Monmen),5,Normal,Cotton Puff Pokémon,2,Grass,Fairy,0.3,0.6,3,Prankster,Infiltrator,Chlorophyll,280,40,27,60,37,50,66,190,70,56,Medium Fast,2,Fairy,Grass,50,20,1,2,0.5,0.5,0.5,2,0.5,4,0.5,2,1,1,1,1,0,0.5,2,1,cottonee.png,1
-108,tropius,357,Tropius,Tropius,トロピウス (Tropius),3,Normal,Fruit Pokémon,2,Grass,Flying,2,100,3,Chlorophyll,Solar Power,Harvest,460,99,68,83,72,87,51,200,70,161,Slow,2,Grass,Monster,50,25,1,2,0.5,1,0.25,4,0.5,2,0,2,1,1,2,1,1,1,1,1,tropius.png,1
-109,bouffalant,626,Bouffalant,Bisofank,バッフロン (Buffron),5,Normal,Bash Buffalo Pokémon,1,Normal,,1.6,94.6,3,Reckless,Sap Sipper,Soundproof,490,95,110,95,40,95,55,45,70,172,Medium Fast,1,Field,,50,20,1,1,1,1,1,1,2,1,1,1,1,1,1,0,1,1,1,1,bouffalant.png,1
-110,woobat,527,Woobat,Fleknoil,コロモリ (Koromori),5,Normal,Bat Pokémon,2,Psychic,Flying,0.4,2.1,3,Unaware,Klutz,Simple,323,65,45,43,55,43,72,190,70,65,Medium Fast,2,Field,Flying,50,15,1,1,1,2,0.5,2,0.25,1,0,1,0.5,1,2,2,1,2,1,1,woobat.png,1
-111,archen,566,Archen,Flapteryx,アーケン (Archen),5,Normal,First Bird Pokémon,2,Rock,Flying,0.5,9.5,1,Defeatist,,,401,55,112,45,74,45,70,45,70,71,Medium Fast,2,Flying,Water 3,87.5,30,0.5,0.5,2,2,1,2,1,0.5,0,0.5,1,0.5,2,1,1,1,2,1,archen.png,1
-112,ho-oh,250,Ho-oh,Ho-Oh,ホウオウ (Houou),2,Legendary,Rainbow Pokémon,2,Fire,Flying,3.8,199,2,Pressure,,Regenerator,680,106,130,90,110,154,90,3,0,306,Slow,1,Undiscovered,,,120,1,0.5,2,2,0.25,1,0.5,1,0,1,1,0.25,4,1,1,1,0.5,0.5,ho-oh.png,1
-113,scorbunny,813,Scorbunny,Hopplo,ヒバニー (Hibanny),8,Normal,Rabbit Pokémon,1,Fire,,0.3,4.5,2,Blaze,,Libero,310,50,71,40,40,40,69,45,,,Medium Slow,2,Field,Human-Like,87.5,20,1,0.5,2,1,0.5,0.5,1,1,2,1,1,0.5,2,1,1,1,0.5,0.5,scorbunny.png,1
-114,noibat,714,Noibat,eF-eM,オンバット (Onbat),6,Normal,Sound Wave Pokémon,2,Flying,Dragon,0.5,8,3,Frisk,Infiltrator,Telepathy,245,40,30,35,45,40,55,190,70,49,Medium Fast,2,Dragon,Flying,50,20,1,0.5,0.5,1,0.25,4,0.5,1,0,1,1,0.5,2,1,2,1,1,2,noibat.png,1
-115,eevee,133,Eevee,Evoli,イーブイ (Eievui),1,Normal,Evolution Pokémon,1,Normal,,0.3,6.5,3,Run Away,Adaptability,Anticipation,325,55,55,50,45,65,55,45,70,65,Medium Fast,1,Field,,87.5,35,1,1,1,1,1,1,2,1,1,1,1,1,1,0,1,1,1,1,eevee.png,1
-116,mewtwo,150,Mewtwo,Mewtu,ミュウツー (Mewtwo),1,Legendary,Genetic Pokémon,1,Psychic,,2,122,2,Pressure,,Unnerve,680,106,110,90,154,90,130,3,0,306,Slow,1,Undiscovered,,,120,1,1,1,1,1,1,0.5,1,1,1,0.5,2,1,2,1,2,1,1,mewtwo.png,1
-117,buneary,427,Buneary,Haspiror,ミミロル (Mimirol),4,Normal,Rabbit Pokémon,1,Normal,,0.4,5.5,3,Run Away,Klutz,Limber,350,55,66,44,44,56,85,190,0,70,Medium Fast,2,Field,Human-Like,50,20,1,1,1,1,1,1,2,1,1,1,1,1,1,0,1,1,1,1,buneary.png,1
-118,sableye,302,Sableye,Zobiris,ヤミラミ (Yamirami),3,Normal,Darkness Pokémon,2,Dark,Ghost,0.5,11,3,Keen Eye,Stall,Prankster,380,50,75,75,65,65,50,45,35,133,Medium Slow,1,Human-Like,,50,25,0,1,1,1,1,1,0,0.5,1,1,0,1,1,1,1,1,1,2,sableye.png,1
-119,bidoof,399,Bidoof,Bidiza,ビッパ (Bippa),4,Normal,Plump Mouse Pokémon,1,Normal,,0.5,20,3,Simple,Unaware,Moody,250,59,45,40,35,40,31,255,70,50,Medium Fast,2,Field,Water 1,50,15,1,1,1,1,1,1,2,1,1,1,1,1,1,0,1,1,1,1,bidoof.png,1
-120,rookidee,821,Rookidee,Meikro,ココガラ (Kokogara),8,Normal,Tiny Bird Pokémon,1,Flying,,0.2,1.8,3,Keen Eye,Unnerve,Big Pecks,245,38,47,35,33,35,57,255,,,Medium Slow,1,Flying,,50,15,1,1,1,2,0.5,2,0.5,1,0,1,1,0.5,2,1,1,1,1,1,rookidee.png,1
-121,elgyem,605,Elgyem,Pygraulon,リグレー (Ligray),5,Normal,Cerebral Pokémon,1,Psychic,,0.5,9,3,Telepathy,Synchronize,Analytic,335,55,55,55,85,55,30,255,70,67,Medium Fast,1,Human-Like,,50,20,1,1,1,1,1,1,0.5,1,1,1,0.5,2,1,2,1,2,1,1,elgyem.png,1
-122,miltank,241,Miltank,Miltank,ミルタンク (Miltank),2,Normal,Milk Cow Pokémon,1,Normal,,1.2,75.5,3,Thick Fat,Scrappy,Sap Sipper,490,95,80,105,40,70,100,45,70,172,Slow,1,Field,,0,20,1,0.5,1,1,1,0.5,2,1,1,1,1,1,1,0,1,1,1,1,miltank.png,1
-123,guzzlord,799,Guzzlord,Schlingking,アクジキング (Akuziking),7,Sub Legendary,Junkivore Pokémon,2,Dark,Dragon,5.5,888,1,Beast Boost,,,570,223,101,53,97,53,43,45,0,257,Slow,1,Undiscovered,,,120,1,0.5,0.5,0.5,0.5,2,2,1,1,1,0,2,1,0.5,2,0.5,1,4,guzzlord.png,1
-124,hatenna,856,Hatenna,Brimova,ミブリム (Mibrim),8,Normal,Calm Pokémon,1,Psychic,,0.4,3.4,3,Healer,Anticipation,Magic Bounce,265,42,30,45,56,53,39,235,,,Slow,1,Fairy,,0,20,1,1,1,1,1,1,0.5,1,1,1,0.5,2,1,2,1,2,1,1,hatenna.png,1
-125,anorith,347,Anorith,Anorith,アノプス (Anopth),3,Normal,Old Shrimp Pokémon,2,Rock,Bug,0.7,12.5,2,Battle Armor,,Swift Swim,355,45,95,50,40,50,75,45,70,71,Erratic,1,Water 3,,87.5,30,0.5,1,2,1,1,1,1,0.5,1,1,1,1,2,1,1,1,2,1,anorith.png,1
-126,wurmple,265,Wurmple,Waumpel,ケムッソ (Kemusso),3,Normal,Worm Pokémon,1,Bug,,0.3,3.6,2,Shield Dust,,Run Away,195,45,45,35,20,30,20,255,70,56,Medium Fast,1,Bug,,50,15,1,2,1,1,0.5,1,0.5,1,0.5,2,1,1,2,1,1,1,1,1,wurmple.png,1
-127,tyrunt,696,Tyrunt,Balgoras,チゴラス (Chigoras),6,Normal,Royal Heir Pokémon,2,Rock,Dragon,0.8,26,2,Strong Jaw,,Sturdy,362,58,89,77,45,45,48,45,70,72,Medium Fast,2,Dragon,Monster,87.5,30,0.5,0.25,1,0.5,1,2,2,0.5,2,0.5,1,1,1,1,2,1,2,2,tyrunt.png,1
-128,pidgey,16,Pidgey,Taubsi,ポッポ (Poppo),1,Normal,Tiny Bird Pokémon,2,Normal,Flying,0.3,1.8,3,Keen Eye,Tangled Feet,Big Pecks,251,40,45,40,35,35,56,255,70,50,Medium Slow,1,Flying,,50,15,1,1,1,2,0.5,2,1,1,0,1,1,0.5,2,0,1,1,1,1,pidgey.png,1
-129,mankey,56,Mankey,Menki,マンキー (Mankey),1,Normal,Pig Monkey Pokémon,1,Fighting,,0.5,28,3,Vital Spirit,Anger Point,Defiant,305,40,80,35,35,45,70,190,70,61,Medium Fast,1,Field,,50,20,1,1,1,1,1,1,1,1,1,2,2,0.5,0.5,1,1,0.5,1,2,mankey.png,1
-130,illumise,314,Illumise,Illumise,イルミーゼ (Illumise),3,Normal,Firefly Pokémon,1,Bug,,0.6,17.7,3,Oblivious,Tinted Lens,Prankster,430,65,47,75,73,85,85,150,70,151,Fluctuating,2,Bug,Human-Like,0,15,1,2,1,1,0.5,1,0.5,1,0.5,2,1,1,2,1,1,1,1,1,illumise.png,1
-131,igglybuff,174,Igglybuff,Fluffeluff,ププリン (Pupurin),2,Normal,Balloon Pokémon,2,Normal,Fairy,0.3,1,3,Cute Charm,Competitive,Friend Guard,210,90,30,15,40,20,15,170,70,42,Fast,1,Undiscovered,,25,10,1,1,1,1,1,1,1,2,1,1,1,0.5,1,0,0,0.5,2,1,igglybuff.png,1
-132,qwilfish,211,Qwilfish,Baldorfish,ハリーセン (Harysen),2,Normal,Balloon Pokémon,2,Water,Poison,0.5,3.9,3,Poison Point,Swift Swim,Intimidate,440,65,95,85,55,55,85,45,70,88,Medium Fast,1,Water 2,,50,20,1,0.5,0.5,2,1,0.5,0.5,0.5,2,1,2,0.5,1,1,1,1,0.5,0.5,qwilfish.png,1
-133,goldeen,118,Goldeen,Goldini,トサキント (Tosakinto),1,Normal,Goldfish Pokémon,1,Water,,0.6,15,3,Swift Swim,Water Veil,Lightning Rod,320,45,67,60,35,50,63,225,70,64,Medium Fast,1,Water 2,,50,20,1,0.5,0.5,2,2,0.5,1,1,1,1,1,1,1,1,1,1,0.5,1,goldeen.png,1
-134,abra,63,Abra,Abra,ケーシィ (Casey),1,Normal,Psi Pokémon,1,Psychic,,0.9,19.5,3,Synchronize,Inner Focus,Magic Guard,310,25,20,15,105,55,90,200,70,62,Medium Slow,1,Human-Like,,75,20,1,1,1,1,1,1,0.5,1,1,1,0.5,2,1,2,1,2,1,1,abra.png,1
-135,purrloin,509,Purrloin,Felilou,チョロネコ (Choroneko),5,Normal,Devious Pokémon,1,Dark,,0.4,10.1,3,Limber,Unburden,Prankster,281,41,50,37,50,37,66,255,70,56,Medium Fast,1,Field,,50,20,1,1,1,1,1,1,2,1,1,1,0,2,1,0.5,1,0.5,1,2,purrloin.png,1
-136,gulpin,316,Gulpin,Schluppuck,ゴクリン (Gokulin),3,Normal,Stomach Pokémon,1,Poison,,0.4,10.3,3,Liquid Ooze,Sticky Hold,Gluttony,302,70,43,53,43,53,40,225,70,60,Fluctuating,1,Amorphous,,50,20,1,1,1,1,0.5,1,0.5,0.5,2,1,2,0.5,1,1,1,1,1,0.5,gulpin.png,1
-137,munchlax,446,Munchlax,Mampfaxo,ゴンベ (Gonbe),4,Normal,Big Eater Pokémon,1,Normal,,0.6,105,3,Pickup,Thick Fat,Gluttony,390,135,85,40,40,85,5,50,70,78,Slow,1,Undiscovered,,87.5,40,1,1,1,1,1,1,2,1,1,1,1,1,1,0,1,1,1,1,munchlax.png,1
-138,volcanion,721,Volcanion,Volcanion,ボルケニオン (Volcanion),6,Mythical,Steam Pokémon,2,Fire,Water,1.7,195,1,Water Absorb,,,600,80,110,120,130,90,70,3,100,270,Slow,1,Undiscovered,,,120,1,0.25,0,2,1,0.25,1,1,2,1,1,0.5,2,1,1,1,0.25,0.5,volcanion.png,1
-139,lillipup,506,Lillipup,Yorkleff,ヨーテリー (Yorterrie),5,Normal,Puppy Pokémon,1,Normal,,0.4,4.1,3,Vital Spirit,Pickup,Run Away,275,45,60,45,25,45,55,255,70,55,Medium Slow,1,Field,,50,15,1,1,1,1,1,1,2,1,1,1,1,1,1,0,1,1,1,1,lillipup.png,1
-140,lapras,131,Lapras,Lapras,ラプラス (Laplace),1,Normal,Transport Pokémon,2,Water,Ice,2.5,220,3,Water Absorb,Shell Armor,Hydration,535,130,85,80,85,95,60,45,70,187,Slow,2,Monster,Water 1,50,40,1,1,0,2,2,0.25,2,1,1,1,1,1,2,1,1,1,1,1,lapras.png,1
-141,sneasel,215,Sneasel,Sniebel,ニューラ (Nyula),2,Normal,Sharp Claw Pokémon,2,Dark,Ice,0.9,28,3,Inner Focus,Keen Eye,Pickpocket,430,55,95,55,35,75,115,60,35,86,Medium Slow,1,Field,,50,20,1,2,1,1,1,0.5,4,1,1,1,0,2,2,0.5,1,0.5,2,2,sneasel.png,1
-142,murkrow,198,Murkrow,Kramurx,ヤミカラス (Yamikarasu),2,Normal,Darkness Pokémon,2,Dark,Flying,0.5,2.1,3,Insomnia,Super Luck,Prankster,405,60,85,42,85,42,91,30,35,81,Medium Slow,1,Flying,,50,20,1,1,1,2,0.5,2,1,1,0,1,0,1,2,0.5,1,0.5,1,2,murkrow.png,1
-143,tentacool,72,Tentacool,Tentacha,メノクラゲ (Menokurage),1,Normal,Jellyfish Pokémon,2,Water,Poison,0.9,45.5,3,Clear Body,Liquid Ooze,Rain Dish,335,40,40,35,50,100,70,190,70,67,Slow,1,Water 3,,50,20,1,0.5,0.5,2,1,0.5,0.5,0.5,2,1,2,0.5,1,1,1,1,0.5,0.5,tentacool.png,1
-144,oshawott,501,Oshawott,Ottaro,ミジュマル (Mijumaru),5,Normal,Sea Otter Pokémon,1,Water,,0.5,5.9,2,Torrent,,Shell Armor,308,55,55,45,63,45,45,45,70,62,Medium Slow,1,Field,,87.5,20,1,0.5,0.5,2,2,0.5,1,1,1,1,1,1,1,1,1,1,0.5,1,oshawott.png,1
-145,espurr,677,Espurr,Psiau,ニャスパー (Nyasper),6,Normal,Restraint Pokémon,1,Psychic,,0.3,3.5,3,Keen Eye,Infiltrator,Own Tempo,355,62,48,54,63,60,68,190,70,71,Medium Fast,1,Field,,50,20,1,1,1,1,1,1,0.5,1,1,1,0.5,2,1,2,1,2,1,1,espurr.png,1
-146,milcery,868,Milcery,Hokumil,マホミル (Mahomil),8,Normal,Cream Pokémon,1,Fairy,,0.2,0.3,2,Sweet Veil,,Aroma Veil,270,45,40,40,50,61,34,200,,,Medium Fast,2,Amorphous,Fairy,0,20,1,1,1,1,1,1,0.5,2,1,1,1,0.5,1,1,0,0.5,2,1,milcery.png,1
-147,seel,86,Seel,Jurob,パウワウ (Pawou),1,Normal,Sea Lion Pokémon,1,Water,,1.1,90,3,Thick Fat,Hydration,Ice Body,325,65,45,55,45,70,45,190,70,65,Medium Fast,2,Field,Water 1,50,20,1,0.25,0.5,2,2,0.25,1,1,1,1,1,1,1,1,1,1,0.5,1,seel.png,1
-148,pyukumuku,771,Pyukumuku,Gufa,ナマコブシ (Namakobushi),7,Normal,Sea Cucumber Pokémon,1,Water,,0.3,1.2,2,Innards Out,,Unaware,410,55,60,130,30,130,5,60,70,144,Fast,1,Water 1,,50,15,1,0.5,0.5,2,2,0.5,1,1,1,1,1,1,1,1,1,1,0.5,1,pyukumuku.png,1
-149,pineco,204,Pineco,Tannza,クヌギダマ (Kunugidama),2,Normal,Bagworm Pokémon,1,Bug,,0.6,7.2,2,Sturdy,,Overcoat,290,50,65,90,35,35,15,190,70,58,Medium Fast,1,Bug,,50,20,1,2,1,1,0.5,1,0.5,1,0.5,2,1,1,2,1,1,1,1,1,pineco.png,1
-150,cosmog,789,Cosmog,Cosmog,コスモッグ (Cosmog),7,Legendary,Nebula Pokémon,1,Psychic,,0.2,0.1,1,Unaware,,,200,43,29,31,29,31,37,45,0,40,Slow,1,Undiscovered,,,120,1,1,1,1,1,1,0.5,1,1,1,0.5,2,1,2,1,2,1,1,cosmog.png,1
-151,swablu,333,Swablu,Wablu,チルット (Tyltto),3,Normal,Cotton Bird Pokémon,2,Normal,Flying,0.4,1.2,2,Natural Cure,,Cloud Nine,310,45,40,60,40,75,50,255,70,62,Erratic,2,Dragon,Flying,50,20,1,1,1,2,0.5,2,1,1,0,1,1,0.5,2,0,1,1,1,1,swablu.png,1
-152,skitty,300,Skitty,Eneco,エネコ (Eneco),3,Normal,Kitten Pokémon,1,Normal,,0.6,11,3,Cute Charm,Normalize,Wonder Skin,260,50,45,45,35,35,50,255,70,52,Fast,2,Fairy,Field,25,15,1,1,1,1,1,1,2,1,1,1,1,1,1,0,1,1,1,1,skitty.png,1
-153,regidrago,895,Regidrago,Regidrago,レジドラゴ (Regidrago),8,Sub Legendary,Dragon Orb Pokémon,1,Dragon,,2.1,200,1,Dragon‘s Maw,,,580,200,100,50,100,50,80,3,,,Slow,1,Undiscovered,,,120,1,0.5,0.5,0.5,0.5,2,1,1,1,1,1,1,1,1,2,1,1,2,regidrago.png,1
-154,minun,312,Minun,Minun,マイナン (Minun),3,Normal,Cheering Pokémon,1,Electric,,0.4,4.2,2,Minus,,Volt Absorb,405,60,40,50,75,85,95,200,70,142,Medium Fast,1,Fairy,,50,20,1,1,1,0.5,1,1,1,1,2,0.5,1,1,1,1,1,1,0.5,1,minun.png,1
-155,heracross,214,Heracross,Skaraborn,ヘラクロス (Heracros),2,Normal,Single Horn Pokémon,2,Bug,Fighting,1.5,54,3,Swarm,Guts,Moxie,500,80,125,75,40,95,85,45,70,175,Slow,1,Bug,,50,25,1,2,1,1,0.5,1,0.5,1,0.5,4,2,0.5,1,1,1,0.5,1,2,heracross.png,1
-156,trapinch,328,Trapinch,Knacklion,ナックラー (Nuckrar),3,Normal,Ant Pit Pokémon,1,Ground,,0.7,15,3,Hyper Cutter,Arena Trap,Sheer Force,290,45,100,45,45,45,10,255,70,58,Medium Slow,2,Bug,Dragon,50,20,1,1,2,0,2,2,1,0.5,1,1,1,1,0.5,1,1,1,1,1,trapinch.png,1
-157,girafarig,203,Girafarig,Girafarig,キリンリキ (Kirinriki),2,Normal,Long Neck Pokémon,2,Normal,Psychic,1.5,41.5,3,Inner Focus,Early Bird,Sap Sipper,455,70,80,65,90,65,85,60,70,159,Medium Fast,1,Field,,50,20,1,1,1,1,1,1,1,1,1,1,0.5,2,1,0,1,2,1,1,girafarig.png,1
-158,poochyena,261,Poochyena,Fiffyen,ポチエナ (Pochiena),3,Normal,Bite Pokémon,1,Dark,,0.5,13.6,3,Run Away,Quick Feet,Rattled,220,35,55,35,30,30,35,255,70,56,Medium Fast,1,Field,,50,15,1,1,1,1,1,1,2,1,1,1,0,2,1,0.5,1,0.5,1,2,poochyena.png,1
-159,popplio,728,Popplio,Robball,アシマリ (Ashimari),7,Normal,Sea Lion Pokémon,1,Water,,0.4,7.5,2,Torrent,,Liquid Voice,320,50,54,54,66,56,40,45,70,64,Medium Slow,2,Field,Water 1,87.5,15,1,0.5,0.5,2,2,0.5,1,1,1,1,1,1,1,1,1,1,0.5,1,popplio.png,1
-160,glastrier,896,Glastrier,Polaross,ブリザポス (Burizaposu),8,Sub Legendary,Wild Horse Pokémon,1,Ice,,2.2,800,1,Chilling Neigh,,,580,100,145,130,65,110,30,3,,,Slow,1,Undiscovered,,,120,1,2,1,1,1,0.5,2,1,1,1,1,1,2,1,1,1,2,1,glastrier.png,1
-161,kyurem,646,Kyurem,Kyurem,キュレム (Kyurem),5,Legendary,Boundary Pokémon,2,Dragon,Ice,3,325,1,Pressure,,,660,125,130,90,130,90,95,3,0,297,Slow,1,Undiscovered,,,120,1,1,0.5,0.5,0.5,1,2,1,1,1,1,1,2,1,2,1,2,2,kyurem.png,1
-162,carnivine,455,Carnivine,Venuflibis,マスキッパ (Muskippa),4,Normal,Bug Catcher Pokémon,1,Grass,,1.4,27,1,Levitate,,,454,74,100,72,90,72,46,200,70,159,Slow,1,Grass,,50,25,1,2,0.5,0.5,0.5,2,1,2,0,2,1,2,1,1,1,1,1,1,carnivine.png,1
-163,pinsir,127,Pinsir,Pinsir,カイロス (Kailios),1,Normal,Stag Beetle Pokémon,1,Bug,,1.5,55,3,Hyper Cutter,Mold Breaker,Moxie,500,65,125,100,55,70,85,45,70,175,Slow,1,Bug,,50,25,1,2,1,1,0.5,1,0.5,1,0.5,2,1,1,2,1,1,1,1,1,pinsir.png,1
-164,snorunt,361,Snorunt,Schneppke,ユキワラシ (Yukiwarashi),3,Normal,Snow Hat Pokémon,1,Ice,,0.7,16.8,3,Inner Focus,Ice Body,Moody,300,50,50,50,50,50,50,190,70,60,Medium Fast,2,Fairy,Mineral,50,20,1,2,1,1,1,0.5,2,1,1,1,1,1,2,1,1,1,2,1,snorunt.png,1
-165,necrozma,800,Necrozma,Necrozma,ネクロズマ (Necrozma),7,Legendary,Prism Pokémon,1,Psychic,,2.4,230,1,Prism Armor,,,600,97,107,101,127,89,79,255,0,270,Slow,1,Undiscovered,,,120,1,1,1,1,1,1,0.5,1,1,1,0.5,1.5,1,1.5,1,1.5,1,1,necrozma.png,1
-166,smeargle,235,Smeargle,Farbeagle,ドーブル (Doble),2,Normal,Painter Pokémon,1,Normal,,1.2,58,3,Own Tempo,Technician,Moody,250,55,20,35,20,45,75,45,70,88,Fast,1,Field,,50,20,1,1,1,1,1,1,2,1,1,1,1,1,1,0,1,1,1,1,smeargle.png,1
-167,magby,240,Magby,Magby,ブビィ (Buby),2,Normal,Live Coal Pokémon,1,Fire,,0.7,21.4,2,Flame Body,,Vital Spirit,365,45,75,37,70,55,83,45,70,73,Medium Fast,1,Undiscovered,,75,25,1,0.5,2,1,0.5,0.5,1,1,2,1,1,0.5,2,1,1,1,0.5,0.5,magby.png,1
-168,crabrawler,739,Crabrawler,Krabbox,マケンカニ (Makenkani),7,Normal,Boxing Pokémon,1,Fighting,,0.6,7,3,Hyper Cutter,Iron Fist,Anger Point,338,47,82,57,42,47,63,225,70,68,Medium Fast,1,Water 3,,50,20,1,1,1,1,1,1,1,1,1,2,2,0.5,0.5,1,1,0.5,1,2,crabrawler.png,1
-169,geodude,74,Geodude,Kleinstein,イシツブテ (Isitsubute),1,Normal,Rock Pokémon,2,Rock,Ground,0.4,20,3,Rock Head,Sturdy,Sand Veil,300,40,80,100,30,30,20,255,70,60,Medium Slow,1,Mineral,,50,15,0.5,0.5,4,0,4,2,2,0.25,2,0.5,1,1,0.5,1,1,1,2,1,geodude.png,1
-170,foongus,590,Foongus,Tarnpignon,タマゲタケ (Tamagetake),5,Normal,Mushroom Pokémon,2,Grass,Poison,0.2,1,2,Effect Spore,,Regenerator,294,69,55,45,55,55,15,190,70,59,Medium Fast,1,Grass,,50,20,1,2,0.5,0.5,0.25,2,0.5,1,1,2,2,1,1,1,1,1,1,0.5,foongus.png,1
-171,delibird,225,Delibird,Botogel,デリバード (Delibird),2,Normal,Delivery Pokémon,2,Ice,Flying,0.9,16,3,Vital Spirit,Hustle,Insomnia,330,45,55,45,65,45,75,45,70,116,Fast,2,Field,Water 1,50,20,1,2,1,2,0.5,1,1,1,0,1,1,0.5,4,1,1,1,2,1,delibird.png,1
-172,oranguru,765,Oranguru,Kommandutan,ヤレユータン (Yareyuutan),7,Normal,Sage Pokémon,2,Normal,Psychic,1.5,76,3,Inner Focus,Telepathy,Symbiosis,490,90,60,80,90,110,60,45,70,172,Slow,1,Field,,50,20,1,1,1,1,1,1,1,1,1,1,0.5,2,1,0,1,2,1,1,oranguru.png,1
-173,smoochum,238,Smoochum,Kussilla,ムチュール (Muchul),2,Normal,Kiss Pokémon,2,Ice,Psychic,0.4,6,3,Oblivious,Forewarn,Hydration,305,45,30,15,85,65,65,45,70,61,Medium Fast,1,Undiscovered,,0,25,1,2,1,1,1,0.5,1,1,1,1,0.5,2,2,2,1,2,2,1,smoochum.png,1
-174,scyther,123,Scyther,Sichlor,ストライク (Strike),1,Normal,Mantis Pokémon,2,Bug,Flying,1.5,56,3,Swarm,Technician,Steadfast,500,70,110,80,55,80,105,45,70,100,Medium Fast,1,Bug,,50,25,1,2,1,2,0.25,2,0.25,1,0,2,1,0.5,4,1,1,1,1,1,scyther.png,1
-175,stunky,434,Stunky,Skunkapuh,スカンプー (Skunpuu),4,Normal,Skunk Pokémon,2,Poison,Dark,0.4,19.2,3,Stench,Aftermath,Keen Eye,329,63,63,47,41,41,74,225,70,66,Medium Fast,1,Field,,50,20,1,1,1,1,0.5,1,1,0.5,2,1,0,1,1,0.5,1,0.5,1,1,stunky.png,1
-176,klefki,707,Klefki,Clavion,クレッフィ (Cleffy),6,Normal,Key Ring Pokémon,2,Steel,Fairy,0.2,3,2,Prankster,,Magician,470,57,80,91,80,87,75,75,70,165,Fast,1,Mineral,,50,20,0.5,2,1,1,0.5,0.5,1,0,2,0.5,0.5,0.25,0.5,1,0,0.5,1,0.5,klefki.png,1
-177,honedge,679,Honedge,Gramokles,ヒトツキ (Hitotsuki),6,Normal,Sword Pokémon,2,Steel,Ghost,0.8,2,1,No Guard,,,325,45,80,100,35,37,28,180,70,65,Medium Fast,1,Mineral,,50,20,0,2,1,1,0.5,0.5,0,0,2,0.5,0.5,0.25,0.5,2,0.5,2,0.5,0.5,honedge.png,1
-178,entei,244,Entei,Entei,エンテイ (Entei),2,Sub Legendary,Volcano Pokémon,1,Fire,,2.1,198,2,Pressure,,Inner Focus,580,115,115,85,90,75,100,3,35,261,Slow,1,Undiscovered,,,80,1,0.5,2,1,0.5,0.5,1,1,2,1,1,0.5,2,1,1,1,0.5,0.5,entei.png,1
-179,zubat,41,Zubat,Zubat,ズバット (Zubat),1,Normal,Bat Pokémon,2,Poison,Flying,0.8,7.5,2,Inner Focus,,Infiltrator,245,40,45,35,30,40,55,255,70,49,Medium Fast,1,Flying,,50,15,1,1,1,2,0.25,2,0.25,0.5,0,1,2,0.25,2,1,1,1,1,0.5,zubat.png,1
-180,pheromosa,795,Pheromosa,Schabelle,フェローチェ (Pheroache),7,Sub Legendary,Lissome Pokémon,2,Bug,Fighting,1.8,25,1,Beast Boost,,,570,71,137,37,137,37,151,45,0,257,Slow,1,Undiscovered,,,120,1,2,1,1,0.5,1,0.5,1,0.5,4,2,0.5,1,1,1,0.5,1,2,pheromosa.png,1
-181,genesect,649,Genesect,Genesect,ゲノセクト (Genesect),5,Mythical,Paleozoic Pokémon,2,Bug,Steel,1.5,82.5,1,Download,,,600,71,120,95,120,95,99,3,0,270,Slow,1,Undiscovered,,,120,0.5,4,1,1,0.25,0.5,1,0,1,1,0.5,0.5,1,1,0.5,1,0.5,0.5,genesect.png,1
-182,larvesta,636,Larvesta,Ignivor,メラルバ (Merlarva),5,Normal,Torch Pokémon,2,Bug,Fire,1.1,28.8,2,Flame Body,,Swarm,360,55,85,55,50,55,60,45,70,72,Slow,1,Bug,,50,40,1,1,2,1,0.25,0.5,0.5,1,1,2,1,0.5,4,1,1,1,0.5,0.5,larvesta.png,1
-183,golett,622,Golett,Golbit,ゴビット (Gobit),5,Normal,Automaton Pokémon,2,Ground,Ghost,1,92,3,Iron Fist,Klutz,No Guard,303,59,74,50,35,50,35,190,70,61,Medium Fast,1,Mineral,,,25,0,1,2,0,2,2,0,0.25,1,1,1,0.5,0.5,2,1,2,1,1,golett.png,1
-184,kartana,798,Kartana,Katagami,カミツルギ (Kamiturugi),7,Sub Legendary,Drawn Sword Pokémon,2,Grass,Steel,0.3,0.1,1,Beast Boost,,,570,59,181,131,59,31,109,45,0,257,Slow,1,Undiscovered,,,120,0.5,4,0.5,0.5,0.25,1,2,0,1,1,0.5,1,0.5,1,0.5,1,0.5,0.5,kartana.png,1
-185,voltorb,100,Voltorb,Voltobal,ビリリダマ (Biriridama),1,Normal,Ball Pokémon,1,Electric,,0.5,10.4,3,Soundproof,Static,Aftermath,330,40,30,50,55,55,100,190,70,66,Medium Fast,1,Mineral,,,20,1,1,1,0.5,1,1,1,1,2,0.5,1,1,1,1,1,1,0.5,1,voltorb.png,1
-186,regirock,377,Regirock,Regirock,レジロック (Regirock),3,Sub Legendary,Rock Peak Pokémon,1,Rock,,1.7,230,2,Clear Body,,Sturdy,580,80,100,200,50,100,50,3,35,261,Slow,1,Undiscovered,,,80,0.5,0.5,2,1,2,1,2,0.5,2,0.5,1,1,1,1,1,1,2,1,regirock.png,1
-187,cherubi,420,Cherubi,Kikugi,チェリンボ (Cherinbo),4,Normal,Cherry Pokémon,1,Grass,,0.4,3.3,1,Chlorophyll,,,275,45,35,45,62,53,35,190,70,55,Medium Fast,2,Fairy,Grass,50,20,1,2,0.5,0.5,0.5,2,1,2,0.5,2,1,2,1,1,1,1,1,1,cherubi.png,1
-188,barboach,339,Barboach,Schmerbe,ドジョッチ (Dojoach),3,Normal,Whiskers Pokémon,2,Water,Ground,0.4,1.9,3,Oblivious,Anticipation,Hydration,288,50,48,43,46,41,60,190,70,58,Medium Fast,1,Water 2,,50,20,1,0.5,1,0,4,1,1,0.5,1,1,1,1,0.5,1,1,1,0.5,1,barboach.png,1
-189,wooper,194,Wooper,Felino,ウパー (Upah),2,Normal,Water Fish Pokémon,2,Water,Ground,0.4,8.5,3,Damp,Water Absorb,Unaware,210,55,45,45,25,25,15,255,70,42,Medium Fast,2,Field,Water 1,50,20,1,0.5,1,0,4,1,1,0.5,1,1,1,1,0.5,1,1,1,0.5,1,wooper.png,1
-190,litten,725,Litten,Flamiau,ニャビー (Nyabby),7,Normal,Fire Cat Pokémon,1,Fire,,0.4,4.3,2,Blaze,,Intimidate,320,45,65,40,60,40,70,45,70,64,Medium Slow,1,Field,,87.5,15,1,0.5,2,1,0.5,0.5,1,1,2,1,1,0.5,2,1,1,1,0.5,0.5,litten.png,1
-191,dreepy,885,Dreepy,Grolldra,ドラメシヤ (Dorameshiya),8,Normal,Lingering Pokémon,2,Dragon,Ghost,0.5,2,3,Clear Body,Infiltrator,Cursed Body,270,28,60,30,40,30,82,45,,,Slow,2,Amorphous,Dragon,50,40,0,0.5,0.5,0.5,0.5,2,0,0.5,1,1,1,0.5,1,2,2,2,1,2,dreepy.png,1
-192,snivy,495,Snivy,Serpifeu,ツタージャ (Tsutarja),5,Normal,Grass Snake Pokémon,1,Grass,,0.6,8.1,2,Overgrow,,Contrary,308,45,45,55,45,55,63,45,70,62,Medium Slow,2,Field,Grass,87.5,20,1,2,0.5,0.5,0.5,2,1,2,0.5,2,1,2,1,1,1,1,1,1,snivy.png,1
-193,rattata,19,Rattata,Rattfratz,コラッタ (Koratta),1,Normal,Mouse Pokémon,1,Normal,,0.3,3.5,3,Run Away,Guts,Hustle,253,30,56,35,25,35,72,255,70,51,Medium Fast,1,Field,,50,15,1,1,1,1,1,1,2,1,1,1,1,1,1,0,1,1,1,1,rattata.png,1
-194,starly,396,Starly,Staralili,ムックル (Mukkuru),4,Normal,Starling Pokémon,2,Normal,Flying,0.3,2,2,Keen Eye,,Reckless,245,40,55,30,30,30,60,255,70,49,Medium Slow,1,Flying,,50,15,1,1,1,2,0.5,2,1,1,0,1,1,0.5,2,0,1,1,1,1,starly.png,1
-195,houndour,228,Houndour,Hunduster,デルビル (Delvil),2,Normal,Dark Pokémon,2,Dark,Fire,0.6,10.8,3,Early Bird,Flash Fire,Unnerve,330,45,60,30,80,50,65,120,35,66,Slow,1,Field,,50,20,1,0.5,2,1,0.5,0.5,2,1,2,1,0,1,2,0.5,1,0.5,0.5,1,houndour.png,1
-196,magikarp,129,Magikarp,Karpador,コイキング (Koiking),1,Normal,Fish Pokémon,1,Water,,0.9,10,2,Swift Swim,,Rattled,200,20,10,55,15,20,80,255,70,40,Slow,2,Dragon,Water 2,50,5,1,0.5,0.5,2,2,0.5,1,1,1,1,1,1,1,1,1,1,0.5,1,magikarp.png,1
-197,drowzee,96,Drowzee,Traumato,スリープ (Sleepe),1,Normal,Hypnosis Pokémon,1,Psychic,,1,32.4,3,Insomnia,Forewarn,Inner Focus,328,60,48,45,43,90,42,190,70,66,Medium Fast,1,Human-Like,,50,20,1,1,1,1,1,1,0.5,1,1,1,0.5,2,1,2,1,2,1,1,drowzee.png,1
-198,clamperl,366,Clamperl,Perlu,パールル (Pearlulu),3,Normal,Bivalve Pokémon,1,Water,,0.4,52.5,2,Shell Armor,,Rattled,345,35,64,85,74,55,32,255,70,69,Erratic,1,Water 1,,50,20,1,0.5,0.5,2,2,0.5,1,1,1,1,1,1,1,1,1,1,0.5,1,clamperl.png,1
-199,seedot,273,Seedot,Samurzel,タネボー (Taneboh),3,Normal,Acorn Pokémon,1,Grass,,0.5,4,3,Chlorophyll,Early Bird,Pickpocket,220,40,40,50,30,30,30,255,70,44,Medium Slow,2,Field,Grass,50,15,1,2,0.5,0.5,0.5,2,1,2,0.5,2,1,2,1,1,1,1,1,1,seedot.png,1
-200,skiddo,672,Skiddo,Mähikel,メェークル (Meecle),6,Normal,Mount Pokémon,1,Grass,,0.9,31,2,Sap Sipper,,Grass Pelt,350,66,65,48,62,57,52,200,70,70,Medium Fast,1,Field,,50,20,1,2,0.5,0.5,0,2,1,2,0.5,2,1,2,1,1,1,1,1,1,skiddo.png,1
-201,weedle,13,Weedle,Hornliu,ビードル (Beedle),1,Normal,Hairy Bug Pokémon,2,Bug,Poison,0.3,3.2,2,Shield Dust,,Run Away,195,40,35,30,20,20,50,255,70,39,Medium Fast,1,Bug,,50,15,1,2,1,1,0.25,1,0.25,0.5,1,2,2,0.5,2,1,1,1,1,0.5,weedle.png,1
-202,stakataka,805,Stakataka,Muramura,ツンデツンデ (Tundetunde),7,Sub Legendary,Rampart Pokémon,2,Rock,Steel,5.5,820,1,Beast Boost,,,570,61,131,211,53,101,13,30,0,257,Slow,1,Undiscovered,,,120,0.25,1,2,1,1,0.5,4,0,4,0.25,0.5,0.5,0.5,1,0.5,1,1,0.5,stakataka.png,1
-203,spoink,325,Spoink,Spoink,バネブー (Baneboo),3,Normal,Bounce Pokémon,1,Psychic,,0.7,30.6,3,Thick Fat,Own Tempo,Gluttony,330,60,25,35,70,80,60,255,70,66,Fast,1,Field,,50,20,1,0.5,1,1,1,0.5,0.5,1,1,1,0.5,2,1,2,1,2,1,1,spoink.png,1
-204,pikipek,731,Pikipek,Peppeck,ツツケラ (Tsutsukera),7,Normal,Woodpecker Pokémon,2,Normal,Flying,0.3,1.2,3,Keen Eye,Skill Link,Pickup,265,35,75,30,30,30,65,255,70,53,Medium Fast,1,Flying,,50,15,1,1,1,2,0.5,2,1,1,0,1,1,0.5,2,0,1,1,1,1,pikipek.png,1
-205,frillish,592,Frillish,Quabbel,プルリル (Pururill),5,Normal,Floating Pokémon,2,Water,Ghost,1.2,33,3,Water Absorb,Cursed Body,Damp,335,55,40,50,65,85,40,190,70,67,Medium Fast,1,Amorphous,,50,20,0,0.5,0,2,2,0.5,0,0.5,1,1,1,0.5,1,2,1,2,0.5,1,frillish.png,1
-206,cutiefly,742,Cutiefly,Wommel,アブリー (Abuly),7,Normal,Bee Fly Pokémon,2,Bug,Fairy,0.1,0.2,3,Honey Gather,Shield Dust,Sweet Veil,304,40,45,40,55,40,84,190,70,61,Medium Fast,2,Bug,Fairy,50,20,1,2,1,1,0.5,1,0.25,2,0.5,2,1,0.5,2,1,0,0.5,2,1,cutiefly.png,1
-207,tympole,535,Tympole,Schallquap,オタマロ (Otamaro),5,Normal,Tadpole Pokémon,1,Water,,0.5,4.5,3,Swift Swim,Hydration,Water Absorb,294,50,50,40,50,40,64,255,70,59,Medium Slow,1,Water 1,,50,20,1,0.5,0.5,2,2,0.5,1,1,1,1,1,1,1,1,1,1,0.5,1,tympole.png,1
-208,lileep,345,Lileep,Liliep,リリーラ (Lilyla),3,Normal,Sea Lily Pokémon,2,Rock,Grass,1,23.8,2,Suction Cups,,Storm Drain,355,66,41,77,61,87,23,45,70,71,Erratic,1,Water 3,,87.5,30,0.5,1,1,0.5,1,2,2,1,1,1,1,2,1,1,1,1,2,1,lileep.png,1
-209,pachirisu,417,Pachirisu,Pachirisu,パチリス (Pachirisu),4,Normal,EleSquirrel Pokémon,1,Electric,,0.4,3.9,3,Run Away,Pickup,Volt Absorb,405,60,45,70,45,90,95,200,100,142,Medium Fast,2,Fairy,Field,50,10,1,1,1,0.5,1,1,1,1,2,0.5,1,1,1,1,1,1,0.5,1,pachirisu.png,1
-210,beldum,374,Beldum,Tanhel,ダンバル (Dumbber),3,Normal,Iron Ball Pokémon,2,Steel,Psychic,0.6,95.2,2,Clear Body,,Light Metal,300,40,55,80,35,60,30,3,35,60,Slow,1,Mineral,,,40,0.5,2,1,1,0.5,0.5,1,0,2,0.5,0.25,1,0.5,2,0.5,2,0.5,0.5,beldum.png,1
-211,glameow,431,Glameow,Charmian,ニャルマー (Nyarmar),4,Normal,Catty Pokémon,1,Normal,,0.5,3.9,3,Limber,Own Tempo,Keen Eye,310,49,55,42,42,37,85,190,70,62,Fast,1,Field,,25,20,1,1,1,1,1,1,2,1,1,1,1,1,1,0,1,1,1,1,glameow.png,1
-212,zangoose,335,Zangoose,Sengo,ザングース (Zangoose),3,Normal,Cat Ferret Pokémon,1,Normal,,1.3,40.3,2,Immunity,,Toxic Boost,458,73,115,60,60,60,90,90,70,160,Erratic,1,Field,,50,20,1,1,1,1,1,1,2,1,1,1,1,1,1,0,1,1,1,1,zangoose.png,1
-213,moltres,146,Moltres,Lavados,ファイヤー (Fire),1,Sub Legendary,Flame Pokémon,2,Fire,Flying,2,60,2,Pressure,,Flame Body,580,90,100,90,125,85,90,3,35,261,Slow,1,Undiscovered,,,80,1,0.5,2,2,0.25,1,0.5,1,0,1,1,0.25,4,1,1,1,0.5,0.5,moltres.png,1
-214,mesprit,481,Mesprit,Vesprit,エムリット (Emrit),4,Sub Legendary,Emotion Pokémon,1,Psychic,,0.3,0.3,1,Levitate,,,580,80,105,105,105,105,80,3,140,261,Slow,1,Undiscovered,,,80,1,1,1,1,1,1,0.5,1,0,1,0.5,2,1,2,1,2,1,1,mesprit.png,1
-215,groudon,383,Groudon,Groudon,グラードン (Groudon),3,Legendary,Continent Pokémon,1,Ground,,3.5,950,1,Drought,,,670,100,150,140,100,90,90,3,0,302,Slow,1,Undiscovered,,,120,1,1,2,0,2,2,1,0.5,1,1,1,1,0.5,1,1,1,1,1,groudon.png,1
-216,dracozolt,880,Dracozolt,Lectragon,パッチラゴン (Patchiragon),8,Normal,Fossil Pokémon,2,Electric,Dragon,1.8,190,3,Volt Absorb,Hustle,Sand Rush,505,90,100,90,80,70,75,45,,,Slow,1,Undiscovered,,,35,1,0.5,0.5,0,0.5,2,1,1,2,0.5,1,1,1,1,2,1,0.5,2,dracozolt.png,1
-217,mantyke,458,Mantyke,Mantirps,タマンタ (Tamanta),4,Normal,Kite Pokémon,2,Water,Flying,1,65,3,Swift Swim,Water Absorb,Water Veil,345,45,20,50,60,120,50,25,70,69,Slow,1,Undiscovered,,50,25,1,0.5,0.5,4,1,1,0.5,1,0,1,1,0.5,2,1,1,1,0.5,1,mantyke.png,1
-218,paras,46,Paras,Paras,パラス (Paras),1,Normal,Mushroom Pokémon,2,Bug,Grass,0.3,5.4,3,Effect Spore,Dry Skin,Damp,285,35,70,55,45,55,25,190,70,57,Medium Fast,2,Bug,Grass,50,20,1,4,0.5,0.5,0.25,2,0.5,2,0.25,4,1,2,2,1,1,1,1,1,paras.png,1
-219,solrock,338,Solrock,Sonnfel,ソルロック (Solrock),3,Normal,Meteorite Pokémon,2,Rock,Psychic,1.2,154,1,Levitate,,,460,90,95,85,55,65,70,45,70,161,Fast,1,Mineral,,,25,0.5,0.5,2,1,2,1,1,0.5,0,0.5,0.5,2,1,2,1,2,2,1,solrock.png,1
-220,komala,775,Komala,Koalelu,ネッコアラ (Nekkoara),7,Normal,Drowsing Pokémon,1,Normal,,0.4,19.9,1,Comatose,,,480,65,115,65,75,95,65,45,70,168,Slow,1,Field,,50,20,1,1,1,1,1,1,2,1,1,1,1,1,1,0,1,1,1,1,komala.png,1
-221,patrat,504,Patrat,Nagelotz,ミネズミ (Minezumi),5,Normal,Scout Pokémon,1,Normal,,0.5,11.6,3,Run Away,Keen Eye,Analytic,255,45,55,39,35,39,42,255,70,51,Medium Fast,1,Field,,50,15,1,1,1,1,1,1,2,1,1,1,1,1,1,0,1,1,1,1,patrat.png,1
-222,spheal,363,Spheal,Seemops,タマザラシ (Tamazarashi),3,Normal,Clap Pokémon,2,Ice,Water,0.8,39.5,3,Thick Fat,Ice Body,Oblivious,290,70,40,50,55,50,25,255,70,58,Medium Slow,2,Field,Water 1,50,20,1,0.5,0.5,2,2,125,2,1,1,1,1,1,2,1,1,1,1,1,spheal.png,1
-223,lotad,270,Lotad,Loturzel,ハスボー (Hassboh),3,Normal,Water Weed Pokémon,2,Water,Grass,0.5,2.6,3,Swift Swim,Rain Dish,Own Tempo,220,40,30,30,40,50,30,255,70,44,Medium Slow,2,Grass,Water 1,50,15,1,1,0.25,1,1,1,1,2,0.5,2,1,2,1,1,1,1,0.5,1,lotad.png,1
-224,ralts,280,Ralts,Trasla,ラルトス (Ralts),3,Normal,Feeling Pokémon,2,Psychic,Fairy,0.4,6.6,3,Synchronize,Trace,Telepathy,198,28,25,25,45,35,40,235,35,40,Slow,2,Amorphous,Human-Like,50,20,1,1,1,1,1,1,0.25,2,1,1,0.5,1,1,2,0,1,2,1,ralts.png,1
-225,registeel,379,Registeel,Registeel,レジスチル (Registeel),3,Sub Legendary,Iron Pokémon,1,Steel,,1.9,205,2,Clear Body,,Light Metal,580,80,75,150,75,150,50,3,35,261,Slow,1,Undiscovered,,,80,0.5,2,1,1,0.5,0.5,2,0,2,0.5,0.5,0.5,0.5,1,0.5,1,0.5,0.5,registeel.png,1
-226,fomantis,753,Fomantis,Imantis,カリキリ (Karikiri),7,Normal,Sickle Grass Pokémon,1,Grass,,0.3,1.5,2,Leaf Guard,,Contrary,250,40,55,35,50,35,35,190,70,50,Medium Fast,1,Grass,,50,20,1,2,0.5,0.5,0.5,2,1,2,0.5,2,1,2,1,1,1,1,1,1,fomantis.png,1
-227,aerodactyl,142,Aerodactyl,Aerodactyl,プテラ (Ptera),1,Normal,Fossil Pokémon,2,Rock,Flying,1.8,59,3,Rock Head,Pressure,Unnerve,515,80,105,65,60,75,130,45,70,180,Slow,1,Flying,,87.5,35,0.5,0.5,2,2,1,2,1,0.5,0,0.5,1,0.5,2,1,1,1,2,1,aerodactyl.png,1
-228,pincurchin,871,Pincurchin,Britzigel,バチンウニ (Bachinuni),8,Normal,Sea Urchin Pokémon,1,Electric,,0.3,1,2,Lightning Rod,,Electric Surge,435,48,101,95,91,85,15,75,,,Medium Fast,2,Amorphous,Water 1,50,20,1,1,1,0,1,1,1,1,2,0.5,1,1,1,1,1,1,0.5,1,pincurchin.png,1
-229,bronzor,436,Bronzor,Bronzel,ドーミラー (Dohmirror),4,Normal,Bronze Pokémon,2,Steel,Psychic,0.5,60.5,3,Levitate,Heatproof,Heavy Metal,300,57,24,86,24,86,23,255,70,60,Medium Fast,1,Mineral,,,20,0.5,2,1,1,0.5,0.5,1,0,0,0.5,0.25,1,0.5,2,0.5,2,0.5,0.5,bronzor.png,1
-230,kyogre,382,Kyogre,Kyogre,カイオーガ (Kyogre),3,Legendary,Sea Basin Pokémon,1,Water,,4.5,352,1,Drizzle,,,670,100,100,90,150,140,90,3,0,302,Slow,1,Undiscovered,,,120,1,0.5,0.5,2,2,0.5,1,1,1,1,1,1,1,1,1,1,0.5,1,kyogre.png,1
-231,cufant,878,Cufant,Kupfanti,ゾウドウ (Zoudou),8,Normal,Copperderm Pokémon,1,Steel,,1.2,100,2,Sheer Force,,Heavy Metal,330,72,80,49,40,49,40,190,,,Medium Fast,2,Field,Mineral,50,25,0.5,2,1,1,0.5,0.5,2,0,2,0.5,0.5,0.5,0.5,1,0.5,1,0.5,0.5,cufant.png,1
-232,feebas,349,Feebas,Barschwa,ヒンバス (Hinbass),3,Normal,Fish Pokémon,1,Water,,0.6,7.4,3,Swift Swim,Oblivious,Adaptability,200,20,15,20,10,55,80,255,70,40,Erratic,2,Dragon,Water 1,50,20,1,0.5,0.5,2,2,0.5,1,1,1,1,1,1,1,1,1,1,0.5,1,feebas.png,1
-233,maractus,556,Maractus,Maracamba,マラカッチ (Maracacchi),5,Normal,Cactus Pokémon,1,Grass,,1,28,3,Water Absorb,Chlorophyll,Storm Drain,461,75,86,67,106,67,60,255,70,161,Medium Fast,1,Grass,,50,20,1,2,0,0.5,0.5,2,1,2,0.5,2,1,2,1,1,1,1,1,1,maractus.png,1
-234,chimchar,390,Chimchar,Panflam,ヒコザル (Hikozaru),4,Normal,Chimp Pokémon,1,Fire,,0.5,6.2,2,Blaze,,Iron Fist,309,44,58,44,58,44,61,45,70,62,Medium Slow,2,Field,Human-Like,87.5,20,1,0.5,2,1,0.5,0.5,1,1,2,1,1,0.5,2,1,1,1,0.5,0.5,chimchar.png,1
-235,staryu,120,Staryu,Sterndu,ヒトデマン (Hitodeman),1,Normal,Star Shape Pokémon,1,Water,,0.8,34.5,3,Illuminate,Natural Cure,Analytic,340,30,45,55,70,55,85,225,70,68,Slow,1,Water 3,,,20,1,0.5,0.5,2,2,0.5,1,1,1,1,1,1,1,1,1,1,0.5,1,staryu.png,1
-236,pancham,674,Pancham,Pam-Pam,ヤンチャム (Yancham),6,Normal,Playful Pokémon,1,Fighting,,0.6,8,3,Iron Fist,Mold Breaker,Scrappy,348,67,82,62,46,48,43,220,70,70,Medium Fast,2,Field,Human-Like,50,25,1,1,1,1,1,1,1,1,1,2,2,0.5,0.5,1,1,0.5,1,2,pancham.png,1
-237,dwebble,557,Dwebble,Lithomith,イシズマイ (Ishizumai),5,Normal,Rock Inn Pokémon,2,Bug,Rock,0.3,14.5,3,Sturdy,Shell Armor,Weak Armor,325,50,65,85,35,35,55,190,70,65,Medium Fast,2,Bug,Mineral,50,20,0.5,1,2,1,1,1,1,0.5,1,1,1,1,2,1,1,1,2,1,dwebble.png,1
-238,bruxish,779,Bruxish,Knirfish,ハギギシリ (Hagigishiri),7,Normal,Gnash Teeth Pokémon,2,Water,Psychic,0.9,19,3,Dazzling,Strong Jaw,Wonder Skin,475,68,105,70,70,70,92,80,70,166,Medium Fast,1,Water 2,,50,15,1,0.5,0.5,2,2,0.5,0.5,1,1,1,0.5,2,1,2,1,2,0.5,1,bruxish.png,1
-239,joltik,595,Joltik,Wattzapf,バチュル (Bachuru),5,Normal,Attaching Pokémon,2,Bug,Electric,0.1,0.6,3,Compound Eyes,Unnerve,Swarm,319,50,47,50,57,50,65,190,70,64,Medium Fast,1,Bug,,50,20,1,2,1,0.5,0.5,1,0.5,1,1,1,1,1,2,1,1,1,0.5,1,joltik.png,1
-240,phione,489,Phione,Phione,フィオネ (Phione),4,Mythical,Sea Drifter Pokémon,1,Water,,0.4,3.1,1,Hydration,,,480,80,80,80,80,80,80,30,70,216,Slow,2,Fairy,Water 1,,40,1,0.5,0.5,2,2,0.5,1,1,1,1,1,1,1,1,1,1,0.5,1,phione.png,1
-241,pansear,513,Pansear,Grillmak,バオップ (Baoppu),5,Normal,High Temp Pokémon,1,Fire,,0.6,11,2,Gluttony,,Blaze,316,50,53,48,53,48,64,190,70,63,Medium Fast,1,Field,,87.5,20,1,0.5,2,1,0.5,0.5,1,1,2,1,1,0.5,2,1,1,1,0.5,0.5,pansear.png,1
-242,happiny,440,Happiny,Wonneira,ピンプク (Pinpuku),4,Normal,Playhouse Pokémon,1,Normal,,0.6,24.4,3,Natural Cure,Serene Grace,Friend Guard,220,100,5,5,15,65,30,130,140,110,Fast,1,Undiscovered,,0,40,1,1,1,1,1,1,2,1,1,1,1,1,1,0,1,1,1,1,happiny.png,1
-243,spearow,21,Spearow,Habitak,オニスズメ (Onisuzume),1,Normal,Tiny Bird Pokémon,2,Normal,Flying,0.3,2,2,Keen Eye,,Sniper,262,40,60,30,31,31,70,255,70,52,Medium Fast,1,Flying,,50,15,1,1,1,2,0.5,2,1,1,0,1,1,0.5,2,0,1,1,1,1,spearow.png,1
-244,helioptile,694,Helioptile,Eguana,エリキテル (Erikiteru),6,Normal,Generator Pokémon,2,Electric,Normal,0.5,6,3,Dry Skin,Sand Veil,Solar Power,289,44,38,33,61,43,70,190,70,58,Medium Fast,2,Dragon,Monster,50,20,1,1.25,0,0.5,1,1,2,1,2,0.5,1,1,1,0,1,1,0.5,1,helioptile.png,1
-245,wooloo,831,Wooloo,Wolly,ウールー (Wooluu),8,Normal,Sheep Pokémon,1,Normal,,0.6,6,3,Fluffy,Run Away,Bulletproof,270,42,40,55,40,45,48,255,,,Medium Fast,1,Field,,50,15,1,2,1,1,1,1,2,1,1,1,1,1,1,0,1,1,1,1,wooloo.png,1
-246,diancie,719,Diancie,Diancie,ディアンシー (Diancie),6,Mythical,Jewel Pokémon,2,Rock,Fairy,0.7,8.8,1,Clear Body,,,600,50,100,150,100,150,50,3,70,270,Slow,1,Undiscovered,,,25,0.5,0.5,2,1,2,1,1,1,2,0.5,1,0.5,1,1,0,0.5,4,1,diancie.png,1
-247,poipole,803,Poipole,Venicro,ベベノム (Bevenom),7,Sub Legendary,Poison Pin Pokémon,1,Poison,,0.6,1.8,1,Beast Boost,,,420,67,73,67,73,67,73,45,0,189,Slow,1,Undiscovered,,,120,1,1,1,1,0.5,1,0.5,0.5,2,1,2,0.5,1,1,1,1,1,0.5,poipole.png,1
-248,klink,599,Klink,Klikk,ギアル (Giaru),5,Normal,Gear Pokémon,1,Steel,,0.3,21,3,Plus,Minus,Clear Body,300,40,55,70,45,60,30,130,70,60,Medium Slow,1,Mineral,,,20,0.5,2,1,1,0.5,0.5,2,0,2,0.5,0.5,0.5,0.5,1,0.5,1,0.5,0.5,klink.png,1
-249,tynamo,602,Tynamo,Zapplardin,シビシラス (Shibishirasu),5,Normal,EleFish Pokémon,1,Electric,,0.2,0.3,1,Levitate,,,275,35,55,40,45,40,60,190,70,55,Slow,1,Amorphous,,50,20,1,1,1,0.5,1,1,1,1,0,0.5,1,1,1,1,1,1,0.5,1,tynamo.png,1
-250,diglett,50,Diglett,Digda,ディグダ (Digda),1,Normal,Mole Pokémon,1,Ground,,0.2,0.8,3,Sand Veil,Arena Trap,Sand Force,265,10,55,25,35,45,95,255,70,53,Medium Fast,1,Field,,50,20,1,1,2,0,2,2,1,0.5,1,1,1,1,0.5,1,1,1,1,1,diglett.png,1
-251,nihilego,793,Nihilego,Anego,ウツロイド (Uturoid),7,Sub Legendary,Parasite Pokémon,2,Rock,Poison,1.2,55.5,1,Beast Boost,,,570,109,53,47,127,131,103,45,0,257,Slow,1,Undiscovered,,,120,0.5,0.5,2,1,1,1,1,0.25,4,0.5,2,0.5,1,1,1,1,2,0.5,nihilego.png,1
-252,skarmory,227,Skarmory,Panzaeron,エアームド (Airmd),2,Normal,Armor Bird Pokémon,2,Steel,Flying,1.7,50.5,3,Keen Eye,Sturdy,Weak Armor,465,65,80,140,40,70,70,25,70,163,Slow,1,Flying,,50,25,0.5,2,1,2,0.25,1,1,0,0,0.5,0.5,0.25,1,1,0.5,1,0.5,0.5,skarmory.png,1
-253,remoraid,223,Remoraid,Remoraid,テッポウオ (Teppouo),2,Normal,Jet Pokémon,1,Water,,0.6,12,3,Hustle,Sniper,Moody,300,35,65,35,65,35,65,190,70,60,Medium Fast,2,Water 1,Water 2,50,20,1,0.5,0.5,2,2,0.5,1,1,1,1,1,1,1,1,1,1,0.5,1,remoraid.png,1
-254,snom,872,Snom,Snomnom,ユキハミ (Yukihami),8,Normal,Worm Pokémon,2,Ice,Bug,0.3,3.8,2,Shield Dust,,Ice Scales,185,30,25,35,45,30,20,190,,,Medium Fast,1,Bug,,50,20,1,4,1,1,0.5,0.5,1,1,0.5,2,1,1,4,1,1,1,2,1,snom.png,1
-255,numel,322,Numel,Camaub,ドンメル (Donmel),3,Normal,Numb Pokémon,2,Fire,Ground,0.7,24,3,Oblivious,Simple,Own Tempo,305,60,60,40,65,45,35,255,70,61,Medium Fast,1,Field,,50,20,1,0.5,4,0,1,1,1,0.5,2,1,1,0.5,1,1,1,1,0.5,0.5,numel.png,1
-256,lunatone,337,Lunatone,Lunastein,ルナトーン (Lunatone),3,Normal,Meteorite Pokémon,2,Rock,Psychic,1,168,1,Levitate,,,460,90,55,65,95,85,70,45,70,161,Fast,1,Mineral,,,25,0.5,0.5,2,1,2,1,1,0.5,0,0.5,0.5,2,1,2,1,2,2,1,lunatone.png,1
-257,mareanie,747,Mareanie,Garstella,ヒドイデ (Hidoide),7,Normal,Brutal Star Pokémon,2,Poison,Water,0.4,8,3,Merciless,Limber,Regenerator,305,50,53,62,43,52,45,190,70,61,Medium Fast,1,Water 1,,50,20,1,0.5,0.5,2,1,0.5,0.5,0.5,2,1,2,0.5,1,1,1,1,0.5,0.5,mareanie.png,1
-258,throh,538,Throh,Jiutesto,ナゲキ (Nageki),5,Normal,Judo Pokémon,1,Fighting,,1.3,55.5,3,Guts,Inner Focus,Mold Breaker,465,120,100,85,30,85,45,45,70,163,Medium Fast,1,Human-Like,,100,20,1,1,1,1,1,1,1,1,1,2,2,0.5,0.5,1,1,0.5,1,2,throh.png,1
-259,hoppip,187,Hoppip,Hoppspross,ハネッコ (Hanecco),2,Normal,Cottonweed Pokémon,2,Grass,Flying,0.4,0.5,3,Chlorophyll,Leaf Guard,Infiltrator,250,35,35,40,35,55,50,255,70,50,Medium Slow,2,Fairy,Grass,50,20,1,2,0.5,1,0.25,4,0.5,2,0,2,1,1,2,1,1,1,1,1,hoppip.png,1
-260,kecleon,352,Kecleon,Kecleon,カクレオン (Kakureon),3,Normal,Color Swap Pokémon,1,Normal,,1,22,2,Color Change,,Protean,440,60,90,70,60,120,40,200,70,154,Medium Slow,1,Field,,50,20,1,1,1,1,1,1,2,1,1,1,1,1,1,0,1,1,1,1,kecleon.png,1
-261,shuppet,353,Shuppet,Shuppet,カゲボウズ (Kagebouzu),3,Normal,Puppet Pokémon,1,Ghost,,0.6,2.3,3,Insomnia,Frisk,Cursed Body,295,44,75,35,63,33,45,225,35,59,Fast,1,Amorphous,,50,25,0,1,1,1,1,1,0,0.5,1,1,1,0.5,1,2,1,2,1,1,shuppet.png,1
-262,stonjourner,874,Stonjourner,Humanolith,イシヘンジン (Ishihengin),8,Normal,Big Rock Pokémon,1,Rock,,2.5,520,1,Power Spot,,,470,100,125,135,20,20,70,60,,,Slow,1,Mineral,,50,25,0.5,0.5,2,1,2,1,2,0.5,2,0.5,1,1,1,1,1,1,2,1,stonjourner.png,1
-263,gossifleur,829,Gossifleur,Cottini,ヒメンカ (Himenka),8,Normal,Flowering Pokémon,1,Grass,,0.4,2.2,3,Cotton Down,Regenerator,Effect Spore,250,40,40,60,40,60,10,190,,,Medium Fast,1,Grass,,50,20,1,2,0.5,0.5,0.5,2,1,2,0.5,2,1,2,1,1,1,1,1,1,gossifleur.png,1
-264,ducklett,580,Ducklett,Piccolente,コアルヒー (Koaruhie),5,Normal,Water Bird Pokémon,2,Water,Flying,0.5,5.5,3,Keen Eye,Big Pecks,Hydration,305,62,44,50,44,50,55,190,70,61,Medium Fast,2,Flying,Water 1,50,20,1,0.5,0.5,4,1,1,0.5,1,0,1,1,0.5,2,1,1,1,0.5,1,ducklett.png,1
-265,plusle,311,Plusle,Plusle,プラスル (Prasle),3,Normal,Cheering Pokémon,1,Electric,,0.4,4.2,2,Plus,,Lightning Rod,405,60,50,40,85,75,95,200,70,142,Medium Fast,1,Fairy,,50,20,1,1,1,0.5,1,1,1,1,2,0.5,1,1,1,1,1,1,0.5,1,plusle.png,1
-266,poliwag,60,Poliwag,Quapsel,ニョロモ (Nyoromo),1,Normal,Tadpole Pokémon,1,Water,,0.6,12.4,3,Water Absorb,Damp,Swift Swim,300,40,50,40,40,40,90,255,70,60,Medium Slow,1,Water 1,,50,20,1,0.5,0,2,2,0.5,1,1,1,1,1,1,1,1,1,1,0.5,1,poliwag.png,1
-267,treecko,252,Treecko,Geckarbor,キモリ (Kimori),3,Normal,Wood Gecko Pokémon,1,Grass,,0.5,5,2,Overgrow,,Unburden,310,40,45,35,65,55,70,45,70,62,Medium Slow,2,Dragon,Monster,87.5,20,1,2,0.5,0.5,0.5,2,1,2,0.5,2,1,2,1,1,1,1,1,1,treecko.png,1
-268,torchic,255,Torchic,Flemmli,アチャモ (Achamo),3,Normal,Chick Pokémon,1,Fire,,0.4,2.5,2,Blaze,,Speed Boost,310,45,60,40,70,50,45,45,70,62,Medium Slow,1,Field,,87.5,20,1,0.5,2,1,0.5,0.5,1,1,2,1,1,0.5,2,1,1,1,0.5,0.5,torchic.png,1
-269,dunsparce,206,Dunsparce,Dummisel,ノコッチ (Nokocchi),2,Normal,Land Snake Pokémon,1,Normal,,1.5,14,3,Serene Grace,Run Away,Rattled,415,100,70,70,65,65,45,190,70,145,Medium Fast,1,Field,,50,20,1,1,1,1,1,1,2,1,1,1,1,1,1,0,1,1,1,1,dunsparce.png,1
-270,spectrier,897,Spectrier,Phantoross,レイスポス (Reisuposu),8,Sub Legendary,Swift Horse Pokémon,1,Ghost,,2,44.5,1,Grim Neigh,,,580,100,65,60,145,80,130,3,,,Slow,1,Undiscovered,,,120,0,1,1,1,1,1,0,0.5,1,1,1,0.5,1,2,1,2,1,1,spectrier.png,1
-271,magearna,801,Magearna,Magearna,マギアナ (Magearna),7,Mythical,Artificial Pokémon,2,Steel,Fairy,1,80.5,1,Soul-Heart,,,600,80,95,115,130,115,65,3,0,270,Slow,1,Undiscovered,,,120,0.5,2,1,1,0.5,0.5,1,0,2,0.5,0.5,0.25,0.5,1,0,0.5,1,0.5,magearna.png,1
-272,cacnea,331,Cacnea,Tuska,サボネア (Sabonea),3,Normal,Cactus Pokémon,1,Grass,,0.4,51.3,2,Sand Veil,,Water Absorb,335,50,85,40,85,40,35,190,35,67,Medium Slow,2,Grass,Human-Like,50,20,1,2,0.5,0.5,0.5,2,1,2,0.5,2,1,2,1,1,1,1,1,1,cacnea.png,1
-273,slugma,218,Slugma,Schneckmag,マグマッグ (Magmag),2,Normal,Lava Pokémon,1,Fire,,0.7,35,3,Magma Armor,Flame Body,Weak Armor,250,40,40,40,70,40,20,190,70,50,Medium Fast,1,Amorphous,,50,20,1,0.5,2,1,0.5,0.5,1,1,2,1,1,0.5,2,1,1,1,0.5,0.5,slugma.png,1
-274,oddish,43,Oddish,Myrapla,ナゾノクサ (Nazonokusa),1,Normal,Weed Pokémon,2,Grass,Poison,0.5,5.4,2,Chlorophyll,,Run Away,320,45,50,55,75,65,30,255,70,64,Medium Slow,1,Grass,,50,20,1,2,0.5,0.5,0.25,2,0.5,1,1,2,2,1,1,1,1,1,1,0.5,oddish.png,1
-275,jirachi,385,Jirachi,Jirachi,ジラーチ (Jirachi),3,Mythical,Wish Pokémon,2,Steel,Psychic,0.3,1.1,1,Serene Grace,,,600,100,100,100,100,100,100,3,100,270,Slow,1,Undiscovered,,,120,0.5,2,1,1,0.5,0.5,1,0,2,0.5,0.25,1,0.5,2,0.5,2,0.5,0.5,jirachi.png,1
-276,litwick,607,Litwick,Lichtel,ヒトモシ (Hitomoshi),5,Normal,Candle Pokémon,2,Ghost,Fire,0.3,3.1,3,Flash Fire,Flame Body,Infiltrator,275,50,30,55,65,55,20,190,70,55,Medium Slow,1,Amorphous,,50,20,0,0,2,1,0.5,0.5,0,0.5,2,1,1,0.25,2,2,1,2,0.5,0.5,litwick.png,1
-277,drilbur,529,Drilbur,Rotomurf,モグリュー (Mogurew),5,Normal,Mole Pokémon,1,Ground,,0.3,8.5,3,Sand Rush,Sand Force,Mold Breaker,328,60,85,40,30,45,68,120,70,66,Medium Fast,1,Field,,50,20,1,1,2,0,2,2,1,0.5,1,1,1,1,0.5,1,1,1,1,1,drilbur.png,1
-278,cranidos,408,Cranidos,Koknodon,ズガイドス (Zugaidos),4,Normal,Head Butt Pokémon,1,Rock,,0.9,31.5,2,Mold Breaker,,Sheer Force,350,67,125,40,30,30,58,45,70,70,Erratic,1,Monster,,87.5,30,0.5,0.5,2,1,2,1,2,0.5,2,0.5,1,1,1,1,1,1,2,1,cranidos.png,1
-279,blacephalon,806,Blacephalon,Kopplosio,ズガドーン (Zugadoon),7,Sub Legendary,Fireworks Pokémon,2,Fire,Ghost,1.8,13,1,Beast Boost,,,570,53,127,53,151,79,107,30,0,257,Slow,1,Undiscovered,,,120,0,0.5,2,1,0.5,0.5,0,0.5,2,1,1,0.25,2,2,1,2,0.5,0.5,blacephalon.png,1
-280,arctozolt,881,Arctozolt,Lecryodon,パッチルドン (Patchilldon),8,Normal,Fossil Pokémon,2,Electric,Ice,2.3,150,3,Volt Absorb,Static,Slush Rush,505,90,100,90,90,80,55,45,,,Slow,1,Undiscovered,,,35,1,2,1,0,1,0.5,2,1,2,0.5,1,1,2,1,1,1,1,1,arctozolt.png,1
-281,pichu,172,Pichu,Pichu,ピチュー (Pichu),2,Normal,Tiny Mouse Pokémon,1,Electric,,0.3,2,2,Static,,Lightning Rod,205,20,40,15,35,35,60,190,70,41,Medium Fast,1,Undiscovered,,50,10,1,1,1,0.5,1,1,1,1,2,0.5,1,1,1,1,1,1,0.5,1,pichu.png,1
-282,duskull,355,Duskull,Zwirrlicht,ヨマワル (Yomawaru),3,Normal,Requiem Pokémon,1,Ghost,,0.8,15,2,Levitate,,Frisk,295,20,40,90,30,90,25,190,35,59,Fast,1,Amorphous,,50,25,0,1,1,1,1,1,0,0.5,0,1,1,0.5,1,2,1,2,1,1,duskull.png,1
-283,kangaskhan,115,Kangaskhan,Kangama,ガルーラ (Garura),1,Normal,Parent Pokémon,1,Normal,,2.2,80,3,Early Bird,Scrappy,Inner Focus,490,105,95,80,40,80,90,45,70,172,Medium Fast,1,Monster,,0,20,1,1,1,1,1,1,2,1,1,1,1,1,1,0,1,1,1,1,kangaskhan.png,1
-284,chingling,433,Chingling,Klingplim,リーシャン (Lisyan),4,Normal,Bell Pokémon,1,Psychic,,0.2,0.6,1,Levitate,,,285,45,30,50,65,50,45,120,70,57,Fast,1,Undiscovered,,50,25,1,1,1,1,1,1,0.5,1,0,1,0.5,2,1,2,1,2,1,1,chingling.png,1
-285,silicobra,843,Silicobra,Salanga,スナヘビ (Sunahebi),8,Normal,Sand Snake Pokémon,1,Ground,,2.2,7.6,3,Sand Spit,Shed Skin,Sand Veil,315,52,57,75,35,50,46,255,,,Medium Fast,2,Dragon,Field,50,20,1,1,2,0,2,2,1,0.5,1,1,1,1,0.5,1,1,1,1,1,silicobra.png,1
-286,ferroseed,597,Ferroseed,Kastadur,テッシード (Tesseed),5,Normal,Thorn Seed Pokémon,2,Grass,Steel,0.6,18.8,2,Iron Barbs,,Anticipation,305,44,50,91,24,86,10,255,70,61,Medium Fast,2,Grass,Mineral,50,20,0.5,4,0.5,0.5,0.25,1,2,0,1,1,0.5,1,0.5,1,0.5,1,0.5,0.5,ferroseed.png,1
-287,zekrom,644,Zekrom,Zekrom,ゼクロム (Zekrom),5,Legendary,Deep Black Pokémon,2,Dragon,Electric,2.9,345,1,Teravolt,,,680,100,150,120,120,100,90,3,0,306,Slow,1,Undiscovered,,,120,1,0.5,0.5,0.25,0.5,2,1,1,2,0.5,1,1,1,1,2,1,0.5,2,zekrom.png,1
-288,absol,359,Absol,Absol,アブソル (Absol),3,Normal,Disaster Pokémon,1,Dark,,1.2,47,3,Pressure,Super Luck,Justified,465,65,130,60,75,60,75,30,35,163,Medium Slow,1,Field,,50,25,1,1,1,1,1,1,2,1,1,1,0,2,1,0.5,1,0.5,1,2,absol.png,1
-289,aron,304,Aron,Stollunior,ココドラ (Cokodora),3,Normal,Iron Armor Pokémon,2,Steel,Rock,0.4,60,3,Sturdy,Rock Head,Heavy Metal,330,50,70,100,40,40,30,180,35,66,Slow,1,Monster,,50,35,0.25,1,2,1,1,0.5,4,0,4,0.25,0.5,0.5,0.5,1,0.5,1,1,0.5,aron.png,1
-290,tepig,498,Tepig,Floink,ポカブ (Pokabu),5,Normal,Fire Pig Pokémon,1,Fire,,0.5,9.9,2,Blaze,,Thick Fat,308,65,63,45,45,45,45,45,70,62,Medium Slow,1,Field,,87.5,20,1,0.5,2,1,0.5,0.5,1,1,2,1,1,0.5,2,1,1,1,0.5,0.5,tepig.png,1
-291,zapdos,145,Zapdos,Zapdos,サンダー (Thunder),1,Sub Legendary,Electric Pokémon,2,Electric,Flying,1.6,52.6,2,Pressure,,Static,580,90,90,85,125,90,100,3,35,261,Slow,1,Undiscovered,,,80,1,1,1,1,0.5,2,0.5,1,0,0.5,1,0.5,2,1,1,1,0.5,1,zapdos.png,1
-292,clauncher,692,Clauncher,Scampisto,ウデッポウ (Udeppou),6,Normal,Water Gun Pokémon,1,Water,,0.5,8.3,1,Mega Launcher,,,330,50,53,62,58,63,44,225,70,66,Slow,2,Water 1,Water 3,50,15,1,0.5,0.5,2,2,0.5,1,1,1,1,1,1,1,1,1,1,0.5,1,clauncher.png,1
-293,riolu,447,Riolu,Riolu,リオル (Riolu),4,Normal,Emanation Pokémon,1,Fighting,,0.7,20.2,3,Steadfast,Inner Focus,Prankster,285,40,70,40,35,40,60,75,70,57,Medium Slow,1,Undiscovered,,87.5,25,1,1,1,1,1,1,1,1,1,2,2,0.5,0.5,1,1,0.5,1,2,riolu.png,1
-294,skwovet,819,Skwovet,Raffel,ホシガリス (Hoshigarisu),8,Normal,Cheeky Pokémon,1,Normal,,0.3,2.5,2,Cheek Pouch,,Gluttony,275,70,55,55,35,35,25,255,,,Medium Fast,1,Field,,50,20,1,1,1,1,1,1,2,1,1,1,1,1,1,0,1,1,1,1,skwovet.png,1
-295,slakoth,287,Slakoth,Bummelz,ナマケロ (Namakero),3,Normal,Slacker Pokémon,1,Normal,,0.8,24,1,Truant,,,280,60,60,60,35,35,30,255,70,56,Slow,1,Field,,50,15,1,1,1,1,1,1,2,1,1,1,1,1,1,0,1,1,1,1,slakoth.png,1
-296,ponyta,77,Ponyta,Ponita,ポニータ (Ponyta),1,Normal,Fire Horse Pokémon,1,Fire,,1,30,3,Run Away,Flash Fire,Flame Body,410,50,85,55,65,65,90,190,70,82,Medium Fast,1,Field,,50,20,1,0.5,2,1,0.5,0.5,1,1,2,1,1,0.5,2,1,1,1,0.5,0.5,ponyta.png,1
-297,togepi,175,Togepi,Togepi,トゲピー (Togepy),2,Normal,Spike Ball Pokémon,1,Fairy,,0.3,1.5,3,Hustle,Serene Grace,Super Luck,245,35,20,65,40,65,20,190,70,49,Fast,1,Undiscovered,,87.5,10,1,1,1,1,1,1,0.5,2,1,1,1,0.5,1,1,0,0.5,2,1,togepi.png,1
-298,snover,459,Snover,Shnebedeck,ユキカブリ (Yukikaburi),4,Normal,Frost Tree Pokémon,2,Grass,Ice,1,50.5,2,Snow Warning,,Soundproof,334,60,62,50,62,60,40,120,70,67,Slow,2,Grass,Monster,50,20,1,4,0.5,0.5,0.5,1,2,2,0.5,2,1,2,2,1,1,1,2,1,snover.png,1
-299,solosis,577,Solosis,Monozyto,ユニラン (Uniran),5,Normal,Cell Pokémon,1,Psychic,,0.3,1,3,Overcoat,Magic Guard,Regenerator,290,45,30,40,105,50,20,200,70,58,Medium Slow,1,Amorphous,,50,20,1,1,1,1,1,1,0.5,1,1,1,0.5,2,1,2,1,2,1,1,solosis.png,1
-300,caterpie,10,Caterpie,Raupy,キャタピー (Caterpie),1,Normal,Worm Pokémon,1,Bug,,0.3,2.9,2,Shield Dust,,Run Away,195,45,30,35,20,20,45,255,70,39,Medium Fast,1,Bug,,50,15,1,2,1,1,0.5,1,0.5,1,0.5,2,1,1,2,1,1,1,1,1,caterpie.png,1
-301,psyduck,54,Psyduck,Enton,コダック (Koduck),1,Normal,Duck Pokémon,1,Water,,0.8,19.6,3,Damp,Cloud Nine,Swift Swim,320,50,52,48,65,50,55,190,70,64,Medium Fast,2,Field,Water 1,50,20,1,0.5,0.5,2,2,0.5,1,1,1,1,1,1,1,1,1,1,0.5,1,psyduck.png,1
-302,teddiursa,216,Teddiursa,Teddiursa,ヒメグマ (Himeguma),2,Normal,Little Bear Pokémon,1,Normal,,0.6,8.8,3,Pickup,Quick Feet,Honey Gather,330,60,80,50,50,50,40,120,70,66,Medium Fast,1,Field,,50,20,1,1,1,1,1,1,2,1,1,1,1,1,1,0,1,1,1,1,teddiursa.png,1
-303,piplup,393,Piplup,Plinfa,ポッチャマ (Pochama),4,Normal,Penguin Pokémon,1,Water,,0.4,5.2,2,Torrent,,Defiant,314,53,51,53,61,56,40,45,70,63,Medium Slow,2,Field,Water 1,87.5,20,1,0.5,0.5,2,2,0.5,1,1,1,1,1,1,1,1,1,1,0.5,1,piplup.png,1
-304,nickit,827,Nickit,Kleptifux,クスネ (Kusune),8,Normal,Fox Pokémon,1,Dark,,0.6,8.9,3,Run Away,Unburden,Stakeout,245,40,28,28,47,52,50,255,,,Fast,1,Field,,50,15,1,1,1,1,1,1,2,1,1,1,0,2,1,0.5,1,0.5,1,2,nickit.png,1
-305,darumaka,554,Darumaka,Flampion,ダルマッカ (Darumakka),5,Normal,Zen Charm Pokémon,1,Fire,,0.6,37.5,2,Hustle,,Inner Focus,315,70,90,45,15,45,50,120,70,63,Medium Slow,1,Field,,50,20,1,0.5,2,1,0.5,0.5,1,1,2,1,1,0.5,2,1,1,1,0.5,0.5,darumaka.png,1
-306,mawile,303,Mawile,Flunkifer,クチート (Kucheat),3,Normal,Deceiver Pokémon,2,Steel,Fairy,0.6,11.5,3,Hyper Cutter,Intimidate,Sheer Force,380,50,85,85,55,55,50,45,70,133,Fast,2,Fairy,Field,50,20,0.5,2,1,1,0.5,0.5,1,0,2,0.5,0.5,0.25,0.5,1,0,0.5,1,0.5,mawile.png,1
-307,sewaddle,540,Sewaddle,Strawickl,クルミル (Kurumiru),5,Normal,Sewing Pokémon,2,Bug,Grass,0.3,2.5,3,Swarm,Chlorophyll,Overcoat,310,45,53,70,40,60,42,255,70,62,Medium Slow,1,Bug,,50,15,1,4,0.5,0.5,0.25,2,0.5,2,0.25,4,1,2,2,1,1,1,1,1,sewaddle.png,1
-308,buzzwole,794,Buzzwole,Masskito,マッシブーン (Massivoon),7,Sub Legendary,Swollen Pokémon,2,Bug,Fighting,2.4,333.6,1,Beast Boost,,,570,107,139,139,53,53,79,45,0,257,Slow,1,Undiscovered,,,120,1,2,1,1,0.5,1,0.5,1,0.5,4,2,0.5,1,1,1,0.5,1,2,buzzwole.png,1
-309,rockruff,744,Rockruff,Wuffels,イワンコ (Iwanko),7,Normal,Puppy Pokémon,1,Rock,,0.5,9.2,3,Keen Eye,Vital Spirit,Steadfast,280,45,65,40,30,40,60,190,70,56,Medium Fast,1,Field,,50,15,0.5,0.5,2,1,2,1,2,0.5,2,0.5,1,1,1,1,1,1,2,1,rockruff.png,1
-310,manaphy,490,Manaphy,Manaphy,マナフィ (Manaphy),4,Mythical,Seafaring Pokémon,1,Water,,0.3,1.4,1,Hydration,,,600,100,100,100,100,100,100,3,70,270,Slow,2,Fairy,Water 1,,10,1,0.5,0.5,2,2,0.5,1,1,1,1,1,1,1,1,1,1,0.5,1,manaphy.png,1
-311,bunnelby,659,Bunnelby,Scoppel,ホルビー (Horubee),6,Normal,Digging Pokémon,1,Normal,,0.4,5,3,Pickup,Cheek Pouch,Huge Power,237,38,36,38,32,36,57,255,70,47,Medium Fast,1,Field,,50,15,1,1,1,1,1,1,2,1,1,1,1,1,1,0,1,1,1,1,bunnelby.png,1
-312,cubchoo,613,Cubchoo,Petznief,クマシュン (Kumasyun),5,Normal,Chill Pokémon,1,Ice,,0.5,8.5,3,Snow Cloak,Slush Rush,Rattled,305,55,70,40,60,40,40,120,70,61,Medium Fast,1,Field,,50,20,1,2,1,1,1,0.5,2,1,1,1,1,1,2,1,1,1,2,1,cubchoo.png,1
-313,corsola,222,Corsola,Corasonn,サニーゴ (Sunnygo),2,Normal,Coral Pokémon,2,Water,Rock,0.6,5,3,Hustle,Natural Cure,Regenerator,410,65,55,95,65,95,35,60,70,144,Fast,2,Water 1,Water 3,25,20,0.5,0.25,1,2,4,0.5,2,0.5,2,0.5,1,1,1,1,1,1,1,1,corsola.png,1
-314,carbink,703,Carbink,Rocara,メレシー (Melecie),6,Normal,Jewel Pokémon,2,Rock,Fairy,0.3,5.7,2,Clear Body,,Sturdy,500,50,50,150,50,150,50,60,70,100,Slow,2,Fairy,Mineral,,25,0.5,0.5,2,1,2,1,1,1,2,0.5,1,0.5,1,1,0,0.5,4,1,carbink.png,1
-315,omanyte,138,Omanyte,Amonitas,オムナイト (Omnite),1,Normal,Spiral Pokémon,2,Rock,Water,0.4,7.5,3,Swift Swim,Shell Armor,Weak Armor,355,35,40,100,90,55,35,45,70,71,Medium Fast,2,Water 1,Water 3,87.5,30,0.5,0.25,1,2,4,0.5,2,0.5,2,0.5,1,1,1,1,1,1,1,1,omanyte.png,1
-316,rufflet,627,Rufflet,Geronimatz,ワシボン (Washibon),5,Normal,Eaglet Pokémon,2,Normal,Flying,0.5,10.5,3,Keen Eye,Sheer Force,Hustle,350,70,83,50,37,50,60,190,70,70,Slow,1,Flying,,100,20,1,1,1,2,0.5,2,1,1,0,1,1,0.5,2,0,1,1,1,1,rufflet.png,1
-317,grookey,810,Grookey,Chimpep,サルノリ (Sarunori),8,Normal,Chimp Pokémon,1,Grass,,0.3,5,2,Overgrow,,Grassy Surge,310,50,65,50,40,40,65,45,,,Medium Slow,2,Field,Grass,87.5,20,1,2,0.5,0.5,0.5,2,1,2,0.5,2,1,2,1,1,1,1,1,1,grookey.png,1
-318,dhelmise,781,Dhelmise,Moruda,ダダリン (Dadarin),7,Normal,Sea Creeper Pokémon,2,Ghost,Grass,3.9,210,1,Steelworker,,,517,70,131,100,86,90,40,25,70,181,Medium Fast,1,Mineral,,,25,0,2,0.5,0.5,0.5,2,0,1,0.5,2,1,1,1,2,1,2,1,1,dhelmise.png,1
-319,morelull,755,Morelull,Bubungus,ネマシュ (Nemasyu),7,Normal,Illuminating Pokémon,2,Grass,Fairy,0.2,1.5,3,Illuminate,Effect Spore,Rain Dish,285,40,35,55,65,75,15,190,70,57,Medium Fast,1,Grass,,50,20,1,2,0.5,0.5,0.5,2,0.5,4,0.5,2,1,1,1,1,0,0.5,2,1,morelull.png,1
-320,chatot,441,Chatot,Plaudagei,ペラップ (Perap),4,Normal,Music Note Pokémon,2,Normal,Flying,0.5,1.9,3,Keen Eye,Tangled Feet,Big Pecks,411,76,65,45,92,42,91,30,35,144,Medium Slow,1,Flying,,50,20,1,1,1,2,0.5,2,1,1,0,1,1,0.5,2,0,1,1,1,1,chatot.png,1
-321,spinarak,167,Spinarak,Webarak,イトマル (Itomaru),2,Normal,String Spit Pokémon,2,Bug,Poison,0.5,8.5,3,Swarm,Insomnia,Sniper,250,40,60,40,40,40,30,255,70,50,Fast,1,Bug,,50,15,1,2,1,1,0.25,1,0.25,0.5,1,2,2,0.5,2,1,1,1,1,0.5,spinarak.png,1
-322,onix,95,Onix,Onix,イワーク (Iwark),1,Normal,Rock Snake Pokémon,2,Rock,Ground,8.8,210,3,Rock Head,Sturdy,Weak Armor,385,35,45,160,30,45,70,45,70,77,Medium Fast,1,Mineral,,50,25,0.5,0.5,4,0,4,2,2,0.25,2,0.5,1,1,0.5,1,1,1,2,1,onix.png,1
-323,venonat,48,Venonat,Bluzuk,コンパン (Kongpang),1,Normal,Insect Pokémon,2,Bug,Poison,1,30,3,Compound Eyes,Tinted Lens,Run Away,305,60,55,50,40,55,45,190,70,61,Medium Fast,1,Bug,,50,20,1,2,1,1,0.25,1,0.25,0.5,1,2,2,0.5,2,1,1,1,1,0.5,venonat.png,1
-324,wimpod,767,Wimpod,Reißlaus,コソクムシ (Kosokumushi),7,Normal,Turn Tail Pokémon,2,Bug,Water,0.5,12,1,Wimp Out,,,230,25,35,40,20,30,80,90,70,46,Medium Fast,2,Bug,Water 3,50,20,1,1,0.5,2,1,0.5,0.5,1,0.5,2,1,1,2,1,1,1,0.5,1,wimpod.png,1
-325,buizel,418,Buizel,Bamelin,ブイゼル (Buoysel),4,Normal,Sea Weasel Pokémon,1,Water,,0.7,29.5,2,Swift Swim,,Water Veil,330,55,65,35,60,30,85,190,70,66,Medium Fast,2,Field,Water 1,50,20,1,0.5,0.5,2,2,0.5,1,1,1,1,1,1,1,1,1,1,0.5,1,buizel.png,1
-326,vulpix,37,Vulpix,Vulpix,ロコン (Rokon),1,Normal,Fox Pokémon,1,Fire,,0.6,9.9,2,Flash Fire,,Drought,299,38,41,40,50,65,65,190,70,60,Medium Fast,1,Field,,25,20,1,0,2,1,0.5,0.5,1,1,2,1,1,0.5,2,1,1,1,0.5,0.5,vulpix.png,1
-327,togedemaru,777,Togedemaru,Togedemaru,トゲデマル (Togedemaru),7,Normal,Roly-Poly Pokémon,2,Electric,Steel,0.3,3.3,3,Iron Barbs,Lightning Rod,Sturdy,435,65,98,63,40,73,96,180,70,152,Medium Fast,2,Fairy,Field,50,10,0.5,2,1,0.5,0.5,0.5,2,0,4,0.25,0.5,0.5,0.5,1,0.5,1,0.25,0.5,togedemaru.png,1
-328,minccino,572,Minccino,Picochilla,チラーミィ (Chillarmy),5,Normal,Chinchilla Pokémon,1,Normal,,0.4,5.8,3,Cute Charm,Technician,Skill Link,300,55,50,40,40,40,75,255,70,60,Fast,1,Field,,25,15,1,1,1,1,1,1,2,1,1,1,1,1,1,0,1,1,1,1,minccino.png,1
-329,doduo,84,Doduo,Dodu,ドードー (Dodo),1,Normal,Twin Bird Pokémon,2,Normal,Flying,1.4,39.2,3,Run Away,Early Bird,Tangled Feet,310,35,85,45,35,35,75,190,70,62,Medium Fast,1,Flying,,50,20,1,1,1,2,0.5,2,1,1,0,1,1,0.5,2,0,1,1,1,1,doduo.png,1
-330,misdreavus,200,Misdreavus,Traunfugil,ムウマ (Muma),2,Normal,Screech Pokémon,1,Ghost,,0.7,1,1,Levitate,,,435,60,60,60,85,85,85,45,35,87,Fast,1,Amorphous,,50,25,0,1,1,1,1,1,0,0.5,0,1,1,0.5,1,2,1,2,1,1,misdreavus.png,1
-331,shuckle,213,Shuckle,Pottrott,ツボツボ (Tsubotsubo),2,Normal,Mold Pokémon,2,Bug,Rock,0.6,20.5,3,Sturdy,Gluttony,Contrary,505,20,10,230,10,230,5,190,70,177,Medium Slow,1,Bug,,50,20,0.5,1,2,1,1,1,1,0.5,1,1,1,1,2,1,1,1,2,1,shuckle.png,1
-332,rayquaza,384,Rayquaza,Rayquaza,レックウザ (Rayquaza),3,Legendary,Sky High Pokémon,2,Dragon,Flying,7,206.5,1,Air Lock,,,680,105,150,90,150,90,95,45,0,306,Slow,1,Undiscovered,,,120,1,0.5,0.5,1,0.25,4,0.5,1,0,1,1,0.5,2,1,2,1,1,2,rayquaza.png,1
-333,mudbray,749,Mudbray,Pampuli,ドロバンコ (Dorobanko),7,Normal,Donkey Pokémon,1,Ground,,1,110,3,Own Tempo,Stamina,Inner Focus,385,70,100,70,45,55,45,190,70,77,Medium Fast,1,Field,,50,20,1,1,2,0,2,2,1,0.5,1,1,1,1,0.5,1,1,1,1,1,mudbray.png,1
-334,skrelp,690,Skrelp,Algitt,クズモー (Kuzumo),6,Normal,Mock Kelp Pokémon,2,Poison,Water,0.5,7.3,3,Poison Point,Poison Touch,Adaptability,320,50,60,60,60,60,30,225,70,64,Medium Fast,2,Dragon,Water 1,50,20,1,0.5,0.5,2,1,0.5,0.5,0.5,2,1,2,0.5,1,1,1,1,0.5,0.5,skrelp.png,1
-335,ledyba,165,Ledyba,Ledyba,レディバ (Rediba),2,Normal,Five Star Pokémon,2,Bug,Flying,1,10.8,3,Swarm,Early Bird,Rattled,265,40,20,30,40,80,55,255,70,53,Fast,1,Bug,,50,15,1,2,1,2,0.25,2,0.25,1,0,2,1,0.5,4,1,1,1,1,1,ledyba.png,1
-336,baltoy,343,Baltoy,Puppance,ヤジロン (Yajilon),3,Normal,Clay Doll Pokémon,2,Ground,Psychic,0.5,21.5,1,Levitate,,,300,40,40,55,40,70,55,255,70,60,Medium Fast,1,Mineral,,,20,1,1,2,0,2,2,0.5,0.5,0,1,0.5,2,0.5,2,1,2,1,1,baltoy.png,1
-337,dewpider,751,Dewpider,Araqua,シズクモ (Shizukumo),7,Normal,Water Bubble Pokémon,2,Water,Bug,0.3,4,2,Water Bubble,,Water Absorb,269,38,40,52,40,72,27,200,70,54,Medium Fast,2,Bug,Water 1,50,15,1,0.5,0.5,2,1,0.5,0.5,1,0.5,2,1,1,2,1,1,1,0.5,1,dewpider.png,1
-338,applin,840,Applin,Knapfel,カジッチュ (Kajicchu),8,Normal,Apple Core Pokémon,2,Grass,Dragon,0.2,0.5,3,Ripen,Gluttony,Bulletproof,260,40,40,80,40,40,20,255,,,Erratic,2,Dragon,Grass,50,20,1,1,0.25,0.25,0.25,4,1,2,0.5,2,1,2,1,1,2,1,1,2,applin.png,1
-339,sandygast,769,Sandygast,Sankabuh,スナバァ (Sunaba),7,Normal,Sand Heap Pokémon,2,Ghost,Ground,0.5,70,2,Water Compaction,,Sand Veil,320,55,55,80,70,45,15,140,70,64,Medium Fast,1,Amorphous,,50,15,0,1,2,0,2,2,0,0.25,1,1,1,0.5,0.5,2,1,2,1,1,sandygast.png,1
-340,yanma,193,Yanma,Yanma,ヤンヤンマ (Yanyanma),2,Normal,Clear Wing Pokémon,2,Bug,Flying,1.2,38,3,Speed Boost,Compound Eyes,Frisk,390,65,65,45,75,45,95,75,70,78,Medium Fast,1,Bug,,50,20,1,2,1,2,0.25,2,0.25,1,0,2,1,0.5,4,1,1,1,1,1,yanma.png,1
-341,kubfu,891,Kubfu,Dakuma,ダクマ (Dakuma),8,Sub Legendary,Wushu Pokémon,1,Fighting,,0.6,12,1,Inner Focus,,,385,60,90,60,53,50,72,3,,,Slow,1,Undiscovered,,87.5,120,1,1,1,1,1,1,1,1,1,2,2,0.5,0.5,1,1,0.5,1,2,kubfu.png,1
-342,lugia,249,Lugia,Lugia,ルギア (Lugia),2,Legendary,Diving Pokémon,2,Psychic,Flying,5.2,216,2,Pressure,,Multiscale,680,106,90,130,90,154,110,3,0,306,Slow,1,Undiscovered,,,120,1,1,1,2,0.5,2,0.25,1,0,1,0.5,1,2,2,1,2,1,1,lugia.png,1
-343,turtonator,776,Turtonator,Tortunator,バクガメス (Bakugames),7,Normal,Blast Turtle Pokémon,2,Fire,Dragon,2,212,1,Shell Armor,,,485,60,78,135,91,85,36,70,70,170,Medium Fast,2,Dragon,Monster,50,20,1,0.25,1,0.5,0.25,1,1,1,2,1,1,0.5,2,1,2,1,0.5,1,turtonator.png,1
-344,hawlucha,701,Hawlucha,Resladero,ルチャブル (Luchabull),6,Normal,Wrestling Pokémon,2,Fighting,Flying,0.8,21.5,3,Limber,Unburden,Mold Breaker,500,78,92,75,74,63,118,100,70,175,Medium Fast,2,Flying,Human-Like,50,20,1,1,1,2,0.5,2,0.5,1,0,2,2,0.25,1,1,1,0.5,1,2,hawlucha.png,1
-345,squirtle,7,Squirtle,Schiggy,ゼニガメ (Zenigame),1,Normal,Tiny Turtle Pokémon,1,Water,,0.5,9,2,Torrent,,Rain Dish,314,44,48,65,50,64,43,45,70,63,Medium Slow,2,Monster,Water 1,87.5,20,1,0.5,0.5,2,2,0.5,1,1,1,1,1,1,1,1,1,1,0.5,1,squirtle.png,1
-346,exeggcute,102,Exeggcute,Owei,タマタマ (Tamatama),1,Normal,Egg Pokémon,2,Grass,Psychic,0.4,2.5,2,Chlorophyll,,Harvest,325,60,40,80,60,45,40,90,70,65,Slow,1,Grass,,50,20,1,2,0.5,0.5,0.5,2,0.5,2,0.5,2,0.5,4,1,2,1,2,1,1,exeggcute.png,1
-347,emolga,587,Emolga,Emolga,エモンガ (Emonga),5,Normal,Sky Squirrel Pokémon,2,Electric,Flying,0.4,5,2,Static,,Motor Drive,428,55,75,60,75,60,103,200,70,150,Medium Fast,1,Field,,50,20,1,1,1,1,0.5,2,0.5,1,0,0.5,1,0.5,2,1,1,1,0.5,1,emolga.png,1
-348,carvanha,318,Carvanha,Kanivanha,キバニア (Kibanha),3,Normal,Savage Pokémon,2,Water,Dark,0.8,20.8,2,Rough Skin,,Speed Boost,305,45,90,20,65,20,65,225,35,61,Slow,1,Water 2,,50,20,1,0.5,0.5,2,2,0.5,2,1,1,1,0,2,1,0.5,1,0.5,0.5,2,carvanha.png,1
-349,drifloon,425,Drifloon,Driftlon,フワンテ (Fuwante),4,Normal,Balloon Pokémon,2,Ghost,Flying,0.4,1.2,3,Aftermath,Unburden,Flare Boost,348,90,50,34,60,44,70,125,70,70,Fluctuating,1,Amorphous,,50,30,0,1,1,2,0.5,2,0,0.5,0,1,1,0.25,2,2,1,2,1,1,drifloon.png,1
-350,stufful,759,Stufful,Velursi,ヌイコグマ (Nuikoguma),7,Normal,Flailing Pokémon,2,Normal,Fighting,0.5,6.8,3,Fluffy,Klutz,Cute Charm,340,70,75,50,45,50,50,140,70,68,Medium Fast,1,Field,,50,15,1,2,1,1,1,1,2,1,1,2,2,0.5,0.5,0,1,0.5,1,2,stufful.png,1
-351,azurill,298,Azurill,Azurill,ルリリ (Ruriri),3,Normal,Polka Dot Pokémon,2,Normal,Fairy,0.2,2,3,Thick Fat,Huge Power,Sap Sipper,190,50,20,40,20,40,20,150,70,38,Fast,1,Undiscovered,,25,10,1,0.5,1,1,1,0.5,1,2,1,1,1,0.5,1,0,0,0.5,2,1,azurill.png,1
-352,chespin,650,Chespin,Igamaro,ハリマロン (Harimaron),6,Normal,Spiny Nut Pokémon,1,Grass,,0.4,9,2,Overgrow,,Bulletproof,313,56,61,65,48,45,38,45,70,63,Medium Slow,1,Field,,87.5,20,1,2,0.5,0.5,0.5,2,1,2,0.5,2,1,2,1,1,1,1,1,1,chespin.png,1
-353,jangmo-o,782,Jangmo-o,Miniras,ジャラコ (Jyarako),7,Normal,Scaly Pokémon,1,Dragon,,0.6,29.7,3,Bulletproof,Soundproof,Overcoat,300,45,55,65,45,45,45,45,70,60,Slow,1,Dragon,,50,40,1,0.5,0.5,0.5,0.5,2,1,1,1,1,1,1,1,1,2,1,1,2,jangmo-o.png,1
-354,panpour,515,Panpour,Sodamak,ヒヤップ (Hiyappu),5,Normal,Spray Pokémon,1,Water,,0.6,13.5,2,Gluttony,,Torrent,316,50,53,48,53,48,64,190,70,63,Medium Fast,1,Field,,87.5,20,1,0.5,0.5,2,2,0.5,1,1,1,1,1,1,1,1,1,1,0.5,1,panpour.png,1
-355,spiritomb,442,Spiritomb,Kryppuk,ミカルゲ (Mikaruge),4,Normal,Forbidden Pokémon,2,Ghost,Dark,1,108,2,Pressure,,Infiltrator,485,50,92,108,92,108,35,100,70,170,Medium Fast,1,Amorphous,,50,30,0,1,1,1,1,1,0,0.5,1,1,0,1,1,1,1,1,1,2,spiritomb.png,1
-356,chikorita,152,Chikorita,Endivie,チコリータ (Chicorita),2,Normal,Leaf Pokémon,1,Grass,,0.9,6.4,2,Overgrow,,Leaf Guard,318,45,49,65,49,65,45,45,70,64,Medium Slow,2,Grass,Monster,87.5,20,1,2,0.5,0.5,0.5,2,1,2,0.5,2,1,2,1,1,1,1,1,1,chikorita.png,1
-357,vanillite,582,Vanillite,Gelatini,バニプッチ (Vanipeti),5,Normal,Fresh Snow Pokémon,1,Ice,,0.4,5.7,3,Ice Body,Snow Cloak,Weak Armor,305,36,50,50,65,60,44,255,70,61,Slow,1,Mineral,,50,20,1,2,1,1,1,0.5,2,1,1,1,1,1,2,1,1,1,2,1,vanillite.png,1
-358,spinda,327,Spinda,Pandir,パッチール (Patcheel),3,Normal,Spot Panda Pokémon,1,Normal,,1.1,5,3,Own Tempo,Tangled Feet,Contrary,360,60,60,60,60,60,60,255,70,126,Fast,2,Field,Human-Like,50,15,1,1,1,1,1,1,2,1,1,1,1,1,1,0,1,1,1,1,spinda.png,1
-359,grimer,88,Grimer,Sleima,ベトベター (Betbeter),1,Normal,Sludge Pokémon,1,Poison,,0.9,30,3,Stench,Sticky Hold,Poison Touch,325,80,80,50,40,50,25,190,70,65,Medium Fast,1,Amorphous,,50,20,1,1,1,1,0.5,1,0.5,0.5,2,1,2,0.5,1,1,1,1,1,0.5,grimer.png,1
-360,celebi,251,Celebi,Celebi,セレビィ (Celebi),2,Mythical,Time Travel Pokémon,2,Psychic,Grass,0.6,5,1,Natural Cure,,,600,100,100,100,100,100,100,45,100,270,Medium Slow,1,Undiscovered,,,120,1,2,0.5,0.5,0.5,2,0.5,2,0.5,2,0.5,4,1,2,1,2,1,1,celebi.png,1
-361,turtwig,387,Turtwig,Chelast,ナエトル (Naetle),4,Normal,Tiny Leaf Pokémon,1,Grass,,0.4,10.2,2,Overgrow,,Shell Armor,318,55,68,64,45,55,31,45,70,64,Medium Slow,2,Grass,Monster,87.5,20,1,2,0.5,0.5,0.5,2,1,2,0.5,2,1,2,1,1,1,1,1,1,turtwig.png,1
-362,swinub,220,Swinub,Quiekel,ウリムー (Urimoo),2,Normal,Pig Pokémon,2,Ice,Ground,0.4,6.5,3,Oblivious,Snow Cloak,Thick Fat,250,50,50,40,30,30,50,225,70,50,Slow,1,Field,,50,20,1,2,2,0,2,1,2,0.5,1,1,1,1,1,1,1,1,2,1,swinub.png,1
-363,axew,610,Axew,Milza,キバゴ (Kibago),5,Normal,Tusk Pokémon,1,Dragon,,0.6,18,3,Rivalry,Mold Breaker,Unnerve,320,46,87,60,30,40,57,75,35,64,Slow,2,Dragon,Monster,50,40,1,0.5,0.5,0.5,0.5,2,1,1,1,1,1,1,1,1,2,1,1,2,axew.png,1
-364,darkrai,491,Darkrai,Darkrai,ダークライ (Darkrai),4,Mythical,Pitch-Black Pokémon,1,Dark,,1.5,50.5,1,Bad Dreams,,,600,70,90,90,135,90,125,3,0,270,Slow,1,Undiscovered,,,120,1,1,1,1,1,1,2,1,1,1,0,2,1,0.5,1,0.5,1,2,darkrai.png,1
-365,krabby,98,Krabby,Krabby,クラブ (Crab),1,Normal,River Crab Pokémon,1,Water,,0.4,6.5,3,Hyper Cutter,Shell Armor,Sheer Force,325,30,105,90,25,25,50,225,70,65,Medium Fast,1,Water 3,,50,20,1,0.5,0.5,2,2,0.5,1,1,1,1,1,1,1,1,1,1,0.5,1,krabby.png,1
-366,falinks,870,Falinks,Legios,タイレーツ (Tairetsu),8,Normal,Formation Pokémon,1,Fighting,,3,62,2,Battle Armor,,Defiant,470,65,100,100,70,60,75,45,,,Medium Fast,2,Fairy,Mineral,,25,1,1,1,1,1,1,1,1,1,2,2,0.5,0.5,1,1,0.5,1,2,falinks.png,1
-367,pawniard,624,Pawniard,Gladiantri,コマタナ (Komatana),5,Normal,Sharp Blade Pokémon,2,Dark,Steel,0.5,10.2,3,Defiant,Inner Focus,Pressure,340,45,85,70,40,40,60,120,35,68,Medium Fast,1,Human-Like,,50,20,0.5,2,1,1,0.5,0.5,4,0,2,0.5,0,1,0.5,0.5,0.5,0.5,0.5,1,pawniard.png,1
-368,rolycoly,837,Rolycoly,Klonkett,タンドン (Tandon),8,Normal,Coal Pokémon,1,Rock,,0.3,12,3,Steam Engine,Heatproof,Flash Fire,240,30,40,50,40,50,30,255,,,Medium Slow,1,Mineral,,50,15,0.5,0.5,2,1,2,1,2,0.5,2,0.5,1,1,1,1,1,1,2,1,rolycoly.png,1
-369,blitzle,522,Blitzle,Elezeba,シママ (Shimama),5,Normal,Electrified Pokémon,1,Electric,,0.8,29.8,3,Lightning Rod,Motor Drive,Sap Sipper,295,45,60,32,50,32,76,190,70,59,Medium Fast,1,Field,,50,20,1,1,1,0,1,1,1,1,2,0.5,1,1,1,1,1,1,0.5,1,blitzle.png,1
-370,croagunk,453,Croagunk,Glibunkel,グレッグル (Gureggru),4,Normal,Toxic Mouth Pokémon,2,Poison,Fighting,0.7,23,3,Anticipation,Dry Skin,Poison Touch,300,48,61,40,61,40,50,140,100,60,Medium Fast,1,Human-Like,,50,10,1,1,1,1,0.5,1,0.5,0.5,2,2,4,0.25,0.5,1,1,0.5,1,1,croagunk.png,1
-371,regice,378,Regice,Regice,レジアイス (Regice),3,Sub Legendary,Iceberg Pokémon,1,Ice,,1.8,175,2,Clear Body,,Ice Body,580,80,50,100,100,200,50,3,35,261,Slow,1,Undiscovered,,,80,1,2,1,1,1,0.5,2,1,1,1,1,1,2,1,1,1,2,1,regice.png,1
-372,meowth,52,Meowth,Mauzi,ニャース (Nyarth),1,Normal,Scratch Cat Pokémon,1,Normal,,0.4,4.2,3,Pickup,Technician,Unnerve,290,40,45,35,40,40,90,255,70,58,Medium Fast,1,Field,,50,20,1,1,1,1,1,1,2,1,1,1,1,1,1,0,1,1,1,1,meowth.png,1
-373,volbeat,313,Volbeat,Volbeat,バルビート (Barubeat),3,Normal,Firefly Pokémon,1,Bug,,0.7,17.7,3,Illuminate,Swarm,Prankster,430,65,73,75,47,85,85,150,70,151,Erratic,2,Bug,Human-Like,100,15,1,2,1,1,0.5,1,0.5,1,0.5,2,1,1,2,1,1,1,1,1,volbeat.png,1
-374,terrakion,639,Terrakion,Terrakium,テラキオン (Terrakion),5,Sub Legendary,Cavern Pokémon,2,Rock,Fighting,1.9,260,1,Justified,,,580,91,129,90,72,90,108,3,35,261,Slow,1,Undiscovered,,,80,0.5,0.5,2,1,2,1,2,0.5,2,1,2,0.5,0.5,1,1,0.5,2,2,terrakion.png,1
-375,kricketot,401,Kricketot,Zirpurze,コロボーシ (Korobohshi),4,Normal,Cricket Pokémon,1,Bug,,0.3,2.2,2,Shed Skin,,Run Away,194,37,25,41,25,41,25,255,70,39,Medium Slow,1,Bug,,50,15,1,2,1,1,0.5,1,0.5,1,0.5,2,1,1,2,1,1,1,1,1,kricketot.png,1
-376,zeraora,807,Zeraora,Zeraora,ゼラオラ (Zeraora),7,Mythical,Thunderclap Pokémon,1,Electric,,1.5,44.5,1,Volt Absorb,,,600,88,112,75,102,80,143,3,0,270,Slow,1,Undiscovered,,,120,1,1,1,0,1,1,1,1,2,0.5,1,1,1,1,1,1,0.5,1,zeraora.png,1
-377,bellsprout,69,Bellsprout,Knofensa,マダツボミ (Madatsubomi),1,Normal,Flower Pokémon,2,Grass,Poison,0.7,4,2,Chlorophyll,,Gluttony,300,50,75,35,70,30,40,255,70,60,Medium Slow,1,Grass,,50,20,1,2,0.5,0.5,0.25,2,0.5,1,1,2,2,1,1,1,1,1,1,0.5,bellsprout.png,1
-378,luvdisc,370,Luvdisc,Liebiskus,ラブカス (Lovecus),3,Normal,Rendezvous Pokémon,1,Water,,0.6,8.7,2,Swift Swim,,Hydration,330,43,30,55,40,65,97,225,70,116,Fast,1,Water 2,,25,20,1,0.5,0.5,2,2,0.5,1,1,1,1,1,1,1,1,1,1,0.5,1,luvdisc.png,1
-379,horsea,116,Horsea,Seeper,タッツー (Tattu),1,Normal,Dragon Pokémon,1,Water,,0.4,8,3,Swift Swim,Sniper,Damp,295,30,40,70,70,25,60,225,70,59,Medium Fast,2,Dragon,Water 1,50,20,1,0.5,0.5,2,2,0.5,1,1,1,1,1,1,1,1,1,1,0.5,1,horsea.png,1
-380,nincada,290,Nincada,Nincada,ツチニン (Tutinin),3,Normal,Trainee Pokémon,2,Bug,Ground,0.5,5.5,2,Compound Eyes,,Run Away,266,31,45,90,30,30,40,255,70,53,Erratic,1,Bug,,50,15,1,2,2,0,1,2,0.5,0.5,0.5,2,1,1,1,1,1,1,1,1,nincada.png,1
-381,fennekin,653,Fennekin,Fynx,フォッコ (Fokko),6,Normal,Fox Pokémon,1,Fire,,0.4,9.4,2,Blaze,,Magician,307,40,45,40,62,60,60,45,70,61,Medium Slow,1,Field,,87.5,20,1,0.5,2,1,0.5,0.5,1,1,2,1,1,0.5,2,1,1,1,0.5,0.5,fennekin.png,1
-382,yamask,562,Yamask,Makabaja,デスマス (Desumasu),5,Normal,Spirit Pokémon,1,Ghost,,0.5,1.5,1,Mummy,,,303,38,30,85,55,65,30,190,70,61,Medium Fast,2,Amorphous,Mineral,50,25,0,1,1,1,1,1,0,0.5,1,1,1,0.5,1,2,1,2,1,1,yamask.png,1
-383,druddigon,621,Druddigon,Shardrago,クリムガン (Crimgan),5,Normal,Cave Pokémon,1,Dragon,,1.6,139,3,Rough Skin,Sheer Force,Mold Breaker,485,77,120,90,60,90,48,45,70,170,Medium Fast,2,Dragon,Monster,50,30,1,0.5,0.5,0.5,0.5,2,1,1,1,1,1,1,1,1,2,1,1,2,druddigon.png,1
-384,kabuto,140,Kabuto,Kabuto,カブト (Kabuto),1,Normal,Shellfish Pokémon,2,Rock,Water,0.5,11.5,3,Swift Swim,Battle Armor,Weak Armor,355,30,80,90,55,45,55,45,70,71,Medium Fast,2,Water 1,Water 3,87.5,30,0.5,0.25,1,2,4,0.5,2,0.5,2,0.5,1,1,1,1,1,1,1,1,kabuto.png,1
-385,charmander,4,Charmander,Glumanda,ヒトカゲ (Hitokage),1,Normal,Lizard Pokémon,1,Fire,,0.6,8.5,2,Blaze,,Solar Power,309,39,52,43,60,50,65,45,70,62,Medium Slow,2,Dragon,Monster,87.5,20,1,0.5,2,1,0.5,0.5,1,1,2,1,1,0.5,2,1,1,1,0.5,0.5,charmander.png,1
-386,rowlet,722,Rowlet,Bauz,モクロー (Mokuroh),7,Normal,Grass Quill Pokémon,2,Grass,Flying,0.3,1.5,2,Overgrow,,Long Reach,320,68,55,55,50,50,42,45,70,64,Medium Slow,1,Flying,,87.5,15,1,2,0.5,1,0.25,4,0.5,2,0,2,1,1,2,1,1,1,1,1,rowlet.png,1
-387,durant,632,Durant,Fermicula,アイアント (Aiant),5,Normal,Iron Ant Pokémon,2,Bug,Steel,0.3,33,3,Swarm,Hustle,Truant,484,58,109,112,48,48,109,90,70,169,Medium Fast,1,Bug,,50,20,0.5,4,1,1,0.25,0.5,1,0,1,1,0.5,0.5,1,1,0.5,1,0.5,0.5,durant.png,1
-388,sunkern,191,Sunkern,Sonnkern,ヒマナッツ (Himanuts),2,Normal,Seed Pokémon,1,Grass,,0.3,1.8,3,Chlorophyll,Solar Power,Early Bird,180,30,30,30,30,30,30,235,70,36,Medium Slow,1,Grass,,50,20,1,2,0.5,0.5,0.5,2,1,2,0.5,2,1,2,1,1,1,1,1,1,sunkern.png,1
-389,chewtle,833,Chewtle,Kamehaps,カムカメ (Kamukame),8,Normal,Snapping Pokémon,1,Water,,0.3,8.5,3,Strong Jaw,Shell Armor,Swift Swim,284,50,64,50,38,38,44,255,,,Medium Fast,2,Monster,Water 1,50,20,1,0.5,0.5,2,2,0.5,1,1,1,1,1,1,1,1,1,1,0.5,1,chewtle.png,1
-390,clobbopus,852,Clobbopus,Klopptopus,タタッコ (Tatakko),8,Normal,Tantrum Pokémon,1,Fighting,,0.6,4,2,Limber,,Technician,310,50,68,60,50,50,32,180,,,Medium Slow,2,Human-Like,Water 1,50,25,1,1,1,1,1,1,1,1,1,2,2,0.5,0.5,1,1,0.5,1,2,clobbopus.png,1
-391,cobalion,638,Cobalion,Kobalium,コバルオン (Cobalon),5,Sub Legendary,Iron Will Pokémon,2,Steel,Fighting,2.1,250,1,Justified,,,580,91,90,129,90,72,108,3,35,261,Slow,1,Undiscovered,,,80,0.5,2,1,1,0.5,0.5,2,0,2,1,1,0.25,0.25,1,0.5,0.5,0.5,1,cobalion.png,1
-392,pansage,511,Pansage,Vegimak,ヤナップ (Yanappu),5,Normal,Grass Monkey Pokémon,1,Grass,,0.6,10.5,2,Gluttony,,Overgrow,316,50,53,48,53,48,64,190,70,63,Medium Fast,1,Field,,87.5,20,1,2,0.5,0.5,0.5,2,1,2,0.5,2,1,2,1,1,1,1,1,1,pansage.png,1
-393,deino,633,Deino,Kapuno,モノズ (Monozu),5,Normal,Irate Pokémon,2,Dark,Dragon,0.8,17.3,1,Hustle,,,300,52,65,50,45,50,38,45,35,60,Slow,1,Dragon,,50,40,1,0.5,0.5,0.5,0.5,2,2,1,1,1,0,2,1,0.5,2,0.5,1,4,deino.png,1
-394,combee,415,Combee,Wadribie,ミツハニー (Mitsuhoney),4,Normal,Tiny Bee Pokémon,2,Bug,Flying,0.3,5.5,2,Honey Gather,,Hustle,244,30,30,42,30,42,70,120,70,49,Medium Slow,1,Bug,,87.5,15,1,2,1,2,0.25,2,0.25,1,0,2,1,0.5,4,1,1,1,1,1,combee.png,1
-395,wailmer,320,Wailmer,Wailmer,ホエルコ (Hoeruko),3,Normal,Ball Whale Pokémon,1,Water,,2,130,3,Water Veil,Oblivious,Pressure,400,130,70,35,70,35,60,125,70,80,Fluctuating,2,Field,Water 2,50,40,1,0.5,0.5,2,2,0.5,1,1,1,1,1,1,1,1,1,1,0.5,1,wailmer.png,1
-396,phantump,708,Phantump,Paragoni,ボクレー (Bokurei),6,Normal,Stump Pokémon,2,Ghost,Grass,0.4,7,3,Natural Cure,Frisk,Harvest,309,43,70,48,50,60,38,120,70,62,Medium Fast,2,Amorphous,Grass,50,20,0,2,0.5,0.5,0.5,2,0,1,0.5,2,1,1,1,2,1,2,1,1,phantump.png,1
-397,natu,177,Natu,Natu,ネイティ (Naty),2,Normal,Tiny Bird Pokémon,2,Psychic,Flying,0.2,2,3,Synchronize,Early Bird,Magic Bounce,320,40,50,45,70,45,70,190,70,64,Medium Fast,1,Flying,,50,20,1,1,1,2,0.5,2,0.25,1,0,1,0.5,1,2,2,1,2,1,1,natu.png,1
-398,spritzee,682,Spritzee,Parfi,シュシュプ (Shushupu),6,Normal,Perfume Pokémon,1,Fairy,,0.2,0.5,2,Healer,,Aroma Veil,341,78,52,60,63,65,23,200,70,68,Medium Fast,1,Fairy,,50,20,1,1,1,1,1,1,0.5,2,1,1,1,0.5,1,1,0,0.5,2,1,spritzee.png,1
-399,virizion,640,Virizion,Viridium,ビリジオン (Virizion),5,Sub Legendary,Grassland Pokémon,2,Grass,Fighting,2,200,1,Justified,,,580,91,90,72,90,129,108,3,35,261,Slow,1,Undiscovered,,,80,1,2,0.5,0.5,0.5,2,1,2,0.5,4,2,1,0.5,1,1,0.5,1,2,virizion.png,1
-400,rotom,479,Rotom,Rotom,ロトム (Rotom),4,Normal,Plasma Pokémon,2,Electric,Ghost,0.3,0.3,1,Levitate,,,440,50,50,77,95,77,91,45,70,154,Medium Fast,1,Amorphous,,,20,0,1,1,0.5,1,1,0,0.5,0,0.5,1,0.5,1,2,1,2,0.5,1,rotom.png,1
-401,hoothoot,163,Hoothoot,Hoothoot,ホーホー (Hoho),2,Normal,Owl Pokémon,2,Normal,Flying,0.7,21.2,3,Insomnia,Keen Eye,Tinted Lens,262,60,30,30,36,56,50,255,70,52,Medium Fast,1,Flying,,50,15,1,1,1,2,0.5,2,1,1,0,1,1,0.5,2,0,1,1,1,1,hoothoot.png,1
-402,karrablast,588,Karrablast,Laukaps,カブルモ (Kaburumo),5,Normal,Clamping Pokémon,1,Bug,,0.5,5.9,3,Swarm,Shed Skin,No Guard,315,50,75,45,40,45,60,200,70,63,Medium Fast,1,Bug,,50,15,1,2,1,1,0.5,1,0.5,1,0.5,2,1,1,2,1,1,1,1,1,karrablast.png,1
-403,torkoal,324,Torkoal,Qurtel,コータス (Cotoise),3,Normal,Coal Pokémon,1,Fire,,0.5,80.4,3,White Smoke,Drought,Shell Armor,470,70,85,140,85,70,20,90,70,165,Medium Fast,1,Field,,50,20,1,0.5,2,1,0.5,0.5,1,1,2,1,1,0.5,2,1,1,1,0.5,0.5,torkoal.png,1
-404,cramorant,845,Cramorant,Urgl,ウッウ (Uu),8,Normal,Gulp Pokémon,2,Flying,Water,0.8,18,1,Gulp Missile,,,475,70,85,55,85,95,85,45,,,Medium Fast,2,Flying,Water 1,50,20,1,0.5,0.5,4,1,1,0.5,1,0,1,1,0.5,2,1,1,1,0.5,1,cramorant.png,1
-405,victini,494,Victini,Victini,ビクティニ (Victini),5,Mythical,Victory Pokémon,2,Psychic,Fire,0.4,4,1,Victory Star,,,600,100,100,100,100,100,100,3,100,270,Slow,1,Undiscovered,,,120,1,0.5,2,1,0.5,0.5,0.5,1,2,1,0.5,1,2,2,1,2,0.5,0.5,victini.png,1
-406,relicanth,369,Relicanth,Relicanth,ジーランス (Glanth),3,Normal,Longevity Pokémon,2,Water,Rock,1,23.4,3,Swift Swim,Rock Head,Sturdy,485,100,90,130,45,65,55,25,70,170,Slow,2,Water 1,Water 2,87.5,40,0.5,0.25,1,2,4,0.5,2,0.5,2,0.5,1,1,1,1,1,1,1,1,relicanth.png,1
-407,wynaut,360,Wynaut,Isso,ソーナノ (Sohnano),3,Normal,Bright Pokémon,1,Psychic,,0.6,14,2,Shadow Tag,,Telepathy,260,95,23,48,23,48,23,125,70,52,Medium Fast,1,Undiscovered,,50,20,1,1,1,1,1,1,0.5,1,1,1,0.5,2,1,2,1,2,1,1,wynaut.png,1
-408,zorua,570,Zorua,Zorua,ゾロア (Zorua),5,Normal,Tricky Fox Pokémon,1,Dark,,0.7,12.5,1,Illusion,,,330,40,65,40,80,40,65,75,70,66,Medium Slow,1,Field,,87.5,25,1,1,1,1,1,1,2,1,1,1,0,2,1,0.5,1,0.5,1,2,zorua.png,1
-409,blipbug,824,Blipbug,Sensect,サッチムシ (Sacchimushi),8,Normal,Larva Pokémon,1,Bug,,0.4,8,3,Swarm,Compound Eyes,Telepathy,180,25,20,20,25,45,45,255,,,Medium Fast,1,Bug,,50,15,1,2,1,1,0.5,1,0.5,1,0.5,2,1,1,2,1,1,1,1,1,blipbug.png,1
-410,timburr,532,Timburr,Praktibalk,ドッコラー (Dokkorer),5,Normal,Muscular Pokémon,1,Fighting,,0.6,12.5,3,Guts,Sheer Force,Iron Fist,305,75,80,55,25,35,35,180,70,61,Medium Slow,1,Human-Like,,75,20,1,1,1,1,1,1,1,1,1,2,2,0.5,0.5,1,1,0.5,1,2,timburr.png,1
-411,mudkip,258,Mudkip,Hydropi,ミズゴロウ (Mizugorou),3,Normal,Mud Fish Pokémon,1,Water,,0.4,7.6,2,Torrent,,Damp,310,50,70,50,50,50,40,45,70,62,Medium Slow,2,Monster,Water 1,87.5,20,1,0.5,0.5,2,2,0.5,1,1,1,1,1,1,1,1,1,1,0.5,1,mudkip.png,1
-412,toxel,848,Toxel,Toxel,エレズン (Eleson),8,Normal,Baby Pokémon,2,Electric,Poison,0.4,11,3,Rattled,Static,Klutz,242,40,38,35,54,35,40,75,,,Medium Slow,1,Undiscovered,,50,25,1,1,1,0.5,0.5,1,0.5,0.5,4,0.5,2,0.5,1,1,1,1,0.5,0.5,toxel.png,1
-413,shellder,90,Shellder,Muschas,シェルダー (Shellder),1,Normal,Bivalve Pokémon,1,Water,,0.3,4,3,Shell Armor,Skill Link,Overcoat,305,30,65,100,45,25,40,190,70,61,Slow,1,Water 3,,50,20,1,0.5,0.5,2,2,0.5,1,1,1,1,1,1,1,1,1,1,0.5,1,shellder.png,1
-414,bounsweet,761,Bounsweet,Frubberl,アマカジ (Amakaji),7,Normal,Fruit Pokémon,1,Grass,,0.3,3.2,3,Leaf Guard,Oblivious,Sweet Veil,210,42,30,38,30,38,32,235,70,42,Medium Slow,1,Grass,,0,20,1,2,0.5,0.5,0.5,2,1,2,0.5,2,1,2,1,1,1,1,1,1,bounsweet.png,1
-415,trubbish,568,Trubbish,Unratütox,ヤブクロン (Yabukuron),5,Normal,Trash Bag Pokémon,1,Poison,,0.6,31,3,Stench,Sticky Hold,Aftermath,329,50,50,62,40,62,65,190,70,66,Medium Fast,1,Mineral,,50,20,1,1,1,1,0.5,1,0.5,0.5,2,1,2,0.5,1,1,1,1,1,0.5,trubbish.png,1
-416,bagon,371,Bagon,Kindwurm,タツベイ (Tatsubay),3,Normal,Rock Head Pokémon,1,Dragon,,0.6,42.1,2,Rock Head,,Sheer Force,300,45,75,60,40,30,50,45,35,60,Slow,1,Dragon,,50,40,1,0.5,0.5,0.5,0.5,2,1,1,1,1,1,1,1,1,2,1,1,2,bagon.png,1
-417,celesteela,797,Celesteela,Kaguron,テッカグヤ (Tekkaguya),7,Sub Legendary,Launch Pokémon,2,Steel,Flying,9.2,999.9,1,Beast Boost,,,570,97,101,103,107,101,61,45,0,257,Slow,1,Undiscovered,,,120,0.5,2,1,2,0.25,1,1,0,0,0.5,0.5,0.25,1,1,0.5,1,0.5,0.5,celesteela.png,1
-418,uxie,480,Uxie,Selfe,ユクシー (Yuxie),4,Sub Legendary,Knowledge Pokémon,1,Psychic,,0.3,0.3,1,Levitate,,,580,75,75,130,75,130,95,3,140,261,Slow,1,Undiscovered,,,80,1,1,1,1,1,1,0.5,1,0,1,0.5,2,1,2,1,2,1,1,uxie.png,1
-419,suicune,245,Suicune,Suicune,スイクン (Suicune),2,Sub Legendary,Aurora Pokémon,1,Water,,2,187,2,Pressure,,Inner Focus,580,100,75,115,90,115,85,3,35,261,Slow,1,Undiscovered,,,80,1,0.5,0.5,2,2,0.5,1,1,1,1,1,1,1,1,1,1,0.5,1,suicune.png,1
-420,bergmite,712,Bergmite,Arktip,カチコール (Kachikohru),6,Normal,Ice Chunk Pokémon,1,Ice,,1,99.5,3,Own Tempo,Ice Body,Sturdy,304,55,69,85,32,35,28,190,70,61,Medium Fast,2,Mineral,Monster,50,20,1,2,1,1,1,0.5,2,1,1,1,1,1,2,1,1,1,2,1,bergmite.png,1
-421,shroomish,285,Shroomish,Knilz,キノココ (Kinococo),3,Normal,Mushroom Pokémon,1,Grass,,0.4,4.5,3,Effect Spore,Poison Heal,Quick Feet,295,60,40,60,40,60,35,255,70,59,Fluctuating,2,Fairy,Grass,50,15,1,2,0.5,0.5,0.5,2,1,2,0.5,2,1,2,1,1,1,1,1,1,shroomish.png,1
-422,gligar,207,Gligar,Skorgla,グライガー (Gliger),2,Normal,FlyScorpion Pokémon,2,Ground,Flying,1.1,64.8,3,Hyper Cutter,Sand Veil,Immunity,430,65,75,105,35,65,85,60,70,86,Medium Slow,1,Bug,,50,20,1,1,2,0,1,4,0.5,0.5,0,1,1,0.5,1,1,1,1,1,1,gligar.png,1
-423,bonsly,438,Bonsly,Mobai,ウソハチ (Usohachi),4,Normal,Bonsai Pokémon,1,Rock,,0.5,15,3,Sturdy,Rock Head,Rattled,290,50,80,95,10,45,10,255,70,58,Medium Fast,1,Undiscovered,,50,20,0.5,0.5,2,1,2,1,2,0.5,2,0.5,1,1,1,1,1,1,2,1,bonsly.png,1
-424,slowpoke,79,Slowpoke,Flegmon,ヤドン (Yadon),1,Normal,Dopey Pokémon,2,Water,Psychic,1.2,36,3,Oblivious,Own Tempo,Regenerator,315,90,65,65,40,40,15,190,70,63,Medium Fast,2,Monster,Water 1,50,20,1,0.5,0.5,2,2,0.5,0.5,1,1,1,0.5,2,1,2,1,2,0.5,1,slowpoke.png,1
-425,latios,381,Latios,Latios,ラティオス (Latios),3,Sub Legendary,Eon Pokémon,2,Dragon,Psychic,2,60,1,Levitate,,,600,80,90,80,130,110,110,3,90,270,Slow,1,Undiscovered,,100,120,1,0.5,0.5,0.5,0.5,2,0.5,1,0,1,0.5,2,1,2,2,2,1,2,latios.png,1
-426,mew,151,Mew,Mew,ミュウ (Mew),1,Mythical,New Species Pokémon,1,Psychic,,0.4,4,1,Synchronize,,,600,100,100,100,100,100,100,45,100,270,Medium Slow,1,Undiscovered,,,120,1,1,1,1,1,1,0.5,1,1,1,0.5,2,1,2,1,2,1,1,mew.png,1
-427,ekans,23,Ekans,Rettan,アーボ (Arbo),1,Normal,Snake Pokémon,1,Poison,,2,6.9,3,Intimidate,Shed Skin,Unnerve,288,35,60,44,40,54,55,255,70,58,Medium Fast,2,Dragon,Field,50,20,1,1,1,1,0.5,1,0.5,0.5,2,1,2,0.5,1,1,1,1,1,0.5,ekans.png,1
+,image_name,pokedex_number,name,generation,type_1,type_2,height_m,weight_kg,ability_1,ability_2,ability_hidden,hp,attack,defense,sp_attack,sp_defense,speed,image_file,size
+0,sobble,816,Sobble,8,Water,,0.3,4.0,Torrent,,Sniper,50,40,40,70,40,70,sobble.png,1
+1,raikou,243,Raikou,2,Electric,,1.9,178.0,Pressure,,Inner Focus,90,85,75,115,100,115,raikou.png,1
+2,dedenne,702,Dedenne,6,Electric,Fairy,0.2,2.2,Cheek Pouch,Pickup,Plus,67,58,57,81,67,101,dedenne.png,1
+3,articuno,144,Articuno,1,Ice,Flying,1.7,55.4,Pressure,,Snow Cloak,90,85,100,95,125,85,articuno.png,1
+4,bulbasaur,1,Bulbasaur,1,Grass,Poison,0.7,6.9,Overgrow,,Chlorophyll,45,49,49,65,65,45,bulbasaur.png,1
+5,pidove,519,Pidove,5,Normal,Flying,0.3,2.1,Big Pecks,Super Luck,Rivalry,50,55,50,36,30,43,pidove.png,1
+6,comfey,764,Comfey,7,Fairy,,0.1,0.3,Flower Veil,Triage,Natural Cure,51,52,90,82,110,100,comfey.png,1
+7,taillow,276,Taillow,3,Normal,Flying,0.3,2.3,Guts,,Scrappy,40,55,30,30,30,85,taillow.png,1
+8,sandshrew,27,Sandshrew,1,Ground,,0.6,12.0,Sand Veil,,Sand Rush,50,75,85,20,30,40,sandshrew.png,1
+9,marshadow,802,Marshadow,7,Fighting,Ghost,0.7,22.2,Technician,,,90,125,80,90,90,125,marshadow.png,1
+10,lickitung,108,Lickitung,1,Normal,,1.2,65.5,Own Tempo,Oblivious,Cloud Nine,90,55,75,60,75,30,lickitung.png,1
+11,yveltal,717,Yveltal,6,Dark,Flying,5.8,203.0,Dark Aura,,,126,131,95,131,98,99,yveltal.png,1
+12,zigzagoon,263,Zigzagoon,3,Normal,,0.4,17.5,Pickup,Gluttony,Quick Feet,38,30,41,30,41,60,zigzagoon.png,1
+13,petilil,548,Petilil,5,Grass,,0.5,6.6,Chlorophyll,Own Tempo,Leaf Guard,45,35,50,70,50,30,petilil.png,1
+14,cresselia,488,Cresselia,4,Psychic,,1.5,85.6,Levitate,,,120,70,120,75,130,85,cresselia.png,1
+15,regigigas,486,Regigigas,4,Normal,,3.7,420.0,Slow Start,,,110,160,110,80,110,100,regigigas.png,1
+16,palkia,484,Palkia,4,Water,Dragon,4.2,336.0,Pressure,,Telepathy,90,120,100,150,120,100,palkia.png,1
+17,impidimp,859,Impidimp,8,Dark,Fairy,0.4,5.5,Prankster,Frisk,Pickpocket,45,45,30,55,40,50,impidimp.png,1
+18,froakie,656,Froakie,6,Water,,0.3,7.0,Torrent,,Protean,41,56,40,62,44,71,froakie.png,1
+19,arrokuda,846,Arrokuda,8,Water,,0.5,1.0,Swift Swim,,Propeller Tail,41,63,40,40,30,66,arrokuda.png,1
+20,munna,517,Munna,5,Psychic,,0.6,23.3,Forewarn,Synchronize,Telepathy,76,25,45,67,55,24,munna.png,1
+21,mareep,179,Mareep,2,Electric,,0.6,7.8,Static,,Plus,55,40,40,65,45,35,mareep.png,1
+22,shieldon,410,Shieldon,4,Rock,Steel,0.5,57.0,Sturdy,,Soundproof,30,42,118,42,88,30,shieldon.png,1
+23,makuhita,296,Makuhita,3,Fighting,,1.0,86.4,Thick Fat,Guts,Sheer Force,72,60,30,20,30,25,makuhita.png,1
+24,seviper,336,Seviper,3,Poison,,2.7,52.5,Shed Skin,,Infiltrator,73,100,60,100,60,65,seviper.png,1
+25,tirtouga,564,Tirtouga,5,Water,Rock,0.7,16.5,Solid Rock,Sturdy,Swift Swim,54,78,103,53,45,22,tirtouga.png,1
+26,nosepass,299,Nosepass,3,Rock,,1.0,97.0,Sturdy,Magnet Pull,Sand Force,30,45,135,45,90,30,nosepass.png,1
+27,inkay,686,Inkay,6,Dark,Psychic,0.4,3.5,Contrary,Suction Cups,Infiltrator,53,54,53,37,46,45,inkay.png,1
+28,grubbin,736,Grubbin,7,Bug,,0.4,4.4,Swarm,,,47,62,45,55,45,46,grubbin.png,1
+29,sentret,161,Sentret,2,Normal,,0.8,6.0,Run Away,Keen Eye,Frisk,35,46,34,35,45,20,sentret.png,1
+30,skorupi,451,Skorupi,4,Poison,Bug,0.8,12.0,Battle Armor,Sniper,Keen Eye,40,50,90,30,55,65,skorupi.png,1
+31,yungoos,734,Yungoos,7,Normal,,0.4,6.0,Strong Jaw,Stakeout,Adaptability,48,70,30,30,30,45,yungoos.png,1
+32,meltan,808,Meltan,7,Steel,,0.2,8.0,Magnet Pull,,,46,65,65,55,35,34,meltan.png,1
+33,arctovish,883,Arctovish,8,Water,Ice,2.0,175.0,Water Absorb,Ice Body,Slush Rush,90,90,100,80,90,55,arctovish.png,1
+34,duraludon,884,Duraludon,8,Steel,Dragon,1.8,40.0,Light Metal,Heavy Metal,Stalwart,70,95,115,120,50,85,duraludon.png,1
+35,binacle,688,Binacle,6,Rock,Water,0.5,31.0,Sniper,Tough Claws,Pickpocket,42,52,67,39,56,50,binacle.png,1
+36,hippopotas,449,Hippopotas,4,Ground,,0.8,49.5,Sand Stream,,Sand Force,68,72,78,38,42,32,hippopotas.png,1
+37,swirlix,684,Swirlix,6,Fairy,,0.4,3.5,Sweet Veil,,Unburden,62,48,66,59,57,49,swirlix.png,1
+38,finneon,456,Finneon,4,Water,,0.4,7.0,Swift Swim,Storm Drain,Water Veil,49,49,56,49,61,66,finneon.png,1
+39,yamper,835,Yamper,8,Electric,,0.3,13.5,Ball Fetch,,Rattled,59,45,50,40,50,26,yamper.png,1
+40,magnemite,81,Magnemite,1,Electric,Steel,0.3,6.0,Magnet Pull,Sturdy,Analytic,25,35,70,95,55,45,magnemite.png,1
+41,shinx,403,Shinx,4,Electric,,0.5,9.5,Rivalry,Intimidate,Guts,45,65,34,40,34,45,shinx.png,1
+42,budew,406,Budew,4,Grass,Poison,0.2,1.2,Natural Cure,Poison Point,Leaf Guard,40,30,35,50,70,55,budew.png,1
+43,gothita,574,Gothita,5,Psychic,,0.4,5.8,Frisk,Competitive,Shadow Tag,45,30,50,55,65,45,gothita.png,1
+44,porygon,137,Porygon,1,Normal,,0.8,36.5,Trace,Download,Analytic,65,60,70,85,75,40,porygon.png,1
+45,alomomola,594,Alomomola,5,Water,,1.2,31.6,Healer,Hydration,Regenerator,165,75,80,40,45,65,alomomola.png,1
+46,electrike,309,Electrike,3,Electric,,0.6,15.2,Static,Lightning Rod,Minus,40,45,40,65,40,65,electrike.png,1
+47,dratini,147,Dratini,1,Dragon,,1.8,3.3,Shed Skin,,Marvel Scale,41,64,45,50,50,50,dratini.png,1
+48,mienfoo,619,Mienfoo,5,Fighting,,0.9,20.0,Inner Focus,Regenerator,Reckless,45,85,50,55,50,65,mienfoo.png,1
+49,reshiram,643,Reshiram,5,Dragon,Fire,3.2,330.0,Turboblaze,,,100,120,100,150,120,90,reshiram.png,1
+50,heatran,485,Heatran,4,Fire,Steel,1.7,430.0,Flash Fire,,Flame Body,91,90,106,130,106,77,heatran.png,1
+51,phanpy,231,Phanpy,2,Ground,,0.5,33.5,Pickup,,Sand Veil,90,60,60,40,40,40,phanpy.png,1
+52,cyndaquil,155,Cyndaquil,2,Fire,,0.5,7.9,Blaze,,Flash Fire,39,52,43,60,50,65,cyndaquil.png,1
+53,machop,66,Machop,1,Fighting,,0.8,19.5,Guts,No Guard,Steadfast,70,80,50,35,35,35,machop.png,1
+54,eternatus,890,Eternatus,8,Poison,Dragon,20.0,950.0,Pressure,,,140,85,95,145,95,130,eternatus.png,1
+55,fletchling,661,Fletchling,6,Normal,Flying,0.3,1.7,Big Pecks,,Gale Wings,45,50,43,40,38,62,fletchling.png,1
+56,passimian,766,Passimian,7,Fighting,,2.0,82.8,Receiver,,Defiant,100,120,90,40,60,80,passimian.png,1
+57,roggenrola,524,Roggenrola,5,Rock,,0.4,18.0,Sturdy,Weak Armor,Sand Force,55,75,85,25,25,15,roggenrola.png,1
+58,scraggy,559,Scraggy,5,Dark,Fighting,0.6,11.8,Shed Skin,Moxie,Intimidate,50,75,70,35,70,48,scraggy.png,1
+59,latias,380,Latias,3,Dragon,Psychic,1.4,40.0,Levitate,,,80,80,90,110,130,110,latias.png,1
+60,shelmet,616,Shelmet,5,Bug,,0.4,7.7,Hydration,Shell Armor,Overcoat,50,40,85,40,65,25,shelmet.png,1
+61,sawk,539,Sawk,5,Fighting,,1.4,51.0,Sturdy,Inner Focus,Mold Breaker,75,125,75,30,75,85,sawk.png,1
+62,azelf,482,Azelf,4,Psychic,,0.3,0.3,Levitate,,,75,125,70,125,70,115,azelf.png,1
+63,drampa,780,Drampa,7,Normal,Dragon,3.0,185.0,Berserk,Sap Sipper,Cloud Nine,78,60,85,135,91,36,drampa.png,1
+64,aipom,190,Aipom,2,Normal,,0.8,11.5,Run Away,Pickup,Skill Link,55,70,55,40,55,85,aipom.png,1
+65,xurkitree,796,Xurkitree,7,Electric,,3.8,100.0,Beast Boost,,,83,89,71,173,71,83,xurkitree.png,1
+66,meditite,307,Meditite,3,Fighting,Psychic,0.6,11.2,Pure Power,,Telepathy,30,40,55,40,55,60,meditite.png,1
+67,heatmor,631,Heatmor,5,Fire,,1.4,58.0,Gluttony,Flash Fire,White Smoke,85,97,66,105,66,65,heatmor.png,1
+68,calyrex,898,Calyrex,8,Psychic,Grass,1.1,7.7,Unnerve,,,100,80,80,80,80,80,calyrex.png,1
+69,gible,443,Gible,4,Dragon,Ground,0.7,20.5,Sand Veil,,Rough Skin,58,70,45,40,45,42,gible.png,1
+70,corphish,341,Corphish,3,Water,,0.6,11.5,Hyper Cutter,Shell Armor,Adaptability,43,80,65,50,35,35,corphish.png,1
+71,cubone,104,Cubone,1,Ground,,0.4,6.5,Rock Head,Lightning Rod,Battle Armor,50,50,95,40,50,35,cubone.png,1
+72,koffing,109,Koffing,1,Poison,,0.6,1.0,Levitate,Neutralizing Gas,Stench,40,65,95,60,45,35,koffing.png,1
+73,larvitar,246,Larvitar,2,Rock,Ground,0.6,72.0,Guts,,Sand Veil,50,64,50,45,50,41,larvitar.png,1
+74,tyrogue,236,Tyrogue,2,Fighting,,0.7,21.0,Guts,Steadfast,Vital Spirit,35,35,35,35,35,35,tyrogue.png,1
+75,castform,351,Castform,3,Normal,,0.3,0.8,Forecast,,,70,70,70,70,70,70,castform.png,1
+76,chinchou,170,Chinchou,2,Water,Electric,0.5,12.0,Volt Absorb,Illuminate,Water Absorb,75,38,38,56,56,67,chinchou.png,1
+77,litleo,667,Litleo,6,Fire,Normal,0.6,13.5,Rivalry,Unnerve,Moxie,62,50,58,73,54,72,litleo.png,1
+78,ditto,132,Ditto,1,Normal,,0.3,4.0,Limber,,Imposter,48,48,48,48,48,48,ditto.png,1
+79,wingull,278,Wingull,3,Water,Flying,0.6,9.5,Keen Eye,Hydration,Rain Dish,40,30,30,55,30,85,wingull.png,1
+80,gastly,92,Gastly,1,Ghost,Poison,1.3,0.1,Levitate,,,30,35,30,100,35,80,gastly.png,1
+81,whismur,293,Whismur,3,Normal,,0.6,16.3,Soundproof,,Rattled,64,51,23,51,23,28,whismur.png,1
+82,cleffa,173,Cleffa,2,Fairy,,0.3,3.0,Cute Charm,Magic Guard,Friend Guard,50,25,28,45,55,15,cleffa.png,1
+83,growlithe,58,Growlithe,1,Fire,,0.7,19.0,Intimidate,Flash Fire,Justified,55,70,45,70,50,60,growlithe.png,1
+84,sigilyph,561,Sigilyph,5,Psychic,Flying,1.4,14.0,Wonder Skin,Magic Guard,Tinted Lens,72,58,80,103,80,97,sigilyph.png,1
+85,cryogonal,615,Cryogonal,5,Ice,,1.1,148.0,Levitate,,,80,50,50,95,135,105,cryogonal.png,1
+86,stunfisk,618,Stunfisk,5,Ground,Electric,0.7,11.0,Static,Limber,Sand Veil,109,66,84,81,99,32,stunfisk.png,1
+87,stantler,234,Stantler,2,Normal,,1.4,71.2,Intimidate,Frisk,Sap Sipper,73,95,62,85,65,85,stantler.png,1
+88,dracovish,882,Dracovish,8,Water,Dragon,2.3,215.0,Water Absorb,Strong Jaw,Sand Rush,90,90,100,70,80,75,dracovish.png,1
+89,snubbull,209,Snubbull,2,Fairy,,0.6,7.8,Intimidate,Run Away,Rattled,60,80,50,40,40,30,snubbull.png,1
+90,surskit,283,Surskit,3,Bug,Water,0.5,1.7,Swift Swim,,Rain Dish,40,30,32,50,52,65,surskit.png,1
+91,amaura,698,Amaura,6,Rock,Ice,1.3,25.2,Refrigerate,,Snow Warning,77,59,50,67,63,46,amaura.png,1
+92,elekid,239,Elekid,2,Electric,,0.6,23.5,Static,,Vital Spirit,45,63,37,65,55,95,elekid.png,1
+93,goomy,704,Goomy,6,Dragon,,0.3,2.8,Sap Sipper,Hydration,Gooey,45,50,35,55,75,40,goomy.png,1
+94,vullaby,629,Vullaby,5,Dark,Flying,0.5,9.0,Big Pecks,Overcoat,Weak Armor,70,55,75,45,65,60,vullaby.png,1
+95,venipede,543,Venipede,5,Bug,Poison,0.4,5.3,Poison Point,Swarm,Speed Boost,30,45,59,30,39,57,venipede.png,1
+96,regieleki,894,Regieleki,8,Electric,,1.2,145.0,Transistor,,,80,100,50,100,50,200,regieleki.png,1
+97,tangela,114,Tangela,1,Grass,,1.0,35.0,Chlorophyll,Leaf Guard,Regenerator,65,55,115,100,40,60,tangela.png,1
+98,sandile,551,Sandile,5,Ground,Dark,0.7,15.2,Intimidate,Moxie,Anger Point,50,72,35,35,35,65,sandile.png,1
+99,rhyhorn,111,Rhyhorn,1,Ground,Rock,1.0,115.0,Lightning Rod,Rock Head,Reckless,80,85,95,30,30,25,rhyhorn.png,1
+100,salandit,757,Salandit,7,Poison,Fire,0.6,4.8,Corrosion,,Oblivious,48,44,40,71,40,77,salandit.png,1
+101,zarude,893,Zarude,8,Dark,Grass,1.8,70.0,Leaf Guard,,,105,120,105,70,95,105,zarude.png,1
+102,sizzlipede,850,Sizzlipede,8,Fire,Bug,0.7,1.0,Flash Fire,White Smoke,Flame Body,50,65,45,50,50,45,sizzlipede.png,1
+103,audino,531,Audino,5,Normal,,1.1,31.0,Healer,Regenerator,Klutz,103,60,86,60,86,50,audino.png,1
+104,dialga,483,Dialga,4,Steel,Dragon,5.4,683.0,Pressure,,Telepathy,100,120,120,150,100,90,dialga.png,1
+105,totodile,158,Totodile,2,Water,,0.6,9.5,Torrent,,Sheer Force,50,65,64,44,48,43,totodile.png,1
+106,tauros,128,Tauros,1,Normal,,1.4,88.4,Intimidate,Anger Point,Sheer Force,75,100,95,40,70,110,tauros.png,1
+107,cottonee,546,Cottonee,5,Grass,Fairy,0.3,0.6,Prankster,Infiltrator,Chlorophyll,40,27,60,37,50,66,cottonee.png,1
+108,tropius,357,Tropius,3,Grass,Flying,2.0,100.0,Chlorophyll,Solar Power,Harvest,99,68,83,72,87,51,tropius.png,1
+109,bouffalant,626,Bouffalant,5,Normal,,1.6,94.6,Reckless,Sap Sipper,Soundproof,95,110,95,40,95,55,bouffalant.png,1
+110,woobat,527,Woobat,5,Psychic,Flying,0.4,2.1,Unaware,Klutz,Simple,65,45,43,55,43,72,woobat.png,1
+111,archen,566,Archen,5,Rock,Flying,0.5,9.5,Defeatist,,,55,112,45,74,45,70,archen.png,1
+112,ho-oh,250,Ho-oh,2,Fire,Flying,3.8,199.0,Pressure,,Regenerator,106,130,90,110,154,90,ho-oh.png,1
+113,scorbunny,813,Scorbunny,8,Fire,,0.3,4.5,Blaze,,Libero,50,71,40,40,40,69,scorbunny.png,1
+114,noibat,714,Noibat,6,Flying,Dragon,0.5,8.0,Frisk,Infiltrator,Telepathy,40,30,35,45,40,55,noibat.png,1
+115,eevee,133,Eevee,1,Normal,,0.3,6.5,Run Away,Adaptability,Anticipation,55,55,50,45,65,55,eevee.png,1
+116,mewtwo,150,Mewtwo,1,Psychic,,2.0,122.0,Pressure,,Unnerve,106,110,90,154,90,130,mewtwo.png,1
+117,buneary,427,Buneary,4,Normal,,0.4,5.5,Run Away,Klutz,Limber,55,66,44,44,56,85,buneary.png,1
+118,sableye,302,Sableye,3,Dark,Ghost,0.5,11.0,Keen Eye,Stall,Prankster,50,75,75,65,65,50,sableye.png,1
+119,bidoof,399,Bidoof,4,Normal,,0.5,20.0,Simple,Unaware,Moody,59,45,40,35,40,31,bidoof.png,1
+120,rookidee,821,Rookidee,8,Flying,,0.2,1.8,Keen Eye,Unnerve,Big Pecks,38,47,35,33,35,57,rookidee.png,1
+121,elgyem,605,Elgyem,5,Psychic,,0.5,9.0,Telepathy,Synchronize,Analytic,55,55,55,85,55,30,elgyem.png,1
+122,miltank,241,Miltank,2,Normal,,1.2,75.5,Thick Fat,Scrappy,Sap Sipper,95,80,105,40,70,100,miltank.png,1
+123,guzzlord,799,Guzzlord,7,Dark,Dragon,5.5,888.0,Beast Boost,,,223,101,53,97,53,43,guzzlord.png,1
+124,hatenna,856,Hatenna,8,Psychic,,0.4,3.4,Healer,Anticipation,Magic Bounce,42,30,45,56,53,39,hatenna.png,1
+125,anorith,347,Anorith,3,Rock,Bug,0.7,12.5,Battle Armor,,Swift Swim,45,95,50,40,50,75,anorith.png,1
+126,wurmple,265,Wurmple,3,Bug,,0.3,3.6,Shield Dust,,Run Away,45,45,35,20,30,20,wurmple.png,1
+127,tyrunt,696,Tyrunt,6,Rock,Dragon,0.8,26.0,Strong Jaw,,Sturdy,58,89,77,45,45,48,tyrunt.png,1
+128,pidgey,16,Pidgey,1,Normal,Flying,0.3,1.8,Keen Eye,Tangled Feet,Big Pecks,40,45,40,35,35,56,pidgey.png,1
+129,mankey,56,Mankey,1,Fighting,,0.5,28.0,Vital Spirit,Anger Point,Defiant,40,80,35,35,45,70,mankey.png,1
+130,illumise,314,Illumise,3,Bug,,0.6,17.7,Oblivious,Tinted Lens,Prankster,65,47,75,73,85,85,illumise.png,1
+131,igglybuff,174,Igglybuff,2,Normal,Fairy,0.3,1.0,Cute Charm,Competitive,Friend Guard,90,30,15,40,20,15,igglybuff.png,1
+132,qwilfish,211,Qwilfish,2,Water,Poison,0.5,3.9,Poison Point,Swift Swim,Intimidate,65,95,85,55,55,85,qwilfish.png,1
+133,goldeen,118,Goldeen,1,Water,,0.6,15.0,Swift Swim,Water Veil,Lightning Rod,45,67,60,35,50,63,goldeen.png,1
+134,abra,63,Abra,1,Psychic,,0.9,19.5,Synchronize,Inner Focus,Magic Guard,25,20,15,105,55,90,abra.png,1
+135,purrloin,509,Purrloin,5,Dark,,0.4,10.1,Limber,Unburden,Prankster,41,50,37,50,37,66,purrloin.png,1
+136,gulpin,316,Gulpin,3,Poison,,0.4,10.3,Liquid Ooze,Sticky Hold,Gluttony,70,43,53,43,53,40,gulpin.png,1
+137,munchlax,446,Munchlax,4,Normal,,0.6,105.0,Pickup,Thick Fat,Gluttony,135,85,40,40,85,5,munchlax.png,1
+138,volcanion,721,Volcanion,6,Fire,Water,1.7,195.0,Water Absorb,,,80,110,120,130,90,70,volcanion.png,1
+139,lillipup,506,Lillipup,5,Normal,,0.4,4.1,Vital Spirit,Pickup,Run Away,45,60,45,25,45,55,lillipup.png,1
+140,lapras,131,Lapras,1,Water,Ice,2.5,220.0,Water Absorb,Shell Armor,Hydration,130,85,80,85,95,60,lapras.png,1
+141,sneasel,215,Sneasel,2,Dark,Ice,0.9,28.0,Inner Focus,Keen Eye,Pickpocket,55,95,55,35,75,115,sneasel.png,1
+142,murkrow,198,Murkrow,2,Dark,Flying,0.5,2.1,Insomnia,Super Luck,Prankster,60,85,42,85,42,91,murkrow.png,1
+143,tentacool,72,Tentacool,1,Water,Poison,0.9,45.5,Clear Body,Liquid Ooze,Rain Dish,40,40,35,50,100,70,tentacool.png,1
+144,oshawott,501,Oshawott,5,Water,,0.5,5.9,Torrent,,Shell Armor,55,55,45,63,45,45,oshawott.png,1
+145,espurr,677,Espurr,6,Psychic,,0.3,3.5,Keen Eye,Infiltrator,Own Tempo,62,48,54,63,60,68,espurr.png,1
+146,milcery,868,Milcery,8,Fairy,,0.2,0.3,Sweet Veil,,Aroma Veil,45,40,40,50,61,34,milcery.png,1
+147,seel,86,Seel,1,Water,,1.1,90.0,Thick Fat,Hydration,Ice Body,65,45,55,45,70,45,seel.png,1
+148,pyukumuku,771,Pyukumuku,7,Water,,0.3,1.2,Innards Out,,Unaware,55,60,130,30,130,5,pyukumuku.png,1
+149,pineco,204,Pineco,2,Bug,,0.6,7.2,Sturdy,,Overcoat,50,65,90,35,35,15,pineco.png,1
+150,cosmog,789,Cosmog,7,Psychic,,0.2,0.1,Unaware,,,43,29,31,29,31,37,cosmog.png,1
+151,swablu,333,Swablu,3,Normal,Flying,0.4,1.2,Natural Cure,,Cloud Nine,45,40,60,40,75,50,swablu.png,1
+152,skitty,300,Skitty,3,Normal,,0.6,11.0,Cute Charm,Normalize,Wonder Skin,50,45,45,35,35,50,skitty.png,1
+153,regidrago,895,Regidrago,8,Dragon,,2.1,200.0,Dragon‘s Maw,,,200,100,50,100,50,80,regidrago.png,1
+154,minun,312,Minun,3,Electric,,0.4,4.2,Minus,,Volt Absorb,60,40,50,75,85,95,minun.png,1
+155,heracross,214,Heracross,2,Bug,Fighting,1.5,54.0,Swarm,Guts,Moxie,80,125,75,40,95,85,heracross.png,1
+156,trapinch,328,Trapinch,3,Ground,,0.7,15.0,Hyper Cutter,Arena Trap,Sheer Force,45,100,45,45,45,10,trapinch.png,1
+157,girafarig,203,Girafarig,2,Normal,Psychic,1.5,41.5,Inner Focus,Early Bird,Sap Sipper,70,80,65,90,65,85,girafarig.png,1
+158,poochyena,261,Poochyena,3,Dark,,0.5,13.6,Run Away,Quick Feet,Rattled,35,55,35,30,30,35,poochyena.png,1
+159,popplio,728,Popplio,7,Water,,0.4,7.5,Torrent,,Liquid Voice,50,54,54,66,56,40,popplio.png,1
+160,glastrier,896,Glastrier,8,Ice,,2.2,800.0,Chilling Neigh,,,100,145,130,65,110,30,glastrier.png,1
+161,kyurem,646,Kyurem,5,Dragon,Ice,3.0,325.0,Pressure,,,125,130,90,130,90,95,kyurem.png,1
+162,carnivine,455,Carnivine,4,Grass,,1.4,27.0,Levitate,,,74,100,72,90,72,46,carnivine.png,1
+163,pinsir,127,Pinsir,1,Bug,,1.5,55.0,Hyper Cutter,Mold Breaker,Moxie,65,125,100,55,70,85,pinsir.png,1
+164,snorunt,361,Snorunt,3,Ice,,0.7,16.8,Inner Focus,Ice Body,Moody,50,50,50,50,50,50,snorunt.png,1
+165,necrozma,800,Necrozma,7,Psychic,,2.4,230.0,Prism Armor,,,97,107,101,127,89,79,necrozma.png,1
+166,smeargle,235,Smeargle,2,Normal,,1.2,58.0,Own Tempo,Technician,Moody,55,20,35,20,45,75,smeargle.png,1
+167,magby,240,Magby,2,Fire,,0.7,21.4,Flame Body,,Vital Spirit,45,75,37,70,55,83,magby.png,1
+168,crabrawler,739,Crabrawler,7,Fighting,,0.6,7.0,Hyper Cutter,Iron Fist,Anger Point,47,82,57,42,47,63,crabrawler.png,1
+169,geodude,74,Geodude,1,Rock,Ground,0.4,20.0,Rock Head,Sturdy,Sand Veil,40,80,100,30,30,20,geodude.png,1
+170,foongus,590,Foongus,5,Grass,Poison,0.2,1.0,Effect Spore,,Regenerator,69,55,45,55,55,15,foongus.png,1
+171,delibird,225,Delibird,2,Ice,Flying,0.9,16.0,Vital Spirit,Hustle,Insomnia,45,55,45,65,45,75,delibird.png,1
+172,oranguru,765,Oranguru,7,Normal,Psychic,1.5,76.0,Inner Focus,Telepathy,Symbiosis,90,60,80,90,110,60,oranguru.png,1
+173,smoochum,238,Smoochum,2,Ice,Psychic,0.4,6.0,Oblivious,Forewarn,Hydration,45,30,15,85,65,65,smoochum.png,1
+174,scyther,123,Scyther,1,Bug,Flying,1.5,56.0,Swarm,Technician,Steadfast,70,110,80,55,80,105,scyther.png,1
+175,stunky,434,Stunky,4,Poison,Dark,0.4,19.2,Stench,Aftermath,Keen Eye,63,63,47,41,41,74,stunky.png,1
+176,klefki,707,Klefki,6,Steel,Fairy,0.2,3.0,Prankster,,Magician,57,80,91,80,87,75,klefki.png,1
+177,honedge,679,Honedge,6,Steel,Ghost,0.8,2.0,No Guard,,,45,80,100,35,37,28,honedge.png,1
+178,entei,244,Entei,2,Fire,,2.1,198.0,Pressure,,Inner Focus,115,115,85,90,75,100,entei.png,1
+179,zubat,41,Zubat,1,Poison,Flying,0.8,7.5,Inner Focus,,Infiltrator,40,45,35,30,40,55,zubat.png,1
+180,pheromosa,795,Pheromosa,7,Bug,Fighting,1.8,25.0,Beast Boost,,,71,137,37,137,37,151,pheromosa.png,1
+181,genesect,649,Genesect,5,Bug,Steel,1.5,82.5,Download,,,71,120,95,120,95,99,genesect.png,1
+182,larvesta,636,Larvesta,5,Bug,Fire,1.1,28.8,Flame Body,,Swarm,55,85,55,50,55,60,larvesta.png,1
+183,golett,622,Golett,5,Ground,Ghost,1.0,92.0,Iron Fist,Klutz,No Guard,59,74,50,35,50,35,golett.png,1
+184,kartana,798,Kartana,7,Grass,Steel,0.3,0.1,Beast Boost,,,59,181,131,59,31,109,kartana.png,1
+185,voltorb,100,Voltorb,1,Electric,,0.5,10.4,Soundproof,Static,Aftermath,40,30,50,55,55,100,voltorb.png,1
+186,regirock,377,Regirock,3,Rock,,1.7,230.0,Clear Body,,Sturdy,80,100,200,50,100,50,regirock.png,1
+187,cherubi,420,Cherubi,4,Grass,,0.4,3.3,Chlorophyll,,,45,35,45,62,53,35,cherubi.png,1
+188,barboach,339,Barboach,3,Water,Ground,0.4,1.9,Oblivious,Anticipation,Hydration,50,48,43,46,41,60,barboach.png,1
+189,wooper,194,Wooper,2,Water,Ground,0.4,8.5,Damp,Water Absorb,Unaware,55,45,45,25,25,15,wooper.png,1
+190,litten,725,Litten,7,Fire,,0.4,4.3,Blaze,,Intimidate,45,65,40,60,40,70,litten.png,1
+191,dreepy,885,Dreepy,8,Dragon,Ghost,0.5,2.0,Clear Body,Infiltrator,Cursed Body,28,60,30,40,30,82,dreepy.png,1
+192,snivy,495,Snivy,5,Grass,,0.6,8.1,Overgrow,,Contrary,45,45,55,45,55,63,snivy.png,1
+193,rattata,19,Rattata,1,Normal,,0.3,3.5,Run Away,Guts,Hustle,30,56,35,25,35,72,rattata.png,1
+194,starly,396,Starly,4,Normal,Flying,0.3,2.0,Keen Eye,,Reckless,40,55,30,30,30,60,starly.png,1
+195,houndour,228,Houndour,2,Dark,Fire,0.6,10.8,Early Bird,Flash Fire,Unnerve,45,60,30,80,50,65,houndour.png,1
+196,magikarp,129,Magikarp,1,Water,,0.9,10.0,Swift Swim,,Rattled,20,10,55,15,20,80,magikarp.png,1
+197,drowzee,96,Drowzee,1,Psychic,,1.0,32.4,Insomnia,Forewarn,Inner Focus,60,48,45,43,90,42,drowzee.png,1
+198,clamperl,366,Clamperl,3,Water,,0.4,52.5,Shell Armor,,Rattled,35,64,85,74,55,32,clamperl.png,1
+199,seedot,273,Seedot,3,Grass,,0.5,4.0,Chlorophyll,Early Bird,Pickpocket,40,40,50,30,30,30,seedot.png,1
+200,skiddo,672,Skiddo,6,Grass,,0.9,31.0,Sap Sipper,,Grass Pelt,66,65,48,62,57,52,skiddo.png,1
+201,weedle,13,Weedle,1,Bug,Poison,0.3,3.2,Shield Dust,,Run Away,40,35,30,20,20,50,weedle.png,1
+202,stakataka,805,Stakataka,7,Rock,Steel,5.5,820.0,Beast Boost,,,61,131,211,53,101,13,stakataka.png,1
+203,spoink,325,Spoink,3,Psychic,,0.7,30.6,Thick Fat,Own Tempo,Gluttony,60,25,35,70,80,60,spoink.png,1
+204,pikipek,731,Pikipek,7,Normal,Flying,0.3,1.2,Keen Eye,Skill Link,Pickup,35,75,30,30,30,65,pikipek.png,1
+205,frillish,592,Frillish,5,Water,Ghost,1.2,33.0,Water Absorb,Cursed Body,Damp,55,40,50,65,85,40,frillish.png,1
+206,cutiefly,742,Cutiefly,7,Bug,Fairy,0.1,0.2,Honey Gather,Shield Dust,Sweet Veil,40,45,40,55,40,84,cutiefly.png,1
+207,tympole,535,Tympole,5,Water,,0.5,4.5,Swift Swim,Hydration,Water Absorb,50,50,40,50,40,64,tympole.png,1
+208,lileep,345,Lileep,3,Rock,Grass,1.0,23.8,Suction Cups,,Storm Drain,66,41,77,61,87,23,lileep.png,1
+209,pachirisu,417,Pachirisu,4,Electric,,0.4,3.9,Run Away,Pickup,Volt Absorb,60,45,70,45,90,95,pachirisu.png,1
+210,beldum,374,Beldum,3,Steel,Psychic,0.6,95.2,Clear Body,,Light Metal,40,55,80,35,60,30,beldum.png,1
+211,glameow,431,Glameow,4,Normal,,0.5,3.9,Limber,Own Tempo,Keen Eye,49,55,42,42,37,85,glameow.png,1
+212,zangoose,335,Zangoose,3,Normal,,1.3,40.3,Immunity,,Toxic Boost,73,115,60,60,60,90,zangoose.png,1
+213,moltres,146,Moltres,1,Fire,Flying,2.0,60.0,Pressure,,Flame Body,90,100,90,125,85,90,moltres.png,1
+214,mesprit,481,Mesprit,4,Psychic,,0.3,0.3,Levitate,,,80,105,105,105,105,80,mesprit.png,1
+215,groudon,383,Groudon,3,Ground,,3.5,950.0,Drought,,,100,150,140,100,90,90,groudon.png,1
+216,dracozolt,880,Dracozolt,8,Electric,Dragon,1.8,190.0,Volt Absorb,Hustle,Sand Rush,90,100,90,80,70,75,dracozolt.png,1
+217,mantyke,458,Mantyke,4,Water,Flying,1.0,65.0,Swift Swim,Water Absorb,Water Veil,45,20,50,60,120,50,mantyke.png,1
+218,paras,46,Paras,1,Bug,Grass,0.3,5.4,Effect Spore,Dry Skin,Damp,35,70,55,45,55,25,paras.png,1
+219,solrock,338,Solrock,3,Rock,Psychic,1.2,154.0,Levitate,,,90,95,85,55,65,70,solrock.png,1
+220,komala,775,Komala,7,Normal,,0.4,19.9,Comatose,,,65,115,65,75,95,65,komala.png,1
+221,patrat,504,Patrat,5,Normal,,0.5,11.6,Run Away,Keen Eye,Analytic,45,55,39,35,39,42,patrat.png,1
+222,spheal,363,Spheal,3,Ice,Water,0.8,39.5,Thick Fat,Ice Body,Oblivious,70,40,50,55,50,25,spheal.png,1
+223,lotad,270,Lotad,3,Water,Grass,0.5,2.6,Swift Swim,Rain Dish,Own Tempo,40,30,30,40,50,30,lotad.png,1
+224,ralts,280,Ralts,3,Psychic,Fairy,0.4,6.6,Synchronize,Trace,Telepathy,28,25,25,45,35,40,ralts.png,1
+225,registeel,379,Registeel,3,Steel,,1.9,205.0,Clear Body,,Light Metal,80,75,150,75,150,50,registeel.png,1
+226,fomantis,753,Fomantis,7,Grass,,0.3,1.5,Leaf Guard,,Contrary,40,55,35,50,35,35,fomantis.png,1
+227,aerodactyl,142,Aerodactyl,1,Rock,Flying,1.8,59.0,Rock Head,Pressure,Unnerve,80,105,65,60,75,130,aerodactyl.png,1
+228,pincurchin,871,Pincurchin,8,Electric,,0.3,1.0,Lightning Rod,,Electric Surge,48,101,95,91,85,15,pincurchin.png,1
+229,bronzor,436,Bronzor,4,Steel,Psychic,0.5,60.5,Levitate,Heatproof,Heavy Metal,57,24,86,24,86,23,bronzor.png,1
+230,kyogre,382,Kyogre,3,Water,,4.5,352.0,Drizzle,,,100,100,90,150,140,90,kyogre.png,1
+231,cufant,878,Cufant,8,Steel,,1.2,100.0,Sheer Force,,Heavy Metal,72,80,49,40,49,40,cufant.png,1
+232,feebas,349,Feebas,3,Water,,0.6,7.4,Swift Swim,Oblivious,Adaptability,20,15,20,10,55,80,feebas.png,1
+233,maractus,556,Maractus,5,Grass,,1.0,28.0,Water Absorb,Chlorophyll,Storm Drain,75,86,67,106,67,60,maractus.png,1
+234,chimchar,390,Chimchar,4,Fire,,0.5,6.2,Blaze,,Iron Fist,44,58,44,58,44,61,chimchar.png,1
+235,staryu,120,Staryu,1,Water,,0.8,34.5,Illuminate,Natural Cure,Analytic,30,45,55,70,55,85,staryu.png,1
+236,pancham,674,Pancham,6,Fighting,,0.6,8.0,Iron Fist,Mold Breaker,Scrappy,67,82,62,46,48,43,pancham.png,1
+237,dwebble,557,Dwebble,5,Bug,Rock,0.3,14.5,Sturdy,Shell Armor,Weak Armor,50,65,85,35,35,55,dwebble.png,1
+238,bruxish,779,Bruxish,7,Water,Psychic,0.9,19.0,Dazzling,Strong Jaw,Wonder Skin,68,105,70,70,70,92,bruxish.png,1
+239,joltik,595,Joltik,5,Bug,Electric,0.1,0.6,Compound Eyes,Unnerve,Swarm,50,47,50,57,50,65,joltik.png,1
+240,phione,489,Phione,4,Water,,0.4,3.1,Hydration,,,80,80,80,80,80,80,phione.png,1
+241,pansear,513,Pansear,5,Fire,,0.6,11.0,Gluttony,,Blaze,50,53,48,53,48,64,pansear.png,1
+242,happiny,440,Happiny,4,Normal,,0.6,24.4,Natural Cure,Serene Grace,Friend Guard,100,5,5,15,65,30,happiny.png,1
+243,spearow,21,Spearow,1,Normal,Flying,0.3,2.0,Keen Eye,,Sniper,40,60,30,31,31,70,spearow.png,1
+244,helioptile,694,Helioptile,6,Electric,Normal,0.5,6.0,Dry Skin,Sand Veil,Solar Power,44,38,33,61,43,70,helioptile.png,1
+245,wooloo,831,Wooloo,8,Normal,,0.6,6.0,Fluffy,Run Away,Bulletproof,42,40,55,40,45,48,wooloo.png,1
+246,diancie,719,Diancie,6,Rock,Fairy,0.7,8.8,Clear Body,,,50,100,150,100,150,50,diancie.png,1
+247,poipole,803,Poipole,7,Poison,,0.6,1.8,Beast Boost,,,67,73,67,73,67,73,poipole.png,1
+248,klink,599,Klink,5,Steel,,0.3,21.0,Plus,Minus,Clear Body,40,55,70,45,60,30,klink.png,1
+249,tynamo,602,Tynamo,5,Electric,,0.2,0.3,Levitate,,,35,55,40,45,40,60,tynamo.png,1
+250,diglett,50,Diglett,1,Ground,,0.2,0.8,Sand Veil,Arena Trap,Sand Force,10,55,25,35,45,95,diglett.png,1
+251,nihilego,793,Nihilego,7,Rock,Poison,1.2,55.5,Beast Boost,,,109,53,47,127,131,103,nihilego.png,1
+252,skarmory,227,Skarmory,2,Steel,Flying,1.7,50.5,Keen Eye,Sturdy,Weak Armor,65,80,140,40,70,70,skarmory.png,1
+253,remoraid,223,Remoraid,2,Water,,0.6,12.0,Hustle,Sniper,Moody,35,65,35,65,35,65,remoraid.png,1
+254,snom,872,Snom,8,Ice,Bug,0.3,3.8,Shield Dust,,Ice Scales,30,25,35,45,30,20,snom.png,1
+255,numel,322,Numel,3,Fire,Ground,0.7,24.0,Oblivious,Simple,Own Tempo,60,60,40,65,45,35,numel.png,1
+256,lunatone,337,Lunatone,3,Rock,Psychic,1.0,168.0,Levitate,,,90,55,65,95,85,70,lunatone.png,1
+257,mareanie,747,Mareanie,7,Poison,Water,0.4,8.0,Merciless,Limber,Regenerator,50,53,62,43,52,45,mareanie.png,1
+258,throh,538,Throh,5,Fighting,,1.3,55.5,Guts,Inner Focus,Mold Breaker,120,100,85,30,85,45,throh.png,1
+259,hoppip,187,Hoppip,2,Grass,Flying,0.4,0.5,Chlorophyll,Leaf Guard,Infiltrator,35,35,40,35,55,50,hoppip.png,1
+260,kecleon,352,Kecleon,3,Normal,,1.0,22.0,Color Change,,Protean,60,90,70,60,120,40,kecleon.png,1
+261,shuppet,353,Shuppet,3,Ghost,,0.6,2.3,Insomnia,Frisk,Cursed Body,44,75,35,63,33,45,shuppet.png,1
+262,stonjourner,874,Stonjourner,8,Rock,,2.5,520.0,Power Spot,,,100,125,135,20,20,70,stonjourner.png,1
+263,gossifleur,829,Gossifleur,8,Grass,,0.4,2.2,Cotton Down,Regenerator,Effect Spore,40,40,60,40,60,10,gossifleur.png,1
+264,ducklett,580,Ducklett,5,Water,Flying,0.5,5.5,Keen Eye,Big Pecks,Hydration,62,44,50,44,50,55,ducklett.png,1
+265,plusle,311,Plusle,3,Electric,,0.4,4.2,Plus,,Lightning Rod,60,50,40,85,75,95,plusle.png,1
+266,poliwag,60,Poliwag,1,Water,,0.6,12.4,Water Absorb,Damp,Swift Swim,40,50,40,40,40,90,poliwag.png,1
+267,treecko,252,Treecko,3,Grass,,0.5,5.0,Overgrow,,Unburden,40,45,35,65,55,70,treecko.png,1
+268,torchic,255,Torchic,3,Fire,,0.4,2.5,Blaze,,Speed Boost,45,60,40,70,50,45,torchic.png,1
+269,dunsparce,206,Dunsparce,2,Normal,,1.5,14.0,Serene Grace,Run Away,Rattled,100,70,70,65,65,45,dunsparce.png,1
+270,spectrier,897,Spectrier,8,Ghost,,2.0,44.5,Grim Neigh,,,100,65,60,145,80,130,spectrier.png,1
+271,magearna,801,Magearna,7,Steel,Fairy,1.0,80.5,Soul-Heart,,,80,95,115,130,115,65,magearna.png,1
+272,cacnea,331,Cacnea,3,Grass,,0.4,51.3,Sand Veil,,Water Absorb,50,85,40,85,40,35,cacnea.png,1
+273,slugma,218,Slugma,2,Fire,,0.7,35.0,Magma Armor,Flame Body,Weak Armor,40,40,40,70,40,20,slugma.png,1
+274,oddish,43,Oddish,1,Grass,Poison,0.5,5.4,Chlorophyll,,Run Away,45,50,55,75,65,30,oddish.png,1
+275,jirachi,385,Jirachi,3,Steel,Psychic,0.3,1.1,Serene Grace,,,100,100,100,100,100,100,jirachi.png,1
+276,litwick,607,Litwick,5,Ghost,Fire,0.3,3.1,Flash Fire,Flame Body,Infiltrator,50,30,55,65,55,20,litwick.png,1
+277,drilbur,529,Drilbur,5,Ground,,0.3,8.5,Sand Rush,Sand Force,Mold Breaker,60,85,40,30,45,68,drilbur.png,1
+278,cranidos,408,Cranidos,4,Rock,,0.9,31.5,Mold Breaker,,Sheer Force,67,125,40,30,30,58,cranidos.png,1
+279,blacephalon,806,Blacephalon,7,Fire,Ghost,1.8,13.0,Beast Boost,,,53,127,53,151,79,107,blacephalon.png,1
+280,arctozolt,881,Arctozolt,8,Electric,Ice,2.3,150.0,Volt Absorb,Static,Slush Rush,90,100,90,90,80,55,arctozolt.png,1
+281,pichu,172,Pichu,2,Electric,,0.3,2.0,Static,,Lightning Rod,20,40,15,35,35,60,pichu.png,1
+282,duskull,355,Duskull,3,Ghost,,0.8,15.0,Levitate,,Frisk,20,40,90,30,90,25,duskull.png,1
+283,kangaskhan,115,Kangaskhan,1,Normal,,2.2,80.0,Early Bird,Scrappy,Inner Focus,105,95,80,40,80,90,kangaskhan.png,1
+284,chingling,433,Chingling,4,Psychic,,0.2,0.6,Levitate,,,45,30,50,65,50,45,chingling.png,1
+285,silicobra,843,Silicobra,8,Ground,,2.2,7.6,Sand Spit,Shed Skin,Sand Veil,52,57,75,35,50,46,silicobra.png,1
+286,ferroseed,597,Ferroseed,5,Grass,Steel,0.6,18.8,Iron Barbs,,Anticipation,44,50,91,24,86,10,ferroseed.png,1
+287,zekrom,644,Zekrom,5,Dragon,Electric,2.9,345.0,Teravolt,,,100,150,120,120,100,90,zekrom.png,1
+288,absol,359,Absol,3,Dark,,1.2,47.0,Pressure,Super Luck,Justified,65,130,60,75,60,75,absol.png,1
+289,aron,304,Aron,3,Steel,Rock,0.4,60.0,Sturdy,Rock Head,Heavy Metal,50,70,100,40,40,30,aron.png,1
+290,tepig,498,Tepig,5,Fire,,0.5,9.9,Blaze,,Thick Fat,65,63,45,45,45,45,tepig.png,1
+291,zapdos,145,Zapdos,1,Electric,Flying,1.6,52.6,Pressure,,Static,90,90,85,125,90,100,zapdos.png,1
+292,clauncher,692,Clauncher,6,Water,,0.5,8.3,Mega Launcher,,,50,53,62,58,63,44,clauncher.png,1
+293,riolu,447,Riolu,4,Fighting,,0.7,20.2,Steadfast,Inner Focus,Prankster,40,70,40,35,40,60,riolu.png,1
+294,skwovet,819,Skwovet,8,Normal,,0.3,2.5,Cheek Pouch,,Gluttony,70,55,55,35,35,25,skwovet.png,1
+295,slakoth,287,Slakoth,3,Normal,,0.8,24.0,Truant,,,60,60,60,35,35,30,slakoth.png,1
+296,ponyta,77,Ponyta,1,Fire,,1.0,30.0,Run Away,Flash Fire,Flame Body,50,85,55,65,65,90,ponyta.png,1
+297,togepi,175,Togepi,2,Fairy,,0.3,1.5,Hustle,Serene Grace,Super Luck,35,20,65,40,65,20,togepi.png,1
+298,snover,459,Snover,4,Grass,Ice,1.0,50.5,Snow Warning,,Soundproof,60,62,50,62,60,40,snover.png,1
+299,solosis,577,Solosis,5,Psychic,,0.3,1.0,Overcoat,Magic Guard,Regenerator,45,30,40,105,50,20,solosis.png,1
+300,caterpie,10,Caterpie,1,Bug,,0.3,2.9,Shield Dust,,Run Away,45,30,35,20,20,45,caterpie.png,1
+301,psyduck,54,Psyduck,1,Water,,0.8,19.6,Damp,Cloud Nine,Swift Swim,50,52,48,65,50,55,psyduck.png,1
+302,teddiursa,216,Teddiursa,2,Normal,,0.6,8.8,Pickup,Quick Feet,Honey Gather,60,80,50,50,50,40,teddiursa.png,1
+303,piplup,393,Piplup,4,Water,,0.4,5.2,Torrent,,Defiant,53,51,53,61,56,40,piplup.png,1
+304,nickit,827,Nickit,8,Dark,,0.6,8.9,Run Away,Unburden,Stakeout,40,28,28,47,52,50,nickit.png,1
+305,darumaka,554,Darumaka,5,Fire,,0.6,37.5,Hustle,,Inner Focus,70,90,45,15,45,50,darumaka.png,1
+306,mawile,303,Mawile,3,Steel,Fairy,0.6,11.5,Hyper Cutter,Intimidate,Sheer Force,50,85,85,55,55,50,mawile.png,1
+307,sewaddle,540,Sewaddle,5,Bug,Grass,0.3,2.5,Swarm,Chlorophyll,Overcoat,45,53,70,40,60,42,sewaddle.png,1
+308,buzzwole,794,Buzzwole,7,Bug,Fighting,2.4,333.6,Beast Boost,,,107,139,139,53,53,79,buzzwole.png,1
+309,rockruff,744,Rockruff,7,Rock,,0.5,9.2,Keen Eye,Vital Spirit,Steadfast,45,65,40,30,40,60,rockruff.png,1
+310,manaphy,490,Manaphy,4,Water,,0.3,1.4,Hydration,,,100,100,100,100,100,100,manaphy.png,1
+311,bunnelby,659,Bunnelby,6,Normal,,0.4,5.0,Pickup,Cheek Pouch,Huge Power,38,36,38,32,36,57,bunnelby.png,1
+312,cubchoo,613,Cubchoo,5,Ice,,0.5,8.5,Snow Cloak,Slush Rush,Rattled,55,70,40,60,40,40,cubchoo.png,1
+313,corsola,222,Corsola,2,Water,Rock,0.6,5.0,Hustle,Natural Cure,Regenerator,65,55,95,65,95,35,corsola.png,1
+314,carbink,703,Carbink,6,Rock,Fairy,0.3,5.7,Clear Body,,Sturdy,50,50,150,50,150,50,carbink.png,1
+315,omanyte,138,Omanyte,1,Rock,Water,0.4,7.5,Swift Swim,Shell Armor,Weak Armor,35,40,100,90,55,35,omanyte.png,1
+316,rufflet,627,Rufflet,5,Normal,Flying,0.5,10.5,Keen Eye,Sheer Force,Hustle,70,83,50,37,50,60,rufflet.png,1
+317,grookey,810,Grookey,8,Grass,,0.3,5.0,Overgrow,,Grassy Surge,50,65,50,40,40,65,grookey.png,1
+318,dhelmise,781,Dhelmise,7,Ghost,Grass,3.9,210.0,Steelworker,,,70,131,100,86,90,40,dhelmise.png,1
+319,morelull,755,Morelull,7,Grass,Fairy,0.2,1.5,Illuminate,Effect Spore,Rain Dish,40,35,55,65,75,15,morelull.png,1
+320,chatot,441,Chatot,4,Normal,Flying,0.5,1.9,Keen Eye,Tangled Feet,Big Pecks,76,65,45,92,42,91,chatot.png,1
+321,spinarak,167,Spinarak,2,Bug,Poison,0.5,8.5,Swarm,Insomnia,Sniper,40,60,40,40,40,30,spinarak.png,1
+322,onix,95,Onix,1,Rock,Ground,8.8,210.0,Rock Head,Sturdy,Weak Armor,35,45,160,30,45,70,onix.png,1
+323,venonat,48,Venonat,1,Bug,Poison,1.0,30.0,Compound Eyes,Tinted Lens,Run Away,60,55,50,40,55,45,venonat.png,1
+324,wimpod,767,Wimpod,7,Bug,Water,0.5,12.0,Wimp Out,,,25,35,40,20,30,80,wimpod.png,1
+325,buizel,418,Buizel,4,Water,,0.7,29.5,Swift Swim,,Water Veil,55,65,35,60,30,85,buizel.png,1
+326,vulpix,37,Vulpix,1,Fire,,0.6,9.9,Flash Fire,,Drought,38,41,40,50,65,65,vulpix.png,1
+327,togedemaru,777,Togedemaru,7,Electric,Steel,0.3,3.3,Iron Barbs,Lightning Rod,Sturdy,65,98,63,40,73,96,togedemaru.png,1
+328,minccino,572,Minccino,5,Normal,,0.4,5.8,Cute Charm,Technician,Skill Link,55,50,40,40,40,75,minccino.png,1
+329,doduo,84,Doduo,1,Normal,Flying,1.4,39.2,Run Away,Early Bird,Tangled Feet,35,85,45,35,35,75,doduo.png,1
+330,misdreavus,200,Misdreavus,2,Ghost,,0.7,1.0,Levitate,,,60,60,60,85,85,85,misdreavus.png,1
+331,shuckle,213,Shuckle,2,Bug,Rock,0.6,20.5,Sturdy,Gluttony,Contrary,20,10,230,10,230,5,shuckle.png,1
+332,rayquaza,384,Rayquaza,3,Dragon,Flying,7.0,206.5,Air Lock,,,105,150,90,150,90,95,rayquaza.png,1
+333,mudbray,749,Mudbray,7,Ground,,1.0,110.0,Own Tempo,Stamina,Inner Focus,70,100,70,45,55,45,mudbray.png,1
+334,skrelp,690,Skrelp,6,Poison,Water,0.5,7.3,Poison Point,Poison Touch,Adaptability,50,60,60,60,60,30,skrelp.png,1
+335,ledyba,165,Ledyba,2,Bug,Flying,1.0,10.8,Swarm,Early Bird,Rattled,40,20,30,40,80,55,ledyba.png,1
+336,baltoy,343,Baltoy,3,Ground,Psychic,0.5,21.5,Levitate,,,40,40,55,40,70,55,baltoy.png,1
+337,dewpider,751,Dewpider,7,Water,Bug,0.3,4.0,Water Bubble,,Water Absorb,38,40,52,40,72,27,dewpider.png,1
+338,applin,840,Applin,8,Grass,Dragon,0.2,0.5,Ripen,Gluttony,Bulletproof,40,40,80,40,40,20,applin.png,1
+339,sandygast,769,Sandygast,7,Ghost,Ground,0.5,70.0,Water Compaction,,Sand Veil,55,55,80,70,45,15,sandygast.png,1
+340,yanma,193,Yanma,2,Bug,Flying,1.2,38.0,Speed Boost,Compound Eyes,Frisk,65,65,45,75,45,95,yanma.png,1
+341,kubfu,891,Kubfu,8,Fighting,,0.6,12.0,Inner Focus,,,60,90,60,53,50,72,kubfu.png,1
+342,lugia,249,Lugia,2,Psychic,Flying,5.2,216.0,Pressure,,Multiscale,106,90,130,90,154,110,lugia.png,1
+343,turtonator,776,Turtonator,7,Fire,Dragon,2.0,212.0,Shell Armor,,,60,78,135,91,85,36,turtonator.png,1
+344,hawlucha,701,Hawlucha,6,Fighting,Flying,0.8,21.5,Limber,Unburden,Mold Breaker,78,92,75,74,63,118,hawlucha.png,1
+345,squirtle,7,Squirtle,1,Water,,0.5,9.0,Torrent,,Rain Dish,44,48,65,50,64,43,squirtle.png,1
+346,exeggcute,102,Exeggcute,1,Grass,Psychic,0.4,2.5,Chlorophyll,,Harvest,60,40,80,60,45,40,exeggcute.png,1
+347,emolga,587,Emolga,5,Electric,Flying,0.4,5.0,Static,,Motor Drive,55,75,60,75,60,103,emolga.png,1
+348,carvanha,318,Carvanha,3,Water,Dark,0.8,20.8,Rough Skin,,Speed Boost,45,90,20,65,20,65,carvanha.png,1
+349,drifloon,425,Drifloon,4,Ghost,Flying,0.4,1.2,Aftermath,Unburden,Flare Boost,90,50,34,60,44,70,drifloon.png,1
+350,stufful,759,Stufful,7,Normal,Fighting,0.5,6.8,Fluffy,Klutz,Cute Charm,70,75,50,45,50,50,stufful.png,1
+351,azurill,298,Azurill,3,Normal,Fairy,0.2,2.0,Thick Fat,Huge Power,Sap Sipper,50,20,40,20,40,20,azurill.png,1
+352,chespin,650,Chespin,6,Grass,,0.4,9.0,Overgrow,,Bulletproof,56,61,65,48,45,38,chespin.png,1
+353,jangmo-o,782,Jangmo-o,7,Dragon,,0.6,29.7,Bulletproof,Soundproof,Overcoat,45,55,65,45,45,45,jangmo-o.png,1
+354,panpour,515,Panpour,5,Water,,0.6,13.5,Gluttony,,Torrent,50,53,48,53,48,64,panpour.png,1
+355,spiritomb,442,Spiritomb,4,Ghost,Dark,1.0,108.0,Pressure,,Infiltrator,50,92,108,92,108,35,spiritomb.png,1
+356,chikorita,152,Chikorita,2,Grass,,0.9,6.4,Overgrow,,Leaf Guard,45,49,65,49,65,45,chikorita.png,1
+357,vanillite,582,Vanillite,5,Ice,,0.4,5.7,Ice Body,Snow Cloak,Weak Armor,36,50,50,65,60,44,vanillite.png,1
+358,spinda,327,Spinda,3,Normal,,1.1,5.0,Own Tempo,Tangled Feet,Contrary,60,60,60,60,60,60,spinda.png,1
+359,grimer,88,Grimer,1,Poison,,0.9,30.0,Stench,Sticky Hold,Poison Touch,80,80,50,40,50,25,grimer.png,1
+360,celebi,251,Celebi,2,Psychic,Grass,0.6,5.0,Natural Cure,,,100,100,100,100,100,100,celebi.png,1
+361,turtwig,387,Turtwig,4,Grass,,0.4,10.2,Overgrow,,Shell Armor,55,68,64,45,55,31,turtwig.png,1
+362,swinub,220,Swinub,2,Ice,Ground,0.4,6.5,Oblivious,Snow Cloak,Thick Fat,50,50,40,30,30,50,swinub.png,1
+363,axew,610,Axew,5,Dragon,,0.6,18.0,Rivalry,Mold Breaker,Unnerve,46,87,60,30,40,57,axew.png,1
+364,darkrai,491,Darkrai,4,Dark,,1.5,50.5,Bad Dreams,,,70,90,90,135,90,125,darkrai.png,1
+365,krabby,98,Krabby,1,Water,,0.4,6.5,Hyper Cutter,Shell Armor,Sheer Force,30,105,90,25,25,50,krabby.png,1
+366,falinks,870,Falinks,8,Fighting,,3.0,62.0,Battle Armor,,Defiant,65,100,100,70,60,75,falinks.png,1
+367,pawniard,624,Pawniard,5,Dark,Steel,0.5,10.2,Defiant,Inner Focus,Pressure,45,85,70,40,40,60,pawniard.png,1
+368,rolycoly,837,Rolycoly,8,Rock,,0.3,12.0,Steam Engine,Heatproof,Flash Fire,30,40,50,40,50,30,rolycoly.png,1
+369,blitzle,522,Blitzle,5,Electric,,0.8,29.8,Lightning Rod,Motor Drive,Sap Sipper,45,60,32,50,32,76,blitzle.png,1
+370,croagunk,453,Croagunk,4,Poison,Fighting,0.7,23.0,Anticipation,Dry Skin,Poison Touch,48,61,40,61,40,50,croagunk.png,1
+371,regice,378,Regice,3,Ice,,1.8,175.0,Clear Body,,Ice Body,80,50,100,100,200,50,regice.png,1
+372,meowth,52,Meowth,1,Normal,,0.4,4.2,Pickup,Technician,Unnerve,40,45,35,40,40,90,meowth.png,1
+373,volbeat,313,Volbeat,3,Bug,,0.7,17.7,Illuminate,Swarm,Prankster,65,73,75,47,85,85,volbeat.png,1
+374,terrakion,639,Terrakion,5,Rock,Fighting,1.9,260.0,Justified,,,91,129,90,72,90,108,terrakion.png,1
+375,kricketot,401,Kricketot,4,Bug,,0.3,2.2,Shed Skin,,Run Away,37,25,41,25,41,25,kricketot.png,1
+376,zeraora,807,Zeraora,7,Electric,,1.5,44.5,Volt Absorb,,,88,112,75,102,80,143,zeraora.png,1
+377,bellsprout,69,Bellsprout,1,Grass,Poison,0.7,4.0,Chlorophyll,,Gluttony,50,75,35,70,30,40,bellsprout.png,1
+378,luvdisc,370,Luvdisc,3,Water,,0.6,8.7,Swift Swim,,Hydration,43,30,55,40,65,97,luvdisc.png,1
+379,horsea,116,Horsea,1,Water,,0.4,8.0,Swift Swim,Sniper,Damp,30,40,70,70,25,60,horsea.png,1
+380,nincada,290,Nincada,3,Bug,Ground,0.5,5.5,Compound Eyes,,Run Away,31,45,90,30,30,40,nincada.png,1
+381,fennekin,653,Fennekin,6,Fire,,0.4,9.4,Blaze,,Magician,40,45,40,62,60,60,fennekin.png,1
+382,yamask,562,Yamask,5,Ghost,,0.5,1.5,Mummy,,,38,30,85,55,65,30,yamask.png,1
+383,druddigon,621,Druddigon,5,Dragon,,1.6,139.0,Rough Skin,Sheer Force,Mold Breaker,77,120,90,60,90,48,druddigon.png,1
+384,kabuto,140,Kabuto,1,Rock,Water,0.5,11.5,Swift Swim,Battle Armor,Weak Armor,30,80,90,55,45,55,kabuto.png,1
+385,charmander,4,Charmander,1,Fire,,0.6,8.5,Blaze,,Solar Power,39,52,43,60,50,65,charmander.png,1
+386,rowlet,722,Rowlet,7,Grass,Flying,0.3,1.5,Overgrow,,Long Reach,68,55,55,50,50,42,rowlet.png,1
+387,durant,632,Durant,5,Bug,Steel,0.3,33.0,Swarm,Hustle,Truant,58,109,112,48,48,109,durant.png,1
+388,sunkern,191,Sunkern,2,Grass,,0.3,1.8,Chlorophyll,Solar Power,Early Bird,30,30,30,30,30,30,sunkern.png,1
+389,chewtle,833,Chewtle,8,Water,,0.3,8.5,Strong Jaw,Shell Armor,Swift Swim,50,64,50,38,38,44,chewtle.png,1
+390,clobbopus,852,Clobbopus,8,Fighting,,0.6,4.0,Limber,,Technician,50,68,60,50,50,32,clobbopus.png,1
+391,cobalion,638,Cobalion,5,Steel,Fighting,2.1,250.0,Justified,,,91,90,129,90,72,108,cobalion.png,1
+392,pansage,511,Pansage,5,Grass,,0.6,10.5,Gluttony,,Overgrow,50,53,48,53,48,64,pansage.png,1
+393,deino,633,Deino,5,Dark,Dragon,0.8,17.3,Hustle,,,52,65,50,45,50,38,deino.png,1
+394,combee,415,Combee,4,Bug,Flying,0.3,5.5,Honey Gather,,Hustle,30,30,42,30,42,70,combee.png,1
+395,wailmer,320,Wailmer,3,Water,,2.0,130.0,Water Veil,Oblivious,Pressure,130,70,35,70,35,60,wailmer.png,1
+396,phantump,708,Phantump,6,Ghost,Grass,0.4,7.0,Natural Cure,Frisk,Harvest,43,70,48,50,60,38,phantump.png,1
+397,natu,177,Natu,2,Psychic,Flying,0.2,2.0,Synchronize,Early Bird,Magic Bounce,40,50,45,70,45,70,natu.png,1
+398,spritzee,682,Spritzee,6,Fairy,,0.2,0.5,Healer,,Aroma Veil,78,52,60,63,65,23,spritzee.png,1
+399,virizion,640,Virizion,5,Grass,Fighting,2.0,200.0,Justified,,,91,90,72,90,129,108,virizion.png,1
+400,rotom,479,Rotom,4,Electric,Ghost,0.3,0.3,Levitate,,,50,50,77,95,77,91,rotom.png,1
+401,hoothoot,163,Hoothoot,2,Normal,Flying,0.7,21.2,Insomnia,Keen Eye,Tinted Lens,60,30,30,36,56,50,hoothoot.png,1
+402,karrablast,588,Karrablast,5,Bug,,0.5,5.9,Swarm,Shed Skin,No Guard,50,75,45,40,45,60,karrablast.png,1
+403,torkoal,324,Torkoal,3,Fire,,0.5,80.4,White Smoke,Drought,Shell Armor,70,85,140,85,70,20,torkoal.png,1
+404,cramorant,845,Cramorant,8,Flying,Water,0.8,18.0,Gulp Missile,,,70,85,55,85,95,85,cramorant.png,1
+405,victini,494,Victini,5,Psychic,Fire,0.4,4.0,Victory Star,,,100,100,100,100,100,100,victini.png,1
+406,relicanth,369,Relicanth,3,Water,Rock,1.0,23.4,Swift Swim,Rock Head,Sturdy,100,90,130,45,65,55,relicanth.png,1
+407,wynaut,360,Wynaut,3,Psychic,,0.6,14.0,Shadow Tag,,Telepathy,95,23,48,23,48,23,wynaut.png,1
+408,zorua,570,Zorua,5,Dark,,0.7,12.5,Illusion,,,40,65,40,80,40,65,zorua.png,1
+409,blipbug,824,Blipbug,8,Bug,,0.4,8.0,Swarm,Compound Eyes,Telepathy,25,20,20,25,45,45,blipbug.png,1
+410,timburr,532,Timburr,5,Fighting,,0.6,12.5,Guts,Sheer Force,Iron Fist,75,80,55,25,35,35,timburr.png,1
+411,mudkip,258,Mudkip,3,Water,,0.4,7.6,Torrent,,Damp,50,70,50,50,50,40,mudkip.png,1
+412,toxel,848,Toxel,8,Electric,Poison,0.4,11.0,Rattled,Static,Klutz,40,38,35,54,35,40,toxel.png,1
+413,shellder,90,Shellder,1,Water,,0.3,4.0,Shell Armor,Skill Link,Overcoat,30,65,100,45,25,40,shellder.png,1
+414,bounsweet,761,Bounsweet,7,Grass,,0.3,3.2,Leaf Guard,Oblivious,Sweet Veil,42,30,38,30,38,32,bounsweet.png,1
+415,trubbish,568,Trubbish,5,Poison,,0.6,31.0,Stench,Sticky Hold,Aftermath,50,50,62,40,62,65,trubbish.png,1
+416,bagon,371,Bagon,3,Dragon,,0.6,42.1,Rock Head,,Sheer Force,45,75,60,40,30,50,bagon.png,1
+417,celesteela,797,Celesteela,7,Steel,Flying,9.2,999.9,Beast Boost,,,97,101,103,107,101,61,celesteela.png,1
+418,uxie,480,Uxie,4,Psychic,,0.3,0.3,Levitate,,,75,75,130,75,130,95,uxie.png,1
+419,suicune,245,Suicune,2,Water,,2.0,187.0,Pressure,,Inner Focus,100,75,115,90,115,85,suicune.png,1
+420,bergmite,712,Bergmite,6,Ice,,1.0,99.5,Own Tempo,Ice Body,Sturdy,55,69,85,32,35,28,bergmite.png,1
+421,shroomish,285,Shroomish,3,Grass,,0.4,4.5,Effect Spore,Poison Heal,Quick Feet,60,40,60,40,60,35,shroomish.png,1
+422,gligar,207,Gligar,2,Ground,Flying,1.1,64.8,Hyper Cutter,Sand Veil,Immunity,65,75,105,35,65,85,gligar.png,1
+423,bonsly,438,Bonsly,4,Rock,,0.5,15.0,Sturdy,Rock Head,Rattled,50,80,95,10,45,10,bonsly.png,1
+424,slowpoke,79,Slowpoke,1,Water,Psychic,1.2,36.0,Oblivious,Own Tempo,Regenerator,90,65,65,40,40,15,slowpoke.png,1
+425,latios,381,Latios,3,Dragon,Psychic,2.0,60.0,Levitate,,,80,90,80,130,110,110,latios.png,1
+426,mew,151,Mew,1,Psychic,,0.4,4.0,Synchronize,,,100,100,100,100,100,100,mew.png,1
+427,ekans,23,Ekans,1,Poison,,2.0,6.9,Intimidate,Shed Skin,Unnerve,35,60,44,40,54,55,ekans.png,1

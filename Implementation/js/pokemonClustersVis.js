@@ -420,7 +420,7 @@ class Cluster {
 
                     vis.tooltip
                         .style("opacity", 1)
-                        .style("left", event.pageX - 160 + "px")
+                        .style("left", event.pageX - 150 + "px")
                         .style("top", event.pageY - 160 + "px")
                         .html(html)
                         .style("background",'#012231')})
