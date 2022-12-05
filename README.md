@@ -2,7 +2,7 @@
 
 **Team Members**: Xinyu (Olivia) Kang, Sijia (Nancy) Li, Xiaoyuan (Sophy) Huang
 
-* URL to website: 
+* URL to website: https://lisijia6.github.io/An-Adventure-with-Pokemon/
 * URL to video: 
 
 ## Project Description
