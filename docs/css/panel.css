@@ -17,13 +17,13 @@ input { cursor: pointer; }
     display: none;	/* keep the element hidden */
 }
 .divFloat {
-    margin: 0 auto;
+    margin: -20% auto;
     background-color: #FFF;
     border: solid 1px #999;
     color: #000;
     width: 1400px;
     height: auto;
-    padding: 50px;
+    padding: 10%;
     -webkit-border-radius: 3px;
     -webkit-box-orient: vertical;
     -webkit-transition: 200ms -webkit-transform;
